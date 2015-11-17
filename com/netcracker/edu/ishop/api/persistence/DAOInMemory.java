@@ -11,10 +11,10 @@ public class DAOInMemory extends DAO {
     @Override
     public <T extends AbstractBusinessObject> T create(Class<T> abObj) {
 
-        UniqueIDGenerator UIDgenerator = UniqueIDGenerator.getInstance();
+        UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
 
         if (User.class.isAssignableFrom(abObj)) {
-            BigInteger id = UIDgenerator.getID();
+            BigInteger id = UIDGenerator.getID();
             User user = new User(id);
             System.out.println(user.toString());
 
