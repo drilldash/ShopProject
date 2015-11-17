@@ -1,0 +1,32 @@
+package netcracker.edu.ishop.api.commands;
+
+import org.apache.log4j.Logger;
+
+import java.util.List;
+
+public class ExitCommand extends AbstractCommand{
+
+    public static final Logger log = Logger.getLogger(ExitCommand.class);
+
+    @Override
+    public String getName() {
+        return "exit";
+    }
+
+    @Override
+    public String getDescription() {
+        return "Use this command to exit from the application";
+    }
+
+    @Override
+    public void execute(String[] cmdArgs) {
+        log.info("Exiting application...");
+        System.exit(0);
+    }
+
+    @Override
+    public String toString() {
+        return null;
+    }
+}
+
