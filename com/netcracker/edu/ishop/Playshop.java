@@ -1,5 +1,7 @@
 package netcracker.edu.ishop;
 import netcracker.edu.ishop.api.commands.*;
+import org.apache.log4j.Logger;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,13 +9,14 @@ import java.io.InputStreamReader;
 
 public class Playshop {
 
+    public static final Logger log = Logger.getLogger(Playshop.class);
 
     public static void main(String[] args) {
 
         CommandEngine commandEngine = new CommandEngine();
 
         while (true) {
-            System.out.print(">>>\n");
+            System.out.println(">>>");
             String cmdData = getInputStringCommand();
             commandEngine.executeCommand(cmdData);
         }
@@ -25,7 +28,7 @@ public class Playshop {
         try {
             return br.readLine();
         } catch (IOException ioe) {
-            System.out.println("Exception during user input");
+            log.info("Exception during user input");
             ioe.printStackTrace();
             return null;
         }

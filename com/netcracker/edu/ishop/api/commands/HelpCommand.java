@@ -31,8 +31,6 @@ public class HelpCommand extends AbstractCommand{
 
     @Override
     public void execute(String[] cmdArgs) {
-
-
         String helpText = "\n Available commands:";
 
         for (AbstractCommand cmd : cmdList ) {
