@@ -1,26 +1,30 @@
 package netcracker.edu.ishop.api.persistence;
-import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
-import netcracker.edu.ishop.api.objects.Folder;
-import netcracker.edu.ishop.api.objects.Item;
-import netcracker.edu.ishop.api.objects.User;
+
+import netcracker.edu.ishop.api.objects.*;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
+import org.apache.log4j.Logger;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 @SuppressWarnings("unchecked")
-public class  DAOInMemory<T extends AbstractBusinessObject>  extends DAO<T> {
+public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
 
-    private Map<Class<T>, Map<BigInteger, Class<T>>> dataMap;
+    public static final Logger log = Logger.getLogger(DAOInMemory.class);
 
-    private Map<BigInteger, User> userShard = new HashMap<>();
-
+    private Map<Class, Map<BigInteger, T>> dataMap;
 
     public DAOInMemory() {
         this.dataMap = new HashMap<>();
+        dataMap.put(User.class, new HashMap<BigInteger, T>());
+        dataMap.put(Folder.class, new HashMap<BigInteger, T>());
+        dataMap.put(Item.class, new HashMap<BigInteger, T>());
+        dataMap.put(Order.class, new HashMap<BigInteger, T>());
 
-        dataMap.put( User.class, userShard );
+
 
     }
 
@@ -49,6 +53,13 @@ public class  DAOInMemory<T extends AbstractBusinessObject>  extends DAO<T> {
             return (T) item;
         }
 
+        if (Order.class.isAssignableFrom(abObj)) {
+            BigInteger id = UIDGenerator.getID();
+            Order order = new Order(id);
+            System.out.println(order.toString());
+            return (T) order;
+        }
+
         if (abObj == null) {
             throw new NullPointerException("Can't create instance for" + abObj);
         }
@@ -62,12 +73,13 @@ public class  DAOInMemory<T extends AbstractBusinessObject>  extends DAO<T> {
 
     @Override
 
-    public void save(Class<T> abObj) {
-        if (User.class.isAssignableFrom(abObj)) {
-            userShard.put(abObj, abObj);
+    public void save(T abObj) {
+        dataMap.get(abObj.getClass()).put(abObj.getId(), abObj);
+        log.info(Arrays.toString(dataMap.get(abObj.getClass()).entrySet().toArray()));
+
 
     }
-    }
+
 
     @Override
     public void delete() {

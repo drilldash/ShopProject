@@ -1,5 +1,6 @@
 package netcracker.edu.ishop.api.commands;
 
+import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
 import org.apache.log4j.Logger;
@@ -38,8 +39,9 @@ public class RegisterUserCommand extends AbstractCommand{
         String password = cmdArgs[1];
 
 
-        log.info(username + password);
-        daoInstance.create(User.class);
+        log.info(username + " " + password);
+        AbstractBusinessObject abObj = daoInstance.create(User.class);
+        daoInstance.save(abObj);
 
     }
 }

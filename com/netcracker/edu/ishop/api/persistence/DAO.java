@@ -12,7 +12,7 @@ abstract public class DAO <T extends AbstractBusinessObject> {
 
     public abstract T load();
 
-    public abstract void save(Class<T> abObj);
+    public abstract void save(T abObj);
 
     public abstract void delete();
 
