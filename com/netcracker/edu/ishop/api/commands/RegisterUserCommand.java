@@ -7,7 +7,10 @@ import org.apache.log4j.Logger;
 public class RegisterUserCommand extends AbstractCommand{
 
     public static final Logger log = Logger.getLogger(RegisterUserCommand.class);
-    private DAO dao;
+
+    public RegisterUserCommand(DAO daoInstance) {
+        super(daoInstance);
+    }
 
     @Override
     public String toString() {
@@ -24,10 +27,6 @@ public class RegisterUserCommand extends AbstractCommand{
         return "register_user";
     }
 
-    public RegisterUserCommand(DAO dao) {
-        this.dao = dao;
-    }
-
     @Override
     public void execute(String[] cmdArgs) {
 
@@ -40,7 +39,7 @@ public class RegisterUserCommand extends AbstractCommand{
 
 
         log.info(username + password);
-        dao.create(User.class);
+        daoInstance.create(User.class);
 
     }
 }

@@ -1,5 +1,6 @@
 package netcracker.edu.ishop.api.commands;
 
+import netcracker.edu.ishop.api.persistence.DAO;
 import org.apache.log4j.Logger;
 
 import java.util.List;
@@ -7,6 +8,10 @@ import java.util.List;
 public class ExitCommand extends AbstractCommand{
 
     public static final Logger log = Logger.getLogger(ExitCommand.class);
+
+    public ExitCommand(DAO daoInstance) {
+        super(daoInstance);
+    }
 
     @Override
     public String getName() {
@@ -24,7 +29,10 @@ public class ExitCommand extends AbstractCommand{
         System.exit(0);
     }
 
+
+
     @Override
+
     public String toString() {
         return null;
     }

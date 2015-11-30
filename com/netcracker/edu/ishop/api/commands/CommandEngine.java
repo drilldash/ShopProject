@@ -1,6 +1,7 @@
 package netcracker.edu.ishop.api.commands;
 
 
+import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.api.persistence.DAOInMemory;
 
 import java.util.*;
@@ -9,15 +10,15 @@ public class CommandEngine {
     private Map<String, AbstractCommand> commandsMap;
     private static List<AbstractCommand> commandsList;
 
-
-    private DAOInMemory daoInMemory = new DAOInMemory();
+    private DAO daoInstance = new DAOInMemory();
 
     public CommandEngine() {
+
         // we're registering commands here
         commandsList = new ArrayList<AbstractCommand>();
-        commandsList.add(new ExitCommand());
-        commandsList.add(new RegisterUserCommand(daoInMemory));
-        commandsList.add(new HelpCommand(commandsList));
+        commandsList.add(new ExitCommand(daoInstance));
+        commandsList.add(new RegisterUserCommand(daoInstance));
+        commandsList.add(new HelpCommand(daoInstance, commandsList));
 
         commandsMap = new HashMap<String, AbstractCommand>();
         for (AbstractCommand cmd: commandsList) {
