@@ -1,7 +1,8 @@
 package netcracker.edu.ishop.utils;
 import org.apache.commons.io.FilenameUtils;
 
-public class ProjectConstants {
+public class ScenarioConstants {
+    // J. Bloch EPJ, article 19
     public static final boolean PERMIT_SCENARIO_EXECUTION = true;
 
     //assuming separate directory location of custom user scripts under project's root
