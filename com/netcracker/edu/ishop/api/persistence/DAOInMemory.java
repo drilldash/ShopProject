@@ -1,16 +1,18 @@
 package netcracker.edu.ishop.api.persistence;
 import com.google.gson.Gson;
 
+import com.google.gson.reflect.TypeToken;
 import netcracker.edu.ishop.api.objects.*;
 import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 
+import org.apache.commons.io.FilenameUtils;
 import org.apache.log4j.Logger;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.math.BigInteger;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 @SuppressWarnings("unchecked")
 public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
@@ -19,24 +21,39 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
 
     private Map<Class, Map<BigInteger, T>> dataMap;
 
+
     public DAOInMemory() {
 
-        File serializedObjectFile = new File(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH);
-        if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
-            Gson gson = new Gson();
-            try {
-                BufferedReader br = new BufferedReader(new FileReader(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH));
-                Map<Class, Map<BigInteger, T>> dataMap = gson.fromJson(br, HashMap.class);
-                this.dataMap = dataMap;
-                log.info("It seems that system succeeded in deserialization of dataMap");
+        this.dataMap = new HashMap<>();
 
-            } catch (IOException e) {
-                e.printStackTrace();
+        //Explicit enumeration of all Business Objects! Manual work is a bad solution
+        List<Class> typesList = new ArrayList<>(Arrays.asList(User.class, Folder.class, Order.class, Item.class));
+        Gson gson = new Gson();
+
+        for (Class type: typesList) {
+            String serializedObjectPath = FilenameUtils.concat(SerializationConstants.SERIALIZED_OBJECT_FOLDER_PATH, type.getName() + ".json");
+            File serializedObjectFile = new File(serializedObjectPath);
+
+            if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(serializedObjectPath));
+                    //ClassCastException!
+
+                    final Type serializedType = new TypeToken<Map<BigInteger, T>>(){}.getType();
+                    Map<BigInteger, T> shardMap =  gson.fromJson(br, serializedType);
+                    dataMap.put(type, shardMap);
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
+        }
+        if (dataMap.size() != 0) {
+            log.info(dataMap.get(User.class));
+        }
 
 
-        } else {
-            this.dataMap = new HashMap<>();
+        if (dataMap.size() == 0) {
             dataMap.put(User.class, new HashMap<BigInteger, T>());
             dataMap.put(Folder.class, new HashMap<BigInteger, T>());
             dataMap.put(Item.class, new HashMap<BigInteger, T>());
@@ -95,6 +112,7 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
             Map mapShard = dataMap.get(abObj.getClass());
             if (mapShard != null) {
                 mapShard.put(abObj.getId(), abObj);
+                log.info("Putting " + abObj.getClass().getName() + " into the shard " + mapShard.getClass().getName() + " successful" );
             }
             else {
                 log.info("It seems that main serialized data structure was broken during serialization or loading");
@@ -121,18 +139,58 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     @Override
     public void DAOExit() {
         Gson gson = new Gson();
-        String json = gson.toJson(dataMap);
-        log.info(json);
+//        String json = gson.toJson(dataMap);
+//        log.info(json);
+//
+//        try {
+//            //write converted json data to a file named "CountryGSON.json"
+//            FileWriter writer = new FileWriter(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH);
+//            writer.write(json);
+//            writer.close();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
-        try {
-            //write converted json data to a file named "CountryGSON.json"
-            FileWriter writer = new FileWriter(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH);
-            writer.write(json);
-            writer.close();
 
-        } catch (IOException e) {
-            e.printStackTrace();
+        for (Map.Entry<Class, Map<BigInteger, T>> entry : dataMap.entrySet()) {
+            Class type = entry.getKey();
+
+            Map<BigInteger, T> mapShard= entry.getValue();
+            log.info(mapShard);
+            String json = gson.toJson(mapShard);
+            log.info(json);
+
+            try {
+                //write converted json data to a file named "<typename>.json"
+
+                String serializedObjectPath = FilenameUtils.concat(SerializationConstants.SERIALIZED_OBJECT_FOLDER_PATH, type.getName() + ".json");
+                File serializedObjectFile = new File(serializedObjectPath);
+
+
+                if (!serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+                    FileWriter writer = new FileWriter(serializedObjectPath);
+                    writer.write(json);
+                    writer.close();
+                }
+
+                if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+                    serializedObjectFile.delete();
+                    serializedObjectFile.createNewFile();
+
+                    FileWriter writer = new FileWriter(serializedObjectPath);
+                    writer.write(json);
+                    writer.close();
+                    //register_user u2 p2
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
         }
+
 
 
     }
