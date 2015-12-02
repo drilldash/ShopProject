@@ -1,12 +1,14 @@
 package netcracker.edu.ishop.api.persistence;
+import com.google.gson.Gson;
 
 import netcracker.edu.ishop.api.objects.*;
+import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
+
 import org.apache.log4j.Logger;
 
+import java.io.*;
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -18,13 +20,28 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     private Map<Class, Map<BigInteger, T>> dataMap;
 
     public DAOInMemory() {
-        this.dataMap = new HashMap<>();
-        dataMap.put(User.class, new HashMap<BigInteger, T>());
-        dataMap.put(Folder.class, new HashMap<BigInteger, T>());
-        dataMap.put(Item.class, new HashMap<BigInteger, T>());
-        dataMap.put(Order.class, new HashMap<BigInteger, T>());
+
+        File serializedObjectFile = new File(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH);
+        if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+            Gson gson = new Gson();
+            try {
+                BufferedReader br = new BufferedReader(new FileReader(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH));
+                Map<Class, Map<BigInteger, T>> dataMap = gson.fromJson(br, HashMap.class);
+                this.dataMap = dataMap;
+                log.info("It seems that system succeeded in deserialization of dataMap");
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
 
+        } else {
+            this.dataMap = new HashMap<>();
+            dataMap.put(User.class, new HashMap<BigInteger, T>());
+            dataMap.put(Folder.class, new HashMap<BigInteger, T>());
+            dataMap.put(Item.class, new HashMap<BigInteger, T>());
+            dataMap.put(Order.class, new HashMap<BigInteger, T>());
+        }
 
     }
 
@@ -74,8 +91,18 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     @Override
 
     public void save(T abObj) {
-        dataMap.get(abObj.getClass()).put(abObj.getId(), abObj);
-        log.info(Arrays.toString(dataMap.get(abObj.getClass()).entrySet().toArray()));
+        try {
+            Map mapShard = dataMap.get(abObj.getClass());
+            if (mapShard != null) {
+                mapShard.put(abObj.getId(), abObj);
+            }
+            else {
+                log.info("It seems that main serialized data structure was broken during serialization or loading");
+            }
+            //log.info(Arrays.toString(mapShard.entrySet().toArray()));
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
 
 
     }
@@ -90,4 +117,25 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     public Map getMapShardByABOName(Class<T> abObj) {
         return null;
     }
+
+    @Override
+    public void DAOExit() {
+        Gson gson = new Gson();
+        String json = gson.toJson(dataMap);
+        log.info(json);
+
+        try {
+            //write converted json data to a file named "CountryGSON.json"
+            FileWriter writer = new FileWriter(SerializationConstants.SERIALIZED_OBJECT_FILE_PATH);
+            writer.write(json);
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+
 }

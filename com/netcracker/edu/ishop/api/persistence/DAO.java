@@ -18,4 +18,6 @@ abstract public class DAO <T extends AbstractBusinessObject> {
 
     public abstract Map getMapShardByABOName(Class<T> abObj);
 
+    public abstract void DAOExit();
+
 }

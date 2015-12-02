@@ -26,6 +26,7 @@ public class ExitCommand extends AbstractCommand{
     @Override
     public void execute(String[] cmdArgs) {
         log.info("Exiting application...");
+        daoInstance.DAOExit();
         System.exit(0);
     }
 

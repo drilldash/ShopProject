@@ -63,7 +63,7 @@ public class Playshop {
                     if (!cmdData.startsWith("#")) {
                         commandEngine.executeCommand(cmdData);
                     } else {
-                        log.info("Line " + lineNumber + ":\"" + cmdData + "\" was omitted for execution, because it\'s a comment");
+                        log.info("Scenario line " + lineNumber + ":\n\"" + cmdData + "\" was omitted for execution, because it\'s a comment");
                     }
 
                 }
