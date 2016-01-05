@@ -18,6 +18,7 @@ public class CommandEngine {
         commandsList = new ArrayList<AbstractCommand>();
         commandsList.add(new ExitCommand(daoInstance));
         commandsList.add(new RegisterUserCommand(daoInstance));
+        commandsList.add(new ShowUsersCommand(daoInstance));
         commandsList.add(new HelpCommand(daoInstance, commandsList));
 
         commandsMap = new HashMap<String, AbstractCommand>();

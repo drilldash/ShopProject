@@ -10,7 +10,7 @@ public class User extends AbstractBusinessObject {
 
     @Override
     public String toString() {
-        return ""+getClass().getCanonicalName() + " id: " + getId();
+        return ""+getClass().getSimpleName() + " id: " + getId() + " name:" + getName();
     }
 
     public User(BigInteger id) {

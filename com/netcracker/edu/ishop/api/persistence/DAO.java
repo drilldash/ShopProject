@@ -2,6 +2,7 @@ package netcracker.edu.ishop.api.persistence;
 
 import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 
+import java.util.HashMap;
 import java.util.Map;
 
 abstract public class DAO <T extends AbstractBusinessObject> {
@@ -19,5 +20,7 @@ abstract public class DAO <T extends AbstractBusinessObject> {
     public abstract Map getMapShardByABOName(Class<T> abObj);
 
     public abstract void DAOExit();
+
+
 
 }

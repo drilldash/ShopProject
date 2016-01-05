@@ -40,7 +40,10 @@ public class RegisterUserCommand extends AbstractCommand{
 
 
         log.info(username + " " + password);
-        AbstractBusinessObject abObj = daoInstance.create(User.class);
+        // cast!!!
+        User abObj = (User) daoInstance.create(User.class);
+        abObj.setName(username);
+        abObj.setPassword(password);
         daoInstance.save(abObj);
 
     }

@@ -1,3 +1,6 @@
 help
+show_users
 #help <- this is comment
-#register_user root root
+register_user u1 p1
+register_user u2 p2
+show_users
