@@ -1,6 +1,6 @@
 package netcracker.edu.ishop;
 
-import netcracker.edu.ishop.api.commands.*;
+import netcracker.edu.ishop.api.commands.engine.CommandEngine;
 import netcracker.edu.ishop.utils.ScenarioConstants;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
@@ -10,6 +10,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.file.AccessDeniedException;
 
 
 public class Playshop {
@@ -20,12 +21,20 @@ public class Playshop {
 
         CommandEngine commandEngine = new CommandEngine();
 
-        executeScenarioScript(commandEngine);
+        try {
+            executeScenarioScript(commandEngine);
+        } catch (IOException IOE) {
+            log.info(IOE);
+        }
 
         while (true) {
             System.out.println(">>>");
             String cmdData = getInputStringCommand();
-            commandEngine.executeCommand(cmdData);
+            try {
+                commandEngine.executeCommand(cmdData);
+            } catch (AccessDeniedException ADE) {
+                log.info(ADE);
+            }
         }
 
     }
@@ -41,7 +50,7 @@ public class Playshop {
         }
     }
 
-    private static void executeScenarioScript(CommandEngine commandEngine) {
+    private static void executeScenarioScript(CommandEngine commandEngine) throws IOException, AccessDeniedException{
 
         //inspired by these: (ways of concatenating file paths and reading files)
         //http://stackoverflow.com/a/4177678/2938167
@@ -61,7 +70,11 @@ public class Playshop {
                     lineNumber++;
                     String cmdData = lineIterator.next();
                     if (!cmdData.startsWith("#")) {
-                        commandEngine.executeCommand(cmdData);
+                        try {
+                            commandEngine.executeCommand(cmdData);
+                        } catch (AccessDeniedException ADE) {
+                            log.info(ADE);
+                        }
                     } else {
                         log.info("Scenario line " + lineNumber + ":\n\"" + cmdData + "\" was omitted for execution, because it\'s a comment");
                     }
@@ -69,8 +82,9 @@ public class Playshop {
                 }
                 log.info("Executing of scenario\'s file was finished");
 
-            } catch (IOException e) {
-                log.info("No scenario file was found! Is scenario\'s filepath\n" + scenarioFile + " correct?\n" + e);
+            } catch (IOException IOE) {
+                log.info("No scenario file was found! Is scenario\'s filepath\n" + scenarioFile + " correct?\n" + IOE);
+
             } finally {
                 LineIterator.closeQuietly(lineIterator);
             }

@@ -12,7 +12,7 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.math.BigInteger;
 import java.util.HashMap;
-import java.util.List;
+import java.util.Iterator;
 import java.util.Map;
 
 @SuppressWarnings("unchecked")
@@ -27,77 +27,77 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     code for all the classes of objects you wish to serialize.
     */
 
-    public static final Logger log = Logger.getLogger(DAOInMemory.class);
+            public static final Logger log = Logger.getLogger(DAOInMemory.class);
 
-    private Map<Class, Map<BigInteger, T>> dataMap;
+            private Map<Class, Map<BigInteger, T>> dataMap;
 
-    public DAOInMemory() {
+            public DAOInMemory() {
 
-        this.dataMap = new HashMap<>();
+                this.dataMap = new HashMap<>();
 
-        Map userMap =  jsonDeserializeBObjectByType(User.class, SerializationConstants.SERIALIZED_USERMAP_FILE_PATH);
-        if (userMap != null) {
-            dataMap.put(User.class, userMap);
-        } else {
-            dataMap.put(User.class, new HashMap<BigInteger, T>());
-        }
+                Map userMap =  jsonDeserializeBObjectByType(User.class, SerializationConstants.SERIALIZED_USERMAP_FILE_PATH);
+                if (userMap != null) {
+                    dataMap.put(User.class, userMap);
+                } else {
+                    dataMap.put(User.class, new HashMap<BigInteger, T>());
+                }
 
-        Map folderMap =  jsonDeserializeBObjectByType(Folder.class, SerializationConstants.SERIALIZED_FOLDERMAP_FILE_PATH);
-        if (folderMap != null) {
-            dataMap.put(Folder.class, folderMap);
-        } else {
-            dataMap.put(Folder.class, new HashMap<BigInteger, T>());
-        }
+                Map folderMap =  jsonDeserializeBObjectByType(Folder.class, SerializationConstants.SERIALIZED_FOLDERMAP_FILE_PATH);
+                if (folderMap != null) {
+                    dataMap.put(Folder.class, folderMap);
+                } else {
+                    dataMap.put(Folder.class, new HashMap<BigInteger, T>());
+                }
 
-        Map itemMap =  jsonDeserializeBObjectByType(Item.class, SerializationConstants.SERIALIZED_ITEMMAP_FILE_PATH);
-        if (itemMap != null) {
-            dataMap.put(Item.class, itemMap);
-        } else {
-            dataMap.put(Item.class, new HashMap<BigInteger, T>());
-        }
+                Map itemMap =  jsonDeserializeBObjectByType(Item.class, SerializationConstants.SERIALIZED_ITEMMAP_FILE_PATH);
+                if (itemMap != null) {
+                    dataMap.put(Item.class, itemMap);
+                } else {
+                    dataMap.put(Item.class, new HashMap<BigInteger, T>());
+                }
 
-        Map orderMap =  jsonDeserializeBObjectByType(Order.class, SerializationConstants.SERIALIZED_ORDERMAP_FILE_PATH);
-        if (orderMap != null) {
-            dataMap.put(Order.class, orderMap);
-        } else {
-            dataMap.put(Order.class, new HashMap<BigInteger, T>());
-        }
-    }
+                Map orderMap =  jsonDeserializeBObjectByType(Order.class, SerializationConstants.SERIALIZED_ORDERMAP_FILE_PATH);
+                if (orderMap != null) {
+                    dataMap.put(Order.class, orderMap);
+                } else {
+                    dataMap.put(Order.class, new HashMap<BigInteger, T>());
+                }
+            }
 
-    public T create(Class<T> abObj) {
+            public T create(Class<T> abObjType) {
 
-        UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
+                UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
 
-        if (User.class.isAssignableFrom(abObj)) {
-            BigInteger id = UIDGenerator.getID();
-            User user = new User(id);
-            //log.info(user.toString());
-            return (T) user;
-        }
+                if (User.class.isAssignableFrom(abObjType)) {
+                    BigInteger id = UIDGenerator.getID();
+                    User user = new User(id);
+                    //log.info(user.toString());
+                    return (T) user;
+                }
 
-        if (Folder.class.isAssignableFrom(abObj)) {
+        if (Folder.class.isAssignableFrom(abObjType)) {
             BigInteger id = UIDGenerator.getID();
             Folder folder = new Folder(id);
             //log.info(folder.toString());
             return (T) folder;
         }
 
-        if (Item.class.isAssignableFrom(abObj)) {
+        if (Item.class.isAssignableFrom(abObjType)) {
             BigInteger id = UIDGenerator.getID();
             Item item = new Item(id);
             //log.info(item.toString());
             return (T) item;
         }
 
-        if (Order.class.isAssignableFrom(abObj)) {
+        if (Order.class.isAssignableFrom(abObjType)) {
             BigInteger id = UIDGenerator.getID();
             Order order = new Order(id);
             //log.info(order.toString());
             return (T) order;
         }
 
-        if (abObj == null) {
-            throw new NullPointerException("Can't create instance for:" + abObj);
+        if (abObjType == null) {
+            throw new NullPointerException("Can't create instance for:" + abObjType);
         }
         return null;
     }
@@ -113,6 +113,11 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         try {
             Map mapShard = dataMap.get(abObj.getClass());
             if (mapShard != null) {
+
+//                if (User.class.isAssignableFrom(abObj.getClass())) {
+//                    for ()
+//
+//                }
                 //log.info(mapShard.getClass().getName());
                 //log.info(mapShard.keySet().iterator().next().getClass().getName());
                 //log.info(mapShard.values().iterator().next().getClass().getName());
@@ -134,7 +139,29 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
 
 
     @Override
-    public void delete() {
+    public void delete(T aboObj) {
+        Map shardMap;
+        if (User.class.isAssignableFrom(aboObj.getClass())) {
+            shardMap = dataMap.get(User.class);
+            shardMap.remove(aboObj.getId());
+        }
+
+        if (Item.class.isAssignableFrom(aboObj.getClass())) {
+            shardMap = dataMap.get(Item.class);
+            shardMap.remove(aboObj.getId());
+        }
+
+        if (Folder.class.isAssignableFrom(aboObj.getClass())) {
+            shardMap = dataMap.get(Folder.class);
+            shardMap.remove(aboObj.getId());
+        }
+
+        if (Order.class.isAssignableFrom(aboObj.getClass())) {
+            shardMap = dataMap.get(Order.class);
+            shardMap.remove(aboObj.getId());
+        }
+
+
 
     }
 
@@ -144,6 +171,26 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         //log.info(dataMap.get(abObjType));
         return dataMap.get(abObjType);
     }
+
+
+    public User findUserByName(String userName) {
+
+        Map userMap = dataMap.get(User.class);
+        for (Iterator<User> userIter = userMap.values().iterator(); userIter.hasNext();) {
+            User user = userIter.next();
+            if (user.getName().equals(userName.toLowerCase())) {
+                //foundFlag = true;
+                return user;
+            }
+        }
+
+//        if (!foundFlag) {
+//                log.info("findUserByName didn't find any user with given username " + userName);
+//        }
+        return null;
+    }
+
+
 
     @Override
     public void DAOExit() {
@@ -158,6 +205,7 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         Order.class
         ***
         */
+
         jsonSerializeBObjectByType(User.class, SerializationConstants.SERIALIZED_USERMAP_FILE_PATH);
         jsonSerializeBObjectByType(Folder.class, SerializationConstants.SERIALIZED_FOLDERMAP_FILE_PATH);
         jsonSerializeBObjectByType(Item.class, SerializationConstants.SERIALIZED_ITEMMAP_FILE_PATH);
@@ -165,6 +213,15 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
 
         //here we serialize last ID number to use it as initial value for next launch of the application
         saveLastID();
+
+        //not cool, each instantiation of CommandEngine creates DAO-instance for himself (should dao be singleton in threaded app?)
+        //CommandEngine comEngine = new CommandEngine();
+//
+//        for (Iterator<User> userIter = CurrentSessionState.getAllSignedInUsers().iterator(); userIter.hasNext();) {
+//            User user = userIter.next();
+//            comEngine.executeCommand("sign_out " + user.getName());
+//        }
+
 
     }
 

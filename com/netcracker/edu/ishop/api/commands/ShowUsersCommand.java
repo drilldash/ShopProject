@@ -2,8 +2,10 @@ package netcracker.edu.ishop.api.commands;
 
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
+import java.util.EnumSet;
 import java.util.Map;
 
 public class ShowUsersCommand extends AbstractCommand{
@@ -12,6 +14,7 @@ public class ShowUsersCommand extends AbstractCommand{
 
     public ShowUsersCommand(DAO daoInstance) {
         super(daoInstance);
+        this.defaultLevelAccess = UserGroupTypes.setAccessForSignInGroups();
     }
 
     @Override
@@ -21,11 +24,15 @@ public class ShowUsersCommand extends AbstractCommand{
 
     @Override
     public String getDescription() {
-        return "This command shows saved users in current implementation of data structure\n";
+        return "This command shows saved users in current implementation of data structure";
     }
+
 
     @Override
     public void execute(String[] cmdArgs) {
+
+        //daoInstance.findUserByName("u1");
+
         Map userMap = daoInstance.getMapShardByABOName(User.class);
 
         if (userMap.size() > 0) {

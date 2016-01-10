@@ -36,6 +36,11 @@ public class UniqueIDGenerator {
         return BigInteger.valueOf(id);
     }
 
+    public void decrementID() {
+        uniqueId.getAndDecrement();
+    }
+
+
     private BigInteger restoreLastID() {
         File serializedLastIDFile = new File(SerializationConstants.SERIALIZED_LAST_ID_FILE_PATH);
         if (serializedLastIDFile.exists() && !serializedLastIDFile.isDirectory()) {
@@ -49,7 +54,7 @@ public class UniqueIDGenerator {
                 e.printStackTrace();
             }
         }
-        return BigInteger.ZERO;
+        return BigInteger.ONE;
     }
 
 

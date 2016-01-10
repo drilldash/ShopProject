@@ -35,4 +35,10 @@ public class SerializationConstants {
     public static final String SERIALIZED_LAST_ID_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
             SERIALIZED_LAST_ID_FILE_NAME);
 
+    //////
+    public static final String SERIALIZED_FIRST_LAUNCH_FILE_NAME = "firstLaunch.json";
+    public static final String SERIALIZED_FIRST_LAUNCH_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
+            SERIALIZED_FIRST_LAUNCH_FILE_NAME);
+
+
 }
