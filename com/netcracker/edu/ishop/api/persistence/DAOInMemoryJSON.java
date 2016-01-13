@@ -1,7 +1,10 @@
 package netcracker.edu.ishop.api.persistence;
+
 import com.google.gson.Gson;
 
 import com.google.gson.reflect.TypeToken;
+import netcracker.edu.ishop.api.commands.engine.CommandEngine;
+import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.*;
 import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
@@ -11,12 +14,13 @@ import org.apache.log4j.Logger;
 import java.io.*;
 import java.lang.reflect.Type;
 import java.math.BigInteger;
+import java.nio.file.AccessDeniedException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
 @SuppressWarnings("unchecked")
-public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
+public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
 
     /*
     Check out for JSON serialization (bi-directional) of Java objects.
@@ -27,53 +31,53 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     code for all the classes of objects you wish to serialize.
     */
 
-            public static final Logger log = Logger.getLogger(DAOInMemory.class);
+    public static final Logger log = Logger.getLogger(DAOInMemoryJSON.class);
 
-            private Map<Class, Map<BigInteger, T>> dataMap;
+    private Map<Class, Map<BigInteger, T>> dataMap;
 
-            public DAOInMemory() {
+    public DAOInMemoryJSON() {
 
-                this.dataMap = new HashMap<>();
+        this.dataMap = new HashMap<>();
 
-                Map userMap =  jsonDeserializeBObjectByType(User.class, SerializationConstants.SERIALIZED_USERMAP_FILE_PATH);
-                if (userMap != null) {
-                    dataMap.put(User.class, userMap);
-                } else {
-                    dataMap.put(User.class, new HashMap<BigInteger, T>());
-                }
+        Map userMap = jsonDeserializeBObjectByType(User.class, SerializationConstants.SERIALIZED_USERMAP_FILE_PATH);
+        if (userMap != null) {
+            dataMap.put(User.class, userMap);
+        } else {
+            dataMap.put(User.class, new HashMap<BigInteger, T>());
+        }
 
-                Map folderMap =  jsonDeserializeBObjectByType(Folder.class, SerializationConstants.SERIALIZED_FOLDERMAP_FILE_PATH);
-                if (folderMap != null) {
-                    dataMap.put(Folder.class, folderMap);
-                } else {
-                    dataMap.put(Folder.class, new HashMap<BigInteger, T>());
-                }
+        Map folderMap = jsonDeserializeBObjectByType(Folder.class, SerializationConstants.SERIALIZED_FOLDERMAP_FILE_PATH);
+        if (folderMap != null) {
+            dataMap.put(Folder.class, folderMap);
+        } else {
+            dataMap.put(Folder.class, new HashMap<BigInteger, T>());
+        }
 
-                Map itemMap =  jsonDeserializeBObjectByType(Item.class, SerializationConstants.SERIALIZED_ITEMMAP_FILE_PATH);
-                if (itemMap != null) {
-                    dataMap.put(Item.class, itemMap);
-                } else {
-                    dataMap.put(Item.class, new HashMap<BigInteger, T>());
-                }
+        Map itemMap = jsonDeserializeBObjectByType(Item.class, SerializationConstants.SERIALIZED_ITEMMAP_FILE_PATH);
+        if (itemMap != null) {
+            dataMap.put(Item.class, itemMap);
+        } else {
+            dataMap.put(Item.class, new HashMap<BigInteger, T>());
+        }
 
-                Map orderMap =  jsonDeserializeBObjectByType(Order.class, SerializationConstants.SERIALIZED_ORDERMAP_FILE_PATH);
-                if (orderMap != null) {
-                    dataMap.put(Order.class, orderMap);
-                } else {
-                    dataMap.put(Order.class, new HashMap<BigInteger, T>());
-                }
-            }
+        Map orderMap = jsonDeserializeBObjectByType(Order.class, SerializationConstants.SERIALIZED_ORDERMAP_FILE_PATH);
+        if (orderMap != null) {
+            dataMap.put(Order.class, orderMap);
+        } else {
+            dataMap.put(Order.class, new HashMap<BigInteger, T>());
+        }
+    }
 
-            public T create(Class<T> abObjType) {
+    public T create(Class<T> abObjType) {
 
-                UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
+        UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
 
-                if (User.class.isAssignableFrom(abObjType)) {
-                    BigInteger id = UIDGenerator.getID();
-                    User user = new User(id);
-                    //log.info(user.toString());
-                    return (T) user;
-                }
+        if (User.class.isAssignableFrom(abObjType)) {
+            BigInteger id = UIDGenerator.getID();
+            User user = new User(id);
+            //log.info(user.toString());
+            return (T) user;
+        }
 
         if (Folder.class.isAssignableFrom(abObjType)) {
             BigInteger id = UIDGenerator.getID();
@@ -125,8 +129,7 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
                 //log.info(abObj.getId());
                 mapShard.put(abObj.getId(), abObj);
                 //log.info(mapShard);
-            }
-            else {
+            } else {
                 log.info("It seems that main serialized data structure was broken during serialization or loading");
             }
             //log.info(Arrays.toString(mapShard.entrySet().toArray()));
@@ -162,7 +165,6 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         }
 
 
-
     }
 
     @Override
@@ -176,7 +178,7 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     public User findUserByName(String userName) {
 
         Map userMap = dataMap.get(User.class);
-        for (Iterator<User> userIter = userMap.values().iterator(); userIter.hasNext();) {
+        for (Iterator<User> userIter = userMap.values().iterator(); userIter.hasNext(); ) {
             User user = userIter.next();
             if (user.getName().equals(userName.toLowerCase())) {
                 //foundFlag = true;
@@ -189,7 +191,6 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
 //        }
         return null;
     }
-
 
 
     @Override
@@ -215,12 +216,17 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         saveLastID();
 
         //not cool, each instantiation of CommandEngine creates DAO-instance for himself (should dao be singleton in threaded app?)
-        //CommandEngine comEngine = new CommandEngine();
-//
-//        for (Iterator<User> userIter = CurrentSessionState.getAllSignedInUsers().iterator(); userIter.hasNext();) {
-//            User user = userIter.next();
-//            comEngine.executeCommand("sign_out " + user.getName());
-//        }
+        CommandEngine comEngine = CommandEngine.getInstance();
+
+        for (Iterator<User> userIter = CurrentSessionState.getAllSignedInUsers().iterator(); userIter.hasNext();) {
+            User user = userIter.next();
+            try {
+                comEngine.executeCommand("sign_out " + user.getName());
+            } catch (AccessDeniedException ADE) {
+                log.info(ADE);
+            }
+
+        }
 
 
     }
@@ -228,7 +234,8 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
     private void jsonSerializeBObjectByType(Class abObjType, String serializedFileName) {
         Map mapShard = dataMap.get(abObjType);
 
-        Type mapType = new TypeToken<Map<BigInteger, T>>() {}.getType();
+        Type mapType = new TypeToken<Map<BigInteger, T>>() {
+        }.getType();
 
         Gson gson = new Gson();
         String json = gson.toJson(mapShard, mapType);
@@ -252,26 +259,30 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
                 BufferedReader br = new BufferedReader(new FileReader(serializedFileName));
 
                 if (User.class.isAssignableFrom(abObjType)) {
-                    Type typeOfMap = new TypeToken<Map<BigInteger, User>>() { }.getType();
+                    Type typeOfMap = new TypeToken<Map<BigInteger, User>>() {
+                    }.getType();
                     Map<BigInteger, User> mapShard = gson.fromJson(br, typeOfMap);
                     return mapShard;
                 }
 
                 if (Folder.class.isAssignableFrom(abObjType)) {
-                    Type typeOfMap = new TypeToken<Map<BigInteger, Folder>>() { }.getType();
+                    Type typeOfMap = new TypeToken<Map<BigInteger, Folder>>() {
+                    }.getType();
                     Map<BigInteger, Folder> mapShard = gson.fromJson(br, typeOfMap);
                     return mapShard;
                 }
 
 
                 if (Item.class.isAssignableFrom(abObjType)) {
-                    Type typeOfMap = new TypeToken<Map<BigInteger, Item>>() { }.getType();
+                    Type typeOfMap = new TypeToken<Map<BigInteger, Item>>() {
+                    }.getType();
                     Map<BigInteger, Item> mapShard = gson.fromJson(br, typeOfMap);
                     return mapShard;
                 }
 
                 if (Order.class.isAssignableFrom(abObjType)) {
-                    Type typeOfMap = new TypeToken<Map<BigInteger, Order>>() { }.getType();
+                    Type typeOfMap = new TypeToken<Map<BigInteger, Order>>() {
+                    }.getType();
                     Map<BigInteger, Order> mapShard = gson.fromJson(br, typeOfMap);
                     return mapShard;
                 }
@@ -289,7 +300,8 @@ public class DAOInMemory<T extends AbstractBusinessObject> extends DAO<T> {
         BigInteger lastID = UniqueIDGenerator.getInstance().getID();
         log.info("Last unused ID number:" + lastID);
         Gson gson = new Gson();
-        Type varType = new TypeToken<BigInteger>() {}.getType();
+        Type varType = new TypeToken<BigInteger>() {
+        }.getType();
         String jsonLastID = gson.toJson(lastID, varType);
 
         try {

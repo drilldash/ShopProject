@@ -4,7 +4,7 @@ package netcracker.edu.ishop.api.commands.engine;
 import netcracker.edu.ishop.api.commands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
-import netcracker.edu.ishop.api.persistence.DAOInMemory;
+import netcracker.edu.ishop.api.persistence.DAOInMemoryJSON;
 import org.apache.log4j.Logger;
 
 import java.nio.file.AccessDeniedException;
@@ -13,10 +13,13 @@ import java.util.*;
 public class CommandEngine {
     public static final Logger log = Logger.getLogger(CommandEngine.class);
 
+    private static CommandEngine INSTANCE = new CommandEngine();
     private Map<String, AbstractCommand> commandsMap;
     private static List<AbstractCommand> commandsList;
 
-    private DAO daoInstance = new DAOInMemory();
+    private DAO daoInstance = new DAOInMemoryJSON();
+
+
 
     public CommandEngine() {
 
@@ -32,10 +35,7 @@ public class CommandEngine {
         commandsList.add(new DeleteUserCommand(daoInstance));
         commandsList.add(new RenameUserCommand(daoInstance));
         commandsList.add(new WhichGroupCommand(daoInstance));
-
         commandsList.add(new HelpCommand(daoInstance, commandsList));
-
-
 
         commandsMap = new HashMap<String, AbstractCommand>();
         for (AbstractCommand cmd: commandsList) {
@@ -43,6 +43,14 @@ public class CommandEngine {
         }
 
     }
+
+    public static CommandEngine getInstance() {
+        if(INSTANCE == null) {
+            INSTANCE = new CommandEngine();
+        }
+        return INSTANCE;
+    }
+
 
     public static List<AbstractCommand> getListOfCommands() {
         return commandsList;
@@ -79,7 +87,8 @@ public class CommandEngine {
             }
             else {
                 //log.info(cmdRawData + "\nAccess denied!" + " Use command \"which_group\" to see yout current level of access.");
-                throw new AccessDeniedException(cmdRawData + "\nAccess denied!" + " Use command \"which_group\" to see yout current level of access.");
+                throw new AccessDeniedException(cmdRawData + "\nAccess denied! Using this command requires GROUP:" + command.getRequiredLevelAccess() + " \nUse command " +
+                        "\"which_group\" to see your current level of access.");
             }
         }
 

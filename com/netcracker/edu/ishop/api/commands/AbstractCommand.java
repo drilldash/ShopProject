@@ -1,9 +1,6 @@
 package netcracker.edu.ishop.api.commands;
 
-import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
-import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 import netcracker.edu.ishop.api.persistence.DAO;
-import netcracker.edu.ishop.api.persistence.DAOInMemory;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 
 import java.util.EnumSet;
@@ -23,6 +20,7 @@ public abstract class AbstractCommand{
     public abstract String getName();
     public abstract String getDescription();
 
+
     public abstract void execute(String[] cmdArgs);
 
     public abstract String toString();
@@ -31,4 +29,7 @@ public abstract class AbstractCommand{
         return defaultLevelAccess.contains(groupType);
     }
 
+    public String getRequiredLevelAccess() {
+        return defaultLevelAccess.toString();
+    }
 }

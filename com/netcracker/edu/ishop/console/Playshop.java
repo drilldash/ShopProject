@@ -1,4 +1,4 @@
-package netcracker.edu.ishop;
+package netcracker.edu.ishop.console;
 
 import netcracker.edu.ishop.api.commands.engine.CommandEngine;
 import netcracker.edu.ishop.utils.ScenarioConstants;
@@ -19,7 +19,7 @@ public class Playshop {
 
     public static void main(String[] args) {
 
-        CommandEngine commandEngine = new CommandEngine();
+        CommandEngine commandEngine = CommandEngine.getInstance();
 
         try {
             executeScenarioScript(commandEngine);

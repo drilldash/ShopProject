@@ -2,7 +2,6 @@ package netcracker.edu.ishop.api.commands;
 
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
-import netcracker.edu.ishop.api.persistence.DAOInMemory;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
@@ -45,7 +44,7 @@ public class RegisterUserCommand extends AbstractCommand {
             //class cast!!!
             User user = (User) daoInstance.create(User.class);
 
-            //DAO<User> daoInstance = new DAOInMemory<User>();
+            //DAO<User> daoInstance = new DAOInMemoryJSON<User>();
             //User user = daoInstance.create(User.class);
 
             user.setName(username);
