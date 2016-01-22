@@ -13,7 +13,7 @@ import java.nio.file.AccessDeniedException;
 import java.security.AccessControlException;
 
 public class MultiThreadServer implements Runnable {
-    public static final Logger log = Logger.getLogger(MultiThreadServer.class);
+    public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.server");
     Socket csocket;
 
     MultiThreadServer(Socket csocket) {
@@ -33,7 +33,8 @@ public class MultiThreadServer implements Runnable {
     @Override
     public void run() {
         try (PrintWriter out = new PrintWriter(csocket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(csocket.getInputStream()))) {
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(csocket.getInputStream()))) {
 
             String input;
             while ((input = in.readLine()) != null) {
@@ -42,21 +43,18 @@ public class MultiThreadServer implements Runnable {
                     String cmdData = input.toLowerCase();
                     if (cmdData == "close") {
                         cmdEngine.executeCommand("exit");
-                        out.println("");
+                        out.println(cmdEngine.getCommandStatus());
                     } else {
                         cmdEngine.executeCommand(cmdData);
-                        out.println("Smth to send");
+                        out.println(cmdEngine.getCommandStatus());
                     }
 
-                } catch (IllegalArgumentException e) {
-                    log.info(e.toString());
-                    out.println(1);
-                } catch (AccessControlException ACE) {
-                    log.info(ACE.toString());
-                    out.println(1);
-                } catch (AccessDeniedException ACE) {
-                    log.info(ACE.toString());
-                    out.println(1);
+                } catch (IllegalArgumentException | AccessDeniedException iae) {
+                    log.info(iae.toString());
+                    out.println(iae.toString());
+                } catch (AccessControlException ace) {
+                    log.info(ace.toString());
+                    out.println(ace);
                 }
 
             }

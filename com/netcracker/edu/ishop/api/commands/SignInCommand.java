@@ -35,7 +35,8 @@ public class SignInCommand extends AbstractCommand {
             throw new IllegalArgumentException("Wrong number of arguments in " + "\"" + getName() + "\"");
         }
         else if (CurrentSessionState.getSignedInUser() != null) {
-            log.info("User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first");
+            setStatusMessage("User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first");
+            log.info(getStatusMessage());
         }
         else {
             String username = cmdArgs[0];
@@ -44,12 +45,15 @@ public class SignInCommand extends AbstractCommand {
             User user = daoInstance.findUserByName(username);
 
             if (user == null) {
-                log.info("No such username found in data-structure, you should register first");
+                setStatusMessage("No such username found in data-structure, you should register first");
+                log.info(getStatusMessage());
             } else if (user != null && !Arrays.equals(user.getPassword(), password)) {
-                log.info("Passwords are not matching each other");
+                setStatusMessage("Passwords are not matching each other");
+                log.info(getStatusMessage());
             } else {
                 CurrentSessionState.setSignedInUser(user);
-                log.info("User \"" + username + "\" has been successfully signed in!");
+                setStatusMessage("User \"" + username + "\" has been successfully signed in!");
+                log.info(getStatusMessage());
             }
         }
     }

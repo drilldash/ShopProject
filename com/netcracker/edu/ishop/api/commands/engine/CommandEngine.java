@@ -19,7 +19,7 @@ public class CommandEngine {
 
     private DAO daoInstance = new DAOInMemoryJSON();
 
-
+    private String commandStatus;
 
     public CommandEngine() {
 
@@ -56,6 +56,9 @@ public class CommandEngine {
         return commandsList;
     }
 
+    public String getCommandStatus() {
+        return commandStatus;
+    }
 
     public void executeCommand(String cmdRawData) throws AccessDeniedException{
         String[] cmdParams;
@@ -74,6 +77,7 @@ public class CommandEngine {
 
         if (cmdName == null || commandsMap.get(cmdName) == null) {
             System.out.println("Unknown command! Type \"help\"!");
+            commandStatus = "Unknown command! Type \"help\"!";
         }
         else {
             AbstractCommand command = commandsMap.get(cmdName);
@@ -81,9 +85,12 @@ public class CommandEngine {
             if (command.checkAccess(CurrentSessionState.getUserGroupTypeLocal())) {
                 try {
                     command.execute(cmdParams);
+                    commandStatus = command.getStatusMessage();
                 } catch (IllegalArgumentException IAE) {
                     log.info(IAE.toString());
+                    commandStatus = IAE.toString();
                 }
+
             }
             else {
                 //log.info(cmdRawData + "\nAccess denied!" + " Use command \"which_group\" to see yout current level of access.");

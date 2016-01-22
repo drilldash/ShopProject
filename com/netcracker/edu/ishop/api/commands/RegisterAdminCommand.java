@@ -34,7 +34,8 @@ public class RegisterAdminCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 2 || cmdArgs.length < 2) {
-            log.info("Wrong number of arguments in " + "\"" + getName() + "\"");
+            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
+            log.info(getStatusMessage());
         } else {
 
             String username = cmdArgs[0];
@@ -53,9 +54,11 @@ public class RegisterAdminCommand extends AbstractCommand {
 
             if (daoInstance.findUserByName(username) == null) {
                 daoInstance.save(user);
-                log.info("Admin " + username + " has been saved in data-structure!");
+                setStatusMessage("Admin " + username + " has been saved in data-structure!");
+                log.info(getStatusMessage());
             } else {
-                log.info("Username " + username + " is taken, can't save it to data-structure");
+                setStatusMessage("Username " + username + " is taken, can't save it to data-structure");
+                log.info(getStatusMessage());
                 UniqueIDGenerator.getInstance().decrementID();
             }
         }

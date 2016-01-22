@@ -8,9 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class PlayServer {
-    public static final Logger log = Logger.getLogger(PlayServer.class);
-
-
+    public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.server");
     public static void execute() throws IOException {
 
         ServerSocket ssock = new ServerSocket(PortSettings.PORT_NUMBER);
@@ -18,9 +16,8 @@ public class PlayServer {
         while (true) {
             log.info("Waiting for client");
             Socket sock = ssock.accept();
-            System.out.println("Connected");
+            log.info("Connected");
             new Thread(new MultiThreadServer(sock)).start();
-
         }
     }
 
@@ -31,6 +28,4 @@ public class PlayServer {
             e.printStackTrace();
         }
     }
-
-
 }

@@ -30,7 +30,8 @@ public class DeleteUserCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 1 || cmdArgs.length < 1) {
-            log.info("Wrong number of arguments in " + "\"" + getName() + "\"");
+            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
+            log.info(getStatusMessage());
         } else {
 
             String username = cmdArgs[0];
@@ -39,9 +40,11 @@ public class DeleteUserCommand extends AbstractCommand {
 
             if (user != null) {
                 daoInstance.delete(user);
-                log.info(username + " has been deleted from data-structure!");
+                setStatusMessage(username + " has been deleted from data-structure!");
+                log.info(getStatusMessage());
             } else {
-                log.info("Username " + username + " not found for deleting");
+                setStatusMessage("Username " + username + " not found for deleting");
+                log.info(getStatusMessage());
             }
         }
     }

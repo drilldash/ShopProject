@@ -1,6 +1,6 @@
 package netcracker.edu.ishop.api.persistence;
 
-import com.google.gson.Gson;
+import com.google.gson.*;
 
 import com.google.gson.reflect.TypeToken;
 import netcracker.edu.ishop.api.commands.engine.CommandEngine;
@@ -12,9 +12,12 @@ import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import org.apache.log4j.Logger;
 
 import java.io.*;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Type;
 import java.math.BigInteger;
 import java.nio.file.AccessDeniedException;
+import java.nio.file.NoSuchFileException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -34,6 +37,7 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
     public static final Logger log = Logger.getLogger(DAOInMemoryJSON.class);
 
     private Map<Class, Map<BigInteger, T>> dataMap;
+    private Map<Class<T>, Map<BigInteger, T>> dataMapTest;
 
     public DAOInMemoryJSON() {
 
@@ -66,53 +70,81 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
         } else {
             dataMap.put(Order.class, new HashMap<BigInteger, T>());
         }
+
+
+        //dataMapTest = jsonDeserializeEntireDataStructure(SerializationConstants.SERIALIZED_DATAMAP_FILE_PATH);
+        log.info(dataMapTest);
+
+
     }
 
-    public T create(Class<T> abObjType) {
+//    public T create(Class<T> abObjType) {
+//
+//        UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
+//
+//        if (User.class.isAssignableFrom(abObjType)) {
+//            BigInteger id = UIDGenerator.getID();
+//            User user = new User(id);
+//            //log.info(user.toString());
+//            return (T) user;
+//        }
+//
+//        if (Folder.class.isAssignableFrom(abObjType)) {
+//            BigInteger id = UIDGenerator.getID();
+//            Folder folder = new Folder(id);
+//            //log.info(folder.toString());
+//            return (T) folder;
+//        }
+//
+//        if (Item.class.isAssignableFrom(abObjType)) {
+//            BigInteger id = UIDGenerator.getID();
+//            Item item = new Item(id);
+//            //log.info(item.toString());
+//            return (T) item;
+//        }
+//
+//        if (Order.class.isAssignableFrom(abObjType)) {
+//            BigInteger id = UIDGenerator.getID();
+//            Order order = new Order(id);
+//            //log.info(order.toString());
+//            return (T) order;
+//        }
+//
+//        if (abObjType == null) {
+//            throw new NullPointerException("Can't create instance for:" + abObjType);
+//        }
+//        return null;
+//    }
 
+
+    public T create(Class<T> abObjType) {
         UniqueIDGenerator UIDGenerator = UniqueIDGenerator.getInstance();
 
-        if (User.class.isAssignableFrom(abObjType)) {
-            BigInteger id = UIDGenerator.getID();
-            User user = new User(id);
-            //log.info(user.toString());
-            return (T) user;
-        }
-
-        if (Folder.class.isAssignableFrom(abObjType)) {
-            BigInteger id = UIDGenerator.getID();
-            Folder folder = new Folder(id);
-            //log.info(folder.toString());
-            return (T) folder;
-        }
-
-        if (Item.class.isAssignableFrom(abObjType)) {
-            BigInteger id = UIDGenerator.getID();
-            Item item = new Item(id);
-            //log.info(item.toString());
-            return (T) item;
-        }
-
-        if (Order.class.isAssignableFrom(abObjType)) {
-            BigInteger id = UIDGenerator.getID();
-            Order order = new Order(id);
-            //log.info(order.toString());
-            return (T) order;
-        }
-
-        if (abObjType == null) {
-            throw new NullPointerException("Can't create instance for:" + abObjType);
+        if (AbstractBusinessObject.class.isAssignableFrom(abObjType)) {
+            return spawnBusinessObjectInstanceByReflection(abObjType, UIDGenerator.getID());
         }
         return null;
     }
+
+    private T spawnBusinessObjectInstanceByReflection(Class<T> abObjType, BigInteger newId) {
+        T newBusinessObjectInstance = null;
+        try {
+            Constructor<T> constructor = abObjType.getConstructor(BigInteger.class);
+            newBusinessObjectInstance = constructor.newInstance(newId);
+        } catch (NoSuchMethodException | IllegalAccessException | InstantiationException | InvocationTargetException exceptionMessage) {
+            log.info(exceptionMessage);
+        }
+        return newBusinessObjectInstance;
+    }
+
 
     @Override
     public T load() {
         return null;
     }
 
-    @Override
 
+    @Override
     public void save(T abObj) {
         try {
             Map mapShard = dataMap.get(abObj.getClass());
@@ -215,10 +247,14 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
         //here we serialize last ID number to use it as initial value for next launch of the application
         saveLastID();
 
+        //test: entire json serialization\deserialization
+        //jsonSerializeEntireDataStructure(SerializationConstants.SERIALIZED_DATAMAP_FILE_PATH);
+
+
         //not cool, each instantiation of CommandEngine creates DAO-instance for himself (should dao be singleton in threaded app?)
         CommandEngine comEngine = CommandEngine.getInstance();
 
-        for (Iterator<User> userIter = CurrentSessionState.getAllSignedInUsers().iterator(); userIter.hasNext();) {
+        for (Iterator<User> userIter = CurrentSessionState.getAllSignedInUsers().iterator(); userIter.hasNext(); ) {
             User user = userIter.next();
             try {
                 comEngine.executeCommand("sign_out " + user.getName());
@@ -239,6 +275,24 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
 
         Gson gson = new Gson();
         String json = gson.toJson(mapShard, mapType);
+        try {
+            FileWriter writer = new FileWriter(serializedFileName);
+            writer.write(json);
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    private void jsonSerializeEntireDataStructure(String serializedFileName) {
+
+        Type mapType = new TypeToken<Map<Class<T>, Map<BigInteger, T>>>() {}.getType();
+
+        Gson gson = new Gson();
+
+        String json = gson.toJson(dataMap, mapType);
         try {
             FileWriter writer = new FileWriter(serializedFileName);
             writer.write(json);
@@ -296,6 +350,66 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
         return null;
     }
 
+
+
+
+//    private Map jsonDeserializeBObjectByType2(T aboObj, String serializedFileName) {
+//        File serializedObjectFile = new File(serializedFileName);
+//        if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+//            Gson gson = new Gson();
+//            try {
+//                Class c = aboObj.getClass();
+//                Class<?> cl = Class.forName(aboObj.getClass().getSimpleName());
+//                String name = aboObj.getClass().getSimpleName();
+//
+//                BufferedReader br = new BufferedReader(new FileReader(serializedFileName));
+//
+//                if (AbstractBusinessObject.class.isAssignableFrom(c)) {
+//                    Type typeOfMap = new TypeToken<Map<BigInteger, name>>() {}.getType();
+//                    Map<BigInteger, cl> mapShard = gson.fromJson(br, typeOfMap);
+//                    return mapShard;
+//                }
+//
+//
+//            } catch (IOException | ClassNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//
+//        }
+//
+//        return null;
+//    }
+
+
+    private Map jsonDeserializeEntireDataStructure(String serializedFileName) {
+
+
+
+        Map<Class<T>, Map<BigInteger, T>> emptyDataMap = new HashMap<>();
+        File serializedObjectFile = new File(serializedFileName);
+        if (serializedObjectFile.exists() && !serializedObjectFile.isDirectory()) {
+            //GsonBuilder gsonBuilder = new GsonBuilder();
+            ///gsonBuilder.registerTypeAdapter(, );
+            Gson gson = new Gson();
+            try {
+
+                BufferedReader br = new BufferedReader(new FileReader(serializedFileName));
+                Type mapType = new TypeToken<Map<Class<T>, Map<BigInteger, T>>>(){}.getType();
+
+                Map<Class<T>, Map<BigInteger, T>> dataMap = gson.fromJson(br, mapType);
+                return dataMap;
+
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return emptyDataMap;
+    }
+
+
     private void saveLastID() {
         BigInteger lastID = UniqueIDGenerator.getInstance().getID();
         log.info("Last unused ID number:" + lastID);
@@ -313,5 +427,21 @@ public class DAOInMemoryJSON<T extends AbstractBusinessObject> extends DAO<T> {
             e.printStackTrace();
         }
     }
+
+
+//
+//    public class TAdapter implements JsonSerializer<T> {
+//        @Override
+//        public JsonElement serialize(T t, Type type, JsonSerializationContext jsc) {
+//            JsonObject jsonObject = new JsonObject();
+//            jsonObject.addProperty("class", t.getClass().getSimpleName());
+//            return jsonObject;
+//        }
+//
+//
+//    }
+
+
+
 
 }

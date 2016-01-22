@@ -30,7 +30,8 @@ public class RenameUserCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 2 || cmdArgs.length < 2) {
-            log.info("Wrong number of arguments in " + "\"" + getName() + "\"");
+            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
+            log.info(getStatusMessage());
         } else {
 
             String oldUsername = cmdArgs[0];
@@ -41,14 +42,17 @@ public class RenameUserCommand extends AbstractCommand {
             //User abo = daoInstance.create(User.class); why this doesn't work?
 
             if (user == null){
-                log.info("No such username has been found in data-structure");
+                setStatusMessage("No such username has been found in data-structure");
+                log.info(getStatusMessage());
             }
             else if (daoInstance.findUserByName(newUsername) != null) {
-                log.info("Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.");
+                setStatusMessage("Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.");
+                log.info(getStatusMessage());
             }
             else if (user != null && daoInstance.findUserByName(newUsername) == null) {
                 user.setName(newUsername);
-                log.info("Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"");
+                setStatusMessage("Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"");
+                log.info(getStatusMessage());
             }
 
         }

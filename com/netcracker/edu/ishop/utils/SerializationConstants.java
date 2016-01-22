@@ -39,6 +39,11 @@ public class SerializationConstants {
     public static final String SERIALIZED_FIRST_LAUNCH_FILE_NAME = "firstLaunch.json";
     public static final String SERIALIZED_FIRST_LAUNCH_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
             SERIALIZED_FIRST_LAUNCH_FILE_NAME);
+    //////
+    public static final String SERIALIZED_DATAMAP_FILE_NAME = "dataMap.json";
+    public static final String SERIALIZED_DATAMAP_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
+            SERIALIZED_DATAMAP_FILE_NAME);
+
 
 
 }

@@ -53,9 +53,11 @@ public class RegisterUserCommand extends AbstractCommand {
 
             if (daoInstance.findUserByName(username) == null) {
                 daoInstance.save(user);
-                log.info(username + " has been saved in data-structure!");
+                setStatusMessage(username + " has been saved in data-structure!");
+                log.info(getStatusMessage());
             } else {
-                log.info("Username " + username + " is taken, can't save it to data-structure");
+                setStatusMessage("Username " + username + " is taken, can't save it to data-structure");
+                log.info(getStatusMessage());
                 UniqueIDGenerator.getInstance().decrementID();
             }
         }
