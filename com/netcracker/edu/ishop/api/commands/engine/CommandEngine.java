@@ -5,6 +5,7 @@ import netcracker.edu.ishop.api.commands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.api.persistence.DAOInMemoryJSON;
+import netcracker.edu.ishop.api.persistence.JsonDaoNew;
 import org.apache.log4j.Logger;
 
 import java.nio.file.AccessDeniedException;
@@ -17,6 +18,7 @@ public class CommandEngine {
     private Map<String, AbstractCommand> commandsMap;
     private static List<AbstractCommand> commandsList;
 
+    //private DAO daoInstance = new JsonDaoNew<>();
     private DAO daoInstance = new DAOInMemoryJSON();
 
     private String commandStatus;

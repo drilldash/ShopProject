@@ -10,18 +10,18 @@ public class Item extends AbstractBusinessObject {
     public static final Logger log = Logger.getLogger(Item.class);
 
     private String itemType;
-    private int folderId;
+    private BigInteger folderId;
     private ArrayList<CharacteristicValue> charsVals = new ArrayList<>();
 
     public Item(BigInteger id) {
         super(id);
     }
 
-    public void setFolderId(int folderId) {
+    public void setFolderId(BigInteger folderId) {
         this.folderId = folderId;
     }
 
-    public int getFolderId() {
+    public BigInteger getFolderId() {
         return folderId;
     }
 

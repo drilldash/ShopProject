@@ -35,7 +35,7 @@ public class ShowUsersCommand extends AbstractCommand{
 
         Map userMap = daoInstance.getMapShardByABOName(User.class);
 
-        if (userMap.size() > 0) {
+        if (userMap != null && userMap.size() > 0) {
 //            for (Object obj : userMap.values()) {
 //                log.info(obj);
 //            }

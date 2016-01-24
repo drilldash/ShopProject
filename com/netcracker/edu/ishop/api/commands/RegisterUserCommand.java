@@ -42,10 +42,10 @@ public class RegisterUserCommand extends AbstractCommand {
 
 
             //class cast!!!
-            User user = (User) daoInstance.create(User.class);
+            //User user = (User) daoInstance.create(User.class);
 
             //DAO<User> daoInstance = new DAOInMemoryJSON<User>();
-            //User user = daoInstance.create(User.class);
+            User user = daoInstance.create(User.class);
 
             user.setName(username);
             user.setPassword(password);
