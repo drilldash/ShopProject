@@ -100,27 +100,26 @@ public class TestSerializeDeserialize {
     }
 
 
-    private void jsonSerializeBObjectByType(Class abObjType, Map mapShard) throws ClassNotFoundException {
-        final String serializedFileName = "Output2.json";
-
-
-        Class cls = Class.forName(abObjType.getCanonicalName());
-
-
-        Type mapType = new TypeToken<Map<BigInteger, >>() {
-        }.getType();
-
-        Gson gson = prepareGson();
-        String json = gson.toJson(mapShard, mapType);
-        try {
-            FileWriter writer = new FileWriter(serializedFileName);
-            writer.write(json);
-            writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    private void jsonSerializeBObjectByType(Class abObjType, Map mapShard) throws ClassNotFoundException {
+//        final String serializedFileName = "Output2.json";
+//
+//
+//        Class cls = Class.forName(abObjType.getCanonicalName());
+//
+//        Type mapType = new TypeToken<Map<BigInteger, >>() {
+//        }.getType();
+//
+//        Gson gson = prepareGson();
+//        String json = gson.toJson(mapShard, mapType);
+//        try {
+//            FileWriter writer = new FileWriter(serializedFileName);
+//            writer.write(json);
+//            writer.close();
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     private Gson prepareGson() {
         final GsonBuilder gsonBuilder = new GsonBuilder();

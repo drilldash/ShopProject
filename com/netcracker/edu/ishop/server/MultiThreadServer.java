@@ -2,7 +2,7 @@ package netcracker.edu.ishop.server;
 
 import netcracker.edu.ishop.api.commands.engine.CommandEngine;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
-import netcracker.edu.ishop.utils.PortSettings;
+import netcracker.edu.ishop.utils.PortSettingsNew;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -21,7 +21,7 @@ public class MultiThreadServer implements Runnable {
     }
 
     public static void main(String args[]) throws Exception {
-        ServerSocket ssock = new ServerSocket(PortSettings.PORT_NUMBER);
+        ServerSocket ssock = new ServerSocket(PortSettingsNew.PORT_NUMBER);
         System.out.println("Listening");
         while (true) {
             Socket sock = ssock.accept();

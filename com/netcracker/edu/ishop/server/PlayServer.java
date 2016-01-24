@@ -1,6 +1,6 @@
 package netcracker.edu.ishop.server;
 
-import netcracker.edu.ishop.utils.PortSettings;
+import netcracker.edu.ishop.utils.PortSettingsNew;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -11,7 +11,7 @@ public class PlayServer {
     public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.server");
     public static void execute() throws IOException {
 
-        ServerSocket ssock = new ServerSocket(PortSettings.PORT_NUMBER);
+        ServerSocket ssock = new ServerSocket(PortSettingsNew.PORT_NUMBER);
         System.out.println("Listening");
         while (true) {
             log.info("Waiting for client");

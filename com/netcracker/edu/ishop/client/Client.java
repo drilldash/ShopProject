@@ -1,22 +1,20 @@
 package netcracker.edu.ishop.client;
 
-import netcracker.edu.ishop.utils.PortSettings;
+import netcracker.edu.ishop.utils.PortSettingsNew;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.ConnectException;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class Client {
     public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.client");
     public static void execute() throws IOException,ClassNotFoundException {
         System.out.println("Connecting to server via socket");
 
-        Socket serverSocket = new Socket("localhost", PortSettings.PORT_NUMBER);
+        Socket serverSocket = new Socket("localhost", PortSettingsNew.PORT_NUMBER);
         BufferedReader in = new BufferedReader(new InputStreamReader(serverSocket.getInputStream()));
         PrintWriter out = new PrintWriter(serverSocket.getOutputStream(), true);
 
