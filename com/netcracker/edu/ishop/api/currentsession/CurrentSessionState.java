@@ -2,7 +2,9 @@ package netcracker.edu.ishop.api.currentsession;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.objects.User;
+import netcracker.edu.ishop.api.persistence.DAOFactory;
 import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
@@ -19,6 +21,9 @@ public class CurrentSessionState {
     private static final ThreadLocal<User> userThreadLocal = new ThreadLocal<>();
     private static final ThreadLocal<UserGroupTypes> userGroupTypeLocal = new ThreadLocal<>();
     private static final Set<User> activeUsers = new HashSet<>();
+
+    private static final ThreadLocal<Folder> currentFolder = new ThreadLocal<>();
+
     private static Gson gson = new Gson();
 
     static {
@@ -30,12 +35,34 @@ public class CurrentSessionState {
             userGroupTypeLocal.set(UserGroupTypes.GUEST);
         }
 
+        setInitialCurrentFolder();
+
     }
 
     public static void setNoUser() {
         userGroupTypeLocal.set(UserGroupTypes.GUEST);
         userThreadLocal.set(null);
     }
+
+    public static Folder getCurrentFolder() {
+        return currentFolder.get();
+    }
+
+    public static void setInitialCurrentFolder() {
+        log.info("we are here");
+        Folder rootFolder = DAOFactory.getDAO().findFolderInstanceByName("ROOT");
+        if ( rootFolder!= null) {
+            currentFolder.set(rootFolder);
+
+        } else {
+            currentFolder.set(null);
+        }
+    }
+
+    public static void setCurrentFolder(Folder folder) {
+        currentFolder.set(folder);
+    }
+
 
     public static UserGroupTypes getUserGroupTypeLocal() {
         return userGroupTypeLocal.get();

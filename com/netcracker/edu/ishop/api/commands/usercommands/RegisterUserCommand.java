@@ -1,5 +1,6 @@
-package netcracker.edu.ishop.api.commands;
+package netcracker.edu.ishop.api.commands.usercommands;
 
+import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
@@ -34,7 +35,8 @@ public class RegisterUserCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 2 || cmdArgs.length < 2) {
-            log.info("Wrong number of arguments in " + "\"" + getName() + "\"");
+            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
+            log.info(getStatusMessage());
         } else {
 
             String username = cmdArgs[0];

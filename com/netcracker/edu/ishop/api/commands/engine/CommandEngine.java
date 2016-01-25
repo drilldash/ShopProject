@@ -2,11 +2,15 @@ package netcracker.edu.ishop.api.commands.engine;
 
 
 import netcracker.edu.ishop.api.commands.*;
+import netcracker.edu.ishop.api.commands.foldercommands.*;
+import netcracker.edu.ishop.api.commands.usercommands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
-import netcracker.edu.ishop.api.persistence.DAOInMemoryJSON;
-import netcracker.edu.ishop.api.persistence.JsonDaoNew;
+import netcracker.edu.ishop.api.persistence.DAOFactory;
+
 import org.apache.log4j.Logger;
+
+
 
 import java.nio.file.AccessDeniedException;
 import java.util.*;
@@ -19,11 +23,13 @@ public class CommandEngine {
     private static List<AbstractCommand> commandsList;
 
     //private DAO daoInstance = new JsonDaoNew<>();
-    private DAO daoInstance = new DAOInMemoryJSON();
+
 
     private String commandStatus;
 
-    public CommandEngine() {
+    private CommandEngine() {
+
+        DAO daoInstance = DAOFactory.getDAO();
 
         // we're registering commands here
         commandsList = new ArrayList<AbstractCommand>();
@@ -38,6 +44,14 @@ public class CommandEngine {
         commandsList.add(new RenameUserCommand(daoInstance));
         commandsList.add(new WhichGroupCommand(daoInstance));
         commandsList.add(new HelpCommand(daoInstance, commandsList));
+
+        // folder commands
+        commandsList.add(new CreateFolderCommand(daoInstance));
+        commandsList.add(new ShowFolderPathCommand(daoInstance));
+        commandsList.add(new ShowFolderRecordsCommand(daoInstance));
+        commandsList.add(new ShowCurrentFolderCommand(daoInstance));
+        commandsList.add(new ShowFoldersInCurrentCommand(daoInstance));
+        commandsList.add(new ChangeFolderCommand(daoInstance));
 
         commandsMap = new HashMap<String, AbstractCommand>();
         for (AbstractCommand cmd: commandsList) {

@@ -1,5 +1,6 @@
-package netcracker.edu.ishop.api.commands;
+package netcracker.edu.ishop.api.commands.usercommands;
 
+import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.utils.UserGroupTypes;

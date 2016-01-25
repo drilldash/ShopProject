@@ -61,5 +61,59 @@
     "isAdmin": false,
     "groupType": "USER",
     "id": 6
+  },
+  "7": {
+    "name": "u7",
+    "password": [
+      "p",
+      "7"
+    ],
+    "isAdmin": false,
+    "groupType": "USER",
+    "id": 7
+  },
+  "8": {
+    "name": "u8",
+    "password": [
+      "p",
+      "8"
+    ],
+    "isAdmin": false,
+    "groupType": "USER",
+    "id": 8
+  },
+  "9": {
+    "name": "u9",
+    "password": [
+      "p",
+      "9"
+    ],
+    "isAdmin": false,
+    "groupType": "USER",
+    "id": 9
+  },
+  "15": {
+    "name": "utest",
+    "password": [
+      "p",
+      "t",
+      "e",
+      "s",
+      "t"
+    ],
+    "isAdmin": false,
+    "groupType": "USER",
+    "id": 15
+  },
+  "17": {
+    "name": "upd",
+    "password": [
+      "u",
+      "p",
+      "d"
+    ],
+    "isAdmin": false,
+    "groupType": "USER",
+    "id": 17
   }
 }

@@ -1,12 +1,12 @@
-package netcracker.edu.ishop.api.commands;
+package netcracker.edu.ishop.api.commands.usercommands;
 
+import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 import java.util.Arrays;
-import java.util.EnumSet;
 
 public class SignInCommand extends AbstractCommand {
 

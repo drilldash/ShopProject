@@ -4,3 +4,6 @@ show_users
 register_user u1 p1
 register_user u2 p2
 show_users
+cd cat2
+cd Cat2SubCat1
+cd Test

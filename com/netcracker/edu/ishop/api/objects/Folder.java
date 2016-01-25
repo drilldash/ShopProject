@@ -29,6 +29,15 @@ public class Folder extends AbstractBusinessObject{
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "Folder{" +
+                "name='" + name + "', " +
+                "id = " + getId() +
+                ", parentFolderId=" + parentFolderId +
+                '}';
+    }
 }
 
 
