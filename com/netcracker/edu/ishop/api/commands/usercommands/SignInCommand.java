@@ -35,8 +35,14 @@ public class SignInCommand extends AbstractCommand {
             throw new IllegalArgumentException("Wrong number of arguments in " + "\"" + getName() + "\"");
         }
         else if (CurrentSessionState.getSignedInUser() != null) {
-            setStatusMessage("User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first");
-            log.info(getStatusMessage());
+            //setStatusMessage("User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first");
+            //log.info(getStatusMessage());
+
+            String msg = "User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first";
+            setAllCmdData("ERROR", "U012", msg);
+            log.info(getCmdContent());
+
+
         }
         else {
             String username = cmdArgs[0];
@@ -45,16 +51,37 @@ public class SignInCommand extends AbstractCommand {
             User user = daoInstance.findUserByName(username);
 
             if (user == null) {
-                setStatusMessage("No such username found in data-structure, you should register first");
-                log.info(getStatusMessage());
+                //setStatusMessage("No such username found in data-structure, you should register first");
+                //log.info(getStatusMessage());
+
+                String msg = "No such username found in data-structure, you should register first";
+                setAllCmdData("ERROR", "U013", msg);
+                log.info(getCmdContent());
+
+
             } else if (user != null && !Arrays.equals(user.getPassword(), password)) {
-                setStatusMessage("Passwords are not matching each other");
-                log.info(getStatusMessage());
+                //setStatusMessage("Passwords are not matching each other");
+                //log.info(getStatusMessage());
+
+                String msg = "Passwords are not matching each other";
+                setAllCmdData("ERROR", "U014", msg);
+                log.info(getCmdContent());
+
+
+
             } else {
                 CurrentSessionState.setSignedInUser(user);
-                setStatusMessage("User \"" + username + "\" has been successfully signed in!");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("User \"" + username + "\" has been successfully signed in!");
+                //log.info(getStatusMessage());
+
+                String msg ="User \"" + username + "\" has been successfully signed in!";
+                setAllCmdData("OK", "U015", msg);
+                log.info(getCmdContent());
+
+
             }
+
         }
     }
 

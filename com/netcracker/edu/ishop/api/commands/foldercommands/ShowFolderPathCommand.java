@@ -44,14 +44,24 @@ public class ShowFolderPathCommand extends AbstractCommand {
             //log.info(folder.getName());
 
             //System.exit(0);
-            filePathTreeStructure += tab + folder.getName() + "\n";
-            tab+= "--";
-            parentRefId = folder.getParentFolderId();
+            if (folder != null) {
+                filePathTreeStructure += tab + folder.getName() + "\n";
+                tab+= "--";
+                parentRefId = folder.getParentFolderId();
+            }
+            else {
+                break;
+            }
+
 
 
         }
-        setStatusMessage("Result:\n" + filePathTreeStructure);
-        log.info(getStatusMessage());
+        //setStatusMessage("Result:\n" + filePathTreeStructure);
+        //log.info(getStatusMessage());
+
+        String msg = "Result:\n" + filePathTreeStructure;
+        setAllCmdData("OK", "F010", msg);
+        log.info(getCmdContent());
 
     }
 

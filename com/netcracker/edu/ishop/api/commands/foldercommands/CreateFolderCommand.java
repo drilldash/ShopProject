@@ -54,13 +54,16 @@ public class CreateFolderCommand extends AbstractCommand {
                 }
 
                 daoInstance.save(folder);
-
-                setStatusMessage("Folder \"" + folder.getName() + "\" has been saved in data-structure!");
-                log.info(getStatusMessage());
+                String msg = "Folder \"" + folder.getName() + "\" has been saved in data-structure!";
+                setAllCmdData("OK", "F007", msg);
+                log.info(getCmdContent());
 
             } else {
-                setStatusMessage("Folder \"" + folder.getName() + "\" already exists in data-structure!");
-                log.info(getStatusMessage());
+
+                String msg = "Folder \"" + folder.getName() + "\" already exists in data-structure!";
+                setAllCmdData("ERROR", "F008", msg);
+                log.info(getCmdContent());
+
                 UniqueIDGenerator.getInstance().decrementID();
             }
         }

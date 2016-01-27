@@ -36,14 +36,27 @@ public class SignOutCommand extends AbstractCommand {
         else {
             String username = cmdArgs[0];
             User user = daoInstance.findUserByName(username);
-            if (user == null) {
-                setStatusMessage("No such username found in data-structure, you should register first");
-                log.info(getStatusMessage());
+            if (user != CurrentSessionState.getSignedInUser()) {
+
+                //setStatusMessage("No such username found in data-structure, you should register first");
+                //log.info(getStatusMessage());
+
+                String msg ="Entered username doesn't match the actual signed in username";
+                setAllCmdData("ERROR", "U016", msg);
+                log.info(getCmdContent());
+
+
             } else {
                 CurrentSessionState.removeUserFromSignedInUsers();
                 CurrentSessionState.setNoUser();
-                setStatusMessage("User " + username + " has been successfully signed out");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("User " + username + " has been successfully signed out");
+                //log.info(getStatusMessage());
+
+                String msg = "User " + username + " has been successfully signed out";
+                setAllCmdData("OK", "U017", msg);
+                log.info(getCmdContent());
+
             }
         }
     }

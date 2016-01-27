@@ -47,7 +47,13 @@ public class HelpCommand extends AbstractCommand{
         for (AbstractCommand cmd : cmdList ) {
             helpText += "\n" + (cmd.getName() + " ---> " + cmd.getDescription());
         }
-        setStatusMessage(helpText);
-        log.info(getStatusMessage());
+        //setStatusMessage(helpText);
+        //log.info(getStatusMessage());
+
+        String msg = helpText;
+        //C stands for CommonErrors
+        setAllCmdData("OK", "C002", msg);
+        log.info(getCmdContent());
+
     }
 }

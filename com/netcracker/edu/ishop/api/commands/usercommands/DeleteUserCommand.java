@@ -39,11 +39,21 @@ public class DeleteUserCommand extends AbstractCommand {
 
             if (user != null) {
                 daoInstance.delete(user);
-                setStatusMessage(username + " has been deleted from data-structure!");
-                log.info(getStatusMessage());
+                //setStatusMessage(username + " has been deleted from data-structure!");
+                //log.info(getStatusMessage());
+
+                String msg = username + " has been deleted from data-structure!";
+                setAllCmdData("OK", "U001", msg);
+                log.info(getCmdContent());
+
+
             } else {
-                setStatusMessage("Username " + username + " not found for deleting");
-                log.info(getStatusMessage());
+                //setStatusMessage("Username " + username + " not found for deleting");
+                //log.info(getStatusMessage());
+
+                String msg = "Username " + username + " not found for deleting";
+                setAllCmdData("ERROR", "U002", msg);
+                log.info(getCmdContent());
             }
         }
     }

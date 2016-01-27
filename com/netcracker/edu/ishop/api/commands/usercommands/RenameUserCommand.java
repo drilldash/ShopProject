@@ -41,17 +41,34 @@ public class RenameUserCommand extends AbstractCommand {
             //User abo = daoInstance.create(User.class); why this doesn't work?
 
             if (user == null){
-                setStatusMessage("No such username has been found in data-structure");
-                log.info(getStatusMessage());
+                //setStatusMessage("No such username has been found in data-structure");
+                //log.info(getStatusMessage());
+
+                String msg = "No such username has been found in data-structure";
+                setAllCmdData("ERROR", "U007", msg);
+                log.info(getCmdContent());
+
             }
             else if (daoInstance.findUserByName(newUsername) != null) {
-                setStatusMessage("Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.");
-                log.info(getStatusMessage());
+                //setStatusMessage("Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.");
+                //log.info(getStatusMessage());
+
+                String msg = "Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.";
+                setAllCmdData("ERROR", "U008", msg);
+                log.info(getCmdContent());
+
             }
             else if (user != null && daoInstance.findUserByName(newUsername) == null) {
                 user.setName(newUsername);
-                setStatusMessage("Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"");
+                //log.info(getStatusMessage());
+
+                String msg = "Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"";
+                setAllCmdData("ERROR", "U009", msg);
+                log.info(getCmdContent());
+
+
             }
 
         }

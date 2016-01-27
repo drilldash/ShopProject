@@ -32,8 +32,14 @@ public class ExitCommand extends AbstractCommand{
         int numberSignedInUsers = CurrentSessionState.getAllSignedInUsers().size();
 
         if (numberSignedInUsers > 0) {
-            setStatusMessage(numberSignedInUsers + " users will be signed out automatically." + "Exiting application...");
-            log.info(getStatusMessage());
+            //setStatusMessage(numberSignedInUsers + " users will be signed out automatically." + "Exiting application...");
+            //log.info(getStatusMessage());
+
+            String msg = "numberSignedInUsers + \" users will be signed out automatically.\" + \"Exiting application...\"";
+            //C stands for CommonStatuses
+            setAllCmdData("OK", "C002", msg);
+            log.info(getCmdContent());
+
         }
 
         daoInstance.DAOExit();

@@ -1,5 +1,7 @@
 package netcracker.edu.ishop.client;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import netcracker.edu.ishop.utils.PortSettingsNew;
 import org.apache.log4j.Logger;
 
@@ -24,7 +26,21 @@ public class Client {
             out.println(userInput);
             String serverInput = in.readLine();
 
-            log.info(serverInput+"\n");
+            JsonParser parser = new JsonParser();
+            JsonObject json = parser.parse(serverInput).getAsJsonObject();
+
+            //log.info(serverInput);
+            //hardcoded-style, pal
+
+            if (json.has("STATUS") && json.has("STATUS_CODE") && json.has("Content")) {
+                String status = "Status: " + json.get("STATUS").getAsString();
+                String statusCode = "Code: " + json.get("STATUS_CODE").getAsString() ;
+                String content = "Content: " + json.get("Content").getAsString();
+                log.info( status + "\n" + statusCode + "\n" + content );
+            }
+            else {
+                log.info(serverInput);
+            }
 
             if (userInput != null && userInput.equalsIgnoreCase("close")) break;
         }

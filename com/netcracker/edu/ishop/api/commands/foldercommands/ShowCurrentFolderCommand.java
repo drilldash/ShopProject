@@ -29,8 +29,11 @@ public class ShowCurrentFolderCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
 
         try {
-            setStatusMessage(CurrentSessionState.getCurrentFolder().toString());
-            log.info(getStatusMessage());
+            String msg = CurrentSessionState.getCurrentFolder().toString();
+            setAllCmdData("OK", "F009", msg);
+            log.info(getCmdContent());
+
+
         } catch (NullPointerException npe) {
             log.info(npe);
             CurrentSessionState.setInitialCurrentFolder();

@@ -1,5 +1,6 @@
-package netcracker.edu.ishop.api.commands;
+package netcracker.edu.ishop.api.commands.usercommands;
 
+import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
@@ -43,10 +44,10 @@ public class RegisterAdminCommand extends AbstractCommand {
 
 
             // class cast!!!
-            User user = (User) daoInstance.create(User.class);
+            //User user = (User) daoInstance.create(User.class);
 
             //DAO<User> daoInstance = new DAOInMemoryJSON<User>();
-            //User user = daoInstance.create(User.class);
+            User user = daoInstance.create(User.class);
 
             user.setName(username);
             user.setPassword(password);
@@ -54,11 +55,24 @@ public class RegisterAdminCommand extends AbstractCommand {
 
             if (daoInstance.findUserByName(username) == null) {
                 daoInstance.save(user);
-                setStatusMessage("Admin " + username + " has been saved in data-structure!");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("Admin " + username + " has been saved in data-structure!");
+                //log.info(getStatusMessage());
+
+                String msg = "Admin " + username + " has been saved in data-structure!";
+                setAllCmdData("OK", "U003", msg);
+                log.info(getCmdContent());
+
+
             } else {
-                setStatusMessage("Username " + username + " is taken, can't save it to data-structure");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("Username " + username + " is taken, can't save it to data-structure");
+                //log.info(getStatusMessage());
+
+                String msg = "Username " + username + " is taken, can't save it to data-structure";
+                setAllCmdData("ERROR", "U004", msg);
+                log.info(getCmdContent());
+
                 UniqueIDGenerator.getInstance().decrementID();
             }
         }

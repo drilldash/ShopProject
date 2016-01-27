@@ -40,8 +40,18 @@ public class ShowFoldersInCurrentCommand extends AbstractCommand {
         for (Folder folder: listChildFolders) {
             folderNames += folder.getName() + "\n";
         }
-        setStatusMessage(folderNames);
-        log.info(getStatusMessage());
+        //setStatusMessage(folderNames);
+        //log.info(getStatusMessage());
+        if (listChildFolders.size() > 0) {
+            String msg = folderNames;
+            setAllCmdData("OK", "F013", msg);
+            log.info(getCmdContent());
+        }
+        else {
+            String msg = "There are no possible variants to change directory to";
+            setAllCmdData("ERROR", "F014", msg);
+            log.info(getCmdContent());
+        }
 
     }
 

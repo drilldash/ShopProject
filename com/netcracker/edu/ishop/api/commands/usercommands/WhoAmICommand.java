@@ -34,11 +34,23 @@ public class WhoAmICommand extends AbstractCommand {
 
             try {
                 String currentName = CurrentSessionState.getSignedInUser().getName();
-                setStatusMessage("I am " + currentName);
-                log.info(getStatusMessage());
+
+                //setStatusMessage("I am " + currentName);
+                //log.info(getStatusMessage());
+
+                String msg = "I am " + currentName;
+                setAllCmdData("OK", "U020", msg);
+                log.info(getCmdContent());
+
             } catch (NullPointerException NP) {
-                setStatusMessage("You're not signed in (GUEST)");
-                log.info(getStatusMessage());
+
+                //setStatusMessage("You're not signed in (GUEST)");
+                //log.info(getStatusMessage());
+
+                String msg = "You're not signed in (GUEST)";
+                setAllCmdData("ERROR", "U021", msg);
+                log.info(getCmdContent());
+
             }
         }
     @Override

@@ -44,6 +44,7 @@ public class MultiThreadServer implements Runnable {
                     if (cmdData == "close") {
                         cmdEngine.executeCommand("exit");
                         out.println(cmdEngine.getCommandStatus());
+                        //out.println();
                     } else {
                         cmdEngine.executeCommand(cmdData);
                         out.println(cmdEngine.getCommandStatus());

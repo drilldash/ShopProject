@@ -101,7 +101,8 @@ public class CommandEngine {
             if (command.checkAccess(CurrentSessionState.getUserGroupTypeLocal())) {
                 try {
                     command.execute(cmdParams);
-                    commandStatus = command.getStatusMessage();
+                    //commandStatus = command.getStatusMessage();
+                    commandStatus = command.getCmdJsonCommandData().toString();
                 } catch (IllegalArgumentException IAE) {
                     log.info(IAE.toString());
                     commandStatus = IAE.toString();

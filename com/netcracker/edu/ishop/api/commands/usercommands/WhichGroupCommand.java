@@ -30,12 +30,21 @@ public class WhichGroupCommand extends AbstractCommand {
     public void execute(String[] cmdArgs) {
         try {
             String currentGroup = CurrentSessionState.getUserGroupTypeLocal().toString();
-            setStatusMessage("GROUP:" + currentGroup);
-            log.info(getStatusMessage());
+            //setStatusMessage("GROUP:" + currentGroup);
+            //log.info(getStatusMessage());
+
+            String msg = "GROUP:" + currentGroup;
+            setAllCmdData("OK", "U018", msg);
+            log.info(getCmdContent());
+
         }
         catch (NullPointerException NP) {
-            setStatusMessage(NP.toString());
-            log.info(getStatusMessage());
+            //setStatusMessage(NP.toString());
+            //log.info(getStatusMessage());
+
+            String msg = NP.toString();
+            setAllCmdData("ERROR", "U019", msg);
+            log.info(getCmdContent());
         }
     }
 

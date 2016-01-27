@@ -40,12 +40,22 @@ public class ShowUsersCommand extends AbstractCommand {
 //                log.info(obj);
 //            }
             //log.info(userMap.keySet());
-            setStatusMessage(userMap.values().toString());
-            log.info(getStatusMessage());
+            //setStatusMessage(userMap.values().toString());
+            //log.info(getStatusMessage());
+
+            String msg = userMap.values().toString();
+            setAllCmdData("OK", "U010", msg);
+            log.info(getCmdContent());
+
         }
         else {
-            setStatusMessage("No users were found for showing. Try to add at least one user by 'register_user' command");
-            log.info(getStatusMessage());
+            //setStatusMessage("No users were found for showing. Try to add at least one user by 'register_user' command");
+            //log.info(getStatusMessage());
+
+            String msg = "No users were found for showing. Try to add at least one user by 'register_user' command";
+            setAllCmdData("ERROR", "U011", msg);
+            log.info(getCmdContent());
+
         }
 
     }

@@ -41,12 +41,22 @@ public class ShowFolderRecordsCommand extends AbstractCommand {
 //                log.info(obj);
 //            }
                 //log.info(userMap.keySet());
-                setStatusMessage(folderMap.values().toString());
-                log.info(getStatusMessage());
+                //setStatusMessage(folderMap.values().toString());
+                //log.info(getStatusMessage());
+
+                String msg = folderMap.values().toString();
+                setAllCmdData("OK", "F011", msg);
+                log.info(getCmdContent());
+
             }
             else {
-                setStatusMessage("No folders were found for showing. Try to add at least one folder by 'create_folder' command");
-                log.info(getStatusMessage());
+                //setStatusMessage("No folders were found for showing. Try to add at least one folder by 'create_folder' command");
+                //log.info(getStatusMessage());
+
+                String msg = "No folders were found for showing. \n Try to add at least one folder by 'create_folder' command";
+                setAllCmdData("ERROR", "F012", msg);
+                log.info(getCmdContent());
+
             }
 
         }
