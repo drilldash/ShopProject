@@ -27,13 +27,24 @@ abstract public class DAO {
 
     public abstract  <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String username);
 
+    //
+
     public abstract Folder findFolderInstanceByName(String folderName);
 
     public abstract Folder findParentFoldersWithGivenParentId(BigInteger givenParentId);
 
     public abstract List<Folder> findAllFoldersWithGivenParentId(BigInteger givenParentId);
 
+    //
+
     public abstract  <T extends AbstractBusinessObject> T findABOInstanceById(Class<T> cls, BigInteger id);
+
+    //
+
+    //use this sh~ properly
+    //public abstract <T extends AbstractBusinessObject> List<T> findAllAbstractBusinessObjectssWithGivenParentId(Class<T> cls, BigInteger id);
+
+    public abstract List<String> findOnlyItemsAndFoldersWithGivenParentId(BigInteger givenParentId);
 
     public abstract void DAOExit();
 

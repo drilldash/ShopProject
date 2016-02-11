@@ -8,6 +8,9 @@ import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class ShowFolderPathCommand extends AbstractCommand {
 
@@ -35,8 +38,8 @@ public class ShowFolderPathCommand extends AbstractCommand {
 
         BigInteger parentRefId = BigInteger.ZERO;
 
-        String tab = "--";
-        String filePathTreeStructure = folder.getName() + "\n";
+        List<String> filePathList = new ArrayList<String>();
+        filePathList.add(CurrentSessionState.getCurrentFolder().getName());
 
         while (parentRefId != null) {
 
@@ -45,8 +48,7 @@ public class ShowFolderPathCommand extends AbstractCommand {
 
             //System.exit(0);
             if (folder != null) {
-                filePathTreeStructure += tab + folder.getName() + "\n";
-                tab+= "--";
+                filePathList.add(folder.getName());
                 parentRefId = folder.getParentFolderId();
             }
             else {
@@ -58,8 +60,12 @@ public class ShowFolderPathCommand extends AbstractCommand {
         }
         //setStatusMessage("Result:\n" + filePathTreeStructure);
         //log.info(getStatusMessage());
+        Collections.reverse(filePathList);
 
-        String msg = "Result:\n" + filePathTreeStructure;
+        //reversing the String
+        //String msg = "Result:\n" + new StringBuilder(filePathTreeStructure).reverse().toString();
+        String msg = "Result:\n" +  printFilePath(filePathList);
+
         setAllCmdData("OK", "F010", msg);
         log.info(getCmdContent());
 
@@ -69,4 +75,14 @@ public class ShowFolderPathCommand extends AbstractCommand {
     public String toString() {
         return null;
     }
+
+    private String printFilePath(List<String> filePathList) {
+        String output = "/";
+        for (String record: filePathList) {
+            output += record + "/";
+
+        }
+        return output;
+    }
+
 }

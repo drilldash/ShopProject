@@ -14,7 +14,8 @@ import java.util.Arrays;
 
 public class AddItemCommand extends AbstractCommand {
 
-    public static final Logger log = Logger.getLogger(AddItemCommand.class);
+    // correct logger
+    private static final Logger log = Logger.getLogger(AddItemCommand.class);
 
     public AddItemCommand(DAO daoInstance) {
         super(daoInstance);

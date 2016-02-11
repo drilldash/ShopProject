@@ -7,6 +7,8 @@ import netcracker.edu.ishop.utils.UserGroupTypes;
 import java.util.EnumSet;
 
 public abstract class AbstractCommand{
+
+
     protected DAO daoInstance;
     protected EnumSet<UserGroupTypes> defaultLevelAccess;
     protected String statusMessage;

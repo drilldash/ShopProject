@@ -35,7 +35,6 @@ public class ShowFoldersInCurrentCommand extends AbstractCommand {
 
         List<Folder> listChildFolders = daoInstance.findAllFoldersWithGivenParentId(currFolder.getId());
 
-
         String folderNames = "Possible variants to change directory to are:\n";
         for (Folder folder: listChildFolders) {
             folderNames += folder.getName() + "\n";

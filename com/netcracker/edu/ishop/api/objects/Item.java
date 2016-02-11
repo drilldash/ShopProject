@@ -44,6 +44,8 @@ public class Item extends AbstractBusinessObject {
         }
     }
 
+
+
     @Override
     public String toString() {
         return "In folder with id " + folderId + " there is " + name + " " + charsVals.toString() + " number: " + itemNum;

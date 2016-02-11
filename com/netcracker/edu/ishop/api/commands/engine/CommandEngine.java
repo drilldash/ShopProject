@@ -5,13 +5,13 @@ import netcracker.edu.ishop.api.commands.*;
 import netcracker.edu.ishop.api.commands.foldercommands.*;
 import netcracker.edu.ishop.api.commands.itemcommands.AddItemCommand;
 import netcracker.edu.ishop.api.commands.itemcommands.ShowItemsCommand;
+import netcracker.edu.ishop.api.commands.mixedcommands.ListSegmentsCommand;
 import netcracker.edu.ishop.api.commands.usercommands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.api.persistence.DAOFactory;
 
 import org.apache.log4j.Logger;
-
 
 
 import java.nio.file.AccessDeniedException;
@@ -59,20 +59,20 @@ public class CommandEngine {
         commandsList.add(new AddItemCommand(daoInstance));
         commandsList.add(new ShowItemsCommand(daoInstance));
 
+        // mixed commands
+        commandsList.add(new ListSegmentsCommand(daoInstance));
 
         commandsMap = new HashMap<String, AbstractCommand>();
 
 
-
-
-        for (AbstractCommand cmd: commandsList) {
+        for (AbstractCommand cmd : commandsList) {
             commandsMap.put(cmd.getName().toLowerCase(), cmd);
         }
 
     }
 
     public static CommandEngine getInstance() {
-        if(INSTANCE == null) {
+        if (INSTANCE == null) {
             INSTANCE = new CommandEngine();
         }
         return INSTANCE;
@@ -87,7 +87,7 @@ public class CommandEngine {
         return commandStatus;
     }
 
-    public void executeCommand(String cmdRawData) throws AccessDeniedException{
+    public void executeCommand(String cmdRawData) throws AccessDeniedException {
         String[] cmdParams;
         if (cmdRawData == null) {
             System.exit(0);
@@ -105,8 +105,7 @@ public class CommandEngine {
         if (cmdName == null || commandsMap.get(cmdName) == null) {
             System.out.println("Unknown command! Type \"help\"!");
             commandStatus = "Unknown command! Type \"help\"!";
-        }
-        else {
+        } else {
             AbstractCommand command = commandsMap.get(cmdName);
             //log.info(CurrentSessionState.getUserGroupTypeLocal());
             if (command.checkAccess(CurrentSessionState.getUserGroupTypeLocal())) {
@@ -119,8 +118,7 @@ public class CommandEngine {
                     commandStatus = IAE.toString();
                 }
 
-            }
-            else {
+            } else {
                 //log.info(cmdRawData + "\nAccess denied!" + " Use command \"which_group\" to see yout current level of access.");
                 throw new AccessDeniedException(cmdRawData + "\nAccess denied! Using this command requires GROUP:" + command.getRequiredLevelAccess() + " \nUse command " +
                         "\"which_group\" to see your current level of access.");
@@ -128,7 +126,6 @@ public class CommandEngine {
         }
 
     }
-
 
 
 }

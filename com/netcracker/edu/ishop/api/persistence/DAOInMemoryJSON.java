@@ -122,7 +122,7 @@ public class DAOInMemoryJSON extends DAO {
         return null;
     }
 
-    @SuppressWarnings("unchecked")
+    //@SuppressWarnings("unchecked")
     public <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String nameABO) {
         Map shardMap = dataMemoryStorage.getHashMapByType(cls);
         //log.info(shardMap);
@@ -139,11 +139,44 @@ public class DAOInMemoryJSON extends DAO {
         return null;
     }
 
+    @Override
+    public List<String> findOnlyItemsAndFoldersWithGivenParentId(BigInteger givenParentId) {
+
+        Map folderShardMap = dataMemoryStorage.getHashMapByType(Folder.class);
+        Map itemShardMap   = dataMemoryStorage.getHashMapByType(Item.class);
+
+        List<String> combinedList = new ArrayList<>();
+
+        for (Iterator<Folder> aboIterator = folderShardMap.values().iterator(); aboIterator.hasNext(); ) {
+            Folder aboObj = aboIterator.next();
+
+            //excluding root;
+            if (aboObj.getParentFolderId() != null) {
+                if (aboObj.getParentFolderId().equals(givenParentId)) {
+                    combinedList.add("F:" + aboObj.getName());
+                    //log.info("Added: " + aboObj.getName());
+                }
+            }
+
+        }
+
+        for (Iterator<Item> aboIterator = itemShardMap.values().iterator(); aboIterator.hasNext(); ) {
+            Item aboObj = aboIterator.next();
+
+            //excluding root;
+            if (aboObj.getFolderId() != null) {
+                if (aboObj.getFolderId().equals(givenParentId)) {
+                    combinedList.add("I:" + aboObj.getName());
+                    //log.info("Added: " + aboObj.getName());
+                }
+            }
+
+        }
 
 
 
-
-
+        return combinedList;
+    }
 
     @Override
     public <T extends AbstractBusinessObject> T findABOInstanceById(Class<T> cls, BigInteger id) {

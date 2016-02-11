@@ -9,7 +9,7 @@ import java.util.EnumSet;
 
 public class ExitCommand extends AbstractCommand{
 
-    public static final Logger log = Logger.getLogger(ExitCommand.class);
+    private static final Logger log = Logger.getLogger(ExitCommand.class);
 
     public ExitCommand(DAO daoInstance) {
         super(daoInstance);
