@@ -122,6 +122,29 @@ public class DAOInMemoryJSON extends DAO {
         return null;
     }
 
+    @SuppressWarnings("unchecked")
+    public <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String nameABO) {
+        Map shardMap = dataMemoryStorage.getHashMapByType(cls);
+        //log.info(shardMap);
+
+        for (Iterator<T> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
+            T aboObj = aboIterator.next();
+            if (aboObj.getName().equals(nameABO)) {
+                return aboObj;
+            }
+
+            //log.info(aboObj.getName());
+
+        }
+        return null;
+    }
+
+
+
+
+
+
+
     @Override
     public <T extends AbstractBusinessObject> T findABOInstanceById(Class<T> cls, BigInteger id) {
         Map shardMap = dataMemoryStorage.getHashMapByType(cls);
@@ -177,6 +200,7 @@ public class DAOInMemoryJSON extends DAO {
         Folder.class
         Item.class
         Order.class
+        ItemProperty.Class
         ***
         */
 
@@ -194,7 +218,7 @@ public class DAOInMemoryJSON extends DAO {
 
         //test: entire json serialization\deserialization
         //jsonSerializeEntireDataStructure(SerializationConstants.SERIALIZED_DATAMAP_FILE_PATH);
-        //not cool, each instantiation of CommandEngine creates DAO-instance for himself (should dao be singleton in threaded app?)
+        //not cool, each instantiation of CommandEngine creates DAO-instance for himself (should dao be singleton in multithreaded app?)
 
         CommandEngine comEngine = CommandEngine.getInstance();
 

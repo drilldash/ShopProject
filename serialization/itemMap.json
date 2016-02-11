@@ -1,1 +1,105 @@
-{}
+{
+  "32": {
+    "folderId": 22,
+    "charsVals": [
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 33,
+            "name": "k1"
+          },
+          "charVal": "v1"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 34,
+            "name": "k2"
+          },
+          "charVal": "v2"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 35,
+            "name": "k3"
+          },
+          "charVal": "v3"
+        }
+      }
+    ],
+    "id": 32,
+    "name": "item1"
+  },
+  "36": {
+    "folderId": 22,
+    "charsVals": [
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 33,
+            "name": "k1"
+          },
+          "charVal": "v1"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 34,
+            "name": "k2"
+          },
+          "charVal": "v2"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 35,
+            "name": "k3"
+          },
+          "charVal": "v3"
+        }
+      }
+    ],
+    "id": 36,
+    "name": "item1"
+  },
+  "37": {
+    "folderId": 22,
+    "itemNum": 10,
+    "charsVals": [
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 38,
+            "name": "vendor"
+          },
+          "charVal": "Intel"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 39,
+            "name": "capacity"
+          },
+          "charVal": "480Gb"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 40,
+            "name": "guarantee"
+          },
+          "charVal": "60m"
+        }
+      }
+    ],
+    "id": 37,
+    "name": "SSD730"
+  }
+}

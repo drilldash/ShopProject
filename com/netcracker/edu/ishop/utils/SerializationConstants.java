@@ -29,6 +29,10 @@ public class SerializationConstants {
     public static final String SERIALIZED_ORDERMAP_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
             SERIALIZED_ORDERMAP_FILE_NAME);
 
+    public static final String SERIALIZED_ITEM_PROPERTY_MAP_FILE_NAME = "itemPropertyMap.json";
+    public static final String SERIALIZED_ITEM_PROPERTY_MAP_FILE_PATH = FilenameUtils.concat(SERIALIZED_OBJECT_FOLDER_PATH,
+            SERIALIZED_ITEM_PROPERTY_MAP_FILE_NAME);
+
     //////
 
     public static final String SERIALIZED_LAST_ID_FILE_NAME = "lastID.json";

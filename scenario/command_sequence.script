@@ -1,8 +1,9 @@
 help
 show_users
 #help <- this is comment
-register_user u1 p1
-register_user u2 p2
+#register_user u1 p1
+#register_user u2 p2
+sign_in u1 p1
 show_users
 cd cat2
 cd Cat2SubCat1

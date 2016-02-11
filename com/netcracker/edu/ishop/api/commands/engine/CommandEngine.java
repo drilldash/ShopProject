@@ -3,6 +3,8 @@ package netcracker.edu.ishop.api.commands.engine;
 
 import netcracker.edu.ishop.api.commands.*;
 import netcracker.edu.ishop.api.commands.foldercommands.*;
+import netcracker.edu.ishop.api.commands.itemcommands.AddItemCommand;
+import netcracker.edu.ishop.api.commands.itemcommands.ShowItemsCommand;
 import netcracker.edu.ishop.api.commands.usercommands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
@@ -53,7 +55,16 @@ public class CommandEngine {
         commandsList.add(new ShowFoldersInCurrentCommand(daoInstance));
         commandsList.add(new ChangeFolderCommand(daoInstance));
 
+        // item commands
+        commandsList.add(new AddItemCommand(daoInstance));
+        commandsList.add(new ShowItemsCommand(daoInstance));
+
+
         commandsMap = new HashMap<String, AbstractCommand>();
+
+
+
+
         for (AbstractCommand cmd: commandsList) {
             commandsMap.put(cmd.getName().toLowerCase(), cmd);
         }

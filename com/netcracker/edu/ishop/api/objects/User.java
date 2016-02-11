@@ -5,7 +5,6 @@ import netcracker.edu.ishop.utils.UserGroupTypes;
 import java.math.BigInteger;
 
 public class User extends AbstractBusinessObject {
-    private String name;
     private char[] password;
     private boolean isAdmin;
     private UserGroupTypes groupType;
@@ -19,20 +18,12 @@ public class User extends AbstractBusinessObject {
         super(id);
     }
 
-    public String getName() {
-        return name;
-    }
-
     public char[] getPassword() {
         return password;
     }
 
     public boolean isAdmin() {
         return isAdmin;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setPassword(char[] password) {

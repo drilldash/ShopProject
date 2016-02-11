@@ -52,7 +52,7 @@ public abstract class AbstractCommand{
         if (this.jsonCommandData.has("STATUS_CODE")) {
             return this.jsonCommandData.get("STATUS_CODE").getAsString();
         } else {
-            return "";
+            return "STATUS_CODE:undefined";
         }
     }
 
@@ -64,7 +64,7 @@ public abstract class AbstractCommand{
         if (this.jsonCommandData.has("STATUS")) {
             return this.jsonCommandData.get("STATUS").getAsString();
         } else {
-            return "";
+            return "STATUS:undefined";
         }
     }
 
@@ -76,7 +76,7 @@ public abstract class AbstractCommand{
         if (this.jsonCommandData.has("Content")) {
             return this.jsonCommandData.get("Content").getAsString();
         } else {
-            return "";
+            return "Content:none";
         }
     }
 

@@ -7,6 +7,7 @@ import java.math.BigInteger;
 
 public abstract class AbstractBusinessObject {
     private BigInteger id;
+    protected String name;
 
     public AbstractBusinessObject(BigInteger id) {
         this.id = id;
@@ -14,5 +15,13 @@ public abstract class AbstractBusinessObject {
 
     public BigInteger getId() {
         return id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

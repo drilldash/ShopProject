@@ -1,31 +1,31 @@
 {
   "16": {
-    "name": "ROOT",
-    "id": 16
+    "id": 16,
+    "name": "ROOT"
   },
   "18": {
-    "name": "Cat6",
     "parentFolderId": 16,
-    "id": 18
+    "id": 18,
+    "name": "Cat6"
   },
   "19": {
-    "name": "Cat1",
     "parentFolderId": 16,
-    "id": 19
+    "id": 19,
+    "name": "Cat1"
   },
   "20": {
-    "name": "cat2",
     "parentFolderId": 16,
-    "id": 20
+    "id": 20,
+    "name": "cat2"
   },
   "21": {
-    "name": "Cat2SubCat1",
     "parentFolderId": 20,
-    "id": 21
+    "id": 21,
+    "name": "Cat2SubCat1"
   },
   "22": {
-    "name": "Test",
     "parentFolderId": 21,
-    "id": 22
+    "id": 22,
+    "name": "Test"
   }
 }

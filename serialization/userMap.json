@@ -1,26 +1,25 @@
 {
   "1": {
-    "name": "u1",
     "password": [
       "p",
       "1"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 1
+    "id": 1,
+    "name": "u1"
   },
   "2": {
-    "name": "u2",
     "password": [
       "p",
       "2"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 2
+    "id": 2,
+    "name": "u2"
   },
   "3": {
-    "name": "admin",
     "password": [
       "a",
       "d",
@@ -30,70 +29,70 @@
     ],
     "isAdmin": false,
     "groupType": "ADMIN",
-    "id": 3
+    "id": 3,
+    "name": "admin"
   },
   "4": {
-    "name": "u4",
     "password": [
       "p",
       "4"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 4
+    "id": 4,
+    "name": "u4"
   },
   "5": {
-    "name": "u5",
     "password": [
       "p",
       "5"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 5
+    "id": 5,
+    "name": "u5"
   },
   "6": {
-    "name": "u6",
     "password": [
       "p",
       "6"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 6
+    "id": 6,
+    "name": "u6"
   },
   "7": {
-    "name": "u7",
     "password": [
       "p",
       "7"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 7
+    "id": 7,
+    "name": "u7"
   },
   "8": {
-    "name": "u8",
     "password": [
       "p",
       "8"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 8
+    "id": 8,
+    "name": "u8"
   },
   "9": {
-    "name": "u9",
     "password": [
       "p",
       "9"
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 9
+    "id": 9,
+    "name": "u9"
   },
   "15": {
-    "name": "utest",
     "password": [
       "p",
       "t",
@@ -103,10 +102,10 @@
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 15
+    "id": 15,
+    "name": "utest"
   },
   "17": {
-    "name": "upd",
     "password": [
       "u",
       "p",
@@ -114,6 +113,7 @@
     ],
     "isAdmin": false,
     "groupType": "USER",
-    "id": 17
+    "id": 17,
+    "name": "upd"
   }
 }

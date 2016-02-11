@@ -25,7 +25,7 @@ abstract public class DAO {
 
     public abstract User findUserByName(String username);
 
-    //public abstract  <T extends AbstractBusinessObject> T findABOInstanceByName(Class<T> cls, String username);
+    public abstract  <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String username);
 
     public abstract Folder findFolderInstanceByName(String folderName);
 
