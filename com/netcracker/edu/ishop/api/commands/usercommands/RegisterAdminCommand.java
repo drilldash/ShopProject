@@ -52,6 +52,7 @@ public class RegisterAdminCommand extends AbstractCommand {
             user.setName(username);
             user.setPassword(password);
             user.setGroupType(UserGroupTypes.ADMIN);
+            user.setIsAdmin(true);
 
             if (daoInstance.findUserByName(username) == null) {
                 daoInstance.save(user);

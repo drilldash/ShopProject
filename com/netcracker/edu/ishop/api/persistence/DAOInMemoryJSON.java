@@ -216,6 +216,27 @@ public class DAOInMemoryJSON extends DAO {
     }
 
     @Override
+    public List<Item> findItemsWithGivenFolderId(BigInteger givenFolderId) {
+        Map shardMap = dataMemoryStorage.getHashMapByType(Item.class);
+
+        List<Item> itemList = new ArrayList<>();
+
+        for (Iterator<Item> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
+            Item aboObj = aboIterator.next();
+
+            //excluding root;
+            if (aboObj.getFolderId() != null) {
+                if (aboObj.getFolderId().equals(givenFolderId)) {
+                    itemList.add(aboObj);
+                    //log.info("Added: " + aboObj.getName());
+                }
+            }
+
+        }
+        return itemList;
+    }
+
+    @Override
     public Folder findParentFoldersWithGivenParentId(BigInteger givenParentId) {
         Map shardMap = dataMemoryStorage.getHashMapByType(Folder.class);
         Folder parentFolder = (Folder) shardMap.get(givenParentId);

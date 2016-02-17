@@ -47,7 +47,7 @@ public class WhoAmICommand extends AbstractCommand {
                 //setStatusMessage("You're not signed in (GUEST)");
                 //log.info(getStatusMessage());
 
-                String msg = "You're not signed in (GUEST)";
+                String msg = "You're not signed in (" + CurrentSessionState.getUserGroupTypeLocal().toString() + ")";
                 setAllCmdData("ERROR", "U021", msg);
                 log.info(getCmdContent());
 

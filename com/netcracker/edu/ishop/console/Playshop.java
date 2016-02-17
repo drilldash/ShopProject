@@ -70,6 +70,7 @@ public class Playshop {
                     String cmdData = lineIterator.next();
                     if (!cmdData.startsWith("#")) {
                         try {
+                            log.info(cmdData);
                             commandEngine.executeCommand(cmdData);
                         } catch (AccessDeniedException ADE) {
                             log.info(ADE);

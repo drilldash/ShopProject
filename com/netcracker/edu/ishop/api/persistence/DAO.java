@@ -2,6 +2,7 @@ package netcracker.edu.ishop.api.persistence;
 
 import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 import netcracker.edu.ishop.api.objects.Folder;
+import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.objects.User;
 
 import java.math.BigInteger;
@@ -34,6 +35,11 @@ abstract public class DAO {
     public abstract Folder findParentFoldersWithGivenParentId(BigInteger givenParentId);
 
     public abstract List<Folder> findAllFoldersWithGivenParentId(BigInteger givenParentId);
+
+    //
+
+    public abstract List<Item> findItemsWithGivenFolderId(BigInteger givenFolderId);
+
 
     //
 

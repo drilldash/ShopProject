@@ -50,7 +50,7 @@ public class CreateFolderCommand extends AbstractCommand {
                     CurrentSessionState.setCurrentFolder(folder);
                 } else {
                     folder.setParentFolderId(CurrentSessionState.getCurrentFolder().getId());
-                    CurrentSessionState.setCurrentFolder(folder);
+                    //CurrentSessionState.setCurrentFolder(folder);
                 }
 
                 daoInstance.save(folder);

@@ -40,6 +40,9 @@ public class UniqueIDGenerator {
         uniqueId.getAndDecrement();
     }
 
+    public void incrementID() {
+        uniqueId.getAndIncrement();
+    }
 
     private BigInteger restoreLastID() {
         File serializedLastIDFile = new File(SerializationConstants.SERIALIZED_LAST_ID_FILE_PATH);

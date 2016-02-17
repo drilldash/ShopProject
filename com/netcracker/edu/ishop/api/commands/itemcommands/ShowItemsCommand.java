@@ -54,7 +54,7 @@ public class ShowItemsCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = "No items were found for showing. \n Try to add at least one folder by 'add_item' command";
-            setAllCmdData("ERROR", "IF01", msg);
+            setAllCmdData("ERROR", "IF03", msg);
             log.info(getCmdContent());
 
         }

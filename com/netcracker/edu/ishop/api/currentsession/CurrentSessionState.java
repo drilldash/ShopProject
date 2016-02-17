@@ -6,6 +6,7 @@ import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAOFactory;
 import netcracker.edu.ishop.utils.SerializationConstants;
+import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -49,13 +50,17 @@ public class CurrentSessionState {
     }
 
     public static void setInitialCurrentFolder() {
-        log.info("we are here");
+        //log.info("we are here");
         Folder rootFolder = DAOFactory.getDAO().findFolderInstanceByName("ROOT");
         if ( rootFolder!= null) {
             currentFolder.set(rootFolder);
 
         } else {
-            currentFolder.set(null);
+            Folder folder = DAOFactory.getDAO().create(Folder.class);
+            folder.setName("ROOT");
+            currentFolder.set(folder);
+            DAOFactory.getDAO().save(folder);
+            //UniqueIDGenerator.getInstance().incrementID();
         }
     }
 

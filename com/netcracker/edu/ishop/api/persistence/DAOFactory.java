@@ -26,7 +26,7 @@ public class DAOFactory {
 
         switch (prop.getProperty("USING_DATA_ACCESS_OBJECT_ENGINE")) {
             case "DAOJsonInMemory":
-                log.info("We are here");
+                //log.info("We are here");
                 DAO_INSTANCE = DAOInMemoryJSON.getInstance();
                 log.info("Loaded DAO instance: " + DAO_INSTANCE.getClass());
                 break;

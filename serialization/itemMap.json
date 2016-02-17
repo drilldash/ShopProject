@@ -1,80 +1,11 @@
 {
-  "32": {
-    "folderId": 22,
+  "7": {
+    "folderId": 5,
     "charsVals": [
       {
         "charWithValue": {
           "charKey": {
-            "id": 33,
-            "name": "k1"
-          },
-          "charVal": "v1"
-        }
-      },
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 34,
-            "name": "k2"
-          },
-          "charVal": "v2"
-        }
-      },
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 35,
-            "name": "k3"
-          },
-          "charVal": "v3"
-        }
-      }
-    ],
-    "id": 32,
-    "name": "item1"
-  },
-  "36": {
-    "folderId": 22,
-    "charsVals": [
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 33,
-            "name": "k1"
-          },
-          "charVal": "v1"
-        }
-      },
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 34,
-            "name": "k2"
-          },
-          "charVal": "v2"
-        }
-      },
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 35,
-            "name": "k3"
-          },
-          "charVal": "v3"
-        }
-      }
-    ],
-    "id": 36,
-    "name": "item1"
-  },
-  "37": {
-    "folderId": 22,
-    "itemNum": 10,
-    "charsVals": [
-      {
-        "charWithValue": {
-          "charKey": {
-            "id": 38,
+            "id": 8,
             "name": "vendor"
           },
           "charVal": "Intel"
@@ -83,7 +14,7 @@
       {
         "charWithValue": {
           "charKey": {
-            "id": 39,
+            "id": 9,
             "name": "capacity"
           },
           "charVal": "480Gb"
@@ -92,14 +23,23 @@
       {
         "charWithValue": {
           "charKey": {
-            "id": 40,
+            "id": 10,
             "name": "guarantee"
           },
-          "charVal": "60m"
+          "charVal": "48m"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 11,
+            "name": "ssd_flash_memory_chip"
+          },
+          "charVal": "MLC2204"
         }
       }
     ],
-    "id": 37,
-    "name": "SSD730"
+    "id": 7,
+    "name": "SSD"
   }
 }

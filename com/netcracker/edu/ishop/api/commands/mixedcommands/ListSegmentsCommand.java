@@ -36,9 +36,9 @@ public class ListSegmentsCommand extends AbstractCommand {
 
         List<String> listOfSegments = daoInstance.findOnlyItemsAndFoldersWithGivenParentId(currFolder.getId());
 
-        String cmdOutput = "There are next items and folders in current directory:\n";
+        String cmdOutput = "There are next items and folders in current directory:";
         for (String record: listOfSegments) {
-            cmdOutput += record + "\n";
+            cmdOutput +=  "\n" + record;
         }
         //setStatusMessage(folderNames);
         //log.info(getStatusMessage());

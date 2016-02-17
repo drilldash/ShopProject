@@ -4,7 +4,9 @@ package netcracker.edu.ishop.api.commands.engine;
 import netcracker.edu.ishop.api.commands.*;
 import netcracker.edu.ishop.api.commands.foldercommands.*;
 import netcracker.edu.ishop.api.commands.itemcommands.AddItemCommand;
+import netcracker.edu.ishop.api.commands.itemcommands.AddItemPropertyCommand;
 import netcracker.edu.ishop.api.commands.itemcommands.ShowItemsCommand;
+import netcracker.edu.ishop.api.commands.itemcommands.ShowPropertiesOfGivenItem;
 import netcracker.edu.ishop.api.commands.mixedcommands.ListSegmentsCommand;
 import netcracker.edu.ishop.api.commands.usercommands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
@@ -58,6 +60,8 @@ public class CommandEngine {
         // item commands
         commandsList.add(new AddItemCommand(daoInstance));
         commandsList.add(new ShowItemsCommand(daoInstance));
+        commandsList.add(new AddItemPropertyCommand(daoInstance));
+        commandsList.add(new ShowPropertiesOfGivenItem(daoInstance));
 
         // mixed commands
         commandsList.add(new ListSegmentsCommand(daoInstance));
@@ -113,6 +117,7 @@ public class CommandEngine {
                     command.execute(cmdParams);
                     //commandStatus = command.getStatusMessage();
                     commandStatus = command.getCmdJsonCommandData().toString();
+                    //log.info(commandStatus);
                 } catch (IllegalArgumentException IAE) {
                     log.info(IAE.toString());
                     commandStatus = IAE.toString();

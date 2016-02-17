@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import java.util.EnumSet;
 import java.util.List;
 
-public class HelpCommand extends AbstractCommand{
+public class HelpCommand extends AbstractCommand {
 
     public static final Logger log = Logger.getLogger(HelpCommand.class);
 
@@ -32,7 +32,7 @@ public class HelpCommand extends AbstractCommand{
 
     @Override
     public String getDescription() {
-        return "Use this command to list available commands";
+        return "Use this command to list available commands. Usage: \"help\" or \"help [given command name]\" (e.g. \'help ls\')";
     }
 
     @Override
@@ -42,18 +42,44 @@ public class HelpCommand extends AbstractCommand{
 
     @Override
     public void execute(String[] cmdArgs) {
-        String helpText = "Available commands:";
 
-        for (AbstractCommand cmd : cmdList ) {
-            helpText += "\n" + (cmd.getName() + " ---> " + cmd.getDescription());
+
+        if (cmdArgs.length == 0) {
+            String helpText = "Available commands:";
+
+            for (AbstractCommand cmd : cmdList) {
+                helpText += "\n" + (cmd.getName() + " ---> " + cmd.getDescription());
+            }
+            //setStatusMessage(helpText);
+            //log.info(getStatusMessage());
+
+            String msg = helpText;
+            //C stands for CommonErrors
+            setAllCmdData("OK", "C002", msg);
+            log.info(getCmdContent());
+        } else if (cmdArgs.length == 1) {
+            String helpText = "";
+            String givenCmdName = cmdArgs[0];
+
+            for (AbstractCommand cmd : cmdList) {
+                if (cmd.getName().equals(givenCmdName)) {
+                    helpText += "" + (cmd.getName() + " ---> " + cmd.getDescription());
+                }
+            }
+            String msg;
+            if (helpText.equals("")) {
+                msg = "There is no help documentation for \"" + givenCmdName + "\"";
+            } else {
+                msg = helpText;
+            }
+
+            setAllCmdData("OK", "C002", msg);
+            log.info(getCmdContent());
+
+        } else if (cmdArgs.length > 1) {
+            String msg = "Too many arguments. " + getDescription();
+            setAllCmdData("ERROR", "I10", msg);
+            log.info(getCmdContent());
         }
-        //setStatusMessage(helpText);
-        //log.info(getStatusMessage());
-
-        String msg = helpText;
-        //C stands for CommonErrors
-        setAllCmdData("OK", "C002", msg);
-        log.info(getCmdContent());
-
     }
 }
