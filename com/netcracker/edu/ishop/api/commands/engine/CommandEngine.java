@@ -8,6 +8,10 @@ import netcracker.edu.ishop.api.commands.itemcommands.AddItemPropertyCommand;
 import netcracker.edu.ishop.api.commands.itemcommands.ShowItemsCommand;
 import netcracker.edu.ishop.api.commands.itemcommands.ShowPropertiesOfGivenItem;
 import netcracker.edu.ishop.api.commands.mixedcommands.ListSegmentsCommand;
+import netcracker.edu.ishop.api.commands.ordercommands.BuyItemsInOrderCommand;
+import netcracker.edu.ishop.api.commands.ordercommands.PutItemToOrderCommand;
+import netcracker.edu.ishop.api.commands.ordercommands.ShowHistoryOfOrdersCommand;
+import netcracker.edu.ishop.api.commands.ordercommands.ViewOrderContentCommand;
 import netcracker.edu.ishop.api.commands.usercommands.*;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
@@ -36,6 +40,8 @@ public class CommandEngine {
         DAO daoInstance = DAOFactory.getDAO();
 
         // we're registering commands here
+
+        //user commands
         commandsList = new ArrayList<AbstractCommand>();
         commandsList.add(new ExitCommand(daoInstance));
         commandsList.add(new RegisterUserCommand(daoInstance));
@@ -65,6 +71,14 @@ public class CommandEngine {
 
         // mixed commands
         commandsList.add(new ListSegmentsCommand(daoInstance));
+
+        //order commands
+        commandsList.add(new BuyItemsInOrderCommand(daoInstance));
+        commandsList.add(new PutItemToOrderCommand(daoInstance));
+        commandsList.add(new ShowHistoryOfOrdersCommand(daoInstance));
+        commandsList.add(new ViewOrderContentCommand(daoInstance));
+
+        //
 
         commandsMap = new HashMap<String, AbstractCommand>();
 

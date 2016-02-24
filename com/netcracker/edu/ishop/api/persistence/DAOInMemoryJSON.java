@@ -501,6 +501,16 @@ public class DAOInMemoryJSON extends DAO {
         }
     }
 
+    public Item searchForItemObjectInGivenList(List<Item> itemList, String givenItemName) {
+        for(Item item : itemList){
+            if (item.getName() != null && item.getName().contains(givenItemName)) {
+                return item;
+            }
+            //something here
+        }
+        return null;
+    }
+
 
 
 

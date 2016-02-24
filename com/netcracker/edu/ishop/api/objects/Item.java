@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Item extends AbstractBusinessObject {
 
@@ -13,11 +14,7 @@ public class Item extends AbstractBusinessObject {
     private String itemType;
     private BigInteger folderId;
 
-    private LinkedList<ItemPropertyValue> charsVals = new LinkedList<>();
-
-
-
-
+    private List<ItemPropertyValue> charsVals = new LinkedList<>();
 
     public Item(BigInteger id) {
         super(id);
@@ -38,7 +35,7 @@ public class Item extends AbstractBusinessObject {
         }
     }
 
-    public LinkedList<ItemPropertyValue> getCharsVals() {
+    public List<ItemPropertyValue> getCharsVals() {
         return charsVals;
     }
 
@@ -51,6 +48,11 @@ public class Item extends AbstractBusinessObject {
     public String toString() {
         return "In folder with id " + folderId + " there is " + name + " " + charsVals.toString();
     }
+
+    public String printItemWithProperties() {
+        return name + " " + charsVals.toString();
+    }
+
 
     public void addPropertyWithVal(ItemPropertyValue propValue) {
         this.charsVals.add(propValue);

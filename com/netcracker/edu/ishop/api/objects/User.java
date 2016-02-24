@@ -8,6 +8,7 @@ public class User extends AbstractBusinessObject {
     private char[] password;
     private boolean isAdmin;
     private UserGroupTypes groupType;
+    private BigInteger orderId = null;
 
     @Override
     public String toString() {
@@ -46,4 +47,11 @@ public class User extends AbstractBusinessObject {
         return (this.groupType.toString()).equals(role);
     }
 
+    public BigInteger getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId(BigInteger orderId) {
+        this.orderId = orderId;
+    }
 }

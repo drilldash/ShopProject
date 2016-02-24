@@ -1,18 +1,34 @@
 {
+  "6": {
+    "id": 6,
+    "name": "Vendor"
+  },
+  "7": {
+    "id": 7,
+    "name": "Quantity"
+  },
   "8": {
     "id": 8,
-    "name": "vendor"
+    "name": "Capacity"
   },
   "9": {
     "id": 9,
-    "name": "capacity"
+    "name": "ModelName"
   },
   "10": {
     "id": 10,
-    "name": "guarantee"
+    "name": "MemoryChip"
   },
-  "11": {
-    "id": 11,
-    "name": "ssd_flash_memory_chip"
+  "13": {
+    "id": 13,
+    "name": "MemoryCapacity"
+  },
+  "14": {
+    "id": 14,
+    "name": "ScreenResolution"
+  },
+  "15": {
+    "id": 15,
+    "name": "OriginCountry"
   }
 }

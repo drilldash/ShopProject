@@ -47,7 +47,7 @@ public class ShowPropertiesOfGivenItem extends AbstractCommand {
             Item selectedItem = searchForItemObjectInGivenList(itemList, givenItemName);
 
 
-            LinkedList<ItemPropertyValue> propertiesList = selectedItem.getCharsVals();
+            List<ItemPropertyValue> propertiesList = selectedItem.getCharsVals();
 
             if (propertiesList != null) {
                 String msg = "Properties of " + givenItemName + " are " + propertiesList.toString();

@@ -42,7 +42,7 @@ public class ChangeFolderCommand extends AbstractCommand {
 
                 Folder currFolder = CurrentSessionState.getCurrentFolder();
 
-                log.info(currFolder.getId());
+                //log.info(currFolder.getId());
                 List<Folder> listChildFolders = daoInstance.findAllFoldersWithGivenParentId(currFolder.getId());
                 Folder givenFolder = daoInstance.findFolderInstanceByName(folderName);
 

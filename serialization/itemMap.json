@@ -1,12 +1,12 @@
 {
-  "7": {
-    "folderId": 5,
+  "5": {
+    "folderId": 4,
     "charsVals": [
       {
         "charWithValue": {
           "charKey": {
-            "id": 8,
-            "name": "vendor"
+            "id": 6,
+            "name": "Vendor"
           },
           "charVal": "Intel"
         }
@@ -14,8 +14,17 @@
       {
         "charWithValue": {
           "charKey": {
-            "id": 9,
-            "name": "capacity"
+            "id": 7,
+            "name": "Quantity"
+          },
+          "charVal": "10"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 8,
+            "name": "Capacity"
           },
           "charVal": "480Gb"
         }
@@ -23,23 +32,75 @@
       {
         "charWithValue": {
           "charKey": {
-            "id": 10,
-            "name": "guarantee"
+            "id": 9,
+            "name": "ModelName"
           },
-          "charVal": "48m"
+          "charVal": "SSD730"
         }
       },
       {
         "charWithValue": {
           "charKey": {
-            "id": 11,
-            "name": "ssd_flash_memory_chip"
+            "id": 10,
+            "name": "MemoryChip"
           },
-          "charVal": "MLC2204"
+          "charVal": "MLC2202"
         }
       }
     ],
-    "id": 7,
-    "name": "SSD"
+    "id": 5,
+    "name": "Intel_SSD_730"
+  },
+  "12": {
+    "folderId": 11,
+    "charsVals": [
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 6,
+            "name": "Vendor"
+          },
+          "charVal": "Asus"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 13,
+            "name": "MemoryCapacity"
+          },
+          "charVal": "16Gb"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 14,
+            "name": "ScreenResolution"
+          },
+          "charVal": "1920x1080"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 7,
+            "name": "Quantity"
+          },
+          "charVal": "100"
+        }
+      },
+      {
+        "charWithValue": {
+          "charKey": {
+            "id": 15,
+            "name": "OriginCountry"
+          },
+          "charVal": "China"
+        }
+      }
+    ],
+    "id": 12,
+    "name": "AsusNexus7"
   }
 }

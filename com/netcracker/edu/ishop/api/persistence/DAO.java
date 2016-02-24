@@ -40,6 +40,7 @@ abstract public class DAO {
 
     public abstract List<Item> findItemsWithGivenFolderId(BigInteger givenFolderId);
 
+    public abstract Item searchForItemObjectInGivenList(List<Item> itemList, String givenItemName);
 
     //
 

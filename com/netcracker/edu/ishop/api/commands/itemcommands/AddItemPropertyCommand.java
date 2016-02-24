@@ -44,7 +44,7 @@ public class AddItemPropertyCommand extends AbstractCommand {
             //Item selectedItem = daoInstance.findAbstractBusinessObjByName(Item.class, givenItemName);
 
             String givenItemName = cmdArgs[0];
-            Item selectedItem = searchForItemObjectInGivenList(itemList, givenItemName);
+            Item selectedItem = daoInstance.searchForItemObjectInGivenList(itemList, givenItemName);
 
             String[] cmdItemArgData = null;
             if (cmdArgs.length >= 2) {
@@ -113,15 +113,7 @@ public class AddItemPropertyCommand extends AbstractCommand {
     }
 
 
-    private Item searchForItemObjectInGivenList(List<Item> itemList, String givenItemName) {
-        for(Item item : itemList){
-            if (item.getName() != null && item.getName().contains(givenItemName)) {
-                return item;
-            }
-            //something here
-        }
-        return null;
-    }
+
 
 
 }
