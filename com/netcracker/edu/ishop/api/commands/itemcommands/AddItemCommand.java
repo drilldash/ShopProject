@@ -6,10 +6,10 @@ import netcracker.edu.ishop.api.objects.ItemProperty;
 import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.objects.ItemPropertyValue;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
-import java.math.BigInteger;
 import java.util.Arrays;
 
 public class AddItemCommand extends AbstractCommand {
@@ -33,7 +33,7 @@ public class AddItemCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         String itemName = cmdArgs[0];
         //BigInteger itemNum = new BigInteger(cmdArgs[1]);
@@ -44,7 +44,7 @@ public class AddItemCommand extends AbstractCommand {
             //log.info(Arrays.toString(cmdItemArgData));
 
             Item item = daoInstance.create(Item.class);
-            item.setFolderId(CurrentSessionState.getCurrentFolder().getId());
+            item.setFolderId(CurrentSessionState.getCurrentSession().getCurrentFolder().getId());
             item.setName(itemName);
             //item.setItemNum(itemNum);
 
@@ -79,24 +79,31 @@ public class AddItemCommand extends AbstractCommand {
                 }
 
             }
-            String msg = "Item " + itemName + "has been added to folder " + CurrentSessionState.getCurrentFolder();
-            setAllCmdData("OK", "IS01", msg);
-            log.info(getCmdContent());
+            String msg = "Item " + itemName + "has been added to folder " + CurrentSessionState.getCurrentSession().getCurrentFolder();
+
             daoInstance.save(item);
+            return CommandFormat.build("OK", "----", msg);
+
         }
 
         if (cmdArgs.length == 1) {
 
 
             Item item = daoInstance.create(Item.class);
-            item.setFolderId(CurrentSessionState.getCurrentFolder().getId());
+            item.setFolderId(CurrentSessionState.getCurrentSession().getCurrentFolder().getId());
             item.setName(itemName);
             //item.setItemNum(itemNum);
-            String msg = "Item " + itemName + "has been added to folder " + CurrentSessionState.getCurrentFolder();
-            setAllCmdData("OK", "IS01", msg);
-            log.info(getCmdContent());
+            String msg = "Item " + itemName + "has been added to folder " + CurrentSessionState.getCurrentSession().getCurrentFolder();
+            //log.info(getCmdContent());
             daoInstance.save(item);
+            return CommandFormat.build("OK", "IS01", msg);
+
         }
+        if (cmdArgs.length == 0) {
+            String msg = "Wrong number of arguments in " + "\"" + getName() + "\"";
+            return CommandFormat.build("ERROR", "----", msg);
+        }
+        return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
     }
 
     @Override

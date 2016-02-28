@@ -4,8 +4,10 @@ import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
+
 import java.util.Arrays;
 
 public class SignInCommand extends AbstractCommand {
@@ -28,23 +30,21 @@ public class SignInCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
-        if ((cmdArgs.length > 2 || cmdArgs.length < 2) && (CurrentSessionState.getSignedInUser() == null)) {
+        if ((cmdArgs.length > 2 || cmdArgs.length < 2) && (CurrentSessionState.getCurrentSession().getSignedInUser() == null)) {
             //log.info("Wrong number of arguments in " + "\"" + getName() + "\"");
             throw new IllegalArgumentException("Wrong number of arguments in " + "\"" + getName() + "\"");
-        }
-        else if (CurrentSessionState.getSignedInUser() != null) {
+        } else if (CurrentSessionState.getCurrentSession().getSignedInUser() != null) {
             //setStatusMessage("User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first");
             //log.info(getStatusMessage());
 
-            String msg = "User " + CurrentSessionState.getSignedInUser().getName() + " should sign out first";
-            setAllCmdData("ERROR", "U012", msg);
-            log.info(getCmdContent());
+            String msg = "User " + CurrentSessionState.getCurrentSession().getSignedInUser().getName() + " should sign out first";
+            return CommandFormat.build("ERROR", "U012", msg);
+            
 
 
-        }
-        else {
+        } else {
             String username = cmdArgs[0];
             char[] password = cmdArgs[1].toCharArray();
 
@@ -55,8 +55,8 @@ public class SignInCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "No such username found in data-structure, you should register first";
-                setAllCmdData("ERROR", "U013", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U013", msg);
+                
 
 
             } else if (user != null && !Arrays.equals(user.getPassword(), password)) {
@@ -64,26 +64,29 @@ public class SignInCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "Passwords are not matching each other";
-                setAllCmdData("ERROR", "U014", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U014", msg);
+                
 
 
-
-            } else {
-                CurrentSessionState.setSignedInUser(user);
+            } else if (!CurrentSessionState.getCurrentSession().getAllSignedInUsers().contains(user)) {
+                CurrentSessionState.getCurrentSession().setSignedInUser(user);
 
                 //setStatusMessage("User \"" + username + "\" has been successfully signed in!");
                 //log.info(getStatusMessage());
 
-                String msg ="User \"" + username + "\" has been successfully signed in!";
-                setAllCmdData("OK", "U015", msg);
-                log.info(getCmdContent());
-
-
+                String msg = "User \"" + username + "\" has been successfully signed in!";
+                return CommandFormat.build("OK", "U015", msg);
+                
+            } else {
+                String msg = "User \"" + username + "\" has already been taken to sign in!";
+                return CommandFormat.build("OK", "U015", msg);
+                
             }
 
         }
+
     }
+
 
     @Override
     public String toString() {

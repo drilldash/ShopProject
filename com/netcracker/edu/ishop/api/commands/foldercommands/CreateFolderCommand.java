@@ -2,9 +2,9 @@ package netcracker.edu.ishop.api.commands.foldercommands;
 
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
-import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
@@ -29,11 +29,11 @@ public class CreateFolderCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 1 || cmdArgs.length < 1) {
-            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
-            log.info(getStatusMessage());
+            String msg = "Wrong number of arguments in " + "\"" + getName() + "\"";
+            return CommandFormat.build("ERROR", "----", msg);
 
         } else {
 
@@ -45,26 +45,24 @@ public class CreateFolderCommand extends AbstractCommand {
 
                 folder.setName(folderName);
 
-                if (CurrentSessionState.getCurrentFolder() == null) {
+                if (CurrentSessionState.getCurrentSession().getCurrentFolder() == null) {
                     folder.setParentFolderId(null);
-                    CurrentSessionState.setCurrentFolder(folder);
+                    CurrentSessionState.getCurrentSession().setCurrentFolder(folder);
                 } else {
-                    folder.setParentFolderId(CurrentSessionState.getCurrentFolder().getId());
+                    folder.setParentFolderId(CurrentSessionState.getCurrentSession().getCurrentFolder().getId());
                     //CurrentSessionState.setCurrentFolder(folder);
                 }
 
                 daoInstance.save(folder);
                 String msg = "Folder \"" + folder.getName() + "\" has been saved in data-structure!";
-                setAllCmdData("OK", "F007", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "F007", msg);
+
 
             } else {
 
                 String msg = "Folder \"" + folder.getName() + "\" already exists in data-structure!";
-                setAllCmdData("ERROR", "F008", msg);
-                log.info(getCmdContent());
-
                 UniqueIDGenerator.getInstance().decrementID();
+                return CommandFormat.build("ERROR", "F008", msg);
             }
         }
     }

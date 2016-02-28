@@ -21,15 +21,15 @@ import java.math.BigInteger;
 import java.nio.file.AccessDeniedException;
 import java.util.*;
 
-public class DAOInMemoryJSON extends DAO {
+public class DAOInMemoryJSONConcurrent extends DAO {
 
-    private static DAOInMemoryJSON INSTANCE = new DAOInMemoryJSON();
+    private static DAOInMemoryJSONConcurrent INSTANCE = new DAOInMemoryJSONConcurrent();
 
-    public static final Logger log = Logger.getLogger(DAOInMemoryJSON.class);
+    public static final Logger log = Logger.getLogger(DAOInMemoryJSONConcurrent.class);
 
     private HeterogeneousTypeSafeContainer dataMemoryStorage = new HeterogeneousTypeSafeContainer();
 
-    private DAOInMemoryJSON() {
+    private DAOInMemoryJSONConcurrent() {
 
         //log.info("Loaded DAO instance: " + getClass());
         for (Class cls : DAOUtils.getListofAbsBusinessObjTypes()) {
@@ -37,9 +37,9 @@ public class DAOInMemoryJSON extends DAO {
         }
     }
 
-    public static DAOInMemoryJSON getInstance() {
+    public static DAOInMemoryJSONConcurrent getInstance() {
         if(INSTANCE == null) {
-            INSTANCE = new DAOInMemoryJSON();
+            INSTANCE = new DAOInMemoryJSONConcurrent();
         }
         return INSTANCE;
     }
@@ -84,7 +84,7 @@ public class DAOInMemoryJSON extends DAO {
     @Override
     public <T extends AbstractBusinessObject> void delete(T aboObj) {
         if (AbstractBusinessObject.class.isAssignableFrom(aboObj.getClass())) {
-           dataMemoryStorage.getHashMapByType(User.class).remove(aboObj.getId());
+            dataMemoryStorage.getHashMapByType(User.class).remove(aboObj.getId());
         }
     }
 

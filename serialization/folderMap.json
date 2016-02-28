@@ -17,5 +17,15 @@
     "parentFolderId": 1,
     "id": 11,
     "name": "Tablets"
+  },
+  "22": {
+    "parentFolderId": 1,
+    "id": 22,
+    "name": "test"
+  },
+  "23": {
+    "parentFolderId": 1,
+    "id": 23,
+    "name": "NEWTEST"
   }
 }

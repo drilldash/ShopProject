@@ -4,6 +4,7 @@ import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -29,9 +30,9 @@ public class ShowFoldersInCurrentCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
-        Folder currFolder = CurrentSessionState.getCurrentFolder();
+        Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
 
         List<Folder> listChildFolders = daoInstance.findAllFoldersWithGivenParentId(currFolder.getId());
 
@@ -43,13 +44,13 @@ public class ShowFoldersInCurrentCommand extends AbstractCommand {
         //log.info(getStatusMessage());
         if (listChildFolders.size() > 0) {
             String msg = folderNames;
-            setAllCmdData("OK", "F013", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "F013", msg);
+
         }
         else {
             String msg = "There are no possible variants to change directory to";
-            setAllCmdData("ERROR", "F014", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "F014", msg);
+
         }
 
     }

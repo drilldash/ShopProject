@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -30,26 +31,26 @@ public class WhoAmICommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
             try {
-                String currentName = CurrentSessionState.getSignedInUser().getName();
+                String currentName = CurrentSessionState.getCurrentSession().getSignedInUser().getName();
 
                 //setStatusMessage("I am " + currentName);
                 //log.info(getStatusMessage());
 
                 String msg = "I am " + currentName;
-                setAllCmdData("OK", "U020", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "----", msg);
+                
 
             } catch (NullPointerException NP) {
 
                 //setStatusMessage("You're not signed in (GUEST)");
                 //log.info(getStatusMessage());
 
-                String msg = "You're not signed in (" + CurrentSessionState.getUserGroupTypeLocal().toString() + ")";
-                setAllCmdData("ERROR", "U021", msg);
-                log.info(getCmdContent());
+                String msg = "You're not signed in (" + CurrentSessionState.getCurrentSession().getUserGroupTypeLocal().toString() + ")";
+                return CommandFormat.build("INFO", "----", msg);
+                
 
             }
         }

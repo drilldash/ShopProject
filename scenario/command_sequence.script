@@ -1,15 +1,19 @@
 help
-show_users
+#show_users
 #help <- this is comment
 #register_user u1 p1
 #register_user u2 p2
 sign_in u1 p1
 show_users
 #current_folder
-cd cat2
-cd Cat2SubCat1
-cd Test
-cd Empty
-show_item_properties a b c d e
-add_item_property
-add_item_property item1
+cd Tablets
+show_item_properties AsusNexus7
+pwd
+pwd
+pwd
+ls
+cd ../
+which_group
+sign_out u1
+sign_in admin admin
+exit

@@ -6,10 +6,10 @@ import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.objects.ItemPropertyValue;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
-import java.util.LinkedList;
 import java.util.List;
 
 public class ShowPropertiesOfGivenItem extends AbstractCommand {
@@ -32,10 +32,10 @@ public class ShowPropertiesOfGivenItem extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
 
-        Folder currFolder = CurrentSessionState.getCurrentFolder();
+        Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
         List<Item> itemList = daoInstance.findItemsWithGivenFolderId(currFolder.getId());
 
         if (itemList.size() > 0 && cmdArgs.length == 1) {
@@ -51,28 +51,30 @@ public class ShowPropertiesOfGivenItem extends AbstractCommand {
 
             if (propertiesList != null) {
                 String msg = "Properties of " + givenItemName + " are " + propertiesList.toString();
-                setAllCmdData("OK", "IS06", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "IS06", msg);
+
             } else {
                 String msg = "There are no properties for " + givenItemName;
-                setAllCmdData("ERROR", "IF07", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "IF07", msg);
+
 
             }
 
 
         } else if (cmdArgs.length == 0) {
-            String msg = "No item name has been entered to show properties in current directory \"" + CurrentSessionState.getCurrentFolder().getName() + "\"";
-            setAllCmdData("ERROR", "IF09", msg);
-            log.info(getCmdContent());
+            String msg = "No item name has been entered to show properties in current directory \"" + CurrentSessionState.getCurrentSession().getCurrentFolder().getName() + "\"";
+            return CommandFormat.build("ERROR", "IF09", msg);
+
         } else if (cmdArgs.length >= 2) {
             String msg = "Too many arguments. " + getDescription();
-            setAllCmdData("ERROR", "I10", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "I10", msg);
+
         } else if (itemList.size() == 0) {
-            String msg = "No items are available for adding properties in current directory \"" + CurrentSessionState.getCurrentFolder().getName() + "\"";
-            setAllCmdData("ERROR", "IF08", msg);
-            log.info(getCmdContent());
+            String msg = "No items are available for adding properties in current directory \"" + CurrentSessionState.getCurrentSession().getCurrentFolder().getName() + "\"";
+            return CommandFormat.build("ERROR", "IF08", msg);
+
+        } else {
+            return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
         }
 
     }

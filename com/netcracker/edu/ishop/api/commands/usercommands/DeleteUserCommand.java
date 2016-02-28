@@ -2,6 +2,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -26,11 +27,12 @@ public class DeleteUserCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 1 || cmdArgs.length < 1) {
-            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
-            log.info(getStatusMessage());
+           
+            return CommandFormat.build("ERROR", "----", "Wrong number of arguments in " + "\"" + getName() + "\"");
+
         } else {
 
             String username = cmdArgs[0];
@@ -39,22 +41,17 @@ public class DeleteUserCommand extends AbstractCommand {
 
             if (user != null) {
                 daoInstance.delete(user);
-                //setStatusMessage(username + " has been deleted from data-structure!");
-                //log.info(getStatusMessage());
-
                 String msg = username + " has been deleted from data-structure!";
-                setAllCmdData("OK", "U001", msg);
-                log.info(getCmdContent());
-
+                return CommandFormat.build("OK", "----", msg);
+                
 
             } else {
                 //setStatusMessage("Username " + username + " not found for deleting");
                 //log.info(getStatusMessage());
 
                 String msg = "Username " + username + " not found for deleting";
-                setAllCmdData("ERROR", "U002", msg);
-                log.info(getCmdContent());
-            }
+                return CommandFormat.build("ERROR", "----", msg);
+                            }
         }
     }
 

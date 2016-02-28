@@ -5,6 +5,7 @@ import netcracker.edu.ishop.api.commands.itemcommands.AddItemCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -30,9 +31,9 @@ public class ListSegmentsCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
-        Folder currFolder = CurrentSessionState.getCurrentFolder();
+        Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
 
         List<String> listOfSegments = daoInstance.findOnlyItemsAndFoldersWithGivenParentId(currFolder.getId());
 
@@ -43,14 +44,13 @@ public class ListSegmentsCommand extends AbstractCommand {
         //setStatusMessage(folderNames);
         //log.info(getStatusMessage());
         if ( listOfSegments.size() > 0) {
-            String msg = cmdOutput;
-            setAllCmdData("OK", "MS01", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "MS01", cmdOutput);
+
         }
         else {
             String msg = "There are no content to show in current directory";
-            setAllCmdData("ERROR", "MF01", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "MF01", msg);
+
         }
 
     }

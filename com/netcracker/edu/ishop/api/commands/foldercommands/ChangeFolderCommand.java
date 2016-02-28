@@ -4,6 +4,7 @@ import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -30,17 +31,18 @@ public class ChangeFolderCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
+        String message;
         if (cmdArgs.length > 1 || cmdArgs.length < 1) {
-            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
-            log.info(getDescription() + "\n" + getStatusMessage());
+            message = "Wrong number of arguments in " + "\"" + getName() + "\"";
+            return CommandFormat.build("ERROR", "----", message);
 
         } else {
 
             if (!cmdArgs[0].equals("../")) {
                 String folderName = cmdArgs[0];
 
-                Folder currFolder = CurrentSessionState.getCurrentFolder();
+                Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
 
                 //log.info(currFolder.getId());
                 List<Folder> listChildFolders = daoInstance.findAllFoldersWithGivenParentId(currFolder.getId());
@@ -49,32 +51,26 @@ public class ChangeFolderCommand extends AbstractCommand {
                 //if there are folders which we can change to
                 if (givenFolder != null && listChildFolders.size() > 0) {
                     if (listChildFolders.contains(givenFolder)) {
-                        CurrentSessionState.setCurrentFolder(givenFolder);
+                        CurrentSessionState.getCurrentSession().setCurrentFolder(givenFolder);
 
                         String msg = ("You're in folder \"" + folderName + "\"!");
-                        setAllCmdData("OK", "F001", msg);
+                        return CommandFormat.build("OK", "----", msg);
 
-                        log.info(getCmdContent());
-
-                        //there are no folders in current folders. Changing is impossible.
+                    //there are no folders in current folders. Changing is impossible.
                     } else if (listChildFolders.size() == 0) {
 
                         String msg = "There is no child folders in current folder \"" + currFolder.getName() + "\"";
-                        setAllCmdData("ERROR", "F002", msg);
-
-                        log.info(getCmdContent());
+                        return CommandFormat.build("ERROR", "----", msg);
                     }
 
-                    //entered name of folder doesn't match any folder
+                //entered name of folder doesn't match any folder
                 } else if (givenFolder == null) {
 
                     String msg = "No such folder exists " + "\nTry to use \'ls_folders\' command";
-                    setAllCmdData("ERROR", "F003", msg);
+                    return CommandFormat.build("ERROR", "----", msg);
 
-                    log.info(getCmdContent());
-
-                    // entered folder name matches some folder, but this folder doesn't belong to this folder
-                    // OR entered folder name matches to ROOT folder which (hopefully) exists but its parentID is null.
+                // entered folder name matches some folder, but this folder doesn't belong to this folder
+                // OR entered folder name matches to ROOT folder which (hopefully) exists but its parentID is null.
 
                 } else if ((givenFolder != null) && (givenFolder.getParentFolderId() == null
                         || !givenFolder.getParentFolderId().equals(currFolder.getId()))) {
@@ -82,35 +78,33 @@ public class ChangeFolderCommand extends AbstractCommand {
                     String msg = "No such folder exists in current folder \"" + currFolder.getName() +
                             "\"" + "\nTry to use \'ls_folders\' command";
 
-                    setAllCmdData("ERROR", "F004", msg);
+                    return CommandFormat.build("ERROR", "----", msg);
 
-                    log.info(getCmdContent());
                 }
 
 
             } else {
-                Folder currFolder = CurrentSessionState.getCurrentFolder();
+                Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
                 Folder targetFolder = daoInstance.findParentFoldersWithGivenParentId(currFolder.getParentFolderId());
                 if (targetFolder != null) {
-                    CurrentSessionState.setCurrentFolder(targetFolder);
+                    CurrentSessionState.getCurrentSession().setCurrentFolder(targetFolder);
 
 
                     String msg = "Successfully changed to one-up folder \"" + targetFolder.getName() + "\"!";
-                    setAllCmdData("OK", "F005", msg);
+                    return CommandFormat.build("OK", "----", msg);
 
-                    log.info(getCmdContent());
+
 
                 } else {
                     String msg = "Can't change into parent folder for folder \"" + currFolder.getName() + "\"";
-                    setAllCmdData("ERROR", "F006", msg);
+                    return CommandFormat.build("ERROR", "----", msg);
 
-                    log.info(getCmdContent());
+
                 }
 
             }
-
-
         }
+        return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
     }
 
 

@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -27,15 +28,15 @@ public class WhichGroupCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
         try {
-            String currentGroup = CurrentSessionState.getUserGroupTypeLocal().toString();
+            String currentGroup = CurrentSessionState.getCurrentSession().getUserGroupTypeLocal().toString();
             //setStatusMessage("GROUP:" + currentGroup);
             //log.info(getStatusMessage());
 
             String msg = "GROUP:" + currentGroup;
-            setAllCmdData("OK", "U018", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "U018", msg);
+            
 
         }
         catch (NullPointerException NP) {
@@ -43,8 +44,8 @@ public class WhichGroupCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = NP.toString();
-            setAllCmdData("ERROR", "U019", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "U019", msg);
+            
         }
     }
 

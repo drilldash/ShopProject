@@ -4,7 +4,6 @@ import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.api.persistence.DAOFactory;
 
 import java.math.BigInteger;
-import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -55,7 +54,7 @@ public class Order extends AbstractBusinessObject {
 
     @Override
     public String toString() {
-        String msg = "+--------------------------------------------------------------------+\n";
+        String msg = "+------ ORDER ID: "+ getId() + "----------------------------------------------+\n";
 
         msg += "| " + "ID:" + getId() + "\n";
 
@@ -65,7 +64,7 @@ public class Order extends AbstractBusinessObject {
                 DAO daoInstance = DAOFactory.getDAO();
                 msg += "| " + daoInstance.findABOInstanceById(Item.class, itemId).printItemWithProperties() + "\n";
             }
-
+            msg += "+--------------------------------------------------------------------+\n";
             return msg;
         }
         else {

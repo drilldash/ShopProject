@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="antlr:stringtemplate:2.2" type="repository">
+    <properties maven-id="antlr:stringtemplate:2.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/antlr/stringtemplate/2.2/stringtemplate-2.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

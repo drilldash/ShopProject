@@ -5,10 +5,11 @@ import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class HeterogeneousTypeSafeContainer {
 
-    private Map<Class<?>, Map> favorites = new HashMap<>();
+    private Map<Class<?>, Map> favorites = new ConcurrentHashMap<>();
 
     public <T> void putFavorite(Class type, Map instance) {
         if (type == null)

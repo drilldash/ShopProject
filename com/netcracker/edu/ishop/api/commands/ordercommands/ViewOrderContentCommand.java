@@ -6,6 +6,7 @@ import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.objects.Order;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -32,10 +33,10 @@ public class ViewOrderContentCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
         if (cmdArgs.length == 0) {
 
-            User currUser = CurrentSessionState.getSignedInUser();
+            User currUser = CurrentSessionState.getCurrentSession().getSignedInUser();
 
             if (currUser.getOrderId() != null) {
                 Order currOrder = daoInstance.findABOInstanceById(Order.class, currUser.getOrderId());
@@ -43,31 +44,28 @@ public class ViewOrderContentCommand extends AbstractCommand {
 
                 String msg = "Following items are in order:\n";
 
-                for (BigInteger id: itemListIds) {
+                for (BigInteger id : itemListIds) {
                     Item nextItem = daoInstance.findABOInstanceById(Item.class, id);
                     msg += "I:" + nextItem.getName();
 
                 }
 
-                setAllCmdData("OK", "OS05", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "OS05", msg);
 
-            }
-            else if (currUser.getOrderId() == null) {
+
+            } else if (currUser.getOrderId() == null) {
                 String msg = "No items are in order. Tru to use command 'put' to add items for ordering.";
-                setAllCmdData("OK", "OS03", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "OS03", msg);
+
             }
 
 
-        }
-
-        else {
+        } else {
             String msg = "Too many arguments. " + getDescription();
-            setAllCmdData("ERROR", "OS04", msg);
-            log.info(getCmdContent());
-        }
+            return CommandFormat.build("ERROR", "OS04", msg);
 
+        }
+        return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
     }
 
     @Override

@@ -5,6 +5,7 @@ import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Order;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -31,10 +32,11 @@ public class BuyItemsInOrderCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
+
         if (cmdArgs.length == 0) {
 
-            User currUser = CurrentSessionState.getSignedInUser();
+            User currUser = CurrentSessionState.getCurrentSession().getSignedInUser();
 
             if (currUser.getOrderId() != null) {
                 Order currOrder = daoInstance.findABOInstanceById(Order.class, currUser.getOrderId());
@@ -48,22 +50,23 @@ public class BuyItemsInOrderCommand extends AbstractCommand {
                 daoInstance.save(currUser);
 
                 String msg = "Congratulations! You've done purchase! Order id:" + currOrder.getId();
-                setAllCmdData("Ok", "OS06", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("Ok", "OS06", msg);
+               
 
             }
             else if (currUser.getOrderId() == null) {
                 String msg = "Can't sold out anything for user '" + currUser.getName() + "'. Try to add some items by command 'put'";
-                setAllCmdData("ERROR", "OS06", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "OS06", msg);
+                
             }
         }
         else {
             String msg = "Too many arguments. " + getDescription();
-            setAllCmdData("ERROR", "OS04", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "OS04", msg);
+            
         }
 
+    return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
 
     }
 

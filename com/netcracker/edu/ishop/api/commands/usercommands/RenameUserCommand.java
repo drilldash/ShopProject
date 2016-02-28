@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -26,11 +27,11 @@ public class RenameUserCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 2 || cmdArgs.length < 2) {
-            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
-            log.info(getStatusMessage());
+            return CommandFormat.build("ERROR", "----", "Wrong number of arguments in " + "\"" + getName() + "\"");
+
         } else {
 
             String oldUsername = cmdArgs[0];
@@ -45,8 +46,8 @@ public class RenameUserCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "No such username has been found in data-structure";
-                setAllCmdData("ERROR", "U007", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U007", msg);
+                
 
             }
             else if (daoInstance.findUserByName(newUsername) != null) {
@@ -54,8 +55,8 @@ public class RenameUserCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "Cannot rename username " + oldUsername + " to " + newUsername + ". It's already taken.";
-                setAllCmdData("ERROR", "U008", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U008", msg);
+                
 
             }
             else if (user != null && daoInstance.findUserByName(newUsername) == null) {
@@ -65,14 +66,14 @@ public class RenameUserCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "Username has been successfully updated from \"" + oldUsername + "\" to \"" + newUsername + "\"";
-                setAllCmdData("ERROR", "U009", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U009", msg);
+                
 
 
             }
 
         }
-
+        return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
 
     }
 

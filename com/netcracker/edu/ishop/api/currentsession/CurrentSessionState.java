@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.lang.reflect.Type;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,91 +20,137 @@ import java.util.Set;
 public class CurrentSessionState {
 
     public static final Logger log = Logger.getLogger(CurrentSessionState.class);
-    private static final ThreadLocal<User> userThreadLocal = new ThreadLocal<>();
-    private static final ThreadLocal<UserGroupTypes> userGroupTypeLocal = new ThreadLocal<>();
-    private static final Set<User> activeUsers = new HashSet<>();
 
-    private static final ThreadLocal<Folder> currentFolder = new ThreadLocal<>();
+    private static CurrentSessionState INSTANCE = new CurrentSessionState();
+
+    private static final Set<User> activeUsers = Collections.synchronizedSet(new HashSet<>());
 
     private static Gson gson = new Gson();
 
-    static {
-        if (checkIfFirstLaunch()) {
-            userGroupTypeLocal.set(UserGroupTypes.ADMIN);
-            saveFirstLaunchStatus();
+    static class SessionState {
+        User localUser;
+        UserGroupTypes localUserType;
+        Folder localCurrentFolder;
 
-        } else {
-            userGroupTypeLocal.set(UserGroupTypes.GUEST);
+        // we need to elevate privileges from GUEST to ADMIN on the very first launch of the project
+        public SessionState() {
+            if (checkIfFirstLaunch()) {
+                localUserType = UserGroupTypes.ADMIN;
+                saveFirstLaunchStatus();
+        }}
+
+
+        private User getLocalUser() {
+            return this.localUser;
         }
 
-        setInitialCurrentFolder();
+        public UserGroupTypes getLocalUserType() {
+            return localUserType;
+        }
 
+        public Folder getLocalCurrentFolder() {
+            return localCurrentFolder;
+        }
+
+        public void setLocalUser(User localUser) {
+            this.localUser = localUser;
+        }
+
+        public void setLocalUserType(UserGroupTypes localUserType) {
+            this.localUserType = localUserType;
+        }
+
+        public void setLocalCurrentFolder(Folder localCurrentFolder) {
+            this.localCurrentFolder = localCurrentFolder;
+        }
     }
 
-    public static void setNoUser() {
-        userGroupTypeLocal.set(UserGroupTypes.GUEST);
-        userThreadLocal.set(null);
+    private static final ThreadLocal<SessionState> sessionStateThreadLocal = new ThreadLocal<SessionState>() {
+        @Override
+        protected SessionState initialValue() {
+            return new SessionState();
+        }
+     };
+
+
+    public static CurrentSessionState getCurrentSession() {
+        if (INSTANCE == null) {
+            INSTANCE = new CurrentSessionState();
+        }
+        return INSTANCE;
     }
 
-    public static Folder getCurrentFolder() {
-        return currentFolder.get();
+    public void setNoUser() {
+        sessionStateThreadLocal.get().setLocalUserType(UserGroupTypes.GUEST);
+        sessionStateThreadLocal.get().setLocalUser(null);
     }
 
-    public static void setInitialCurrentFolder() {
-        //log.info("we are here");
+    public Folder getCurrentFolder() {
+        Folder currFolder = sessionStateThreadLocal.get().getLocalCurrentFolder();
+        if (currFolder == null) {
+            setInitialCurrentFolder();
+        }
+        return sessionStateThreadLocal.get().getLocalCurrentFolder();
+    }
+
+    public void setInitialCurrentFolder() {
         Folder rootFolder = DAOFactory.getDAO().findFolderInstanceByName("ROOT");
-        if ( rootFolder!= null) {
-            currentFolder.set(rootFolder);
+        if (rootFolder != null) {
+            sessionStateThreadLocal.get().setLocalCurrentFolder(rootFolder);
 
         } else {
             Folder folder = DAOFactory.getDAO().create(Folder.class);
             folder.setName("ROOT");
-            currentFolder.set(folder);
+            sessionStateThreadLocal.get().setLocalCurrentFolder(folder);
             DAOFactory.getDAO().save(folder);
-            //UniqueIDGenerator.getInstance().incrementID();
         }
     }
 
-    public static void setCurrentFolder(Folder folder) {
-        currentFolder.set(folder);
+    public void setCurrentFolder(Folder folder) {
+        sessionStateThreadLocal.get().setLocalCurrentFolder(folder);
     }
 
 
-    public static UserGroupTypes getUserGroupTypeLocal() {
-        return userGroupTypeLocal.get();
+    public UserGroupTypes getUserGroupTypeLocal() {
+
+        UserGroupTypes localUserType = sessionStateThreadLocal.get().getLocalUserType();
+        if (localUserType == null) {
+            sessionStateThreadLocal.get().setLocalUserType(UserGroupTypes.GUEST);
+        }
+        return sessionStateThreadLocal.get().getLocalUserType();
     }
 
-    public static User getSignedInUser() {
-        return userThreadLocal.get();
+    public User getSignedInUser() {
+        return sessionStateThreadLocal.get().getLocalUser();
     }
 
-    public static Set getAllSignedInUsers() {
+    public Set<User> getAllSignedInUsers() {
         return activeUsers;
     }
 
-    public static void setSignedInUser(User user) {
+    public void setSignedInUser(User user) {
 
         if (activeUsers.contains(user)) {
             log.info("User already signed in");
         } else {
             activeUsers.add(user);
-            userThreadLocal.set(user);
-            userGroupTypeLocal.set(user.getGroup());
+            sessionStateThreadLocal.get().setLocalUser(user);
+            sessionStateThreadLocal.get().setLocalUserType(user.getGroup());
         }
     }
 
-    public static void removeUserFromSignedInUsers() {
-        activeUsers.remove(userThreadLocal.get());
+    public void removeUserFromSignedInUsers() {
+        activeUsers.remove(sessionStateThreadLocal.get().getLocalUser());
     }
 
 
     private static boolean checkIfFirstLaunch() {
         File serializedFirstLaunchFile = new File(SerializationConstants.SERIALIZED_FIRST_LAUNCH_FILE_PATH);
         if (serializedFirstLaunchFile.exists() && !serializedFirstLaunchFile.isDirectory()) {
-            //Gson gson = new Gson();
             try {
                 BufferedReader br = new BufferedReader(new FileReader(serializedFirstLaunchFile));
-                Type varType = new TypeToken<Boolean>() {}.getType();
+                Type varType = new TypeToken<Boolean>() {
+                }.getType();
                 Boolean firstLaunch = gson.fromJson(br, varType);
                 return firstLaunch;
             } catch (IOException e) {
@@ -115,8 +162,8 @@ public class CurrentSessionState {
 
     private static void saveFirstLaunchStatus() {
         final Boolean firstLaunchStatus = false;
-        //Gson gson = new Gson();
-        Type varType = new TypeToken<Boolean>() {}.getType();
+        Type varType = new TypeToken<Boolean>() {
+        }.getType();
         String firstLaunchStatusJSON = gson.toJson(firstLaunchStatus, varType);
 
         try {

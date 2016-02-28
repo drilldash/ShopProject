@@ -7,6 +7,7 @@ import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.objects.Order;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -32,8 +33,8 @@ public class PutItemToOrderCommand extends AbstractCommand {
     }
     //@SuppressWarnings("unchecked")
     @Override
-    public void execute(String[] cmdArgs) {
-        Folder currFolder = CurrentSessionState.getCurrentFolder();
+    public String execute(String[] cmdArgs) {
+        Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
         List<Item> itemList = daoInstance.findItemsWithGivenFolderId(currFolder.getId());
 
         if (itemList.size() > 0 && cmdArgs.length == 1) {
@@ -41,7 +42,7 @@ public class PutItemToOrderCommand extends AbstractCommand {
             Item selectedItem = daoInstance.searchForItemObjectInGivenList(itemList, givenItemName);
 
             if (selectedItem!=null) {
-                User currUser = CurrentSessionState.getSignedInUser();
+                User currUser = CurrentSessionState.getCurrentSession().getSignedInUser();
                 if (currUser.getOrderId() == null) {
                     Order currOrder = daoInstance.create(Order.class);
                     currOrder.setText("RESERVED");
@@ -53,8 +54,8 @@ public class PutItemToOrderCommand extends AbstractCommand {
                     String msg = "'Order:id'" + currOrder.getId() + " has been created for user " + currUser.getName();
                     msg += "\n Item '" + selectedItem.getName() + "' has been added to Order:id" + currOrder.getId();
 
-                    setAllCmdData("OK", "OS01", msg);
-                    log.info(getCmdContent());
+                    return CommandFormat.build("OK", "OS01", msg);
+                   
                 }
 
                 else if (currUser.getOrderId() != null) {
@@ -64,18 +65,18 @@ public class PutItemToOrderCommand extends AbstractCommand {
 
                     String msg = "\n Item '" + selectedItem.getName() + "' has been added to Order:id" + currOrder.getId();
 
-                    setAllCmdData("OK", "OS01", msg);
-                    log.info(getCmdContent());
+                    return CommandFormat.build("OK", "OS01", msg);
+                    
 
                 }
             }
             else if (selectedItem == null) {
                 String msg = "No such item has been found in current directory. Name:" + givenItemName;
-                setAllCmdData("ERROR", "OF02", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "OF02", msg);
+                
             }
         }
-
+    return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
 
     }
 

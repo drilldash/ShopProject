@@ -1,10 +1,10 @@
 package netcracker.edu.ishop.api.commands;
 
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
-import java.util.EnumSet;
 import java.util.List;
 
 public class HelpCommand extends AbstractCommand {
@@ -41,7 +41,7 @@ public class HelpCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
 
         if (cmdArgs.length == 0) {
@@ -55,8 +55,8 @@ public class HelpCommand extends AbstractCommand {
 
             String msg = helpText;
             //C stands for CommonErrors
-            setAllCmdData("OK", "C002", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "C002", msg);
+            
         } else if (cmdArgs.length == 1) {
             String helpText = "";
             String givenCmdName = cmdArgs[0];
@@ -73,13 +73,14 @@ public class HelpCommand extends AbstractCommand {
                 msg = helpText;
             }
 
-            setAllCmdData("OK", "C002", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "C002", msg);
+            
 
         } else if (cmdArgs.length > 1) {
             String msg = "Too many arguments. " + getDescription();
-            setAllCmdData("ERROR", "I10", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "I10", msg);
+            
         }
+    return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
     }
 }

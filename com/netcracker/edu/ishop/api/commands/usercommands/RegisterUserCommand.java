@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
@@ -32,11 +33,11 @@ public class RegisterUserCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         if (cmdArgs.length > 2 || cmdArgs.length < 2) {
-            setStatusMessage("Wrong number of arguments in " + "\"" + getName() + "\"");
-            log.info(getStatusMessage());
+            return CommandFormat.build("ERROR", "----", "Wrong number of arguments in " + "\"" + getName() + "\"");
+            
         } else {
 
             String username = cmdArgs[0];
@@ -46,7 +47,7 @@ public class RegisterUserCommand extends AbstractCommand {
             //class cast!!!
             //User user = (User) daoInstance.create(User.class);
 
-            //DAO<User> daoInstance = new DAOInMemoryJSON<User>();
+            //DAO<User> daoInstance = new DAOInMemoryJSONConcurrent<User>();
             User user = daoInstance.create(User.class);
 
             user.setName(username);
@@ -60,8 +61,7 @@ public class RegisterUserCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = username + " has been saved in data-structure!";
-                setAllCmdData("OK", "U005", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "U005", msg);
 
 
             } else {
@@ -70,11 +70,12 @@ public class RegisterUserCommand extends AbstractCommand {
 
 
                 String msg = "Username " + username + " is taken, can't save it to data-structure";
-                setAllCmdData("ERROR", "U006", msg);
-                log.info(getCmdContent());
-
                 UniqueIDGenerator.getInstance().decrementID();
+                return CommandFormat.build("ERROR", "U006", msg);
+
+
             }
         }
+
     }
 }

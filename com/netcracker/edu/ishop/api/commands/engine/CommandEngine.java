@@ -17,6 +17,7 @@ import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
 import netcracker.edu.ishop.api.persistence.DAOFactory;
 
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import org.apache.log4j.Logger;
 
 
@@ -32,10 +33,8 @@ public class CommandEngine {
 
     //private DAO daoInstance = new JsonDaoNew<>();
 
-
-    private String commandStatus;
-
     private CommandEngine() {
+
 
         DAO daoInstance = DAOFactory.getDAO();
 
@@ -101,11 +100,7 @@ public class CommandEngine {
         return commandsList;
     }
 
-    public String getCommandStatus() {
-        return commandStatus;
-    }
-
-    public void executeCommand(String cmdRawData) throws AccessDeniedException {
+    public String executeCommand(String cmdRawData) throws AccessDeniedException {
         String[] cmdParams;
         if (cmdRawData == null) {
             System.exit(0);
@@ -120,30 +115,39 @@ public class CommandEngine {
             Arrays.fill(cmdParams, "");
         }
 
+        String commandResult;
+
         if (cmdName == null || commandsMap.get(cmdName) == null) {
             System.out.println("Unknown command! Type \"help\"!");
-            commandStatus = "Unknown command! Type \"help\"!";
+            return CommandFormat.build("ERROR", "----", "Unknown command! Type \"help\"!");
+
+
+
         } else {
             AbstractCommand command = commandsMap.get(cmdName);
-            //log.info(CurrentSessionState.getUserGroupTypeLocal());
-            if (command.checkAccess(CurrentSessionState.getUserGroupTypeLocal())) {
+            //log.info(CurrentSessionState.getCurrentSession().getUserGroupTypeLocal());
+            if (command.checkAccess(CurrentSessionState.getCurrentSession().getUserGroupTypeLocal())) {
                 try {
-                    command.execute(cmdParams);
+                    commandResult = command.execute(cmdParams);
                     //commandStatus = command.getStatusMessage();
-                    commandStatus = command.getCmdJsonCommandData().toString();
+                    return commandResult;
+
                     //log.info(commandStatus);
                 } catch (IllegalArgumentException IAE) {
                     log.info(IAE.toString());
-                    commandStatus = IAE.toString();
+                    commandResult = IAE.toString();
                 }
 
             } else {
                 //log.info(cmdRawData + "\nAccess denied!" + " Use command \"which_group\" to see yout current level of access.");
-                throw new AccessDeniedException(cmdRawData + "\nAccess denied! Using this command requires GROUP:" + command.getRequiredLevelAccess() + " \nUse command " +
-                        "\"which_group\" to see your current level of access.");
+
+                String msg = "\nAccess denied! Using this command requires GROUP:" + command.getRequiredLevelAccess() + " \nUse command " +
+                        "\"which_group\" to see your current level of access.";
+
+                return CommandFormat.build("ERROR", "----", msg);
             }
         }
-
+        return  CommandFormat.build("ERROR", "----", "Received: " +cmdRawData);
     }
 
 

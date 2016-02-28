@@ -1,9 +1,9 @@
 package netcracker.edu.ishop.api.commands.itemcommands;
 
 import netcracker.edu.ishop.api.commands.AbstractCommand;
-import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.objects.Item;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -30,7 +30,7 @@ public class ShowItemsCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         //daoInstance.findUserByName("u1");
 
@@ -45,8 +45,8 @@ public class ShowItemsCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = itemMap.values().toString();
-            setAllCmdData("OK", "IS01", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "----", msg);
+
 
         }
         else {
@@ -54,9 +54,7 @@ public class ShowItemsCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = "No items were found for showing. \n Try to add at least one folder by 'add_item' command";
-            setAllCmdData("ERROR", "IF03", msg);
-            log.info(getCmdContent());
-
+            return CommandFormat.build("ERROR", "----", msg);
         }
 
     }

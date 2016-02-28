@@ -1,4 +1,4 @@
-package netcracker.edu.ishop.server;
+package netcracker.edu.ishop.socketserver;
 
 import netcracker.edu.ishop.utils.PortSettingsNew;
 import org.apache.log4j.Logger;
@@ -8,7 +8,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class PlayServer {
-    public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.server");
+    public static final Logger log = Logger.getLogger("com.netcracker.edu.ishop.socketserver");
     public static void execute() throws IOException {
 
         ServerSocket ssock = new ServerSocket(PortSettingsNew.PORT_NUMBER);

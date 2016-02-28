@@ -30,6 +30,13 @@ public class DAOFactory {
                 DAO_INSTANCE = DAOInMemoryJSON.getInstance();
                 log.info("Loaded DAO instance: " + DAO_INSTANCE.getClass());
                 break;
+            case "DAOJsonInMemoryConcurrent":
+                //log.info("We are here");
+                DAO_INSTANCE = DAOInMemoryJSONConcurrent.getInstance();
+                log.info("Loaded DAO instance: " + DAO_INSTANCE.getClass());
+                break;
+
+
             default:
                 DAO_INSTANCE = null;
                 log.error("Error: Invalid value of DAO.");

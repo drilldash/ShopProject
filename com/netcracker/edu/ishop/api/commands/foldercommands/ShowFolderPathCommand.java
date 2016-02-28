@@ -4,6 +4,7 @@ import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -32,14 +33,14 @@ public class ShowFolderPathCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
-        Folder folder = CurrentSessionState.getCurrentFolder();
+        Folder folder = CurrentSessionState.getCurrentSession().getCurrentFolder();
 
         BigInteger parentRefId = BigInteger.ZERO;
 
         List<String> filePathList = new ArrayList<String>();
-        filePathList.add(CurrentSessionState.getCurrentFolder().getName());
+        filePathList.add(CurrentSessionState.getCurrentSession().getCurrentFolder().getName());
 
         while (parentRefId != null) {
 
@@ -66,8 +67,9 @@ public class ShowFolderPathCommand extends AbstractCommand {
         //String msg = "Result:\n" + new StringBuilder(filePathTreeStructure).reverse().toString();
         String msg = "Result:\n" +  printFilePath(filePathList);
 
-        setAllCmdData("OK", "F010", msg);
-        log.info(getCmdContent());
+
+        return CommandFormat.build("OK", "F010", msg);
+
 
     }
 

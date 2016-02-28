@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.usercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -29,7 +30,7 @@ public class ShowUsersCommand extends AbstractCommand {
 
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         //daoInstance.findUserByName("u1");
 
@@ -44,8 +45,8 @@ public class ShowUsersCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = userMap.values().toString();
-            setAllCmdData("OK", "U010", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("OK", "U010", msg);
+            
 
         }
         else {
@@ -53,8 +54,8 @@ public class ShowUsersCommand extends AbstractCommand {
             //log.info(getStatusMessage());
 
             String msg = "No users were found for showing. Try to add at least one user by 'register_user' command";
-            setAllCmdData("ERROR", "U011", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "U011", msg);
+            
 
         }
 

@@ -3,6 +3,7 @@ package netcracker.edu.ishop.api.commands.foldercommands;
 import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -26,17 +27,16 @@ public class ShowCurrentFolderCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
-
+    public String execute(String[] cmdArgs) {
         try {
-            String msg = CurrentSessionState.getCurrentFolder().toString();
-            setAllCmdData("OK", "F009", msg);
-            log.info(getCmdContent());
+            String msg = CurrentSessionState.getCurrentSession().getCurrentFolder().toString();
+            return CommandFormat.build("OK", "----", msg);
 
 
         } catch (NullPointerException npe) {
             log.info(npe);
-            CurrentSessionState.setInitialCurrentFolder();
+            CurrentSessionState.getCurrentSession().setInitialCurrentFolder();
+            return CommandFormat.build("ERROR", "----", npe.toString());
         }
     }
 

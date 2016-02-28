@@ -4,6 +4,7 @@ import netcracker.edu.ishop.api.commands.AbstractCommand;
 import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
@@ -27,7 +28,7 @@ public class SignOutCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) throws IllegalArgumentException {
+    public String execute(String[] cmdArgs) throws IllegalArgumentException {
 
         if (cmdArgs.length > 1 || cmdArgs.length < 1) {
             throw new IllegalArgumentException("Wrong number of arguments in " + "\"" + getName() + "\"");
@@ -36,26 +37,26 @@ public class SignOutCommand extends AbstractCommand {
         else {
             String username = cmdArgs[0];
             User user = daoInstance.findUserByName(username);
-            if (user != CurrentSessionState.getSignedInUser()) {
+            if (user != CurrentSessionState.getCurrentSession().getSignedInUser()) {
 
                 //setStatusMessage("No such username found in data-structure, you should register first");
                 //log.info(getStatusMessage());
 
                 String msg ="Entered username doesn't match the actual signed in username";
-                setAllCmdData("ERROR", "U016", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "U016", msg);
+                
 
 
             } else {
-                CurrentSessionState.removeUserFromSignedInUsers();
-                CurrentSessionState.setNoUser();
+                CurrentSessionState.getCurrentSession().removeUserFromSignedInUsers();
+                CurrentSessionState.getCurrentSession().setNoUser();
 
                 //setStatusMessage("User " + username + " has been successfully signed out");
                 //log.info(getStatusMessage());
 
                 String msg = "User " + username + " has been successfully signed out";
-                setAllCmdData("OK", "U017", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "U017", msg);
+                
 
             }
         }

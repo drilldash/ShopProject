@@ -1,0 +1,1762 @@
+2016.02.24 22:46:51 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:47:06 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:47:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:47:06 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:47:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:47:06 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: show_users
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:47:06 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:47:06 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:50:08 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:50:08 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:50:08 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:50:08 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:50:08 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:50:08 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:50:08 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:50:37 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:50:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:50:37 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:50:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:50:37 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:50:37 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:50:37 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:51:18 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:51:18 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:51:18 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:51:18 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:51:18 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:51:18 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:51:18 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:51:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:51:48 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:51:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:51:48 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:51:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:51:48 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: show_users
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:51:48 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:51:48 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:55:40 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:55:40 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:55:40 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:55:40 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:55:40 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:55:40 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:55:40 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:10 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:10 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:10 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:10 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:10 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:57:10 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:10 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:20 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:20 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:20 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:57:21 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:21 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:52 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:52 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:52 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:57:52 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:57:52 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:57:53 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:57:53 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:58:15 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:58:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:58:15 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:58:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:58:15 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:58:16 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:58:16 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:58:34 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:58:34 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:58:34 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:58:34 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:58:34 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:58:34 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:58:34 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:59:15 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:59:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:59:15 INFO  PlayServer L 19: 
+Connected
+2016.02.24 22:59:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 22:59:15 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 22:59:16 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 22:59:16 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 23:00:37 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:00:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:00:37 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:00:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:00:37 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:00:38 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 23:00:38 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 23:01:43 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:01:43 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:01:43 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:01:43 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 23:01:53 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:01:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:01:53 INFO  MultiThreadServer L 54: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:01:54 INFO  MultiThreadServer L 64: 
+java.net.SocketException: Connection reset
+2016.02.24 23:05:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:05:24 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:05:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:05:24 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:05:24 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:05:24 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: show_users
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:05:24 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:06:14 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:06:14 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:06:14 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:06:14 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: help
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:06:14 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:06:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:06:29 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:06:29 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:06:29 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:06:29 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:06:29 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: show_users
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:06:30 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:07:11 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:07:14 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:07:14 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:07:14 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:07:14 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:07:14 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: show_users
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:07:15 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:15:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:15:28 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:15:28 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+show_item_properties asusnexus7
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+add_item_property asusnexus7
+2016.02.24 23:15:28 INFO  MultiThreadServer L 44: 
+close
+2016.02.24 23:19:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:19:22 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:19:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+show_item_properties asusnexus7
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+add_item_property asusnexus7
+2016.02.24 23:19:22 INFO  MultiThreadServer L 44: 
+close
+2016.02.24 23:19:46 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:19:50 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:19:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+show_item_properties asusnexus7
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+add_item_property asusnexus7
+2016.02.24 23:19:50 INFO  MultiThreadServer L 44: 
+close
+2016.02.24 23:21:27 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:21:30 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:21:30 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:21:30 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:24:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:24:17 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:24:17 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:24:17 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:26:00 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:26:02 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:26:02 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+show_item_properties asusnexus7
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+add_item_property asusnexus7
+2016.02.24 23:26:02 INFO  MultiThreadServer L 44: 
+close
+2016.02.24 23:26:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:26:50 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:26:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+show_users
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+show_item_properties asusnexus7
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+add_item_property asusnexus7
+2016.02.24 23:26:50 INFO  MultiThreadServer L 44: 
+close
+2016.02.24 23:35:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:35:12 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:35:12 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:35:15 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:35:20 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:35:20 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: ls
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:35:20 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:35:59 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:35:59 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:36:01 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:36:01 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: pwd
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:36:01 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:36:09 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:36:13 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:36:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:36:15 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:36:18 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:36:18 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: ls
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:36:18 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:37:05 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:37:06 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:37:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:37:11 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.24 23:37:17 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:37:29 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.24 23:37:36 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:37:46 INFO  MultiThreadServer L 44: 
+cd ssd
+2016.02.24 23:38:14 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:38:18 INFO  MultiThreadServer L 44: 
+ls_folders
+2016.02.24 23:38:29 INFO  MultiThreadServer L 44: 
+cd ssd
+2016.02.24 23:39:21 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.24 23:39:30 INFO  MultiThreadServer L 44: 
+history
+2016.02.24 23:39:40 INFO  MultiThreadServer L 44: 
+help
+2016.02.24 23:39:48 INFO  MultiThreadServer L 44: 
+help whoami
+2016.02.24 23:39:55 INFO  MultiThreadServer L 44: 
+help ls
+2016.02.24 23:40:02 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:40:11 INFO  MultiThreadServer L 44: 
+cd ssd
+2016.02.24 23:40:18 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:40:32 INFO  MultiThreadServer L 44: 
+which_group
+2016.02.24 23:41:14 INFO  MultiThreadServer L 44: 
+current_folder
+2016.02.24 23:41:22 INFO  MultiThreadServer L 44: 
+cd ../
+2016.02.24 23:41:31 INFO  MultiThreadServer L 44: 
+cd tablets
+2016.02.24 23:42:43 INFO  MultiThreadServer L 44: 
+exit
+2016.02.24 23:43:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:43:57 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:43:57 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:44:06 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.24 23:44:12 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:44:21 INFO  MultiThreadServer L 44: 
+show_folders
+2016.02.24 23:44:29 INFO  MultiThreadServer L 44: 
+current_folder
+2016.02.24 23:44:56 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:45:19 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:45:28 INFO  MultiThreadServer L 44: 
+cd ssd
+2016.02.24 23:46:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:46:23 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:46:23 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:46:26 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:46:33 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:46:33 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: ls
+Access denied! Using this command requires GROUP:[USER, ADMIN] 
+Use command "which_group" to see your current level of access.
+2016.02.24 23:46:33 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:46:43 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:46:45 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:46:45 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:46:49 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:46:52 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:46:57 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:47:02 INFO  MultiThreadServer L 44: 
+cd ssd
+2016.02.24 23:47:34 INFO  MultiThreadServer L 44: 
+create_folder test
+2016.02.24 23:47:37 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:47:40 INFO  MultiThreadServer L 44: 
+cd test
+2016.02.24 23:47:49 INFO  MultiThreadServer L 44: 
+exit
+2016.02.24 23:47:54 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:47:56 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:47:56 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:48:00 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:48:04 INFO  MultiThreadServer L 44: 
+cd test
+2016.02.24 23:49:43 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.24 23:49:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:49:52 INFO  PlayServer L 19: 
+Connected
+2016.02.24 23:49:52 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.24 23:49:57 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.24 23:50:00 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.24 23:50:02 INFO  MultiThreadServer L 44: 
+ls
+2016.02.24 23:50:05 INFO  MultiThreadServer L 44: 
+cd SSD
+2016.02.25 00:11:28 INFO  MultiThreadServer L 44: 
+exit
+2016.02.25 00:11:31 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:11:33 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:11:33 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:11:48 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:11:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:11:51 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.25 00:11:54 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:11:58 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.25 00:12:03 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:12:06 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:12:06 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:12:07 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:12:18 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:12:19 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:12:19 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:12:21 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:12:21 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:12:23 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:12:27 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:12:27 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:12:27 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:14:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:25 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:14:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:49 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:51 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:14:51 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:14:54 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:14:58 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:14:58 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:15:00 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:15:00 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:15:01 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:15:55 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:15:56 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:15:56 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:15:58 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:16:25 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:16:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:16:28 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:16:31 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.25 00:16:34 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:16:34 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:16:37 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:16:37 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:16:37 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:19:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:27 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:19:27 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:28 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:19:28 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:33 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:19:52 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:54 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:19:54 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:19:58 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:19:58 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:20:03 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:20:08 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:20:08 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:20:08 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.25 00:26:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:26:24 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:26:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:26:26 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:26:29 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:26:29 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:26:33 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.25 00:26:33 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: sign_in u1 p1
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.25 00:28:17 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:28:18 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:28:18 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:28:31 INFO  PlayServer L 19: 
+Connected
+2016.02.25 00:28:31 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.25 00:28:36 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:28:46 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.25 00:28:46 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: whoami
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.26 00:27:00 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:27:09 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:27:09 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:27:16 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:28:01 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:28:01 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:28:03 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:28:03 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: pwd
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.26 00:28:14 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:28:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:28:26 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:28:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:28:28 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:29:01 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:29:03 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:29:03 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:29:06 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:29:10 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 00:29:26 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 00:29:30 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:29:33 INFO  MultiThreadServer L 44: 
+ls
+2016.02.26 00:29:45 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 00:29:56 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:29:56 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:29:58 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:29:58 INFO  MultiThreadServer L 55: 
+java.nio.file.AccessDeniedException: pwd
+Access denied! Using this command requires GROUP:[USER, ADMIN, GUEST] 
+Use command "which_group" to see your current level of access.
+2016.02.26 00:30:06 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:30:28 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.26 00:30:29 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.26 00:30:29 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:30:29 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:30:29 INFO  MultiThreadServer L 65: 
+java.net.SocketException: Connection reset
+2016.02.26 00:31:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:31:27 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:31:27 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:31:29 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:31:33 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 00:31:41 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:31:41 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:31:43 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:37:36 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:37:38 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:37:38 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:37:43 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 00:37:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:37:56 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:37:56 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:38:00 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:38:03 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:38:03 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:38:06 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:38:18 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 00:38:33 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 00:38:47 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 00:38:51 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 00:39:31 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 00:39:32 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 00:39:35 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:39:39 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:39:39 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:39:41 INFO  MultiThreadServer L 44: 
+ls
+2016.02.26 00:39:42 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 00:42:19 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:42:20 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:42:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:42:24 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:42:26 INFO  MultiThreadServer L 44: 
+ls
+2016.02.26 00:42:37 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 00:43:04 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:43:04 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:43:06 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:43:14 INFO  MultiThreadServer L 44: 
+ls
+2016.02.26 00:43:21 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 00:44:09 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:44:11 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:44:11 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:44:13 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:44:15 INFO  PlayServer L 19: 
+Connected
+2016.02.26 00:44:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 00:44:17 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 00:44:52 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 00:44:54 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 17:33:18 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:33:25 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:33:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:33:29 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 17:33:38 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:33:38 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:33:42 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 17:33:54 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:34:09 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:38:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:38:31 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:38:32 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:39:33 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:39:33 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:39:33 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:42:51 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:43:36 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:46:22 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:57:45 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Unrecognized Windows Sockets error: 0: recv failed
+2016.02.26 17:57:45 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 17:57:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:57:57 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:57:57 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:58:03 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 17:58:06 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 17:58:11 INFO  PlayServer L 19: 
+Connected
+2016.02.26 17:58:11 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 17:58:21 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:18:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:18:30 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:18:30 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:19:14 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:19:16 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:19:16 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:19:18 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:19:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:19:25 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:19:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:09 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:11 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:20:11 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:17 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:33 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:35 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:20:35 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:20:38 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:20:48 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 23:21:22 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:21:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:21:22 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:21:22 INFO  MultiThreadServer L 44: 
+
+2016.02.26 23:21:50 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:22:19 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:22:28 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:22:28 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:22:31 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:22:36 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 23:23:01 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:23:01 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:23:09 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:23:19 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:23:21 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:23:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:23:30 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:23:30 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:23:35 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 23:23:44 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:23:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:23:51 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:24:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:24:28 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:24:28 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:24:33 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.26 23:25:05 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:25:07 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:25:07 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:25:40 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:25:53 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.26 23:27:24 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:27:39 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:28:02 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:28:03 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:28:07 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 23:29:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:29:15 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:29:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:29:18 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 23:30:19 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:30:22 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:30:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:30:25 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 23:31:38 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:31:41 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:31:41 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:31:46 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:32:05 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:32:05 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:32:08 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:33:00 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:42:04 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:42:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:42:17 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:42:17 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:42:19 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:42:22 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.26 23:42:25 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:42:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:42:27 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:43:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:43:23 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:43:23 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:43:25 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:44:28 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:44:31 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:44:31 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:44:33 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:45:54 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:45:59 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:45:59 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:46:04 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:47:39 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.26 23:47:42 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:47:42 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:47:42 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:47:45 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:48:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:48:06 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:48:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:48:07 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:56:27 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:56:29 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:56:29 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:56:31 INFO  MultiThreadServer L 44: 
+PWD
+2016.02.26 23:56:54 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:56:55 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:56:55 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:59:39 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:59:44 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:59:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:59:45 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.26 23:59:49 INFO  PlayServer L 19: 
+Connected
+2016.02.26 23:59:49 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.26 23:59:50 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:00:18 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 00:00:19 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 00:04:13 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:04:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:04:23 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:04:27 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 00:04:32 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:08:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:08:50 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:08:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:08:51 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:09:05 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 00:09:05 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:09:05 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:09:07 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:09:08 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:09:08 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:09:10 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:17:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:18:50 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:18:50 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:18:52 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:24:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:24:55 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:24:55 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:24:57 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:26:06 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:26:07 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:26:07 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:26:10 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:32:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:32:15 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:32:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:32:18 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:34:14 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:34:21 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:34:23 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:34:23 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:34:28 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:36:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:36:57 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:36:57 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:27 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:37:27 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:31 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:37:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:45 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:37:45 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:47 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:37:56 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:37:56 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:37:58 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:47:39 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:47:48 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:47:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:47:57 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:48:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:48:16 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:48:16 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:48:19 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:48:41 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:48:44 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:48:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:48:46 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:49:21 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:49:21 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:49:33 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:51:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:51:48 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:51:48 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:51:52 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:51:57 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:51:57 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:51:59 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:52:26 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:52:30 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:52:30 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:52:32 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:52:40 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:52:40 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:52:43 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:52:51 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.27 00:52:57 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.27 00:53:07 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.27 00:53:11 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.27 00:53:27 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.27 00:53:37 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:53:39 INFO  MultiThreadServer L 44: 
+ls
+2016.02.27 00:53:42 INFO  MultiThreadServer L 44: 
+cd SSD
+2016.02.27 00:53:43 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:53:48 INFO  MultiThreadServer L 44: 
+cd Tablets
+2016.02.27 00:53:50 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:53:54 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:53:57 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:57:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:57:43 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:57:43 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:57:54 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 00:57:57 INFO  PlayServer L 19: 
+Connected
+2016.02.27 00:57:57 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 00:57:58 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 01:58:28 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 01:58:30 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 02:00:22 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 02:00:24 INFO  PlayServer L 19: 
+Connected
+2016.02.27 02:00:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 02:00:26 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 02:00:30 INFO  PlayServer L 19: 
+Connected
+2016.02.27 02:00:30 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 02:00:32 INFO  MultiThreadServer L 44: 
+pwd
+2016.02.27 02:00:41 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.27 02:00:55 INFO  MultiThreadServer L 44: 
+sign_in admin admin
+2016.02.27 02:01:01 INFO  MultiThreadServer L 44: 
+whoami
+2016.02.27 02:01:24 INFO  MultiThreadServer L 44: 
+ls
+2016.02.27 02:01:35 INFO  MultiThreadServer L 44: 
+create_folder NEWTEST
+2016.02.27 02:01:46 INFO  MultiThreadServer L 44: 
+LS
+2016.02.27 12:21:15 INFO  MultiThreadServer L 44: 
+close
+2016.02.27 12:21:50 INFO  MultiThreadServer L 58: 
+java.net.SocketException: Connection reset
+2016.02.27 12:21:58 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 12:22:02 INFO  PlayServer L 19: 
+Connected
+2016.02.27 12:22:02 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 12:22:04 INFO  MultiThreadServer L 44: 
+ls
+2016.02.27 12:22:16 INFO  MultiThreadServer L 44: 
+which_group
+2016.02.27 12:22:20 INFO  MultiThreadServer L 44: 
+sign_in u1 p1
+2016.02.27 12:22:22 INFO  MultiThreadServer L 44: 
+ls
+2016.02.27 12:22:26 INFO  MultiThreadServer L 44: 
+close
+2016.02.27 16:18:02 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:18:05 INFO  PlayServer L 19: 
+Connected
+2016.02.27 16:18:05 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:18:08 INFO  MultiThreadServer L 42: 
+pwd
+2016.02.27 16:18:20 INFO  PlayServer L 19: 
+Connected
+2016.02.27 16:18:20 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:18:22 INFO  MultiThreadServer L 42: 
+pwd
+2016.02.27 16:18:28 INFO  MultiThreadServer L 42: 
+sign_in u1 p1
+2016.02.27 16:18:34 INFO  MultiThreadServer L 42: 
+sign_in admin admin
+2016.02.27 16:18:59 INFO  MultiThreadServer L 42: 
+which_group
+2016.02.27 16:19:10 INFO  MultiThreadServer L 42: 
+which_group 
+2016.02.27 16:20:15 INFO  PlayServer L 19: 
+Connected
+2016.02.27 16:20:15 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:20:17 INFO  MultiThreadServer L 42: 
+pwd
+2016.02.27 16:20:28 INFO  MultiThreadServer L 42: 
+sign_in admin admin
+2016.02.27 16:20:43 INFO  MultiThreadServer L 42: 
+whoami
+2016.02.27 16:26:44 INFO  MultiThreadServer L 56: 
+java.net.SocketException: Connection reset
+2016.02.27 16:26:46 INFO  MultiThreadServer L 56: 
+java.net.SocketException: Connection reset
+2016.02.27 16:26:47 INFO  MultiThreadServer L 56: 
+java.net.SocketException: Connection reset
+2016.02.27 16:26:51 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:26:53 INFO  PlayServer L 19: 
+Connected
+2016.02.27 16:26:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:26:58 INFO  MultiThreadServer L 42: 
+ышпт_шт г1 з1
+2016.02.27 16:27:04 INFO  MultiThreadServer L 42: 
+sign_in u1 p1
+2016.02.27 16:27:09 INFO  PlayServer L 19: 
+Connected
+2016.02.27 16:27:09 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 16:27:13 INFO  MultiThreadServer L 42: 
+sign_in u1 p1
+2016.02.27 16:27:18 INFO  MultiThreadServer L 42: 
+whoami
+2016.02.27 17:04:44 INFO  MultiThreadServer L 56: 
+java.net.SocketException: Connection reset
+2016.02.27 17:04:46 INFO  MultiThreadServer L 56: 
+java.net.SocketException: Connection reset
+2016.02.27 18:21:34 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:22:49 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:22:53 INFO  PlayServer L 19: 
+Connected
+2016.02.27 18:22:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:22:57 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:23:16 INFO  MultiThreadServer L 30: 
+whoami
+2016.02.27 18:24:42 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:24:44 INFO  PlayServer L 19: 
+Connected
+2016.02.27 18:24:44 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:24:46 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:28:07 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:28:10 INFO  PlayServer L 19: 
+Connected
+2016.02.27 18:28:10 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:28:12 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:28:25 INFO  PlayServer L 19: 
+Connected
+2016.02.27 18:28:25 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 18:28:27 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:31:06 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:31:10 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 18:31:14 INFO  MultiThreadServer L 30: 
+whoami
+2016.02.27 18:32:25 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 18:32:30 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 18:32:40 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 18:33:33 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 20:52:24 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 20:52:37 INFO  PlayServer L 19: 
+Connected
+2016.02.27 20:52:37 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 20:52:40 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 21:04:31 INFO  MultiThreadServer L 30: 
+whoami
+2016.02.27 21:04:41 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 21:04:43 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 21:06:19 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:07:36 INFO  PlayServer L 19: 
+Connected
+2016.02.27 21:07:36 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:07:42 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 21:07:44 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 21:07:59 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:08:03 INFO  PlayServer L 19: 
+Connected
+2016.02.27 21:08:03 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:08:07 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 21:08:13 INFO  PlayServer L 19: 
+Connected
+2016.02.27 21:08:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:08:19 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 21:16:07 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:16:12 INFO  PlayServer L 19: 
+Connected
+2016.02.27 21:16:12 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 21:16:15 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 21:16:30 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 21:16:32 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 22:02:11 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:02:23 INFO  PlayServer L 19: 
+Connected
+2016.02.27 22:02:23 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:02:25 INFO  MultiThreadServer L 30: 
+help
+2016.02.27 22:02:35 INFO  MultiThreadServer L 30: 
+sign_in u1 p1
+2016.02.27 22:02:37 INFO  MultiThreadServer L 30: 
+show_users
+2016.02.27 22:02:41 INFO  MultiThreadServer L 30: 
+cd Tablets
+2016.02.27 22:02:43 INFO  MultiThreadServer L 30: 
+show_item_properties AsusNexus7
+2016.02.27 22:02:45 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:02:47 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:02:49 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:02:51 INFO  MultiThreadServer L 30: 
+ls
+2016.02.27 22:02:53 INFO  MultiThreadServer L 30: 
+cd ../
+2016.02.27 22:02:55 INFO  MultiThreadServer L 30: 
+which_group
+2016.02.27 22:02:57 INFO  MultiThreadServer L 30: 
+sign_out u1
+2016.02.27 22:02:59 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 22:03:01 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 22:07:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:07:41 INFO  PlayServer L 19: 
+Connected
+2016.02.27 22:07:41 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:07:41 INFO  MultiThreadServer L 30: 
+help
+2016.02.27 22:07:42 INFO  MultiThreadServer L 30: 
+sign_in u1 p1
+2016.02.27 22:07:43 INFO  MultiThreadServer L 30: 
+show_users
+2016.02.27 22:07:43 INFO  MultiThreadServer L 30: 
+cd Tablets
+2016.02.27 22:07:43 INFO  MultiThreadServer L 30: 
+show_item_properties AsusNexus7
+2016.02.27 22:07:43 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:07:44 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:07:44 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:07:44 INFO  MultiThreadServer L 30: 
+ls
+2016.02.27 22:07:44 INFO  MultiThreadServer L 30: 
+cd ../
+2016.02.27 22:07:44 INFO  MultiThreadServer L 30: 
+which_group
+2016.02.27 22:07:45 INFO  MultiThreadServer L 30: 
+sign_out u1
+2016.02.27 22:07:45 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 22:07:45 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 22:20:35 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:21:13 INFO  PlayServer L 19: 
+Connected
+2016.02.27 22:21:13 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+help
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+sign_in u1 p1
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+show_users
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+cd Tablets
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+show_item_properties AsusNexus7
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+ls
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+cd ../
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+which_group
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+sign_out u1
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 22:21:13 INFO  MultiThreadServer L 30: 
+exit
+2016.02.27 22:22:53 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:22:59 INFO  PlayServer L 19: 
+Connected
+2016.02.27 22:22:59 INFO  PlayServer L 17: 
+Waiting for client
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+help
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+sign_in u1 p1
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+show_users
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+cd Tablets
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+show_item_properties AsusNexus7
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+pwd
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+ls
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+cd ../
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+which_group
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+sign_out u1
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+sign_in admin admin
+2016.02.27 22:22:59 INFO  MultiThreadServer L 30: 
+exit

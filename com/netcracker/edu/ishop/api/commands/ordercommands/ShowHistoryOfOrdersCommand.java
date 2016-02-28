@@ -1,17 +1,14 @@
 package netcracker.edu.ishop.api.commands.ordercommands;
 
 import netcracker.edu.ishop.api.commands.AbstractCommand;
-import netcracker.edu.ishop.api.currentsession.CurrentSessionState;
 import netcracker.edu.ishop.api.objects.Order;
-import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAO;
+import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
 import java.math.BigInteger;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -35,7 +32,7 @@ public class ShowHistoryOfOrdersCommand extends AbstractCommand {
     }
 
     @Override
-    public void execute(String[] cmdArgs) {
+    public String execute(String[] cmdArgs) {
 
         if (cmdArgs.length == 0) {
 
@@ -55,19 +52,19 @@ public class ShowHistoryOfOrdersCommand extends AbstractCommand {
                 for (Order order : listSoldOutOrders) {
                     msg += order.toString();
                 }
-                setAllCmdData("OK", "OS16", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("OK", "OS16", msg);
+                
             } else {
                 String msg = "There are no orders which were made by customers.";
-                setAllCmdData("ERROR", "OS12", msg);
-                log.info(getCmdContent());
+                return CommandFormat.build("ERROR", "OS12", msg);
+               
             }
 
 
         } else {
             String msg = "Too many arguments. " + getDescription();
-            setAllCmdData("ERROR", "OS04", msg);
-            log.info(getCmdContent());
+            return CommandFormat.build("ERROR", "OS04", msg);
+            
         }
 
 
