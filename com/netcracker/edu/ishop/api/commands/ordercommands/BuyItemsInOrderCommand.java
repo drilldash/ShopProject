@@ -41,7 +41,7 @@ public class BuyItemsInOrderCommand extends AbstractCommand {
             if (currUser.getOrderId() != null) {
                 Order currOrder = daoInstance.findABOInstanceById(Order.class, currUser.getOrderId());
 
-                currOrder.setUserId(null);
+                //currOrder.setUserId(null);
                 currOrder.setOrderDate( new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
                 currOrder.setText("SOLD OUT!");
                 daoInstance.save(currOrder);

@@ -1,0 +1,70 @@
+{
+  "1": {
+    "password": [
+      "a",
+      "d",
+      "m",
+      "i",
+      "n"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 1,
+    "name": "admin"
+  },
+  "2": {
+    "password": [
+      "p",
+      "a",
+      "1"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 2,
+    "name": "a1"
+  },
+  "3": {
+    "password": [
+      "p",
+      "a",
+      "2"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 3,
+    "name": "a2"
+  },
+  "4": {
+    "password": [
+      "p",
+      "a",
+      "3"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 4,
+    "name": "a3"
+  },
+  "5": {
+    "password": [
+      "p",
+      "a",
+      "4"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 5,
+    "name": "a4"
+  },
+  "6": {
+    "password": [
+      "p",
+      "a",
+      "5"
+    ],
+    "isAdmin": true,
+    "groupType": "ADMIN",
+    "id": 6,
+    "name": "a5"
+  }
+}

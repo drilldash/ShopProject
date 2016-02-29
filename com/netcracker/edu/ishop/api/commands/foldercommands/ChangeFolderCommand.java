@@ -86,7 +86,7 @@ public class ChangeFolderCommand extends AbstractCommand {
             } else {
                 Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
                 Folder targetFolder = daoInstance.findParentFoldersWithGivenParentId(currFolder.getParentFolderId());
-                if (targetFolder != null) {
+                if (targetFolder != null && targetFolder.getId() != null) {
                     CurrentSessionState.getCurrentSession().setCurrentFolder(targetFolder);
 
 

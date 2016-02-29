@@ -20,6 +20,7 @@ import java.lang.reflect.Type;
 import java.math.BigInteger;
 import java.nio.file.AccessDeniedException;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class DAOInMemoryJSONConcurrent extends DAO {
 
@@ -64,6 +65,8 @@ public class DAOInMemoryJSONConcurrent extends DAO {
         try {
             //log.info("Save is disabled");
             //HashMap mapShard = dataMemoryStorage.getHashMapByType(abObj.getClass());
+
+            log.info(abObj);
 
             Map<BigInteger, Object> mapShard = dataMemoryStorage.getHashMapByType(abObj.getClass());
 
@@ -184,6 +187,10 @@ public class DAOInMemoryJSONConcurrent extends DAO {
 
         BigInteger searchedId = BigInteger.ZERO;
 
+        //log.info(id);
+
+        //log.info(shardMap.values());
+
         if (shardMap.containsKey(id)) {
             return (T) shardMap.get(id);
 
@@ -239,8 +246,13 @@ public class DAOInMemoryJSONConcurrent extends DAO {
     @Override
     public Folder findParentFoldersWithGivenParentId(BigInteger givenParentId) {
         Map shardMap = dataMemoryStorage.getHashMapByType(Folder.class);
-        Folder parentFolder = (Folder) shardMap.get(givenParentId);
-        return parentFolder;
+        if (givenParentId != null) {
+            Folder parentFolder = (Folder) shardMap.get(givenParentId);
+            return parentFolder;
+        }
+        else {
+            return null;
+        }
     }
 
     @Override
@@ -357,7 +369,7 @@ public class DAOInMemoryJSONConcurrent extends DAO {
         String serializedFileName = DAOUtils.getSerializeFilePathByAbsBObjType(abObjType);
         Map mapShard = dataMemoryStorage.getHashMapByType(abObjType);
 
-        Type mapType = new TypeToken<Map<BigInteger, T>>() {
+        Type mapType = new TypeToken<ConcurrentHashMap<BigInteger, T>>() {
         }.getType();
 
         Gson gson = prepareGson();
@@ -382,7 +394,7 @@ public class DAOInMemoryJSONConcurrent extends DAO {
                 BufferedReader br = new BufferedReader(new FileReader(serializedFileName));
 
                 return gson.fromJson(br,
-                        $Gson$Types.newParameterizedTypeWithOwner(null, Map.class, BigInteger.class, abObjType));
+                        $Gson$Types.newParameterizedTypeWithOwner(null, ConcurrentHashMap.class, BigInteger.class, abObjType));
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -496,7 +508,7 @@ public class DAOInMemoryJSONConcurrent extends DAO {
                 //log.info(shardMap);
                 dataMemoryStorage.putFavorite(abObjType, shardMap);
             } else {
-                dataMemoryStorage.putFavorite(abObjType, new HashMap<>());
+                dataMemoryStorage.putFavorite(abObjType, new ConcurrentHashMap<>());
             }
         }
     }

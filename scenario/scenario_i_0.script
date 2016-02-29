@@ -1,0 +1,8888 @@
+show_item_properties item4
+ls
+help show_items
+ls_folders
+show_folders
+current_folder
+help history
+current_folder
+ls
+sign_in a3 pa3
+sign_in a3 pa3
+add_item item5 key4=val3 key9=val5 key2=val2 key7=val7 
+cd folder4
+which_group
+buy
+buy
+show_item_properties item1
+sign_out
+sign_in user7 pass7
+add_item item3 key8=val7 key2=val3 key8=val8 key6=val5 
+add_item item3 key5=val9 key9=val5 key1=val1 key8=val10 
+show_items
+cd folder2
+sign_in a5 pa5
+buy
+sign_in user4 pass4
+show_folders
+add_item item5 key8=val5 key8=val3 key7=val8 key8=val7 
+pwd
+register_user user2 pass2
+sign_in admin admin
+register_user user7 pass7
+whoami
+cd folder5
+cd folder2
+ls_folders
+show_item_properties item2
+pwd
+show_items
+add_item item1 key4=val7 key3=val5 key3=val5 key5=val3 
+register_admin user9 pass9
+help current_folder
+cd folder2
+ls_folders
+cd folder2
+show_item_properties item4
+put item3
+sign_in a3 pa3
+create_folder folder5
+sign_in a5 pa5
+show_items
+add_item_property item3 key6=val1 key2=val3 key6=val9 key7=val9 
+rename_user user4 <function generate_user at 0x027087F0>
+rename_user user7 <function generate_user at 0x027087F0>
+register_admin user4 pass4
+buy
+add_item item1 key2=val1 key2=val2 key10=val3 key9=val6 
+sign_in a3 pa3
+pwd
+current_folder
+register_user user1 pass1
+whoami
+show_folders
+show_folders
+show_items
+show_users
+create_folder folder2
+show_folders
+show_folders
+which_group
+pwd
+pwd
+register_user user8 pass8
+pwd
+show_items
+add_item_property item4 key3=val4 key6=val10 key6=val3 key9=val3 
+register_user user4 pass4
+ls_folders
+sign_out
+buy
+pwd
+sign_in user3 pass3
+pwd
+which_group
+ls
+show_users
+add_item item3 key9=val9 key1=val9 key2=val2 key5=val8 
+pwd
+sign_in a5 pa5
+register_user user2 pass2
+show_items
+which_group
+help view_order
+show_folders
+whoami
+cd folder3
+pwd
+add_item_property item3 key5=val6 key7=val6 key10=val5 key7=val7 
+ls
+cd folder4
+whoami
+create_folder folder3
+put item5
+ls_folders
+whoami
+add_item item3 key5=val10 key9=val4 key9=val2 key3=val3 
+whoami
+sign_in admin admin
+ls_folders
+register_user admin admin
+show_item_properties item2
+pwd
+show_items
+help register_admin
+pwd
+ls_folders
+create_folder folder5
+sign_in a5 pa5
+put item1
+show_folders
+ls_folders
+show_users
+show_items
+which_group
+whoami
+show_users
+add_item_property item3 key2=val8 key8=val8 key5=val2 key8=val7 
+show_folders
+current_folder
+put item2
+sign_in a2 pa2
+show_item_properties item3
+register_user user4 pass4
+register_user user9 pass9
+cd folder3
+rename_user user9 <function generate_user at 0x027087F0>
+put item3
+which_group
+current_folder
+sign_out
+sign_in a4 pa4
+ls_folders
+show_users
+sign_out
+register_user admin admin
+add_item_property item2 key10=val10 key1=val4 key1=val6 key5=val10 
+sign_in a2 pa2
+show_folders
+register_admin user1 pass1
+ls_folders
+buy
+buy
+add_item item1 key7=val1 key2=val5 key3=val4 key6=val5 
+sign_in user2 pass2
+show_folders
+add_item item3 key3=val4 key4=val9 key10=val3 key5=val9 
+create_folder folder1
+add_item_property item3 key8=val4 key10=val10 key1=val1 key7=val10 
+help register_admin
+add_item item3 key6=val2 key4=val5 key7=val7 key7=val3 
+which_group
+register_user user8 pass8
+ls
+show_item_properties item4
+which_group
+pwd
+which_group
+ls_folders
+sign_out
+pwd
+sign_out
+buy
+register_admin user4 pass4
+which_group
+show_items
+register_user user3 pass3
+register_admin user3 pass3
+pwd
+help create_folder
+which_group
+sign_out
+register_admin user9 pass9
+pwd
+current_folder
+ls_folders
+show_users
+ls
+whoami
+sign_out
+which_group
+cd folder4
+which_group
+help cd
+show_items
+whoami
+show_item_properties item5
+register_admin user5 pass5
+help buy
+whoami
+pwd
+rename_user user4 <function generate_user at 0x027087F0>
+register_user user3 pass3
+register_admin user3 pass3
+show_items
+ls
+put item1
+create_folder folder4
+add_item_property item5 key1=val2 key6=val3 key7=val4 key3=val2 
+cd folder4
+rename_user user9 <function generate_user at 0x027087F0>
+register_user user8 pass8
+cd folder2
+whoami
+ls_folders
+ls_folders
+help add_item_property
+sign_out
+add_item_property item2 key4=val1 key2=val3 key3=val2 key4=val8 
+pwd
+which_group
+register_admin user9 pass9
+show_items
+which_group
+pwd
+show_folders
+help which_group
+put item3
+whoami
+which_group
+add_item_property item1 key6=val3 key5=val5 key1=val3 key10=val4 
+add_item_property item4 key6=val6 key7=val2 key5=val2 key8=val7 
+buy
+which_group
+ls
+ls
+create_folder folder3
+show_items
+show_items
+current_folder
+sign_in a5 pa5
+show_items
+rename_user user5 <function generate_user at 0x027087F0>
+which_group
+pwd
+whoami
+sign_in a5 pa5
+sign_in a2 pa2
+add_item_property item5 key9=val3 key3=val1 key8=val5 key2=val9 
+ls
+rename_user user9 <function generate_user at 0x027087F0>
+create_folder folder5
+show_items
+add_item item3 key3=val6 key6=val2 key3=val9 key3=val2 
+sign_in a1 pa1
+current_folder
+whoami
+sign_in admin admin
+ls_folders
+cd folder1
+sign_in user6 pass6
+show_item_properties item2
+ls_folders
+which_group
+register_user user9 pass9
+show_item_properties item4
+rename_user user5 <function generate_user at 0x027087F0>
+buy
+show_folders
+add_item_property item5 key2=val1 key1=val10 key1=val3 key9=val7 
+buy
+show_folders
+register_admin user6 pass6
+ls
+help add_item_property
+register_user user4 pass4
+ls_folders
+ls_folders
+current_folder
+add_item item1 key3=val5 key8=val7 key7=val9 key8=val5 
+ls_folders
+register_admin user5 pass5
+cd folder2
+whoami
+cd folder1
+show_users
+ls
+which_group
+help show_item_properties
+register_admin user3 pass3
+add_item item5 key5=val1 key2=val1 key4=val7 key8=val4 
+cd folder4
+register_admin user9 pass9
+show_folders
+cd folder1
+rename_user user5 <function generate_user at 0x027087F0>
+show_users
+pwd
+whoami
+help register_admin
+help buy
+sign_in user9 pass9
+sign_in a4 pa4
+add_item_property item1 key8=val5 key1=val2 key2=val1 key2=val10 
+show_items
+buy
+show_item_properties item5
+which_group
+show_items
+sign_in a4 pa4
+add_item_property item5 key9=val3 key9=val10 key5=val4 key2=val5 
+help delete_user
+register_admin user7 pass7
+ls_folders
+show_items
+ls_folders
+add_item item1 key9=val9 key7=val8 key2=val1 key2=val3 
+cd folder3
+sign_out
+ls_folders
+add_item_property item2 key1=val8 key8=val5 key3=val7 key5=val7 
+register_user admin admin
+current_folder
+buy
+add_item_property item5 key3=val10 key2=val1 key9=val10 key2=val6 
+show_folders
+ls
+sign_in user6 pass6
+create_folder folder4
+sign_in a2 pa2
+help delete_user
+sign_in user4 pass4
+whoami
+help cd
+help buy
+help register_user
+ls_folders
+add_item_property item3 key2=val9 key8=val3 key1=val6 key9=val9 
+current_folder
+add_item_property item1 key8=val7 key10=val4 key5=val5 key3=val3 
+register_admin user8 pass8
+add_item_property item4 key2=val8 key8=val9 key1=val8 key7=val1 
+register_user user8 pass8
+show_users
+current_folder
+register_user user9 pass9
+rename_user user6 <function generate_user at 0x027087F0>
+buy
+show_users
+cd folder5
+sign_out
+help show_item_properties
+current_folder
+ls
+sign_out
+sign_in user3 pass3
+create_folder folder2
+add_item_property item3 key6=val2 key1=val2 key7=val2 key1=val4 
+sign_out
+sign_in a1 pa1
+put item2
+rename_user user2 <function generate_user at 0x027087F0>
+create_folder folder2
+whoami
+put item5
+sign_out
+whoami
+buy
+add_item item2 key7=val1 key1=val10 key5=val2 key5=val3 
+help show_folders
+add_item item3 key10=val6 key4=val10 key3=val9 key4=val1 
+add_item item2 key7=val3 key9=val5 key1=val5 key8=val10 
+register_admin user2 pass2
+show_items
+show_item_properties item3
+cd folder3
+help delete_user
+ls
+register_user user6 pass6
+cd folder3
+ls_folders
+rename_user user1 <function generate_user at 0x027087F0>
+ls
+sign_in a5 pa5
+rename_user user9 <function generate_user at 0x027087F0>
+ls
+help show_items
+help sign_out
+whoami
+show_folders
+show_item_properties item2
+add_item item1 key8=val1 key10=val10 key3=val5 key3=val6 
+sign_in user6 pass6
+add_item_property item1 key9=val3 key3=val4 key10=val9 key8=val6 
+show_users
+sign_in user8 pass8
+show_item_properties item5
+show_items
+ls_folders
+cd folder2
+show_folders
+register_user user6 pass6
+buy
+which_group
+sign_in a3 pa3
+ls_folders
+put item1
+current_folder
+register_user user2 pass2
+help history
+sign_out
+ls_folders
+sign_in a3 pa3
+buy
+pwd
+cd folder2
+cd folder5
+ls_folders
+cd folder1
+current_folder
+put item4
+show_users
+buy
+sign_in user4 pass4
+current_folder
+sign_out
+create_folder folder3
+show_item_properties item4
+whoami
+current_folder
+add_item item3 key6=val3 key5=val10 key9=val7 key4=val7 
+pwd
+show_users
+register_admin user5 pass5
+buy
+put item4
+rename_user user5 <function generate_user at 0x027087F0>
+sign_out
+register_user user8 pass8
+add_item_property item5 key8=val8 key8=val4 key4=val7 key1=val3 
+sign_in user9 pass9
+add_item_property item4 key3=val10 key6=val8 key3=val2 key9=val4 
+add_item item5 key1=val1 key3=val9 key2=val6 key2=val4 
+help whoami
+put item4
+show_users
+put item3
+show_users
+add_item_property item4 key10=val8 key2=val9 key10=val3 key5=val7 
+sign_in user2 pass2
+put item4
+current_folder
+register_user user3 pass3
+ls_folders
+whoami
+show_item_properties item2
+ls
+buy
+show_folders
+show_folders
+show_users
+sign_in a1 pa1
+show_items
+ls
+show_item_properties item1
+create_folder folder2
+show_users
+sign_out
+show_items
+show_users
+add_item item4 key10=val2 key8=val9 key1=val3 key10=val7 
+help register_admin
+show_item_properties item2
+current_folder
+sign_in a5 pa5
+whoami
+help register_admin
+add_item item5 key8=val7 key5=val8 key1=val8 key7=val5 
+cd folder2
+sign_in a5 pa5
+ls_folders
+show_folders
+create_folder folder5
+help help
+register_user admin admin
+show_items
+register_user admin admin
+sign_in a3 pa3
+add_item_property item2 key8=val6 key8=val7 key10=val4 key1=val10 
+sign_in user8 pass8
+current_folder
+current_folder
+add_item_property item5 key4=val7 key4=val2 key3=val4 key9=val5 
+sign_in a3 pa3
+which_group
+sign_out
+current_folder
+register_admin user9 pass9
+add_item item1 key9=val10 key9=val9 key6=val5 key5=val4 
+cd folder4
+rename_user user6 <function generate_user at 0x027087F0>
+pwd
+sign_in user3 pass3
+show_item_properties item3
+rename_user user3 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+show_item_properties item3
+register_admin admin admin
+show_users
+add_item item3 key3=val3 key9=val6 key10=val3 key3=val2 
+show_users
+show_item_properties item2
+which_group
+ls
+show_items
+rename_user user9 <function generate_user at 0x027087F0>
+show_items
+ls
+ls
+buy
+sign_in a3 pa3
+create_folder folder2
+show_folders
+sign_out
+ls
+show_item_properties item1
+register_admin user4 pass4
+show_folders
+sign_in user1 pass1
+put item2
+sign_in a2 pa2
+cd folder3
+show_folders
+help create_folder
+buy
+cd folder5
+add_item item4 key5=val7 key9=val10 key9=val1 key4=val3 
+rename_user user5 <function generate_user at 0x027087F0>
+current_folder
+sign_in user6 pass6
+rename_user user5 <function generate_user at 0x027087F0>
+ls_folders
+put item2
+whoami
+sign_in user3 pass3
+show_item_properties item3
+sign_out
+ls_folders
+put item1
+show_folders
+cd folder2
+help delete_user
+ls
+sign_in a5 pa5
+show_folders
+sign_in a2 pa2
+show_users
+pwd
+rename_user user7 <function generate_user at 0x027087F0>
+sign_in admin admin
+register_admin user6 pass6
+show_users
+ls_folders
+whoami
+ls_folders
+current_folder
+buy
+current_folder
+whoami
+register_user user7 pass7
+help help
+sign_in user4 pass4
+help show_folders
+register_admin user3 pass3
+show_users
+pwd
+show_folders
+whoami
+sign_in a3 pa3
+cd folder5
+buy
+cd folder5
+pwd
+sign_in a3 pa3
+show_folders
+put item1
+show_users
+sign_in a5 pa5
+buy
+add_item item4 key7=val8 key2=val8 key2=val5 key9=val9 
+show_folders
+help add_item
+register_user user9 pass9
+add_item_property item3 key7=val4 key7=val6 key4=val3 key5=val5 
+ls
+register_admin user7 pass7
+register_admin user1 pass1
+sign_in a2 pa2
+cd folder5
+ls
+ls
+register_user user6 pass6
+show_folders
+cd folder5
+pwd
+add_item item3 key1=val4 key4=val5 key1=val2 key1=val1 
+show_item_properties item5
+put item3
+ls_folders
+register_admin user6 pass6
+show_users
+sign_in user5 pass5
+show_folders
+ls_folders
+put item1
+show_item_properties item2
+show_users
+add_item_property item3 key2=val8 key8=val4 key8=val10 key8=val5 
+which_group
+show_users
+create_folder folder1
+pwd
+sign_out
+add_item_property item4 key5=val6 key3=val5 key5=val3 key3=val5 
+sign_out
+current_folder
+whoami
+sign_out
+show_folders
+sign_in user5 pass5
+current_folder
+add_item item4 key4=val10 key5=val10 key3=val5 key3=val8 
+show_users
+sign_out
+show_folders
+register_user user9 pass9
+rename_user user4 <function generate_user at 0x027087F0>
+help help
+put item3
+register_admin user3 pass3
+whoami
+which_group
+register_user user2 pass2
+current_folder
+cd folder4
+ls_folders
+show_items
+add_item_property item5 key1=val10 key10=val3 key3=val2 key8=val6 
+current_folder
+sign_out
+add_item_property item5 key7=val6 key9=val5 key4=val6 key5=val10 
+register_user user2 pass2
+register_user user9 pass9
+ls_folders
+add_item item4 key8=val7 key4=val1 key10=val5 key6=val9 
+help current_folder
+ls
+whoami
+show_users
+sign_out
+put item2
+which_group
+show_users
+cd folder4
+sign_in a3 pa3
+show_items
+which_group
+which_group
+show_item_properties item4
+sign_in admin admin
+rename_user user1 <function generate_user at 0x027087F0>
+whoami
+help exit
+sign_out
+register_user user5 pass5
+help show_item_properties
+add_item_property item3 key4=val3 key8=val2 key9=val10 key5=val1 
+rename_user user0 <function generate_user at 0x027087F0>
+show_items
+sign_out
+whoami
+put item4
+pwd
+show_items
+whoami
+create_folder folder4
+current_folder
+current_folder
+add_item item4 key5=val2 key6=val1 key10=val9 key10=val2 
+help show_item_properties
+ls_folders
+show_folders
+sign_in a3 pa3
+put item3
+pwd
+buy
+add_item item2 key3=val1 key2=val6 key6=val8 key6=val5 
+show_folders
+show_users
+sign_in user7 pass7
+register_admin user2 pass2
+show_users
+show_folders
+help current_folder
+rename_user user0 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+show_items
+show_users
+show_item_properties item3
+put item4
+which_group
+show_folders
+show_users
+register_user admin admin
+register_admin user9 pass9
+put item3
+show_items
+which_group
+add_item_property item3 key4=val1 key3=val4 key6=val10 key7=val7 
+sign_in a5 pa5
+show_item_properties item1
+buy
+cd folder5
+sign_in a5 pa5
+cd folder3
+create_folder folder5
+show_users
+show_folders
+sign_in a2 pa2
+register_admin user5 pass5
+create_folder folder1
+current_folder
+whoami
+add_item item2 key9=val3 key9=val8 key4=val2 key7=val5 
+whoami
+show_item_properties item4
+ls
+buy
+cd folder2
+show_items
+show_items
+pwd
+current_folder
+register_user user2 pass2
+cd folder1
+sign_out
+register_admin user2 pass2
+ls_folders
+show_item_properties item1
+rename_user user2 <function generate_user at 0x027087F0>
+show_item_properties item1
+ls_folders
+register_user user7 pass7
+show_users
+sign_in a1 pa1
+sign_out
+whoami
+register_admin user6 pass6
+sign_in a1 pa1
+help sign_in
+ls
+help ls
+pwd
+whoami
+whoami
+ls
+cd folder3
+help exit
+help buy
+show_folders
+add_item_property item2 key8=val5 key10=val7 key2=val8 key6=val3 
+buy
+sign_in a2 pa2
+whoami
+put item3
+which_group
+show_users
+ls
+help pwd
+put item4
+whoami
+which_group
+register_user user9 pass9
+show_folders
+sign_in a1 pa1
+register_user user5 pass5
+sign_in a5 pa5
+add_item item4 key5=val1 key10=val1 key3=val4 key7=val2 
+cd folder4
+pwd
+help sign_out
+show_item_properties item3
+pwd
+create_folder folder4
+cd folder5
+ls_folders
+cd folder4
+rename_user user5 <function generate_user at 0x027087F0>
+sign_out
+show_item_properties item1
+show_folders
+put item3
+rename_user user1 <function generate_user at 0x027087F0>
+buy
+add_item item2 key3=val10 key7=val6 key1=val5 key9=val5 
+sign_out
+register_user user7 pass7
+show_items
+buy
+rename_user user9 <function generate_user at 0x027087F0>
+whoami
+pwd
+buy
+register_admin user7 pass7
+pwd
+ls_folders
+show_users
+show_users
+cd folder4
+add_item item5 key5=val1 key9=val2 key7=val4 key10=val4 
+ls
+ls_folders
+sign_out
+buy
+put item4
+buy
+which_group
+register_user user9 pass9
+whoami
+ls_folders
+sign_in user3 pass3
+create_folder folder4
+cd folder2
+cd folder4
+ls_folders
+ls
+cd folder4
+pwd
+sign_out
+show_item_properties item2
+add_item item2 key8=val2 key1=val8 key8=val2 key9=val1 
+sign_in user4 pass4
+register_user user2 pass2
+show_users
+sign_in a2 pa2
+add_item_property item3 key6=val7 key3=val1 key7=val2 key5=val9 
+rename_user user6 <function generate_user at 0x027087F0>
+current_folder
+help register_admin
+which_group
+rename_user user9 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+cd folder3
+add_item_property item3 key5=val2 key3=val8 key3=val7 key4=val4 
+ls_folders
+show_folders
+register_admin admin admin
+show_folders
+create_folder folder2
+create_folder folder1
+pwd
+show_folders
+sign_out
+pwd
+sign_out
+show_folders
+show_item_properties item3
+pwd
+show_folders
+create_folder folder3
+buy
+show_items
+whoami
+rename_user user6 <function generate_user at 0x027087F0>
+ls
+show_users
+current_folder
+add_item item2 key8=val2 key10=val10 key6=val6 key1=val10 
+ls
+whoami
+show_folders
+register_user user3 pass3
+register_user user8 pass8
+ls
+cd folder1
+which_group
+cd folder3
+buy
+which_group
+show_item_properties item2
+ls
+sign_out
+which_group
+rename_user user1 <function generate_user at 0x027087F0>
+show_items
+current_folder
+current_folder
+show_users
+help sign_out
+ls_folders
+rename_user user7 <function generate_user at 0x027087F0>
+add_item_property item3 key10=val9 key4=val8 key8=val6 key9=val6 
+cd folder4
+show_users
+cd folder2
+help add_item
+which_group
+pwd
+put item3
+sign_out
+cd folder3
+register_user user3 pass3
+buy
+register_user user4 pass4
+show_item_properties item1
+ls
+ls
+put item2
+whoami
+which_group
+ls
+ls_folders
+current_folder
+put item5
+show_item_properties item1
+show_folders
+show_folders
+sign_out
+create_folder folder1
+sign_out
+show_items
+which_group
+which_group
+current_folder
+current_folder
+add_item item4 key1=val9 key9=val6 key5=val9 key4=val6 
+ls
+show_item_properties item2
+show_items
+which_group
+current_folder
+show_items
+add_item item4 key7=val5 key7=val1 key8=val6 key7=val1 
+current_folder
+help show_item_properties
+pwd
+which_group
+pwd
+create_folder folder4
+show_items
+current_folder
+create_folder folder1
+register_admin user1 pass1
+put item2
+register_admin user3 pass3
+add_item_property item4 key7=val2 key5=val8 key7=val2 key10=val3 
+show_items
+cd folder5
+ls_folders
+help show_users
+register_user user9 pass9
+buy
+sign_in user6 pass6
+ls
+add_item_property item4 key5=val1 key10=val7 key2=val1 key8=val7 
+buy
+show_items
+ls
+add_item_property item3 key10=val5 key8=val3 key9=val8 key3=val7 
+put item2
+buy
+sign_out
+show_folders
+pwd
+ls
+ls
+help current_folder
+sign_in user5 pass5
+put item5
+add_item item5 key5=val10 key10=val6 key2=val9 key7=val9 
+buy
+show_users
+ls
+buy
+put item4
+which_group
+create_folder folder1
+ls_folders
+rename_user user3 <function generate_user at 0x027087F0>
+sign_out
+sign_out
+pwd
+show_item_properties item4
+register_admin user4 pass4
+sign_out
+register_admin user5 pass5
+show_item_properties item5
+whoami
+register_user admin admin
+help show_folders
+buy
+sign_out
+put item3
+ls
+create_folder folder1
+show_users
+register_user user6 pass6
+which_group
+register_admin user9 pass9
+ls
+show_folders
+help buy
+current_folder
+create_folder folder4
+add_item_property item2 key1=val10 key7=val1 key7=val6 key1=val2 
+sign_in a2 pa2
+sign_in user8 pass8
+show_users
+sign_in a1 pa1
+register_admin user7 pass7
+current_folder
+help which_group
+add_item item5 key3=val5 key10=val1 key10=val1 key7=val4 
+sign_in a4 pa4
+ls_folders
+sign_in user8 pass8
+sign_out
+show_item_properties item2
+sign_out
+create_folder folder1
+rename_user user4 <function generate_user at 0x027087F0>
+register_user user9 pass9
+show_items
+add_item item5 key10=val10 key3=val7 key8=val9 key4=val9 
+add_item item5 key5=val2 key6=val6 key2=val1 key6=val4 
+sign_in user4 pass4
+put item4
+create_folder folder5
+show_users
+put item5
+register_user admin admin
+ls
+show_item_properties item4
+show_folders
+whoami
+current_folder
+pwd
+cd folder3
+which_group
+show_folders
+show_item_properties item5
+rename_user user8 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+put item3
+cd folder4
+ls
+which_group
+put item2
+help sign_out
+show_items
+show_folders
+sign_in user2 pass2
+current_folder
+show_item_properties item1
+sign_in user1 pass1
+buy
+buy
+add_item item5 key5=val8 key7=val3 key5=val8 key4=val10 
+add_item item2 key6=val7 key5=val7 key1=val9 key6=val5 
+buy
+ls_folders
+put item4
+sign_out
+sign_out
+ls_folders
+pwd
+show_items
+put item3
+register_user user2 pass2
+buy
+current_folder
+show_users
+add_item_property item3 key9=val8 key8=val5 key2=val4 key3=val1 
+register_user user6 pass6
+create_folder folder3
+register_admin admin admin
+show_item_properties item4
+pwd
+pwd
+show_folders
+rename_user user4 <function generate_user at 0x027087F0>
+buy
+which_group
+show_users
+ls_folders
+create_folder folder2
+help which_group
+put item2
+current_folder
+help put
+add_item_property item1 key3=val2 key10=val8 key8=val2 key7=val2 
+register_user user2 pass2
+cd folder2
+add_item item3 key6=val4 key6=val3 key2=val9 key3=val8 
+sign_in a2 pa2
+show_items
+show_users
+whoami
+pwd
+ls
+show_users
+register_user user5 pass5
+whoami
+sign_in admin admin
+sign_out
+register_admin user6 pass6
+sign_in user6 pass6
+create_folder folder4
+sign_in a2 pa2
+whoami
+show_users
+show_item_properties item3
+show_item_properties item2
+which_group
+buy
+register_user user8 pass8
+sign_in a1 pa1
+cd folder3
+ls
+ls
+put item5
+buy
+show_users
+whoami
+register_admin user3 pass3
+show_users
+which_group
+whoami
+add_item_property item4 key3=val4 key8=val3 key9=val5 key6=val8 
+add_item item2 key1=val10 key8=val8 key4=val7 key6=val2 
+ls
+show_item_properties item3
+help view_order
+ls_folders
+current_folder
+help sign_out
+create_folder folder1
+register_user user2 pass2
+ls
+register_user user9 pass9
+sign_in user3 pass3
+sign_out
+add_item_property item4 key1=val3 key5=val2 key7=val8 key3=val5 
+create_folder folder5
+current_folder
+pwd
+ls_folders
+whoami
+register_user user8 pass8
+show_item_properties item5
+sign_in user1 pass1
+help show_users
+rename_user user4 <function generate_user at 0x027087F0>
+put item3
+create_folder folder4
+pwd
+current_folder
+buy
+register_user user8 pass8
+buy
+add_item_property item4 key1=val2 key3=val7 key5=val4 key10=val1 
+rename_user user2 <function generate_user at 0x027087F0>
+cd folder5
+register_admin admin admin
+create_folder folder1
+add_item_property item5 key6=val9 key5=val4 key3=val9 key8=val4 
+ls
+register_admin user3 pass3
+ls
+show_folders
+pwd
+show_users
+register_admin user8 pass8
+sign_in a2 pa2
+which_group
+sign_in user1 pass1
+sign_in a5 pa5
+add_item item5 key6=val10 key6=val4 key6=val5 key9=val8 
+sign_out
+buy
+show_item_properties item5
+help delete_user
+help show_users
+ls_folders
+rename_user user6 <function generate_user at 0x027087F0>
+show_users
+show_items
+ls
+put item1
+which_group
+register_user user7 pass7
+sign_in a1 pa1
+help add_item_property
+ls
+show_item_properties item5
+add_item item2 key9=val3 key4=val3 key1=val3 key10=val10 
+sign_in a4 pa4
+buy
+help current_folder
+show_users
+put item4
+ls
+register_admin user3 pass3
+register_user user3 pass3
+whoami
+ls
+register_user user9 pass9
+rename_user user1 <function generate_user at 0x027087F0>
+ls
+show_items
+add_item_property item2 key1=val10 key3=val7 key6=val3 key4=val2 
+pwd
+sign_out
+show_users
+register_user user8 pass8
+create_folder folder1
+create_folder folder4
+show_item_properties item1
+which_group
+pwd
+rename_user user1 <function generate_user at 0x027087F0>
+add_item item2 key2=val1 key10=val5 key2=val4 key9=val3 
+whoami
+sign_out
+rename_user user4 <function generate_user at 0x027087F0>
+sign_out
+ls_folders
+buy
+pwd
+add_item_property item3 key8=val6 key9=val6 key9=val7 key3=val7 
+help show_folders
+register_admin user7 pass7
+sign_out
+create_folder folder5
+sign_in a5 pa5
+put item4
+register_user user2 pass2
+register_user user6 pass6
+sign_in a4 pa4
+ls_folders
+sign_in user8 pass8
+sign_in a1 pa1
+sign_in a3 pa3
+sign_out
+sign_in a1 pa1
+help whoami
+pwd
+register_user user7 pass7
+whoami
+ls
+sign_in a5 pa5
+cd folder5
+sign_in user8 pass8
+ls
+register_admin user5 pass5
+create_folder folder5
+ls
+buy
+current_folder
+register_user user1 pass1
+sign_in a5 pa5
+sign_in user4 pass4
+register_admin user3 pass3
+which_group
+show_users
+show_users
+current_folder
+help which_group
+help view_order
+current_folder
+show_folders
+sign_out
+put item2
+show_items
+ls_folders
+register_admin user2 pass2
+create_folder folder4
+add_item_property item1 key9=val8 key8=val3 key4=val3 key3=val5 
+show_folders
+which_group
+put item2
+show_folders
+buy
+which_group
+ls_folders
+ls
+sign_in a2 pa2
+show_items
+sign_in a2 pa2
+sign_in user8 pass8
+show_items
+show_items
+cd folder2
+sign_in a5 pa5
+which_group
+sign_in user3 pass3
+sign_in user8 pass8
+show_users
+put item1
+sign_out
+sign_in user5 pass5
+ls
+pwd
+cd folder2
+put item5
+add_item item5 key2=val1 key3=val7 key3=val9 key1=val2 
+buy
+show_items
+whoami
+show_item_properties item3
+add_item item4 key4=val6 key5=val5 key10=val3 key8=val1 
+rename_user user5 <function generate_user at 0x027087F0>
+show_items
+register_admin user5 pass5
+which_group
+sign_in admin admin
+help ls_folders
+whoami
+sign_out
+ls_folders
+whoami
+show_folders
+cd folder4
+register_admin admin admin
+sign_out
+current_folder
+buy
+sign_out
+which_group
+pwd
+sign_in a4 pa4
+show_items
+show_items
+which_group
+show_items
+show_items
+sign_in user4 pass4
+add_item_property item4 key6=val10 key6=val1 key2=val10 key4=val8 
+add_item item3 key4=val3 key10=val10 key9=val9 key9=val10 
+current_folder
+buy
+sign_in a1 pa1
+show_users
+show_users
+sign_out
+ls_folders
+help ls_folders
+register_admin user6 pass6
+add_item item5 key8=val4 key9=val4 key10=val3 key6=val7 
+register_admin user8 pass8
+add_item item1 key8=val2 key6=val3 key1=val2 key7=val10 
+help register_user
+pwd
+add_item_property item2 key8=val10 key10=val10 key8=val2 key10=val4 
+register_admin user7 pass7
+help exit
+which_group
+sign_in user6 pass6
+cd folder3
+create_folder folder5
+whoami
+current_folder
+show_users
+cd folder2
+show_users
+show_users
+add_item_property item1 key3=val1 key8=val4 key4=val9 key9=val6 
+show_items
+whoami
+sign_out
+add_item item4 key6=val9 key7=val2 key10=val5 key3=val9 
+register_user user2 pass2
+sign_in a5 pa5
+whoami
+help add_item_property
+show_folders
+ls
+pwd
+sign_in a4 pa4
+show_items
+show_items
+which_group
+help whoami
+show_items
+show_item_properties item2
+help help
+pwd
+create_folder folder3
+show_item_properties item5
+cd folder3
+whoami
+show_item_properties item1
+ls
+ls_folders
+rename_user user0 <function generate_user at 0x027087F0>
+add_item_property item3 key8=val2 key3=val2 key5=val7 key5=val10 
+ls_folders
+buy
+current_folder
+sign_out
+add_item item4 key7=val8 key8=val5 key3=val1 key5=val7 
+create_folder folder4
+sign_out
+show_items
+sign_in a5 pa5
+ls_folders
+register_user user7 pass7
+ls
+whoami
+whoami
+register_user user5 pass5
+buy
+add_item_property item2 key8=val10 key7=val10 key7=val1 key6=val6 
+which_group
+rename_user user0 <function generate_user at 0x027087F0>
+pwd
+create_folder folder3
+put item1
+ls_folders
+sign_in a4 pa4
+create_folder folder4
+register_admin user7 pass7
+sign_in user4 pass4
+ls
+buy
+create_folder folder5
+show_users
+cd folder3
+add_item_property item2 key9=val9 key10=val7 key1=val10 key3=val7 
+show_folders
+register_admin user1 pass1
+help pwd
+show_users
+register_user user7 pass7
+create_folder folder1
+put item5
+show_items
+sign_out
+show_item_properties item3
+cd folder3
+show_folders
+pwd
+put item1
+sign_in a3 pa3
+help delete_user
+register_admin user7 pass7
+sign_in a4 pa4
+add_item_property item2 key6=val9 key6=val2 key3=val10 key7=val5 
+register_admin user6 pass6
+whoami
+ls
+whoami
+show_folders
+ls_folders
+pwd
+show_folders
+ls
+show_items
+put item5
+sign_in a4 pa4
+sign_in user7 pass7
+ls_folders
+show_folders
+show_items
+add_item item3 key5=val3 key8=val10 key2=val5 key5=val3 
+help ls
+cd folder3
+current_folder
+show_item_properties item3
+show_items
+show_item_properties item3
+sign_out
+show_item_properties item2
+ls_folders
+put item3
+register_admin user8 pass8
+register_admin user3 pass3
+cd folder3
+buy
+sign_out
+add_item_property item2 key7=val8 key2=val10 key8=val1 key1=val4 
+sign_in a1 pa1
+show_users
+put item2
+pwd
+show_users
+show_folders
+show_folders
+ls
+ls
+sign_out
+sign_out
+which_group
+current_folder
+current_folder
+whoami
+which_group
+pwd
+put item5
+help cd
+ls
+which_group
+ls_folders
+put item1
+whoami
+show_folders
+ls_folders
+rename_user user3 <function generate_user at 0x027087F0>
+register_admin user8 pass8
+buy
+put item4
+sign_in a2 pa2
+add_item item2 key9=val5 key4=val4 key4=val4 key7=val3 
+show_items
+which_group
+add_item_property item5 key4=val3 key3=val1 key8=val3 key3=val9 
+sign_out
+help add_item
+show_users
+pwd
+show_items
+show_items
+which_group
+show_folders
+add_item_property item5 key6=val10 key1=val6 key1=val1 key2=val10 
+register_user user6 pass6
+show_folders
+pwd
+sign_in a1 pa1
+pwd
+which_group
+register_admin user4 pass4
+sign_out
+sign_in a4 pa4
+register_user user7 pass7
+sign_out
+create_folder folder4
+cd folder5
+create_folder folder5
+show_users
+show_folders
+whoami
+buy
+register_user user7 pass7
+which_group
+ls_folders
+create_folder folder3
+show_folders
+show_items
+put item4
+show_users
+create_folder folder1
+register_user user8 pass8
+buy
+register_admin user6 pass6
+help register_user
+rename_user user7 <function generate_user at 0x027087F0>
+sign_out
+show_folders
+pwd
+sign_in a1 pa1
+sign_in a5 pa5
+register_admin user1 pass1
+sign_out
+current_folder
+add_item_property item3 key4=val9 key5=val4 key5=val8 key10=val3 
+add_item_property item2 key2=val5 key8=val3 key5=val9 key9=val1 
+which_group
+register_user admin admin
+help put
+cd folder1
+sign_in user9 pass9
+help add_item
+show_users
+whoami
+register_admin user4 pass4
+ls
+ls_folders
+current_folder
+show_folders
+add_item item3 key1=val6 key10=val2 key10=val10 key10=val6 
+sign_in admin admin
+rename_user user5 <function generate_user at 0x027087F0>
+which_group
+rename_user user3 <function generate_user at 0x027087F0>
+put item3
+show_items
+add_item_property item1 key6=val6 key3=val5 key5=val4 key10=val4 
+sign_in user8 pass8
+ls_folders
+show_items
+ls
+whoami
+cd folder1
+register_admin user7 pass7
+help which_group
+rename_user user7 <function generate_user at 0x027087F0>
+whoami
+add_item item2 key1=val5 key6=val7 key2=val1 key2=val5 
+rename_user user2 <function generate_user at 0x027087F0>
+show_users
+current_folder
+rename_user user3 <function generate_user at 0x027087F0>
+create_folder folder1
+sign_out
+rename_user user2 <function generate_user at 0x027087F0>
+add_item_property item3 key7=val2 key3=val2 key1=val5 key1=val3 
+sign_in a4 pa4
+add_item_property item5 key1=val4 key6=val10 key10=val8 key10=val3 
+whoami
+pwd
+show_users
+buy
+show_item_properties item3
+show_item_properties item3
+cd folder4
+ls_folders
+show_items
+show_items
+add_item item2 key10=val10 key7=val4 key5=val2 key3=val2 
+create_folder folder2
+show_users
+ls_folders
+which_group
+sign_in user2 pass2
+help register_admin
+sign_in user2 pass2
+add_item_property item1 key5=val1 key5=val4 key7=val4 key4=val10 
+register_user user3 pass3
+whoami
+sign_in a5 pa5
+sign_in a3 pa3
+current_folder
+current_folder
+ls_folders
+add_item item2 key8=val4 key9=val5 key6=val10 key2=val3 
+sign_out
+pwd
+create_folder folder2
+put item3
+show_users
+which_group
+show_users
+add_item_property item2 key4=val3 key4=val1 key3=val9 key3=val4 
+add_item_property item5 key5=val4 key9=val9 key7=val6 key3=val8 
+register_admin user8 pass8
+buy
+cd folder2
+buy
+show_users
+which_group
+show_item_properties item5
+sign_in user7 pass7
+register_user user8 pass8
+pwd
+create_folder folder3
+help whoami
+show_folders
+buy
+which_group
+show_item_properties item3
+ls
+whoami
+buy
+create_folder folder4
+show_folders
+sign_in a2 pa2
+whoami
+show_users
+cd folder2
+current_folder
+show_folders
+register_admin user9 pass9
+show_items
+sign_out
+pwd
+register_admin user6 pass6
+sign_in a3 pa3
+register_user user8 pass8
+show_users
+pwd
+pwd
+put item2
+pwd
+ls
+create_folder folder4
+add_item_property item1 key3=val9 key3=val9 key2=val1 key6=val4 
+help rename_user
+ls_folders
+show_items
+add_item item1 key5=val4 key1=val2 key7=val5 key2=val5 
+pwd
+ls
+sign_in a2 pa2
+create_folder folder5
+which_group
+show_users
+ls
+current_folder
+sign_out
+buy
+pwd
+show_folders
+which_group
+buy
+show_items
+create_folder folder1
+ls_folders
+add_item item3 key9=val5 key6=val2 key8=val5 key2=val3 
+whoami
+add_item item2 key2=val7 key2=val5 key3=val6 key10=val3 
+show_users
+sign_out
+register_user user1 pass1
+show_users
+create_folder folder3
+help add_item
+add_item item4 key2=val3 key2=val2 key10=val6 key8=val6 
+show_users
+sign_in user6 pass6
+which_group
+create_folder folder4
+whoami
+create_folder folder4
+rename_user user3 <function generate_user at 0x027087F0>
+pwd
+create_folder folder3
+sign_out
+help rename_user
+pwd
+show_items
+cd folder2
+rename_user user2 <function generate_user at 0x027087F0>
+pwd
+show_item_properties item1
+whoami
+create_folder folder3
+show_users
+add_item_property item3 key5=val1 key10=val10 key8=val5 key6=val5 
+register_user user8 pass8
+show_item_properties item5
+register_user user5 pass5
+sign_out
+create_folder folder4
+ls_folders
+whoami
+show_folders
+register_admin user9 pass9
+ls
+rename_user user9 <function generate_user at 0x027087F0>
+rename_user user3 <function generate_user at 0x027087F0>
+add_item_property item2 key1=val7 key7=val10 key7=val1 key1=val8 
+add_item_property item3 key3=val4 key8=val9 key5=val6 key8=val8 
+register_admin user5 pass5
+help show_item_properties
+sign_out
+buy
+ls
+show_items
+create_folder folder3
+buy
+buy
+put item5
+register_admin user8 pass8
+show_item_properties item1
+show_item_properties item4
+add_item_property item4 key10=val9 key1=val4 key7=val8 key5=val7 
+help delete_user
+sign_in user1 pass1
+register_admin user7 pass7
+pwd
+sign_out
+create_folder folder2
+ls_folders
+show_items
+show_users
+current_folder
+sign_out
+buy
+add_item_property item1 key8=val10 key4=val9 key1=val6 key7=val1 
+show_users
+add_item item2 key7=val2 key1=val1 key2=val3 key9=val3 
+cd folder3
+add_item_property item1 key9=val2 key8=val1 key9=val3 key5=val9 
+current_folder
+sign_in user2 pass2
+sign_in user4 pass4
+sign_in user1 pass1
+buy
+show_items
+sign_in a2 pa2
+sign_out
+sign_in user2 pass2
+cd folder1
+create_folder folder3
+ls
+show_item_properties item2
+help ls
+register_user user6 pass6
+sign_in a1 pa1
+help view_order
+rename_user user6 <function generate_user at 0x027087F0>
+pwd
+show_items
+show_item_properties item5
+create_folder folder5
+pwd
+show_item_properties item3
+whoami
+show_item_properties item3
+show_users
+register_user user3 pass3
+register_admin user3 pass3
+which_group
+show_items
+whoami
+ls
+ls
+show_item_properties item4
+current_folder
+sign_out
+sign_in a3 pa3
+current_folder
+sign_in a2 pa2
+show_item_properties item3
+current_folder
+add_item item4 key1=val8 key6=val2 key5=val6 key1=val8 
+show_item_properties item2
+sign_in user8 pass8
+register_user user1 pass1
+which_group
+cd folder2
+cd folder2
+current_folder
+ls_folders
+show_folders
+pwd
+buy
+help history
+show_folders
+show_items
+sign_out
+ls_folders
+show_item_properties item2
+whoami
+whoami
+ls
+help help
+put item3
+ls_folders
+sign_in a5 pa5
+sign_out
+help add_item_property
+pwd
+show_folders
+which_group
+rename_user user7 <function generate_user at 0x027087F0>
+help rename_user
+current_folder
+sign_out
+current_folder
+which_group
+current_folder
+register_user user8 pass8
+register_user user5 pass5
+current_folder
+which_group
+register_admin user2 pass2
+ls_folders
+add_item_property item5 key1=val2 key5=val6 key6=val10 key7=val4 
+buy
+buy
+sign_out
+sign_in user3 pass3
+ls
+buy
+show_item_properties item3
+show_users
+buy
+buy
+create_folder folder2
+help pwd
+which_group
+current_folder
+buy
+whoami
+which_group
+create_folder folder1
+current_folder
+register_admin user3 pass3
+register_admin user3 pass3
+show_users
+show_item_properties item3
+ls
+pwd
+show_items
+add_item item1 key9=val2 key4=val9 key10=val9 key8=val4 
+create_folder folder4
+whoami
+register_user user1 pass1
+help sign_in
+which_group
+add_item item5 key8=val4 key10=val7 key2=val10 key10=val3 
+buy
+show_users
+which_group
+sign_out
+sign_out
+sign_in user1 pass1
+sign_in a5 pa5
+sign_in a5 pa5
+which_group
+ls
+add_item_property item3 key8=val1 key1=val7 key9=val6 key10=val10 
+help put
+sign_out
+buy
+current_folder
+sign_in a2 pa2
+add_item_property item4 key5=val2 key9=val6 key9=val2 key10=val1 
+cd folder4
+register_user user7 pass7
+sign_in a4 pa4
+sign_out
+help buy
+current_folder
+pwd
+put item4
+put item2
+pwd
+add_item item5 key7=val2 key4=val7 key8=val7 key3=val10 
+rename_user user8 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+sign_out
+register_user user8 pass8
+sign_in admin admin
+pwd
+rename_user user9 <function generate_user at 0x027087F0>
+sign_in a5 pa5
+register_admin user2 pass2
+register_user user2 pass2
+cd folder3
+cd folder2
+pwd
+whoami
+current_folder
+show_users
+show_folders
+help register_admin
+help exit
+show_item_properties item3
+which_group
+rename_user user9 <function generate_user at 0x027087F0>
+register_user user1 pass1
+show_items
+whoami
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+show_folders
+pwd
+register_user user5 pass5
+add_item item1 key5=val5 key7=val8 key8=val3 key6=val9 
+sign_in user8 pass8
+ls
+sign_in a4 pa4
+add_item item2 key8=val10 key8=val6 key9=val6 key4=val9 
+ls
+sign_in a2 pa2
+ls
+current_folder
+sign_in user7 pass7
+show_users
+help show_folders
+create_folder folder5
+whoami
+ls_folders
+ls_folders
+register_admin user6 pass6
+register_admin user9 pass9
+buy
+register_user user2 pass2
+put item4
+sign_in user2 pass2
+show_users
+show_folders
+help sign_out
+which_group
+register_user user5 pass5
+show_folders
+buy
+help view_order
+put item5
+register_admin user9 pass9
+sign_in a5 pa5
+show_items
+rename_user user5 <function generate_user at 0x027087F0>
+cd folder4
+sign_in a4 pa4
+sign_in user2 pass2
+rename_user user0 <function generate_user at 0x027087F0>
+show_items
+sign_in user5 pass5
+cd folder3
+register_admin user3 pass3
+current_folder
+sign_in user2 pass2
+register_user user6 pass6
+show_folders
+ls_folders
+help ls
+register_admin user6 pass6
+sign_in a5 pa5
+sign_out
+buy
+current_folder
+ls_folders
+sign_in user8 pass8
+create_folder folder1
+show_item_properties item1
+show_users
+put item2
+sign_in a5 pa5
+help pwd
+show_item_properties item2
+show_folders
+show_items
+add_item item2 key8=val9 key1=val2 key8=val7 key9=val2 
+which_group
+register_admin user1 pass1
+whoami
+register_admin user2 pass2
+help show_folders
+sign_in a2 pa2
+sign_in a4 pa4
+show_item_properties item1
+show_folders
+pwd
+add_item_property item1 key9=val8 key7=val10 key1=val7 key10=val6 
+ls_folders
+help whoami
+register_user user7 pass7
+put item1
+add_item_property item2 key7=val6 key1=val10 key1=val1 key3=val7 
+show_item_properties item5
+show_items
+register_user user3 pass3
+sign_out
+register_user user7 pass7
+show_item_properties item3
+add_item item1 key6=val7 key7=val6 key2=val1 key5=val10 
+create_folder folder2
+register_admin user3 pass3
+register_user user8 pass8
+sign_in user2 pass2
+rename_user user9 <function generate_user at 0x027087F0>
+help exit
+add_item_property item2 key7=val6 key9=val7 key1=val4 key1=val9 
+current_folder
+show_users
+show_users
+sign_out
+whoami
+add_item item2 key7=val10 key1=val5 key10=val1 key2=val3 
+register_user user9 pass9
+rename_user user6 <function generate_user at 0x027087F0>
+show_folders
+show_folders
+ls
+whoami
+current_folder
+register_admin user5 pass5
+register_user user3 pass3
+sign_out
+cd folder3
+show_folders
+add_item_property item1 key10=val8 key6=val9 key10=val10 key10=val8 
+put item4
+sign_in a5 pa5
+ls_folders
+put item3
+show_items
+register_user user3 pass3
+pwd
+rename_user user9 <function generate_user at 0x027087F0>
+show_users
+register_admin user8 pass8
+sign_in a5 pa5
+rename_user user5 <function generate_user at 0x027087F0>
+cd folder1
+which_group
+which_group
+cd folder2
+which_group
+show_users
+help view_order
+rename_user user6 <function generate_user at 0x027087F0>
+show_folders
+cd folder3
+show_folders
+add_item item3 key1=val8 key6=val2 key10=val3 key1=val7 
+add_item_property item1 key3=val10 key10=val6 key3=val3 key5=val6 
+which_group
+show_folders
+cd folder1
+show_item_properties item3
+show_items
+sign_in user8 pass8
+put item2
+rename_user user1 <function generate_user at 0x027087F0>
+pwd
+show_items
+sign_in user9 pass9
+show_users
+sign_out
+pwd
+register_admin user4 pass4
+sign_in admin admin
+cd folder3
+create_folder folder4
+put item1
+register_user user3 pass3
+ls_folders
+sign_in a5 pa5
+sign_out
+show_users
+buy
+which_group
+buy
+register_user user1 pass1
+which_group
+ls
+sign_in a3 pa3
+add_item item1 key4=val10 key6=val1 key8=val3 key5=val7 
+ls
+register_admin user8 pass8
+sign_in a5 pa5
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in user3 pass3
+which_group
+sign_in a4 pa4
+rename_user user2 <function generate_user at 0x027087F0>
+ls
+whoami
+sign_out
+sign_in a5 pa5
+add_item_property item2 key1=val2 key3=val7 key1=val3 key9=val5 
+show_users
+put item1
+rename_user user8 <function generate_user at 0x027087F0>
+buy
+ls
+sign_in a1 pa1
+rename_user user8 <function generate_user at 0x027087F0>
+add_item item3 key3=val6 key8=val5 key9=val9 key1=val9 
+rename_user user2 <function generate_user at 0x027087F0>
+buy
+show_item_properties item5
+sign_in user3 pass3
+pwd
+add_item_property item2 key9=val9 key1=val8 key7=val6 key9=val3 
+show_folders
+which_group
+pwd
+current_folder
+show_users
+pwd
+show_users
+show_item_properties item2
+add_item_property item5 key7=val4 key5=val8 key5=val4 key9=val7 
+show_folders
+sign_out
+sign_out
+sign_in a5 pa5
+add_item item2 key3=val10 key7=val8 key9=val2 key4=val5 
+register_admin user6 pass6
+sign_out
+register_user user3 pass3
+rename_user user6 <function generate_user at 0x027087F0>
+show_item_properties item4
+show_folders
+sign_in user5 pass5
+help put
+cd folder1
+cd folder5
+put item2
+show_item_properties item4
+ls_folders
+create_folder folder5
+create_folder folder5
+show_item_properties item2
+create_folder folder1
+rename_user user2 <function generate_user at 0x027087F0>
+pwd
+rename_user user2 <function generate_user at 0x027087F0>
+cd folder2
+add_item_property item2 key6=val3 key4=val2 key10=val7 key8=val4 
+pwd
+ls
+rename_user user2 <function generate_user at 0x027087F0>
+add_item item2 key3=val8 key7=val5 key6=val3 key10=val3 
+show_items
+sign_out
+show_item_properties item3
+buy
+sign_in a4 pa4
+register_admin user5 pass5
+add_item_property item1 key7=val6 key1=val7 key9=val10 key6=val4 
+add_item item5 key5=val1 key6=val2 key1=val1 key3=val9 
+add_item item1 key6=val1 key6=val7 key5=val5 key10=val8 
+current_folder
+pwd
+rename_user user7 <function generate_user at 0x027087F0>
+show_folders
+whoami
+register_user user8 pass8
+cd folder3
+ls_folders
+sign_out
+which_group
+sign_out
+ls
+show_folders
+which_group
+sign_out
+register_user user7 pass7
+sign_in a1 pa1
+show_items
+help register_admin
+sign_in user1 pass1
+put item3
+register_admin user1 pass1
+sign_out
+show_folders
+add_item item3 key4=val6 key2=val7 key4=val5 key7=val6 
+which_group
+sign_out
+sign_in admin admin
+which_group
+show_users
+sign_out
+create_folder folder2
+create_folder folder5
+rename_user user8 <function generate_user at 0x027087F0>
+ls_folders
+ls_folders
+ls
+show_users
+create_folder folder1
+cd folder1
+pwd
+whoami
+register_user admin admin
+show_folders
+add_item_property item1 key7=val8 key4=val4 key8=val7 key6=val2 
+show_items
+rename_user user1 <function generate_user at 0x027087F0>
+whoami
+sign_out
+buy
+show_users
+sign_out
+show_items
+sign_in user8 pass8
+add_item item2 key2=val4 key3=val4 key4=val1 key1=val6 
+sign_in a5 pa5
+which_group
+current_folder
+ls_folders
+sign_out
+buy
+register_admin admin admin
+create_folder folder4
+current_folder
+rename_user user9 <function generate_user at 0x027087F0>
+put item3
+show_folders
+sign_out
+add_item_property item2 key7=val1 key8=val2 key6=val9 key3=val9 
+which_group
+ls_folders
+whoami
+sign_out
+current_folder
+show_items
+pwd
+rename_user user4 <function generate_user at 0x027087F0>
+add_item item5 key6=val5 key5=val7 key5=val5 key1=val6 
+create_folder folder2
+rename_user user4 <function generate_user at 0x027087F0>
+help cd
+sign_in a1 pa1
+current_folder
+show_item_properties item5
+rename_user user8 <function generate_user at 0x027087F0>
+add_item_property item3 key7=val6 key7=val6 key3=val9 key4=val10 
+sign_in a5 pa5
+whoami
+add_item_property item1 key6=val10 key7=val4 key3=val2 key7=val5 
+add_item_property item3 key2=val5 key6=val4 key7=val8 key2=val4 
+whoami
+sign_in a4 pa4
+buy
+create_folder folder1
+which_group
+whoami
+add_item_property item5 key5=val6 key6=val9 key6=val10 key1=val8 
+add_item item4 key1=val9 key6=val6 key4=val1 key6=val7 
+sign_out
+whoami
+show_folders
+ls
+register_user user2 pass2
+sign_in a4 pa4
+put item1
+register_user user4 pass4
+sign_in a1 pa1
+ls_folders
+cd folder3
+cd folder4
+ls_folders
+sign_in a3 pa3
+whoami
+buy
+put item3
+whoami
+create_folder folder3
+current_folder
+register_admin user3 pass3
+pwd
+show_item_properties item4
+create_folder folder5
+show_item_properties item5
+show_folders
+current_folder
+show_items
+create_folder folder2
+ls
+put item1
+show_users
+show_items
+sign_out
+sign_in user9 pass9
+put item2
+ls_folders
+ls
+sign_in admin admin
+which_group
+put item5
+show_item_properties item1
+create_folder folder1
+add_item_property item4 key6=val3 key5=val1 key2=val2 key4=val1 
+sign_out
+sign_out
+ls
+show_item_properties item1
+pwd
+sign_in user9 pass9
+show_item_properties item3
+sign_in a5 pa5
+pwd
+show_folders
+register_user user2 pass2
+sign_out
+buy
+current_folder
+ls_folders
+register_admin user8 pass8
+sign_in admin admin
+ls
+show_item_properties item2
+whoami
+sign_in user2 pass2
+add_item_property item2 key2=val1 key6=val6 key7=val1 key2=val3 
+show_folders
+create_folder folder5
+add_item_property item2 key5=val10 key4=val10 key2=val9 key8=val8 
+ls_folders
+show_item_properties item5
+which_group
+show_item_properties item5
+register_user user3 pass3
+show_users
+pwd
+show_item_properties item5
+which_group
+buy
+add_item_property item1 key9=val8 key2=val6 key2=val1 key1=val2 
+which_group
+whoami
+register_admin user3 pass3
+show_item_properties item4
+sign_in a4 pa4
+help create_folder
+show_users
+add_item_property item2 key4=val6 key6=val8 key5=val7 key4=val2 
+register_user user5 pass5
+sign_out
+buy
+show_item_properties item2
+put item1
+cd folder2
+ls
+ls_folders
+show_folders
+show_item_properties item3
+rename_user user4 <function generate_user at 0x027087F0>
+put item2
+put item2
+show_item_properties item3
+current_folder
+help ls
+whoami
+pwd
+put item5
+help current_folder
+show_items
+add_item item2 key3=val8 key4=val7 key2=val7 key3=val4 
+show_item_properties item3
+add_item item4 key2=val2 key6=val8 key4=val4 key9=val2 
+add_item item2 key3=val7 key9=val9 key3=val4 key9=val5 
+show_users
+cd folder1
+ls
+add_item_property item3 key7=val3 key5=val10 key4=val4 key5=val4 
+ls
+add_item item4 key2=val4 key7=val7 key6=val4 key5=val3 
+which_group
+create_folder folder4
+show_item_properties item5
+create_folder folder1
+buy
+show_items
+show_items
+sign_in a5 pa5
+buy
+sign_out
+help ls_folders
+create_folder folder4
+show_users
+sign_in admin admin
+buy
+which_group
+sign_in a5 pa5
+add_item_property item3 key3=val8 key9=val7 key10=val3 key10=val5 
+whoami
+register_user user4 pass4
+register_user user3 pass3
+sign_out
+register_user user7 pass7
+ls_folders
+create_folder folder1
+show_items
+register_admin user2 pass2
+ls
+add_item item4 key2=val3 key5=val5 key3=val10 key6=val5 
+sign_in user8 pass8
+rename_user user4 <function generate_user at 0x027087F0>
+create_folder folder4
+sign_in a2 pa2
+register_user user3 pass3
+sign_out
+add_item item3 key5=val1 key2=val10 key2=val3 key7=val2 
+sign_out
+sign_in user6 pass6
+rename_user user1 <function generate_user at 0x027087F0>
+current_folder
+sign_out
+help buy
+which_group
+add_item_property item3 key1=val3 key3=val1 key7=val6 key2=val1 
+which_group
+sign_in a1 pa1
+help register_admin
+show_item_properties item4
+register_admin user5 pass5
+put item1
+cd folder5
+ls
+ls
+rename_user user2 <function generate_user at 0x027087F0>
+ls
+register_user user8 pass8
+whoami
+pwd
+register_user user8 pass8
+rename_user user0 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+sign_out
+help show_users
+create_folder folder4
+put item2
+show_item_properties item5
+create_folder folder3
+help current_folder
+sign_in a2 pa2
+rename_user user4 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in user1 pass1
+register_admin user8 pass8
+add_item item2 key4=val9 key1=val9 key8=val3 key8=val3 
+current_folder
+sign_in a1 pa1
+which_group
+put item4
+help sign_in
+rename_user user5 <function generate_user at 0x027087F0>
+cd folder5
+show_folders
+sign_out
+show_folders
+rename_user user5 <function generate_user at 0x027087F0>
+cd folder5
+pwd
+pwd
+help show_folders
+create_folder folder4
+pwd
+add_item_property item5 key5=val8 key7=val8 key10=val3 key9=val3 
+add_item_property item2 key5=val10 key1=val5 key3=val1 key5=val3 
+register_admin user7 pass7
+current_folder
+current_folder
+ls_folders
+show_item_properties item4
+buy
+show_folders
+whoami
+sign_out
+buy
+register_admin user3 pass3
+show_users
+show_item_properties item3
+whoami
+ls
+show_users
+ls
+sign_in user5 pass5
+pwd
+register_user user6 pass6
+help create_folder
+ls_folders
+ls_folders
+current_folder
+ls
+which_group
+sign_out
+sign_in user6 pass6
+show_folders
+show_users
+ls_folders
+show_users
+cd folder5
+cd folder5
+which_group
+ls_folders
+rename_user user4 <function generate_user at 0x027087F0>
+sign_in a3 pa3
+sign_in a2 pa2
+buy
+help history
+help add_item_property
+sign_in a1 pa1
+current_folder
+sign_in admin admin
+create_folder folder2
+sign_out
+current_folder
+show_folders
+create_folder folder3
+add_item_property item4 key4=val2 key1=val10 key8=val6 key2=val1 
+buy
+help sign_in
+rename_user user1 <function generate_user at 0x027087F0>
+show_users
+ls_folders
+buy
+help ls
+sign_out
+sign_in a1 pa1
+show_folders
+add_item item4 key10=val10 key3=val10 key9=val4 key8=val3 
+current_folder
+sign_in user1 pass1
+pwd
+which_group
+show_item_properties item5
+whoami
+add_item item2 key5=val3 key9=val8 key2=val4 key3=val2 
+put item1
+cd folder2
+register_admin user2 pass2
+pwd
+help add_item_property
+which_group
+add_item_property item3 key5=val2 key4=val4 key8=val4 key5=val10 
+buy
+show_items
+create_folder folder5
+show_item_properties item2
+create_folder folder3
+show_folders
+sign_in a3 pa3
+register_user user6 pass6
+sign_in user3 pass3
+help current_folder
+create_folder folder4
+register_admin user1 pass1
+add_item item4 key10=val8 key8=val9 key5=val1 key1=val5 
+sign_out
+show_folders
+buy
+sign_in user1 pass1
+show_item_properties item5
+show_items
+sign_in a5 pa5
+add_item_property item2 key1=val2 key7=val8 key10=val5 key8=val7 
+buy
+sign_out
+show_item_properties item5
+sign_in user9 pass9
+create_folder folder5
+rename_user user9 <function generate_user at 0x027087F0>
+buy
+ls
+ls_folders
+cd folder5
+which_group
+sign_in a3 pa3
+show_users
+whoami
+add_item_property item5 key1=val8 key4=val8 key7=val3 key10=val10 
+sign_out
+register_user user7 pass7
+create_folder folder3
+add_item_property item1 key3=val6 key1=val4 key4=val1 key5=val3 
+show_users
+show_folders
+cd folder1
+ls
+add_item_property item4 key3=val7 key6=val3 key10=val7 key10=val5 
+which_group
+sign_in a3 pa3
+show_item_properties item4
+add_item item2 key9=val5 key3=val8 key10=val4 key7=val6 
+register_admin admin admin
+show_items
+add_item_property item4 key8=val8 key8=val2 key10=val2 key3=val4 
+cd folder5
+show_items
+which_group
+sign_out
+show_item_properties item2
+show_items
+sign_in a2 pa2
+put item1
+buy
+show_folders
+ls_folders
+buy
+sign_in user8 pass8
+whoami
+show_folders
+put item3
+whoami
+ls
+register_admin admin admin
+sign_in user3 pass3
+add_item_property item2 key3=val1 key3=val9 key6=val5 key8=val1 
+pwd
+add_item item3 key3=val7 key2=val9 key4=val2 key6=val8 
+put item4
+help put
+sign_out
+add_item item2 key2=val7 key8=val2 key10=val4 key9=val8 
+register_admin user3 pass3
+whoami
+register_admin user7 pass7
+show_users
+sign_in a3 pa3
+show_item_properties item3
+create_folder folder2
+buy
+sign_in a5 pa5
+help help
+buy
+put item2
+show_items
+pwd
+help put
+help register_user
+rename_user user6 <function generate_user at 0x027087F0>
+add_item item1 key2=val5 key4=val2 key8=val4 key2=val2 
+whoami
+which_group
+register_user user1 pass1
+rename_user user1 <function generate_user at 0x027087F0>
+which_group
+sign_in user9 pass9
+whoami
+show_users
+sign_out
+show_users
+sign_in a5 pa5
+pwd
+buy
+rename_user user4 <function generate_user at 0x027087F0>
+show_items
+buy
+show_item_properties item3
+add_item_property item2 key5=val8 key4=val6 key1=val4 key2=val6 
+show_users
+current_folder
+show_item_properties item4
+put item3
+put item5
+create_folder folder5
+cd folder2
+put item2
+current_folder
+add_item_property item3 key9=val1 key1=val5 key2=val3 key10=val4 
+sign_in a3 pa3
+create_folder folder4
+sign_in user1 pass1
+show_users
+show_item_properties item5
+register_admin user4 pass4
+sign_in user7 pass7
+cd folder3
+whoami
+sign_out
+put item3
+rename_user user2 <function generate_user at 0x027087F0>
+show_item_properties item5
+which_group
+put item2
+help show_users
+sign_out
+sign_out
+show_users
+show_items
+create_folder folder5
+whoami
+register_user user6 pass6
+cd folder2
+ls
+add_item_property item3 key3=val2 key3=val6 key5=val2 key10=val7 
+put item3
+sign_in user7 pass7
+add_item item3 key8=val4 key3=val3 key5=val10 key6=val10 
+register_admin user8 pass8
+create_folder folder5
+sign_out
+ls_folders
+create_folder folder2
+register_user user6 pass6
+show_folders
+create_folder folder2
+register_admin user1 pass1
+show_item_properties item2
+buy
+which_group
+sign_out
+sign_out
+cd folder3
+add_item_property item4 key8=val9 key2=val5 key10=val5 key3=val4 
+show_users
+show_users
+buy
+put item1
+pwd
+show_item_properties item2
+show_items
+help buy
+whoami
+register_user user8 pass8
+show_folders
+add_item item2 key3=val8 key5=val5 key9=val4 key2=val7 
+current_folder
+create_folder folder4
+register_user admin admin
+help register_user
+show_items
+current_folder
+sign_out
+current_folder
+add_item item1 key8=val5 key2=val2 key5=val9 key5=val5 
+create_folder folder3
+which_group
+show_folders
+rename_user user8 <function generate_user at 0x027087F0>
+show_folders
+cd folder3
+ls
+add_item_property item4 key2=val6 key4=val9 key1=val3 key10=val7 
+put item1
+register_user user8 pass8
+current_folder
+show_users
+rename_user user6 <function generate_user at 0x027087F0>
+current_folder
+current_folder
+whoami
+sign_in a5 pa5
+register_admin admin admin
+sign_out
+show_users
+register_admin user8 pass8
+sign_in a2 pa2
+help pwd
+cd folder1
+register_admin user4 pass4
+sign_in a5 pa5
+show_users
+rename_user user1 <function generate_user at 0x027087F0>
+help cd
+show_users
+current_folder
+register_user user3 pass3
+register_user user7 pass7
+which_group
+show_users
+show_users
+whoami
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+put item2
+show_item_properties item1
+sign_out
+which_group
+register_admin user9 pass9
+current_folder
+show_item_properties item4
+register_admin user7 pass7
+sign_in a3 pa3
+sign_out
+rename_user user1 <function generate_user at 0x027087F0>
+register_admin user8 pass8
+show_folders
+help show_folders
+buy
+register_user user2 pass2
+sign_in a5 pa5
+whoami
+sign_in user6 pass6
+add_item item5 key8=val6 key10=val8 key4=val3 key2=val7 
+show_users
+create_folder folder2
+sign_in user3 pass3
+rename_user user9 <function generate_user at 0x027087F0>
+sign_in admin admin
+show_users
+cd folder2
+add_item_property item3 key7=val1 key1=val2 key9=val1 key2=val8 
+sign_out
+buy
+help ls_folders
+show_item_properties item3
+help ls
+show_item_properties item1
+show_users
+which_group
+help show_item_properties
+show_folders
+which_group
+sign_in a4 pa4
+sign_in user6 pass6
+which_group
+show_items
+show_folders
+show_item_properties item1
+sign_in a5 pa5
+sign_out
+sign_in a2 pa2
+ls_folders
+sign_in user4 pass4
+show_items
+create_folder folder1
+ls_folders
+current_folder
+sign_out
+show_items
+cd folder4
+add_item_property item2 key3=val7 key9=val1 key2=val9 key6=val1 
+rename_user user8 <function generate_user at 0x027087F0>
+cd folder1
+ls_folders
+current_folder
+sign_out
+register_admin user7 pass7
+sign_in user4 pass4
+sign_in user3 pass3
+add_item_property item1 key8=val7 key3=val6 key1=val7 key5=val7 
+register_user admin admin
+register_admin user5 pass5
+cd folder5
+buy
+pwd
+put item1
+pwd
+rename_user user5 <function generate_user at 0x027087F0>
+pwd
+whoami
+buy
+register_user user7 pass7
+current_folder
+add_item_property item3 key10=val8 key1=val9 key5=val2 key7=val1 
+sign_out
+show_item_properties item3
+add_item item1 key5=val7 key6=val8 key6=val6 key4=val9 
+which_group
+show_users
+register_user user9 pass9
+whoami
+rename_user user6 <function generate_user at 0x027087F0>
+help help
+help rename_user
+show_users
+show_folders
+put item3
+cd folder3
+show_folders
+ls
+help show_users
+sign_in a4 pa4
+show_users
+create_folder folder1
+show_users
+help cd
+cd folder2
+register_admin user4 pass4
+rename_user user8 <function generate_user at 0x027087F0>
+show_folders
+show_folders
+which_group
+create_folder folder5
+register_user admin admin
+sign_out
+show_items
+cd folder4
+ls
+cd folder5
+show_users
+pwd
+create_folder folder5
+sign_in a3 pa3
+show_items
+create_folder folder3
+put item4
+sign_out
+register_admin user9 pass9
+create_folder folder5
+sign_in a2 pa2
+add_item_property item1 key3=val6 key1=val7 key7=val8 key3=val10 
+register_admin user2 pass2
+register_user user4 pass4
+create_folder folder4
+ls_folders
+register_admin user4 pass4
+buy
+which_group
+whoami
+show_users
+cd folder3
+current_folder
+show_items
+sign_in a1 pa1
+ls
+register_admin user7 pass7
+help cd
+current_folder
+register_admin admin admin
+add_item item3 key8=val8 key2=val3 key6=val8 key1=val10 
+current_folder
+current_folder
+help delete_user
+whoami
+show_items
+show_items
+sign_in user5 pass5
+whoami
+cd folder4
+create_folder folder1
+create_folder folder3
+buy
+show_item_properties item4
+show_item_properties item2
+sign_in user2 pass2
+put item1
+sign_out
+show_users
+add_item item2 key8=val2 key8=val10 key8=val6 key10=val4 
+show_users
+buy
+sign_in user2 pass2
+buy
+add_item item4 key5=val6 key5=val3 key8=val2 key5=val7 
+add_item item4 key8=val10 key6=val5 key6=val3 key7=val4 
+which_group
+show_item_properties item3
+show_items
+buy
+show_users
+add_item_property item5 key8=val3 key7=val7 key6=val2 key4=val4 
+buy
+current_folder
+whoami
+sign_out
+ls_folders
+show_items
+which_group
+register_user user5 pass5
+show_users
+which_group
+add_item item3 key5=val8 key5=val7 key10=val6 key5=val1 
+sign_in a5 pa5
+cd folder3
+sign_in a4 pa4
+help register_user
+show_folders
+which_group
+put item5
+show_users
+buy
+sign_out
+register_user user1 pass1
+cd folder2
+help sign_out
+show_folders
+add_item_property item4 key4=val5 key10=val5 key5=val5 key5=val9 
+pwd
+add_item item1 key3=val4 key3=val10 key3=val7 key10=val5 
+register_admin user6 pass6
+create_folder folder5
+show_folders
+ls
+show_folders
+pwd
+sign_in user6 pass6
+cd folder1
+show_folders
+ls_folders
+show_folders
+show_item_properties item4
+pwd
+put item5
+pwd
+help show_item_properties
+current_folder
+sign_in a3 pa3
+rename_user user2 <function generate_user at 0x027087F0>
+sign_out
+sign_out
+sign_out
+show_items
+sign_in user5 pass5
+whoami
+current_folder
+sign_out
+sign_out
+show_items
+which_group
+sign_in user5 pass5
+put item5
+show_item_properties item1
+current_folder
+which_group
+which_group
+cd folder4
+sign_out
+register_user admin admin
+which_group
+show_items
+help add_item
+put item2
+register_user user9 pass9
+ls_folders
+sign_in a4 pa4
+register_admin user4 pass4
+ls_folders
+ls_folders
+create_folder folder5
+pwd
+sign_out
+ls_folders
+sign_out
+rename_user user7 <function generate_user at 0x027087F0>
+current_folder
+pwd
+sign_in a3 pa3
+sign_out
+show_item_properties item5
+show_folders
+show_item_properties item1
+show_folders
+register_admin user4 pass4
+sign_in admin admin
+which_group
+sign_in a5 pa5
+add_item_property item4 key2=val2 key7=val5 key9=val8 key9=val4 
+pwd
+help ls_folders
+current_folder
+current_folder
+register_admin user5 pass5
+pwd
+sign_in user4 pass4
+show_folders
+ls_folders
+rename_user user8 <function generate_user at 0x027087F0>
+rename_user user8 <function generate_user at 0x027087F0>
+add_item item4 key1=val9 key6=val7 key4=val6 key8=val8 
+register_admin user1 pass1
+current_folder
+register_user user3 pass3
+sign_in user2 pass2
+sign_in user9 pass9
+create_folder folder5
+show_users
+ls_folders
+show_folders
+whoami
+ls_folders
+show_users
+ls_folders
+buy
+sign_in a4 pa4
+show_folders
+show_folders
+sign_out
+cd folder5
+show_folders
+cd folder3
+show_items
+show_items
+whoami
+put item5
+current_folder
+buy
+pwd
+ls_folders
+show_item_properties item4
+ls
+cd folder1
+buy
+ls
+which_group
+show_item_properties item3
+show_users
+show_items
+help create_folder
+rename_user user4 <function generate_user at 0x027087F0>
+add_item item2 key5=val6 key10=val7 key10=val3 key8=val1 
+show_item_properties item4
+show_items
+sign_in a5 pa5
+show_items
+show_users
+sign_in a3 pa3
+add_item_property item5 key9=val4 key3=val8 key2=val7 key9=val7 
+buy
+register_user user8 pass8
+create_folder folder1
+show_items
+sign_in user4 pass4
+show_item_properties item4
+sign_in user6 pass6
+cd folder2
+which_group
+whoami
+register_user user3 pass3
+register_admin user2 pass2
+put item2
+which_group
+whoami
+show_users
+current_folder
+rename_user user1 <function generate_user at 0x027087F0>
+ls_folders
+sign_out
+show_users
+help current_folder
+add_item item2 key6=val3 key8=val4 key1=val9 key4=val10 
+add_item item1 key1=val5 key2=val9 key3=val8 key3=val2 
+show_items
+sign_out
+show_item_properties item3
+show_item_properties item2
+sign_in user6 pass6
+sign_out
+current_folder
+add_item_property item3 key10=val3 key8=val4 key5=val8 key6=val9 
+ls
+which_group
+show_items
+sign_out
+show_folders
+register_admin user3 pass3
+add_item item4 key6=val10 key7=val3 key1=val4 key8=val1 
+help rename_user
+ls
+current_folder
+ls_folders
+register_user user6 pass6
+show_folders
+pwd
+sign_in a3 pa3
+ls_folders
+sign_in a3 pa3
+whoami
+sign_out
+show_item_properties item5
+which_group
+help whoami
+cd folder4
+pwd
+help which_group
+sign_out
+ls_folders
+sign_out
+cd folder2
+add_item_property item2 key2=val8 key2=val7 key6=val6 key7=val4 
+show_item_properties item2
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+whoami
+current_folder
+whoami
+sign_in user9 pass9
+rename_user user2 <function generate_user at 0x027087F0>
+register_user user3 pass3
+put item2
+whoami
+which_group
+add_item_property item5 key3=val9 key3=val2 key5=val6 key9=val10 
+sign_in user4 pass4
+show_item_properties item4
+sign_in user2 pass2
+which_group
+add_item item4 key6=val4 key1=val10 key4=val7 key1=val4 
+current_folder
+put item5
+buy
+add_item item2 key7=val5 key9=val7 key4=val4 key1=val7 
+put item5
+sign_out
+cd folder5
+register_user user9 pass9
+sign_in user7 pass7
+whoami
+show_folders
+pwd
+register_user admin admin
+create_folder folder3
+current_folder
+sign_in a4 pa4
+sign_out
+sign_in user7 pass7
+add_item_property item1 key10=val3 key1=val7 key10=val2 key8=val7 
+create_folder folder2
+add_item_property item5 key7=val2 key1=val10 key3=val9 key4=val9 
+ls_folders
+cd folder5
+register_admin user5 pass5
+help cd
+put item3
+cd folder4
+ls
+show_folders
+create_folder folder2
+which_group
+put item3
+sign_in user5 pass5
+show_item_properties item1
+register_user user3 pass3
+ls
+help history
+current_folder
+show_users
+which_group
+show_folders
+ls_folders
+cd folder1
+show_users
+show_items
+current_folder
+ls_folders
+ls
+add_item_property item2 key4=val4 key5=val1 key1=val1 key6=val3 
+put item5
+create_folder folder3
+ls_folders
+register_admin user3 pass3
+cd folder1
+add_item item1 key3=val8 key4=val5 key7=val7 key1=val2 
+whoami
+whoami
+put item4
+sign_in a2 pa2
+show_items
+cd folder5
+register_user user3 pass3
+sign_in a4 pa4
+pwd
+current_folder
+rename_user user6 <function generate_user at 0x027087F0>
+which_group
+add_item item1 key4=val6 key1=val7 key6=val2 key4=val8 
+current_folder
+show_items
+cd folder3
+whoami
+rename_user user2 <function generate_user at 0x027087F0>
+pwd
+show_item_properties item1
+register_admin user3 pass3
+buy
+create_folder folder5
+buy
+add_item_property item5 key2=val1 key6=val3 key8=val3 key5=val2 
+show_folders
+help buy
+create_folder folder3
+sign_in user1 pass1
+sign_in a2 pa2
+register_user user6 pass6
+add_item item4 key2=val5 key2=val9 key2=val4 key1=val1 
+register_user user3 pass3
+sign_out
+which_group
+show_items
+sign_out
+show_users
+buy
+register_admin user1 pass1
+show_users
+add_item_property item1 key9=val2 key8=val3 key7=val7 key3=val5 
+ls_folders
+buy
+show_items
+sign_in user9 pass9
+sign_out
+register_user user2 pass2
+cd folder1
+put item5
+add_item_property item3 key3=val1 key10=val7 key2=val5 key5=val1 
+create_folder folder3
+pwd
+register_user user6 pass6
+sign_in a5 pa5
+show_folders
+which_group
+buy
+sign_out
+ls
+add_item_property item3 key7=val1 key9=val3 key7=val6 key1=val8 
+create_folder folder1
+show_users
+which_group
+sign_in user5 pass5
+help delete_user
+sign_out
+help whoami
+whoami
+show_items
+ls_folders
+pwd
+show_items
+pwd
+sign_in a5 pa5
+ls
+current_folder
+show_users
+register_admin user6 pass6
+register_user user6 pass6
+sign_out
+create_folder folder4
+show_item_properties item2
+sign_in a4 pa4
+show_folders
+help ls
+register_user user2 pass2
+add_item item5 key3=val9 key1=val2 key10=val1 key10=val6 
+help show_users
+whoami
+cd folder3
+put item5
+show_items
+buy
+rename_user user1 <function generate_user at 0x027087F0>
+rename_user user9 <function generate_user at 0x027087F0>
+sign_in user7 pass7
+buy
+ls_folders
+which_group
+cd folder5
+register_admin user2 pass2
+add_item_property item1 key9=val10 key1=val5 key9=val5 key2=val5 
+ls
+show_items
+show_users
+help history
+cd folder3
+buy
+create_folder folder1
+pwd
+sign_in user8 pass8
+whoami
+create_folder folder1
+register_user user9 pass9
+add_item_property item5 key2=val4 key7=val5 key8=val5 key6=val8 
+show_item_properties item5
+which_group
+sign_in a5 pa5
+put item3
+ls
+create_folder folder2
+show_item_properties item3
+ls
+cd folder4
+current_folder
+sign_out
+show_items
+ls
+put item5
+help view_order
+register_user user5 pass5
+sign_in a2 pa2
+which_group
+show_users
+whoami
+put item5
+show_users
+whoami
+help sign_out
+add_item_property item3 key6=val10 key3=val7 key2=val3 key6=val9 
+which_group
+show_users
+create_folder folder4
+buy
+sign_in user8 pass8
+rename_user user4 <function generate_user at 0x027087F0>
+cd folder1
+add_item_property item5 key2=val1 key9=val9 key10=val7 key10=val4 
+add_item item3 key7=val8 key5=val1 key4=val4 key4=val5 
+buy
+show_items
+add_item_property item2 key9=val8 key7=val9 key5=val7 key7=val8 
+rename_user user7 <function generate_user at 0x027087F0>
+ls
+ls_folders
+which_group
+show_folders
+register_admin user9 pass9
+help add_item
+add_item item2 key10=val4 key6=val1 key1=val9 key1=val5 
+whoami
+sign_in a1 pa1
+pwd
+sign_in user2 pass2
+whoami
+show_items
+show_users
+sign_out
+ls
+put item5
+current_folder
+help rename_user
+show_users
+create_folder folder4
+show_folders
+ls_folders
+register_user admin admin
+cd folder1
+rename_user user6 <function generate_user at 0x027087F0>
+show_item_properties item4
+show_users
+sign_out
+cd folder5
+sign_out
+sign_out
+sign_out
+pwd
+sign_out
+sign_in user3 pass3
+whoami
+pwd
+ls_folders
+sign_out
+rename_user user1 <function generate_user at 0x027087F0>
+show_item_properties item3
+create_folder folder2
+sign_out
+rename_user user8 <function generate_user at 0x027087F0>
+register_user user4 pass4
+help sign_in
+help whoami
+which_group
+show_users
+put item4
+sign_in a3 pa3
+show_items
+whoami
+buy
+sign_in admin admin
+sign_out
+register_admin user3 pass3
+create_folder folder4
+sign_in user8 pass8
+pwd
+sign_in a3 pa3
+show_items
+sign_in user1 pass1
+show_item_properties item5
+show_users
+sign_in a4 pa4
+ls_folders
+register_admin admin admin
+put item5
+sign_out
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in user8 pass8
+add_item_property item2 key5=val8 key4=val6 key1=val5 key6=val4 
+ls
+rename_user user3 <function generate_user at 0x027087F0>
+register_user user2 pass2
+show_folders
+ls_folders
+put item2
+put item5
+sign_in user7 pass7
+put item5
+rename_user user1 <function generate_user at 0x027087F0>
+show_item_properties item4
+which_group
+help buy
+current_folder
+sign_in a2 pa2
+current_folder
+register_user user2 pass2
+help help
+register_admin user6 pass6
+ls
+current_folder
+show_items
+whoami
+show_items
+register_user user1 pass1
+sign_in a4 pa4
+buy
+sign_out
+create_folder folder1
+show_folders
+show_items
+whoami
+ls_folders
+which_group
+sign_out
+pwd
+show_users
+show_item_properties item4
+sign_in a1 pa1
+ls
+pwd
+show_items
+show_users
+add_item item4 key8=val1 key9=val7 key6=val9 key8=val7 
+pwd
+put item4
+whoami
+sign_out
+put item4
+register_admin user8 pass8
+buy
+add_item item1 key3=val2 key9=val7 key4=val7 key4=val10 
+register_user user1 pass1
+add_item item4 key7=val4 key2=val5 key3=val2 key1=val1 
+show_items
+add_item item2 key8=val8 key7=val2 key6=val2 key10=val5 
+ls
+ls_folders
+ls_folders
+sign_in user2 pass2
+show_item_properties item3
+pwd
+show_folders
+register_admin user9 pass9
+pwd
+create_folder folder1
+whoami
+pwd
+sign_in user7 pass7
+ls_folders
+ls_folders
+add_item item4 key7=val1 key3=val9 key2=val9 key5=val4 
+pwd
+rename_user user6 <function generate_user at 0x027087F0>
+register_user user6 pass6
+pwd
+show_item_properties item1
+register_user user8 pass8
+add_item item3 key7=val3 key7=val6 key3=val6 key3=val1 
+whoami
+help view_order
+show_items
+create_folder folder3
+whoami
+register_user user1 pass1
+create_folder folder4
+put item1
+ls
+cd folder2
+add_item item2 key10=val4 key2=val1 key1=val10 key10=val6 
+add_item item5 key5=val7 key7=val2 key2=val8 key5=val4 
+show_users
+show_folders
+whoami
+pwd
+show_item_properties item3
+put item4
+pwd
+put item3
+cd folder2
+show_folders
+rename_user user3 <function generate_user at 0x027087F0>
+put item3
+register_user user2 pass2
+rename_user user7 <function generate_user at 0x027087F0>
+ls_folders
+buy
+show_items
+sign_in a5 pa5
+sign_out
+show_folders
+ls
+help delete_user
+add_item_property item1 key1=val3 key3=val6 key2=val3 key8=val5 
+current_folder
+add_item item5 key10=val1 key4=val10 key9=val1 key4=val4 
+pwd
+register_user user4 pass4
+ls_folders
+create_folder folder1
+show_item_properties item4
+add_item_property item1 key6=val4 key10=val6 key5=val10 key8=val9 
+show_users
+which_group
+sign_in a2 pa2
+which_group
+create_folder folder3
+show_item_properties item5
+sign_in user1 pass1
+sign_out
+which_group
+sign_out
+sign_in a2 pa2
+whoami
+sign_in user3 pass3
+register_user user5 pass5
+which_group
+add_item item1 key10=val5 key2=val9 key7=val6 key8=val7 
+show_folders
+register_user user7 pass7
+add_item item3 key3=val7 key7=val3 key4=val2 key3=val7 
+show_users
+add_item item3 key10=val4 key5=val4 key7=val5 key8=val2 
+show_items
+cd folder1
+sign_in user7 pass7
+ls_folders
+show_users
+ls_folders
+which_group
+show_item_properties item2
+add_item_property item3 key1=val10 key9=val9 key5=val7 key7=val8 
+put item5
+show_items
+show_folders
+register_user user2 pass2
+register_admin admin admin
+ls
+buy
+rename_user user9 <function generate_user at 0x027087F0>
+rename_user user1 <function generate_user at 0x027087F0>
+pwd
+ls_folders
+show_items
+which_group
+rename_user user5 <function generate_user at 0x027087F0>
+create_folder folder2
+show_item_properties item1
+ls_folders
+current_folder
+register_user user1 pass1
+create_folder folder4
+sign_in user6 pass6
+help delete_user
+create_folder folder1
+rename_user user2 <function generate_user at 0x027087F0>
+add_item item1 key8=val10 key1=val8 key1=val5 key1=val7 
+whoami
+show_items
+cd folder3
+create_folder folder2
+create_folder folder5
+ls_folders
+rename_user user8 <function generate_user at 0x027087F0>
+register_user user8 pass8
+sign_in user5 pass5
+current_folder
+buy
+help help
+register_admin admin admin
+buy
+cd folder3
+add_item item1 key4=val6 key6=val8 key3=val8 key2=val4 
+add_item item2 key9=val4 key3=val7 key1=val7 key8=val4 
+show_folders
+show_folders
+sign_out
+whoami
+sign_in a3 pa3
+create_folder folder1
+whoami
+put item2
+buy
+sign_in a3 pa3
+rename_user user7 <function generate_user at 0x027087F0>
+whoami
+cd folder4
+buy
+show_users
+buy
+sign_out
+buy
+show_items
+which_group
+cd folder3
+register_user admin admin
+put item3
+ls_folders
+show_folders
+help whoami
+create_folder folder5
+pwd
+buy
+ls
+help create_folder
+which_group
+which_group
+add_item_property item2 key4=val9 key8=val5 key8=val1 key9=val3 
+rename_user user3 <function generate_user at 0x027087F0>
+register_user user7 pass7
+show_items
+register_admin user2 pass2
+sign_in user6 pass6
+show_users
+register_user admin admin
+sign_in user2 pass2
+register_admin user6 pass6
+show_folders
+current_folder
+whoami
+show_folders
+pwd
+which_group
+current_folder
+sign_out
+add_item_property item5 key9=val10 key3=val3 key6=val4 key2=val6 
+sign_in a5 pa5
+current_folder
+ls_folders
+ls
+pwd
+whoami
+add_item item2 key10=val7 key9=val5 key10=val4 key4=val2 
+sign_out
+which_group
+show_users
+ls
+sign_in a3 pa3
+show_item_properties item2
+sign_out
+show_items
+add_item_property item5 key5=val7 key2=val5 key5=val2 key7=val7 
+put item1
+whoami
+add_item item3 key5=val3 key6=val7 key10=val4 key10=val9 
+cd folder3
+show_items
+which_group
+sign_in user6 pass6
+rename_user user0 <function generate_user at 0x027087F0>
+show_folders
+show_items
+create_folder folder3
+show_item_properties item4
+create_folder folder2
+put item1
+show_users
+register_admin user4 pass4
+pwd
+show_items
+sign_in user4 pass4
+show_folders
+show_users
+add_item_property item1 key4=val1 key6=val4 key2=val9 key5=val4 
+show_folders
+show_users
+create_folder folder1
+register_user admin admin
+sign_in user6 pass6
+buy
+cd folder2
+which_group
+buy
+register_admin user8 pass8
+buy
+sign_out
+pwd
+sign_in user8 pass8
+current_folder
+ls
+show_items
+whoami
+ls_folders
+put item5
+whoami
+help register_admin
+ls_folders
+create_folder folder3
+buy
+show_users
+sign_in user8 pass8
+which_group
+pwd
+current_folder
+show_users
+current_folder
+sign_in a4 pa4
+buy
+show_folders
+add_item_property item2 key9=val8 key2=val8 key3=val8 key10=val7 
+sign_out
+show_users
+add_item_property item1 key2=val10 key7=val10 key2=val8 key4=val1 
+rename_user user9 <function generate_user at 0x027087F0>
+whoami
+rename_user user8 <function generate_user at 0x027087F0>
+add_item_property item1 key9=val7 key4=val4 key1=val7 key5=val6 
+sign_in a5 pa5
+current_folder
+show_items
+whoami
+register_admin user2 pass2
+rename_user user3 <function generate_user at 0x027087F0>
+register_admin user7 pass7
+which_group
+register_admin user1 pass1
+rename_user user7 <function generate_user at 0x027087F0>
+register_user user5 pass5
+show_items
+add_item item2 key6=val7 key3=val7 key3=val3 key10=val4 
+add_item item2 key1=val1 key4=val9 key10=val5 key4=val9 
+show_item_properties item1
+create_folder folder2
+show_users
+buy
+current_folder
+show_item_properties item5
+ls
+put item3
+add_item_property item4 key5=val2 key7=val1 key4=val3 key2=val4 
+pwd
+ls_folders
+buy
+register_admin admin admin
+add_item_property item3 key8=val10 key7=val2 key10=val8 key9=val10 
+ls
+rename_user user3 <function generate_user at 0x027087F0>
+rename_user user7 <function generate_user at 0x027087F0>
+sign_in user8 pass8
+rename_user user9 <function generate_user at 0x027087F0>
+add_item item3 key8=val4 key1=val8 key9=val5 key10=val2 
+show_item_properties item3
+current_folder
+ls_folders
+help create_folder
+add_item item2 key7=val5 key1=val8 key5=val9 key10=val8 
+show_item_properties item4
+cd folder5
+current_folder
+show_users
+sign_in user3 pass3
+show_items
+add_item item4 key8=val8 key8=val1 key3=val10 key2=val7 
+rename_user user9 <function generate_user at 0x027087F0>
+ls
+show_folders
+buy
+pwd
+pwd
+register_admin user3 pass3
+buy
+cd folder1
+put item3
+current_folder
+sign_out
+rename_user user2 <function generate_user at 0x027087F0>
+show_users
+add_item_property item3 key7=val1 key6=val1 key8=val7 key1=val8 
+help ls
+rename_user user4 <function generate_user at 0x027087F0>
+show_items
+sign_out
+show_item_properties item1
+add_item item3 key10=val3 key5=val10 key8=val2 key9=val10 
+cd folder4
+add_item item5 key9=val3 key4=val3 key8=val1 key1=val10 
+add_item item2 key6=val8 key1=val5 key7=val8 key2=val2 
+add_item_property item2 key4=val2 key6=val9 key2=val10 key8=val1 
+add_item item1 key6=val9 key7=val4 key7=val8 key3=val10 
+whoami
+ls_folders
+show_users
+pwd
+sign_out
+help cd
+sign_in a3 pa3
+add_item_property item5 key5=val10 key10=val5 key5=val10 key9=val7 
+create_folder folder1
+which_group
+put item5
+show_users
+sign_in a4 pa4
+show_items
+sign_in a2 pa2
+register_admin user4 pass4
+create_folder folder2
+which_group
+current_folder
+rename_user user3 <function generate_user at 0x027087F0>
+add_item item4 key7=val1 key3=val6 key7=val4 key4=val5 
+current_folder
+which_group
+show_item_properties item2
+register_admin user6 pass6
+sign_in user6 pass6
+show_folders
+add_item_property item2 key5=val1 key6=val5 key1=val1 key2=val1 
+show_folders
+pwd
+which_group
+whoami
+show_users
+rename_user user8 <function generate_user at 0x027087F0>
+add_item item3 key2=val2 key6=val10 key1=val7 key10=val1 
+ls_folders
+add_item item5 key6=val8 key7=val10 key6=val10 key1=val7 
+show_users
+show_items
+sign_in user7 pass7
+buy
+ls_folders
+show_item_properties item3
+whoami
+put item4
+show_users
+show_item_properties item5
+cd folder5
+buy
+sign_out
+whoami
+show_item_properties item1
+sign_in user8 pass8
+buy
+help register_user
+register_user user4 pass4
+sign_out
+sign_in a3 pa3
+buy
+sign_in admin admin
+add_item item5 key9=val8 key6=val10 key6=val9 key9=val7 
+add_item_property item1 key4=val5 key4=val7 key10=val1 key7=val8 
+add_item item4 key2=val7 key1=val5 key4=val3 key4=val7 
+sign_out
+whoami
+help register_admin
+ls_folders
+show_users
+current_folder
+current_folder
+add_item item2 key2=val6 key5=val7 key6=val9 key9=val1 
+buy
+help current_folder
+show_users
+cd folder4
+show_folders
+add_item item3 key2=val10 key7=val4 key3=val7 key5=val7 
+register_user user7 pass7
+show_item_properties item3
+create_folder folder2
+put item5
+sign_in a3 pa3
+ls
+sign_in a5 pa5
+show_folders
+which_group
+add_item item2 key5=val2 key2=val4 key5=val3 key7=val1 
+register_admin user3 pass3
+show_folders
+ls
+show_items
+buy
+register_user user1 pass1
+add_item item4 key3=val7 key2=val9 key3=val5 key8=val2 
+register_admin user1 pass1
+show_items
+register_user user2 pass2
+buy
+show_item_properties item5
+help show_folders
+show_folders
+rename_user user3 <function generate_user at 0x027087F0>
+whoami
+ls
+show_folders
+sign_in a3 pa3
+show_items
+rename_user user0 <function generate_user at 0x027087F0>
+sign_out
+create_folder folder1
+put item1
+put item1
+sign_in user9 pass9
+show_item_properties item4
+current_folder
+ls_folders
+add_item_property item2 key1=val3 key3=val8 key3=val9 key3=val3 
+cd folder4
+register_admin user2 pass2
+pwd
+show_items
+rename_user user7 <function generate_user at 0x027087F0>
+add_item item5 key1=val5 key7=val10 key8=val1 key6=val5 
+rename_user user6 <function generate_user at 0x027087F0>
+create_folder folder4
+show_users
+cd folder2
+add_item_property item4 key4=val9 key4=val1 key2=val4 key10=val4 
+current_folder
+ls
+sign_in user2 pass2
+show_folders
+ls_folders
+buy
+show_folders
+cd folder4
+current_folder
+rename_user user6 <function generate_user at 0x027087F0>
+current_folder
+sign_out
+buy
+register_admin user9 pass9
+ls_folders
+add_item_property item3 key8=val5 key7=val5 key2=val7 key10=val7 
+buy
+current_folder
+show_folders
+ls
+ls
+sign_in a3 pa3
+current_folder
+show_items
+register_user user3 pass3
+add_item item1 key2=val6 key10=val2 key1=val10 key3=val3 
+cd folder5
+which_group
+sign_out
+sign_in user7 pass7
+ls
+current_folder
+show_item_properties item3
+sign_in user5 pass5
+help register_admin
+register_admin user4 pass4
+register_admin user6 pass6
+help register_user
+register_user user1 pass1
+show_items
+rename_user user9 <function generate_user at 0x027087F0>
+which_group
+show_users
+sign_in a2 pa2
+help rename_user
+ls
+add_item_property item1 key7=val4 key7=val2 key8=val8 key7=val10 
+add_item item1 key10=val5 key4=val3 key1=val1 key10=val2 
+register_admin user4 pass4
+sign_in a1 pa1
+add_item_property item4 key1=val9 key7=val1 key5=val4 key6=val9 
+show_items
+show_items
+rename_user user9 <function generate_user at 0x027087F0>
+buy
+put item4
+pwd
+ls
+rename_user user6 <function generate_user at 0x027087F0>
+whoami
+rename_user user7 <function generate_user at 0x027087F0>
+buy
+whoami
+buy
+sign_in a2 pa2
+help add_item_property
+sign_in a3 pa3
+add_item item4 key8=val2 key6=val3 key9=val1 key4=val5 
+show_item_properties item1
+ls
+create_folder folder4
+help register_user
+pwd
+show_item_properties item5
+sign_in a3 pa3
+sign_out
+sign_in a1 pa1
+show_items
+ls_folders
+ls_folders
+show_folders
+pwd
+put item2
+current_folder
+show_folders
+help put
+create_folder folder5
+show_folders
+add_item_property item3 key7=val1 key6=val9 key4=val1 key10=val2 
+register_admin admin admin
+rename_user user0 <function generate_user at 0x027087F0>
+sign_in user1 pass1
+cd folder5
+add_item_property item5 key6=val7 key8=val7 key5=val10 key5=val6 
+sign_in a1 pa1
+help register_admin
+register_admin user1 pass1
+sign_in user5 pass5
+show_item_properties item5
+ls
+show_items
+whoami
+ls
+buy
+which_group
+sign_out
+create_folder folder3
+current_folder
+pwd
+put item3
+add_item item4 key4=val4 key4=val4 key2=val4 key9=val6 
+buy
+create_folder folder4
+show_item_properties item4
+current_folder
+add_item item1 key9=val10 key5=val9 key2=val5 key10=val1 
+cd folder3
+register_user user5 pass5
+sign_out
+rename_user user4 <function generate_user at 0x027087F0>
+create_folder folder5
+cd folder3
+create_folder folder4
+create_folder folder3
+put item2
+whoami
+show_items
+current_folder
+buy
+buy
+show_items
+show_items
+help history
+create_folder folder1
+show_users
+register_admin user2 pass2
+buy
+show_users
+ls
+rename_user user8 <function generate_user at 0x027087F0>
+help create_folder
+ls
+add_item_property item3 key8=val4 key4=val9 key5=val9 key7=val6 
+show_items
+which_group
+sign_in a1 pa1
+create_folder folder3
+register_admin user1 pass1
+pwd
+buy
+register_admin user1 pass1
+help which_group
+register_admin user7 pass7
+buy
+ls_folders
+cd folder4
+add_item item3 key10=val9 key4=val2 key4=val2 key6=val4 
+whoami
+sign_in a3 pa3
+show_folders
+cd folder4
+add_item_property item4 key5=val1 key2=val2 key9=val1 key3=val8 
+create_folder folder1
+cd folder5
+show_items
+show_users
+which_group
+which_group
+put item4
+ls_folders
+rename_user user8 <function generate_user at 0x027087F0>
+ls_folders
+buy
+add_item item2 key2=val6 key10=val4 key10=val4 key4=val4 
+show_folders
+ls_folders
+show_item_properties item4
+sign_in a2 pa2
+show_users
+sign_in a4 pa4
+show_folders
+add_item_property item1 key7=val2 key9=val7 key5=val2 key9=val6 
+show_items
+sign_out
+buy
+ls_folders
+help show_items
+sign_out
+sign_in a3 pa3
+register_user user2 pass2
+show_items
+show_users
+sign_in user5 pass5
+pwd
+pwd
+show_folders
+sign_in a5 pa5
+register_admin user1 pass1
+sign_in a1 pa1
+add_item_property item4 key10=val10 key1=val2 key7=val9 key10=val7 
+show_users
+pwd
+help show_folders
+current_folder
+register_admin user1 pass1
+which_group
+show_items
+show_item_properties item4
+show_items
+which_group
+put item4
+ls
+current_folder
+show_users
+ls_folders
+which_group
+register_admin user2 pass2
+show_items
+show_item_properties item2
+buy
+which_group
+show_item_properties item4
+buy
+register_admin user3 pass3
+help show_items
+buy
+ls
+current_folder
+register_admin user7 pass7
+which_group
+which_group
+sign_out
+create_folder folder3
+which_group
+pwd
+show_users
+sign_in a4 pa4
+rename_user user1 <function generate_user at 0x027087F0>
+show_users
+which_group
+register_admin user1 pass1
+sign_in a3 pa3
+add_item item4 key1=val7 key7=val7 key2=val10 key4=val10 
+create_folder folder4
+buy
+pwd
+ls_folders
+add_item item3 key6=val1 key7=val6 key4=val5 key6=val9 
+register_user user7 pass7
+sign_in user7 pass7
+show_item_properties item2
+pwd
+create_folder folder3
+cd folder3
+sign_in user7 pass7
+pwd
+which_group
+add_item item4 key9=val3 key7=val6 key7=val10 key3=val10 
+whoami
+show_folders
+create_folder folder1
+add_item_property item5 key7=val6 key2=val7 key1=val8 key3=val4 
+show_items
+buy
+sign_in user9 pass9
+buy
+pwd
+sign_in a4 pa4
+show_item_properties item3
+ls_folders
+register_admin admin admin
+buy
+ls_folders
+create_folder folder1
+sign_in user7 pass7
+current_folder
+whoami
+buy
+cd folder5
+create_folder folder5
+ls_folders
+whoami
+help add_item_property
+show_folders
+cd folder5
+show_folders
+create_folder folder1
+whoami
+sign_in a1 pa1
+add_item item2 key6=val1 key8=val2 key5=val5 key3=val6 
+ls
+register_admin user1 pass1
+add_item_property item1 key7=val7 key9=val4 key10=val5 key6=val8 
+ls
+show_users
+register_admin user1 pass1
+add_item item1 key8=val1 key1=val1 key8=val8 key5=val5 
+show_item_properties item3
+ls
+show_folders
+pwd
+put item5
+buy
+ls
+rename_user user1 <function generate_user at 0x027087F0>
+ls
+current_folder
+buy
+register_user user5 pass5
+register_admin user4 pass4
+help cd
+put item3
+buy
+create_folder folder4
+show_item_properties item5
+register_admin user3 pass3
+put item5
+register_admin user6 pass6
+ls
+add_item item5 key3=val10 key9=val3 key8=val10 key2=val8 
+help sign_out
+register_user user9 pass9
+show_users
+whoami
+rename_user user2 <function generate_user at 0x027087F0>
+whoami
+add_item_property item2 key3=val3 key4=val6 key10=val10 key2=val3 
+pwd
+ls
+rename_user user9 <function generate_user at 0x027087F0>
+create_folder folder4
+sign_out
+rename_user user6 <function generate_user at 0x027087F0>
+show_users
+show_items
+put item1
+cd folder4
+pwd
+buy
+sign_out
+register_admin user6 pass6
+buy
+sign_out
+create_folder folder2
+add_item item3 key1=val9 key2=val8 key2=val4 key1=val8 
+buy
+sign_in a1 pa1
+add_item item5 key1=val7 key10=val3 key6=val2 key9=val10 
+which_group
+whoami
+buy
+which_group
+show_folders
+whoami
+add_item_property item1 key9=val6 key10=val1 key6=val1 key10=val5 
+pwd
+sign_out
+ls
+ls
+ls_folders
+show_items
+register_user user4 pass4
+sign_in a2 pa2
+show_users
+help show_users
+show_users
+ls_folders
+register_user user8 pass8
+show_folders
+pwd
+show_users
+cd folder2
+add_item item2 key9=val8 key10=val6 key6=val8 key6=val7 
+ls
+show_users
+pwd
+cd folder1
+which_group
+whoami
+whoami
+add_item item5 key7=val5 key3=val1 key10=val7 key7=val1 
+show_folders
+show_items
+show_items
+sign_in a1 pa1
+register_user user9 pass9
+buy
+add_item item2 key8=val7 key9=val4 key6=val5 key3=val10 
+ls_folders
+buy
+show_folders
+create_folder folder2
+sign_out
+show_item_properties item5
+current_folder
+put item2
+cd folder2
+rename_user user1 <function generate_user at 0x027087F0>
+show_item_properties item4
+whoami
+help ls_folders
+pwd
+rename_user user0 <function generate_user at 0x027087F0>
+show_item_properties item1
+pwd
+whoami
+add_item_property item1 key9=val3 key2=val5 key10=val7 key4=val2 
+ls_folders
+ls_folders
+show_users
+ls_folders
+register_user user4 pass4
+register_admin user8 pass8
+current_folder
+show_folders
+sign_in a3 pa3
+add_item item1 key10=val2 key4=val6 key9=val5 key7=val7 
+sign_in user3 pass3
+sign_in user7 pass7
+sign_in a1 pa1
+which_group
+sign_in user8 pass8
+create_folder folder4
+cd folder5
+sign_in a5 pa5
+sign_in user7 pass7
+show_users
+create_folder folder1
+sign_out
+sign_in a5 pa5
+buy
+buy
+which_group
+rename_user user7 <function generate_user at 0x027087F0>
+show_users
+ls_folders
+add_item item3 key1=val4 key4=val3 key4=val4 key8=val9 
+sign_in user6 pass6
+put item1
+pwd
+register_user user1 pass1
+cd folder5
+sign_in user9 pass9
+help cd
+show_items
+put item4
+which_group
+sign_out
+buy
+whoami
+ls
+current_folder
+rename_user user9 <function generate_user at 0x027087F0>
+show_folders
+sign_out
+ls
+whoami
+help pwd
+show_items
+whoami
+show_folders
+pwd
+sign_out
+which_group
+pwd
+add_item_property item5 key9=val9 key2=val2 key10=val8 key9=val3 
+show_item_properties item3
+which_group
+show_item_properties item1
+help sign_out
+add_item item2 key7=val6 key7=val2 key2=val5 key10=val3 
+show_folders
+add_item item3 key7=val3 key4=val5 key6=val7 key10=val7 
+buy
+rename_user user6 <function generate_user at 0x027087F0>
+show_users
+buy
+sign_in user8 pass8
+put item3
+whoami
+register_user user6 pass6
+pwd
+show_users
+help add_item_property
+sign_out
+show_users
+show_users
+rename_user user6 <function generate_user at 0x027087F0>
+cd folder4
+show_item_properties item3
+show_users
+rename_user user7 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+show_item_properties item2
+show_folders
+which_group
+cd folder1
+whoami
+add_item item3 key5=val4 key10=val3 key5=val6 key6=val7 
+sign_in user7 pass7
+whoami
+add_item item4 key8=val9 key7=val3 key6=val1 key2=val5 
+register_user user4 pass4
+help ls_folders
+sign_in a1 pa1
+register_admin user4 pass4
+ls
+pwd
+rename_user user3 <function generate_user at 0x027087F0>
+pwd
+ls_folders
+put item3
+sign_in a4 pa4
+pwd
+ls_folders
+ls
+show_users
+help history
+whoami
+register_admin user9 pass9
+cd folder3
+add_item item2 key4=val2 key2=val2 key6=val7 key7=val7 
+help add_item
+put item1
+buy
+show_item_properties item4
+rename_user user7 <function generate_user at 0x027087F0>
+sign_out
+cd folder5
+buy
+add_item item1 key7=val7 key8=val9 key4=val7 key2=val1 
+whoami
+add_item item5 key9=val1 key10=val5 key8=val9 key1=val8 
+register_user user3 pass3
+pwd
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in a5 pa5
+show_folders
+show_users
+buy
+cd folder5
+sign_out
+show_items
+add_item_property item2 key3=val3 key3=val2 key4=val7 key5=val6 
+pwd
+whoami
+cd folder4
+pwd
+register_user user7 pass7
+show_items
+create_folder folder1
+sign_out
+show_users
+show_users
+sign_out
+add_item_property item5 key8=val8 key6=val4 key3=val4 key6=val4 
+show_items
+cd folder2
+sign_in a2 pa2
+register_user user1 pass1
+sign_in a3 pa3
+register_admin user3 pass3
+sign_in user7 pass7
+which_group
+rename_user user1 <function generate_user at 0x027087F0>
+show_item_properties item5
+show_users
+show_users
+help pwd
+show_item_properties item5
+sign_in admin admin
+ls_folders
+buy
+rename_user user9 <function generate_user at 0x027087F0>
+cd folder5
+sign_in user9 pass9
+help help
+ls_folders
+which_group
+show_folders
+add_item item3 key3=val1 key3=val3 key5=val4 key10=val9 
+ls_folders
+add_item_property item3 key2=val5 key4=val2 key7=val2 key7=val3 
+rename_user user2 <function generate_user at 0x027087F0>
+ls
+put item1
+show_item_properties item5
+put item5
+buy
+ls
+show_item_properties item2
+ls
+buy
+show_users
+add_item item5 key8=val9 key9=val10 key3=val9 key9=val9 
+ls
+ls_folders
+rename_user user0 <function generate_user at 0x027087F0>
+current_folder
+sign_in user5 pass5
+which_group
+show_folders
+ls
+register_user user1 pass1
+sign_in a4 pa4
+register_admin user9 pass9
+ls_folders
+current_folder
+pwd
+rename_user user2 <function generate_user at 0x027087F0>
+show_folders
+buy
+which_group
+buy
+show_items
+add_item item1 key2=val2 key7=val2 key4=val7 key5=val9 
+add_item item1 key2=val10 key2=val4 key1=val10 key4=val1 
+ls
+which_group
+register_user user4 pass4
+add_item item3 key8=val5 key3=val5 key4=val5 key3=val6 
+rename_user user6 <function generate_user at 0x027087F0>
+show_users
+sign_in user5 pass5
+sign_in a5 pa5
+cd folder1
+add_item_property item1 key6=val5 key4=val7 key1=val8 key5=val1 
+show_items
+show_users
+sign_in user3 pass3
+add_item_property item5 key7=val8 key8=val4 key9=val8 key8=val6 
+ls
+create_folder folder3
+sign_in user5 pass5
+put item4
+sign_out
+ls_folders
+buy
+create_folder folder4
+rename_user user8 <function generate_user at 0x027087F0>
+sign_in a5 pa5
+sign_in a4 pa4
+which_group
+which_group
+cd folder2
+buy
+register_user user2 pass2
+sign_in user2 pass2
+sign_in user2 pass2
+help delete_user
+show_item_properties item5
+rename_user user9 <function generate_user at 0x027087F0>
+ls
+sign_in user4 pass4
+show_folders
+ls_folders
+sign_in user7 pass7
+rename_user user4 <function generate_user at 0x027087F0>
+register_admin user8 pass8
+register_admin user1 pass1
+add_item item3 key10=val1 key2=val6 key9=val3 key9=val10 
+add_item item1 key2=val4 key8=val10 key4=val3 key10=val9 
+current_folder
+put item5
+sign_in user1 pass1
+help register_user
+register_user user2 pass2
+add_item_property item4 key1=val1 key3=val4 key7=val6 key1=val9 
+buy
+buy
+show_folders
+whoami
+which_group
+ls
+add_item item4 key5=val3 key10=val4 key4=val7 key6=val1 
+show_item_properties item5
+rename_user user1 <function generate_user at 0x027087F0>
+show_users
+sign_in user6 pass6
+show_item_properties item1
+register_admin user6 pass6
+add_item item2 key2=val5 key4=val3 key1=val10 key5=val5 
+pwd
+rename_user user4 <function generate_user at 0x027087F0>
+add_item_property item4 key3=val5 key6=val4 key5=val10 key9=val8 
+register_user user4 pass4
+add_item item2 key9=val7 key9=val3 key1=val4 key5=val10 
+whoami
+show_items
+show_items
+cd folder4
+whoami
+current_folder
+whoami
+create_folder folder2
+which_group
+put item4
+ls_folders
+show_folders
+add_item_property item3 key5=val3 key4=val5 key7=val5 key2=val7 
+which_group
+put item1
+which_group
+whoami
+ls_folders
+sign_out
+add_item item1 key7=val8 key1=val4 key5=val5 key10=val7 
+pwd
+put item3
+ls
+whoami
+rename_user user5 <function generate_user at 0x027087F0>
+buy
+sign_in user2 pass2
+rename_user user7 <function generate_user at 0x027087F0>
+add_item_property item2 key2=val3 key4=val1 key1=val10 key2=val7 
+help view_order
+ls
+register_admin user9 pass9
+add_item_property item1 key3=val2 key10=val9 key4=val8 key4=val2 
+sign_in user6 pass6
+sign_in a4 pa4
+show_item_properties item4
+help sign_in
+sign_in user8 pass8
+register_admin user9 pass9
+ls
+put item2
+whoami
+help pwd
+show_folders
+sign_in a3 pa3
+ls
+sign_in user6 pass6
+buy
+register_admin user1 pass1
+buy
+create_folder folder2
+which_group
+ls_folders
+show_item_properties item4
+show_users
+ls
+whoami
+help sign_in
+buy
+put item5
+pwd
+ls_folders
+show_users
+whoami
+which_group
+help help
+sign_in a1 pa1
+sign_out
+ls_folders
+help register_user
+register_admin user5 pass5
+add_item item4 key5=val4 key1=val10 key1=val3 key8=val4 
+show_item_properties item5
+sign_out
+show_items
+sign_in user1 pass1
+pwd
+show_items
+show_folders
+whoami
+buy
+buy
+register_admin user4 pass4
+pwd
+add_item_property item1 key2=val3 key5=val3 key2=val1 key7=val6 
+show_items
+register_user user5 pass5
+whoami
+sign_in user5 pass5
+show_folders
+pwd
+whoami
+add_item_property item5 key1=val10 key3=val3 key9=val1 key9=val6 
+add_item item3 key2=val3 key3=val4 key10=val3 key2=val7 
+register_user user2 pass2
+current_folder
+whoami
+sign_out
+show_item_properties item3
+register_user user1 pass1
+add_item item2 key2=val2 key4=val5 key2=val8 key9=val6 
+register_admin user8 pass8
+sign_out
+show_item_properties item3
+show_folders
+sign_out
+sign_in user1 pass1
+ls
+whoami
+register_user user7 pass7
+current_folder
+register_user user7 pass7
+sign_in a4 pa4
+whoami
+register_admin user6 pass6
+add_item_property item4 key6=val5 key10=val9 key4=val6 key10=val8 
+add_item_property item3 key2=val6 key5=val2 key3=val7 key8=val3 
+sign_in a1 pa1
+which_group
+cd folder1
+add_item item1 key1=val8 key8=val7 key8=val9 key6=val3 
+buy
+ls
+ls
+cd folder2
+ls_folders
+add_item item2 key4=val2 key3=val1 key6=val2 key8=val2 
+create_folder folder5
+whoami
+current_folder
+register_user user8 pass8
+show_items
+show_items
+help buy
+show_items
+cd folder2
+buy
+create_folder folder2
+add_item_property item1 key1=val6 key3=val4 key4=val7 key9=val2 
+which_group
+ls
+ls
+help rename_user
+add_item_property item3 key9=val3 key10=val3 key10=val1 key10=val2 
+add_item item4 key5=val6 key4=val7 key10=val3 key7=val5 
+cd folder3
+add_item_property item4 key1=val2 key8=val10 key10=val3 key8=val7 
+whoami
+register_admin user1 pass1
+put item2
+show_item_properties item1
+cd folder4
+register_user user7 pass7
+register_user user2 pass2
+show_items
+ls_folders
+register_user user1 pass1
+show_folders
+ls
+sign_in a1 pa1
+show_folders
+which_group
+show_users
+ls
+which_group
+show_folders
+buy
+rename_user user4 <function generate_user at 0x027087F0>
+show_item_properties item1
+which_group
+which_group
+add_item_property item5 key9=val4 key6=val8 key4=val9 key9=val4 
+create_folder folder3
+help put
+show_item_properties item1
+ls
+rename_user user0 <function generate_user at 0x027087F0>
+rename_user user4 <function generate_user at 0x027087F0>
+register_admin admin admin
+cd folder3
+rename_user user3 <function generate_user at 0x027087F0>
+sign_in user2 pass2
+sign_in a2 pa2
+show_item_properties item1
+show_item_properties item2
+sign_in a2 pa2
+show_users
+rename_user user6 <function generate_user at 0x027087F0>
+sign_in user5 pass5
+whoami
+current_folder
+create_folder folder1
+sign_out
+whoami
+pwd
+show_folders
+whoami
+current_folder
+rename_user user1 <function generate_user at 0x027087F0>
+put item5
+current_folder
+sign_in user4 pass4
+pwd
+register_admin user7 pass7
+show_item_properties item3
+sign_in a3 pa3
+buy
+which_group
+add_item item3 key10=val2 key9=val2 key8=val7 key5=val1 
+help rename_user
+current_folder
+help help
+register_admin user6 pass6
+sign_out
+show_items
+add_item item5 key7=val10 key2=val6 key2=val8 key9=val8 
+show_item_properties item3
+add_item item2 key3=val4 key4=val6 key6=val2 key4=val4 
+which_group
+pwd
+add_item item2 key2=val9 key2=val8 key3=val9 key7=val1 
+show_items
+pwd
+cd folder5
+show_items
+ls
+ls_folders
+whoami
+help history
+sign_in a3 pa3
+add_item item1 key6=val4 key2=val9 key5=val2 key4=val8 
+create_folder folder1
+show_users
+add_item item2 key7=val5 key6=val7 key1=val9 key3=val8 
+register_user user7 pass7
+whoami
+whoami
+help help
+whoami
+whoami
+whoami
+rename_user user9 <function generate_user at 0x027087F0>
+sign_out
+add_item item5 key6=val2 key5=val4 key10=val3 key4=val4 
+whoami
+whoami
+register_admin user8 pass8
+cd folder5
+register_user user6 pass6
+sign_out
+sign_out
+create_folder folder5
+ls_folders
+rename_user user7 <function generate_user at 0x027087F0>
+put item4
+ls
+which_group
+rename_user user2 <function generate_user at 0x027087F0>
+help current_folder
+sign_in a4 pa4
+sign_in a2 pa2
+show_folders
+put item5
+show_item_properties item4
+cd folder5
+show_users
+show_items
+show_items
+current_folder
+sign_in a4 pa4
+create_folder folder2
+show_users
+add_item_property item5 key2=val2 key3=val2 key1=val6 key4=val9 
+put item3
+buy
+put item2
+show_users
+create_folder folder5
+add_item_property item1 key1=val6 key1=val3 key4=val9 key5=val3 
+add_item_property item4 key10=val5 key8=val7 key10=val1 key5=val1 
+add_item item5 key6=val9 key4=val5 key7=val4 key1=val4 
+show_users
+ls
+sign_out
+which_group
+register_user user5 pass5
+show_users
+sign_in user1 pass1
+whoami
+help history
+add_item_property item2 key5=val9 key6=val3 key9=val4 key9=val3 
+help rename_user
+show_folders
+ls_folders
+current_folder
+add_item_property item5 key8=val9 key2=val5 key8=val8 key1=val6 
+show_item_properties item5
+put item4
+current_folder
+whoami
+show_folders
+pwd
+pwd
+whoami
+show_items
+register_admin user1 pass1
+rename_user user2 <function generate_user at 0x027087F0>
+add_item_property item5 key6=val8 key9=val3 key6=val6 key4=val6 
+current_folder
+current_folder
+ls
+show_users
+help ls
+put item2
+sign_in a4 pa4
+add_item_property item1 key7=val9 key8=val4 key2=val1 key10=val2 
+register_admin user4 pass4
+buy
+help show_folders
+sign_in user8 pass8
+current_folder
+register_user user6 pass6
+pwd
+add_item_property item4 key10=val5 key2=val10 key1=val4 key7=val6 
+ls_folders
+ls
+show_users
+ls
+show_users
+cd folder4
+rename_user user4 <function generate_user at 0x027087F0>
+current_folder
+create_folder folder4
+current_folder
+sign_out
+rename_user user7 <function generate_user at 0x027087F0>
+add_item_property item3 key6=val10 key1=val9 key8=val1 key7=val1 
+ls_folders
+help exit
+ls
+sign_in user2 pass2
+register_user user6 pass6
+register_admin user1 pass1
+pwd
+ls
+show_item_properties item1
+show_items
+show_items
+rename_user user1 <function generate_user at 0x027087F0>
+cd folder4
+sign_in user1 pass1
+cd folder3
+ls
+put item5
+buy
+cd folder3
+add_item item3 key9=val3 key1=val4 key3=val3 key10=val8 
+sign_in user7 pass7
+show_item_properties item5
+register_admin user3 pass3
+sign_in admin admin
+register_admin user2 pass2
+which_group
+help view_order
+sign_out
+show_folders
+add_item item3 key5=val1 key1=val7 key1=val5 key10=val3 
+which_group
+put item5
+register_admin admin admin
+show_users
+put item4
+add_item_property item3 key10=val5 key2=val9 key1=val7 key5=val6 
+show_folders
+whoami
+cd folder4
+create_folder folder4
+whoami
+show_item_properties item1
+help show_folders
+register_admin user5 pass5
+pwd
+cd folder3
+pwd
+add_item item5 key5=val3 key4=val9 key2=val10 key7=val2 
+buy
+help register_user
+register_user user1 pass1
+add_item_property item5 key5=val8 key4=val5 key7=val7 key10=val2 
+help add_item
+show_items
+register_admin user6 pass6
+register_admin user1 pass1
+cd folder2
+ls_folders
+rename_user user9 <function generate_user at 0x027087F0>
+put item5
+show_folders
+show_item_properties item4
+add_item_property item3 key9=val9 key8=val4 key9=val10 key1=val4 
+rename_user user8 <function generate_user at 0x027087F0>
+show_item_properties item4
+show_users
+buy
+buy
+add_item_property item3 key10=val6 key1=val1 key1=val10 key7=val4 
+show_folders
+show_item_properties item1
+add_item item1 key7=val8 key3=val1 key9=val3 key5=val10 
+ls
+sign_out
+buy
+add_item item3 key5=val1 key9=val8 key4=val4 key3=val5 
+show_users
+add_item_property item4 key7=val4 key1=val3 key6=val10 key6=val6 
+show_item_properties item2
+sign_in a3 pa3
+register_user user9 pass9
+ls
+add_item item2 key9=val3 key7=val5 key2=val8 key4=val8 
+which_group
+show_item_properties item5
+sign_out
+ls_folders
+which_group
+ls
+ls
+show_item_properties item2
+rename_user user3 <function generate_user at 0x027087F0>
+which_group
+sign_in a5 pa5
+sign_in a5 pa5
+ls
+show_item_properties item2
+pwd
+cd folder2
+help cd
+whoami
+create_folder folder3
+cd folder2
+rename_user user4 <function generate_user at 0x027087F0>
+register_user user5 pass5
+rename_user user4 <function generate_user at 0x027087F0>
+show_folders
+sign_in user1 pass1
+put item2
+register_admin admin admin
+which_group
+add_item_property item4 key2=val10 key6=val9 key1=val7 key8=val8 
+create_folder folder3
+buy
+ls
+create_folder folder2
+sign_in user3 pass3
+sign_in a5 pa5
+cd folder3
+show_item_properties item1
+create_folder folder3
+put item3
+ls_folders
+show_item_properties item1
+help put
+show_item_properties item4
+show_users
+sign_in a1 pa1
+buy
+help history
+show_users
+sign_in user4 pass4
+pwd
+register_user user7 pass7
+ls
+help whoami
+sign_in user1 pass1
+add_item item1 key2=val6 key7=val5 key4=val9 key1=val8 
+buy
+create_folder folder4
+sign_in a5 pa5
+rename_user user0 <function generate_user at 0x027087F0>
+sign_in a2 pa2
+help current_folder
+put item4
+show_folders
+create_folder folder2
+sign_out
+put item4
+register_admin user7 pass7
+current_folder
+rename_user user4 <function generate_user at 0x027087F0>
+pwd
+sign_out
+show_users
+buy
+sign_out
+which_group
+register_admin user4 pass4
+show_users
+ls
+pwd
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+current_folder
+help show_items
+rename_user user0 <function generate_user at 0x027087F0>
+register_user user3 pass3
+cd folder5
+help put
+rename_user user3 <function generate_user at 0x027087F0>
+pwd
+ls_folders
+sign_in a5 pa5
+register_user user9 pass9
+register_admin user4 pass4
+sign_out
+current_folder
+show_item_properties item5
+register_user user9 pass9
+add_item item2 key1=val6 key7=val3 key3=val1 key5=val5 
+sign_in user7 pass7
+show_item_properties item5
+show_items
+show_items
+register_admin user7 pass7
+which_group
+sign_out
+sign_in a1 pa1
+rename_user user4 <function generate_user at 0x027087F0>
+show_users
+pwd
+which_group
+cd folder4
+show_folders
+ls_folders
+add_item_property item3 key4=val2 key3=val6 key10=val2 key6=val2 
+show_items
+buy
+register_user user6 pass6
+add_item item4 key2=val4 key10=val7 key5=val8 key5=val8 
+add_item item5 key1=val1 key10=val10 key7=val3 key10=val8 
+ls
+which_group
+cd folder1
+cd folder4
+register_admin user6 pass6
+put item4
+ls_folders
+cd folder5
+show_items
+buy
+put item3
+show_items
+register_admin user8 pass8
+sign_in user7 pass7
+ls
+register_admin user4 pass4
+whoami
+cd folder4
+show_folders
+add_item_property item3 key2=val9 key10=val5 key1=val5 key8=val8 
+show_item_properties item3
+show_users
+sign_out
+current_folder
+put item4
+whoami
+ls
+cd folder5
+ls
+sign_out
+show_folders
+cd folder1
+sign_in user8 pass8
+add_item item1 key3=val4 key7=val1 key6=val7 key5=val5 
+ls
+add_item_property item2 key3=val4 key9=val5 key9=val3 key1=val7 
+sign_in a3 pa3
+whoami
+sign_out
+ls_folders
+show_folders
+pwd
+create_folder folder3
+add_item_property item1 key7=val7 key2=val6 key4=val5 key6=val6 
+add_item item1 key1=val5 key10=val10 key5=val2 key3=val1 
+current_folder
+show_folders
+show_item_properties item2
+cd folder3
+show_item_properties item3
+help delete_user
+show_items
+add_item item3 key10=val7 key2=val8 key10=val8 key7=val4 
+help current_folder
+ls
+rename_user user1 <function generate_user at 0x027087F0>
+rename_user user7 <function generate_user at 0x027087F0>
+pwd
+show_item_properties item3
+sign_out
+show_users
+help show_items
+show_users
+current_folder
+show_folders
+show_users
+show_item_properties item3
+help add_item_property
+add_item_property item5 key4=val2 key1=val6 key7=val5 key8=val10 
+ls_folders
+current_folder
+put item1
+sign_in a5 pa5
+ls_folders
+ls
+sign_out
+ls_folders
+add_item_property item4 key9=val1 key6=val1 key5=val9 key9=val9 
+register_admin user3 pass3
+rename_user user3 <function generate_user at 0x027087F0>
+cd folder2
+cd folder4
+create_folder folder1
+sign_in user2 pass2
+add_item item3 key4=val10 key8=val4 key6=val7 key6=val6 
+rename_user user0 <function generate_user at 0x027087F0>
+add_item item3 key3=val10 key10=val6 key6=val3 key3=val6 
+add_item_property item3 key5=val9 key10=val5 key5=val5 key7=val7 
+which_group
+register_user user5 pass5
+sign_in user4 pass4
+show_items
+put item4
+cd folder1
+show_users
+show_item_properties item3
+add_item_property item4 key8=val3 key9=val4 key5=val4 key6=val9 
+sign_in a1 pa1
+register_user user3 pass3
+which_group
+register_user user3 pass3
+register_admin user8 pass8
+create_folder folder3
+show_users
+create_folder folder1
+show_users
+sign_out
+sign_out
+register_admin user7 pass7
+show_item_properties item3
+ls_folders
+show_items
+sign_in a1 pa1
+register_admin user6 pass6
+show_item_properties item2
+buy
+current_folder
+add_item_property item1 key4=val4 key2=val8 key7=val9 key4=val5 
+show_items
+ls_folders
+show_folders
+show_users
+sign_in user6 pass6
+pwd
+register_user user1 pass1
+show_items
+sign_in a4 pa4
+ls
+ls
+current_folder
+ls
+whoami
+help ls
+show_items
+sign_out
+current_folder
+pwd
+show_item_properties item2
+cd folder2
+show_item_properties item1
+ls
+ls
+rename_user user7 <function generate_user at 0x027087F0>
+put item2
+help pwd
+current_folder
+show_folders
+sign_in user7 pass7
+ls_folders
+help buy
+create_folder folder3
+add_item item5 key2=val1 key6=val5 key6=val6 key4=val10 
+current_folder
+cd folder5
+show_users
+put item5
+create_folder folder1
+show_items
+register_admin user2 pass2
+sign_in a1 pa1
+pwd
+rename_user user7 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+cd folder1
+sign_in user2 pass2
+create_folder folder5
+add_item item3 key10=val10 key2=val2 key2=val3 key5=val3 
+cd folder5
+current_folder
+buy
+whoami
+cd folder4
+show_item_properties item4
+register_user user8 pass8
+add_item item2 key5=val10 key9=val2 key9=val1 key1=val5 
+show_users
+sign_out
+show_item_properties item1
+ls_folders
+sign_out
+add_item_property item1 key2=val1 key4=val6 key1=val10 key5=val5 
+cd folder5
+show_users
+whoami
+help create_folder
+sign_out
+sign_out
+create_folder folder4
+pwd
+sign_out
+register_user user7 pass7
+show_users
+register_user user7 pass7
+pwd
+register_user admin admin
+show_items
+sign_in user6 pass6
+show_users
+register_user user4 pass4
+help show_users
+register_admin user3 pass3
+which_group
+add_item_property item4 key9=val7 key4=val7 key4=val3 key8=val8 
+help sign_out
+add_item item1 key9=val7 key7=val2 key2=val9 key8=val6 
+whoami
+ls
+show_item_properties item3
+pwd
+register_admin user7 pass7
+sign_in user3 pass3
+sign_in a5 pa5
+buy
+add_item_property item5 key7=val9 key6=val3 key4=val7 key9=val6 
+show_folders
+register_admin user3 pass3
+sign_out
+help help
+show_users
+pwd
+sign_in a5 pa5
+sign_in user5 pass5
+show_folders
+buy
+show_folders
+sign_in user9 pass9
+show_folders
+ls_folders
+add_item item1 key4=val5 key10=val1 key1=val6 key7=val7 
+cd folder3
+help show_item_properties
+rename_user user4 <function generate_user at 0x027087F0>
+pwd
+show_items
+register_user user4 pass4
+sign_out
+show_items
+register_user user8 pass8
+add_item_property item4 key7=val7 key4=val9 key4=val6 key1=val5 
+pwd
+pwd
+sign_in user9 pass9
+register_admin user5 pass5
+pwd
+put item1
+which_group
+show_folders
+cd folder4
+create_folder folder2
+show_folders
+show_users
+current_folder
+show_folders
+pwd
+rename_user user1 <function generate_user at 0x027087F0>
+create_folder folder4
+create_folder folder1
+show_folders
+create_folder folder5
+put item5
+put item1
+show_users
+rename_user user9 <function generate_user at 0x027087F0>
+sign_in user1 pass1
+put item2
+which_group
+show_item_properties item4
+register_user user3 pass3
+add_item item3 key9=val1 key7=val4 key6=val3 key4=val4 
+buy
+current_folder
+put item2
+show_items
+sign_in a4 pa4
+whoami
+create_folder folder2
+create_folder folder4
+sign_in a2 pa2
+pwd
+register_user user1 pass1
+sign_out
+register_user admin admin
+register_user admin admin
+register_user user3 pass3
+pwd
+put item1
+show_folders
+register_user user1 pass1
+rename_user user3 <function generate_user at 0x027087F0>
+show_users
+whoami
+ls_folders
+put item4
+cd folder4
+show_folders
+pwd
+help pwd
+show_items
+which_group
+show_users
+put item3
+put item4
+rename_user user7 <function generate_user at 0x027087F0>
+sign_out
+whoami
+show_users
+register_admin user9 pass9
+sign_in a5 pa5
+show_folders
+which_group
+cd folder3
+put item1
+put item4
+pwd
+create_folder folder2
+whoami
+show_folders
+register_admin user1 pass1
+buy
+add_item item4 key10=val10 key2=val5 key10=val9 key4=val2 
+cd folder2
+sign_in a5 pa5
+show_folders
+add_item_property item4 key5=val2 key4=val2 key10=val8 key7=val7 
+pwd
+current_folder
+whoami
+sign_in user8 pass8
+which_group
+ls_folders
+cd folder3
+sign_in user8 pass8
+show_users
+which_group
+sign_in a1 pa1
+add_item item1 key1=val4 key4=val2 key3=val4 key2=val2 
+register_user user2 pass2
+show_users
+add_item item4 key1=val2 key6=val1 key9=val9 key6=val8 
+put item2
+buy
+help whoami
+cd folder2
+sign_in a2 pa2
+sign_in user5 pass5
+add_item item1 key1=val9 key7=val1 key9=val9 key4=val9 
+which_group
+ls_folders
+help current_folder
+register_user user6 pass6
+show_items
+rename_user user1 <function generate_user at 0x027087F0>
+ls
+show_users
+whoami
+whoami
+buy
+whoami
+help rename_user
+show_users
+help show_folders
+add_item item1 key9=val6 key6=val1 key4=val2 key6=val4 
+add_item item5 key6=val1 key10=val7 key8=val1 key10=val10 
+ls
+cd folder3
+put item4
+current_folder
+sign_in user1 pass1
+buy
+sign_out
+register_admin admin admin
+whoami
+current_folder
+create_folder folder1
+show_item_properties item1
+ls_folders
+create_folder folder2
+create_folder folder1
+current_folder
+register_user user8 pass8
+register_user user8 pass8
+register_user user9 pass9
+show_users
+sign_out
+register_admin user4 pass4
+which_group
+current_folder
+help ls_folders
+show_users
+add_item_property item3 key9=val4 key10=val2 key4=val7 key3=val7 
+register_user user2 pass2
+pwd
+add_item item2 key10=val3 key2=val8 key1=val1 key8=val4 
+show_items
+sign_in a4 pa4
+sign_out
+buy
+cd folder2
+show_folders
+ls_folders
+add_item item3 key8=val9 key2=val10 key10=val7 key5=val5 
+show_folders
+sign_in a5 pa5
+sign_in a1 pa1
+create_folder folder4
+show_users
+current_folder
+which_group
+current_folder
+ls
+whoami
+add_item_property item1 key3=val4 key2=val9 key5=val5 key4=val5 
+add_item_property item3 key8=val4 key5=val6 key5=val4 key6=val10 
+show_folders
+current_folder
+ls
+buy
+create_folder folder4
+show_folders
+show_folders
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in user7 pass7
+show_folders
+help add_item
+help view_order
+show_folders
+ls_folders
+whoami
+cd folder2
+show_folders
+which_group
+cd folder3
+pwd
+show_users
+sign_out
+which_group
+help show_item_properties
+put item1
+create_folder folder2
+add_item item2 key2=val10 key3=val10 key2=val2 key6=val6 
+ls
+buy
+sign_in user7 pass7
+show_users
+show_folders
+pwd
+show_users
+buy
+ls_folders
+add_item item2 key5=val6 key1=val5 key1=val2 key5=val4 
+add_item item3 key2=val10 key10=val7 key6=val1 key10=val1 
+add_item item4 key3=val5 key1=val5 key7=val8 key7=val5 
+ls_folders
+register_admin user3 pass3
+sign_out
+ls_folders
+sign_in a3 pa3
+sign_in a2 pa2
+show_users
+show_folders
+create_folder folder4
+buy
+register_admin user3 pass3
+show_items
+show_users
+show_users
+show_items
+which_group
+show_users
+whoami
+ls
+current_folder
+buy
+whoami
+sign_in a2 pa2
+which_group
+add_item_property item1 key2=val2 key8=val2 key4=val10 key3=val7 
+show_item_properties item1
+sign_out
+sign_in admin admin
+register_user user6 pass6
+rename_user user8 <function generate_user at 0x027087F0>
+buy
+whoami
+cd folder5
+show_item_properties item5
+which_group
+buy
+register_admin admin admin
+rename_user user1 <function generate_user at 0x027087F0>
+whoami
+create_folder folder1
+show_items
+sign_in a1 pa1
+show_users
+sign_out
+which_group
+add_item_property item2 key9=val6 key8=val7 key3=val10 key10=val9 
+ls_folders
+ls_folders
+sign_in user3 pass3
+show_item_properties item1
+register_admin user5 pass5
+rename_user user9 <function generate_user at 0x027087F0>
+create_folder folder3
+show_folders
+register_user user7 pass7
+show_items
+put item4
+put item1
+show_items
+help rename_user
+put item5
+sign_in a2 pa2
+current_folder
+help which_group
+pwd
+current_folder
+buy
+show_items
+sign_out
+rename_user user5 <function generate_user at 0x027087F0>
+sign_in admin admin
+show_folders
+buy
+ls
+sign_out
+register_user user5 pass5
+show_item_properties item3
+show_items
+show_item_properties item3
+sign_out
+rename_user user2 <function generate_user at 0x027087F0>
+current_folder
+current_folder
+show_folders
+sign_in a3 pa3
+pwd
+register_user user8 pass8
+sign_in user2 pass2
+show_users
+show_item_properties item4
+show_item_properties item5
+show_users
+whoami
+which_group
+show_items
+ls
+buy
+which_group
+add_item item2 key7=val6 key1=val2 key4=val3 key7=val3 
+add_item item3 key3=val7 key2=val10 key9=val3 key9=val2 
+show_item_properties item1
+current_folder
+show_items
+add_item item3 key8=val9 key2=val7 key8=val8 key8=val3 
+cd folder2
+create_folder folder4
+rename_user user0 <function generate_user at 0x027087F0>
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in user4 pass4
+ls
+sign_in a5 pa5
+rename_user user3 <function generate_user at 0x027087F0>
+help ls_folders
+ls
+show_items
+put item1
+register_user admin admin
+add_item_property item1 key1=val2 key5=val4 key5=val8 key6=val10 
+help whoami
+ls_folders
+help whoami
+which_group
+sign_in a2 pa2
+register_admin user9 pass9
+whoami
+sign_out
+buy
+whoami
+show_users
+whoami
+show_folders
+ls_folders
+current_folder
+create_folder folder5
+create_folder folder4
+sign_in a3 pa3
+add_item_property item2 key7=val10 key8=val6 key10=val8 key10=val5 
+cd folder4
+ls
+cd folder2
+register_user user2 pass2
+create_folder folder2
+show_folders
+register_user user4 pass4
+put item4
+buy
+show_items
+put item5
+add_item_property item2 key6=val5 key9=val3 key7=val8 key5=val5 
+show_items
+pwd
+add_item_property item4 key10=val2 key1=val3 key3=val6 key9=val2 
+which_group
+show_folders
+current_folder
+sign_in admin admin
+pwd
+show_users
+add_item_property item3 key3=val6 key2=val4 key9=val10 key3=val6 
+whoami
+whoami
+sign_in a4 pa4
+show_users
+cd folder4
+sign_in a5 pa5
+register_admin admin admin
+current_folder
+add_item_property item5 key10=val1 key8=val2 key7=val3 key8=val3 
+sign_out
+which_group
+ls
+sign_in user2 pass2
+sign_in admin admin
+put item2
+pwd
+pwd
+buy
+help whoami
+show_users
+buy
+cd folder1
+current_folder
+pwd
+sign_out
+register_admin user7 pass7
+pwd
+buy
+show_item_properties item4
+cd folder1
+add_item item2 key3=val4 key7=val1 key7=val9 key9=val2 
+put item3
+whoami
+help add_item
+show_item_properties item2
+ls_folders
+show_item_properties item1
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in a5 pa5
+create_folder folder4
+rename_user user8 <function generate_user at 0x027087F0>
+pwd
+sign_out
+put item2
+pwd
+create_folder folder1
+ls_folders
+create_folder folder3
+add_item item2 key10=val10 key8=val3 key6=val4 key5=val10 
+current_folder
+sign_out
+cd folder2
+help which_group
+current_folder
+rename_user user4 <function generate_user at 0x027087F0>
+pwd
+help delete_user
+buy
+rename_user user3 <function generate_user at 0x027087F0>
+buy
+sign_in a3 pa3
+sign_in user8 pass8
+help pwd
+cd folder3
+put item5
+register_user user1 pass1
+register_admin user5 pass5
+sign_in a5 pa5
+show_item_properties item3
+sign_in user1 pass1
+show_item_properties item1
+pwd
+ls
+pwd
+add_item_property item1 key5=val6 key6=val6 key10=val1 key10=val10 
+put item4
+help add_item
+ls
+current_folder
+sign_in user2 pass2
+whoami
+pwd
+ls
+register_admin user1 pass1
+register_admin user4 pass4
+show_users
+sign_in a1 pa1
+sign_in admin admin
+pwd
+show_users
+whoami
+create_folder folder1
+whoami
+current_folder
+show_folders
+sign_out
+whoami
+sign_in user7 pass7
+add_item_property item4 key7=val3 key7=val8 key2=val4 key8=val2 
+buy
+create_folder folder1
+sign_in user3 pass3
+ls
+ls
+ls_folders
+pwd
+sign_in a3 pa3
+show_items
+whoami
+sign_out
+sign_out
+rename_user user8 <function generate_user at 0x027087F0>
+whoami
+ls
+sign_out
+add_item item1 key5=val1 key10=val8 key6=val8 key2=val1 
+help sign_in
+pwd
+put item3
+current_folder
+add_item_property item4 key10=val1 key2=val1 key6=val9 key1=val7 
+pwd
+ls_folders
+add_item_property item5 key2=val7 key8=val2 key1=val6 key2=val2 
+show_item_properties item2
+put item1
+which_group
+cd folder2
+sign_in user7 pass7
+buy
+put item4
+add_item_property item2 key4=val1 key4=val2 key9=val10 key8=val10 
+sign_in admin admin
+cd folder5
+help show_items
+add_item_property item5 key2=val9 key2=val10 key6=val10 key8=val2 
+create_folder folder5
+add_item item1 key3=val5 key7=val6 key4=val7 key3=val10 
+rename_user user0 <function generate_user at 0x027087F0>
+ls_folders
+show_item_properties item5
+register_admin user1 pass1
+ls_folders
+help help
+sign_in user9 pass9
+show_users
+show_items
+whoami
+whoami
+whoami
+register_admin user8 pass8
+sign_in user4 pass4
+register_user user2 pass2
+show_folders
+create_folder folder5
+register_user user5 pass5
+ls
+sign_in admin admin
+whoami
+sign_in a4 pa4
+cd folder1
+which_group
+show_users
+sign_in user9 pass9
+show_folders
+which_group
+rename_user user5 <function generate_user at 0x027087F0>
+buy
+add_item_property item2 key4=val4 key9=val3 key8=val6 key3=val4 
+show_items
+which_group
+put item1
+sign_in a4 pa4
+cd folder5
+show_item_properties item3
+create_folder folder2
+ls_folders
+ls
+show_item_properties item4
+add_item item4 key6=val3 key7=val6 key5=val10 key9=val7 
+show_users
+whoami
+create_folder folder4
+whoami
+pwd
+sign_out
+buy
+pwd
+help show_item_properties
+ls_folders
+show_users
+which_group
+rename_user user9 <function generate_user at 0x027087F0>
+whoami
+whoami
+cd folder3
+current_folder
+buy
+current_folder
+pwd
+sign_out
+pwd
+sign_in a3 pa3
+add_item item3 key6=val3 key7=val6 key1=val10 key5=val10 
+add_item_property item4 key8=val8 key10=val1 key7=val9 key10=val5 
+register_user user2 pass2
+sign_in a2 pa2
+sign_in a3 pa3
+whoami
+sign_in a4 pa4
+whoami
+register_admin user6 pass6
+register_admin user3 pass3
+help show_items
+ls_folders
+which_group
+register_user user8 pass8
+current_folder
+which_group
+current_folder
+help sign_in
+sign_in user1 pass1
+whoami
+which_group
+add_item item2 key10=val5 key9=val7 key1=val8 key7=val7 
+whoami
+add_item item3 key3=val9 key5=val5 key1=val2 key3=val2 
+sign_out
+create_folder folder3
+help sign_out
+current_folder
+help view_order
+add_item_property item3 key10=val10 key5=val6 key1=val8 key7=val8 
+cd folder1
+register_admin user4 pass4
+which_group
+register_admin user3 pass3
+help sign_out
+ls_folders
+show_folders
+ls
+create_folder folder1
+help add_item_property
+cd folder2
+show_users
+show_item_properties item4
+ls_folders
+which_group
+rename_user user3 <function generate_user at 0x027087F0>
+sign_in user3 pass3
+ls_folders
+show_users
+create_folder folder1
+which_group
+register_admin user2 pass2
+show_items
+help put
+buy
+help buy
+sign_in user2 pass2
+help buy
+show_users
+whoami
+cd folder3
+sign_in user5 pass5
+sign_out
+show_items
+cd folder3
+put item1
+put item2
+register_user user8 pass8
+current_folder
+show_users
+sign_in user6 pass6
+register_user user1 pass1
+whoami
+create_folder folder3
+ls_folders
+show_item_properties item2
+register_admin user7 pass7
+sign_out
+sign_in a4 pa4
+sign_in user6 pass6
+register_user user7 pass7
+register_admin user2 pass2
+create_folder folder5
+register_admin user5 pass5
+show_item_properties item1
+show_users
+put item5
+pwd
+rename_user user8 <function generate_user at 0x027087F0>
+put item3
+show_users
+sign_out
+sign_in user8 pass8
+cd folder1
+sign_in a1 pa1
+add_item_property item1 key10=val4 key9=val9 key7=val3 key5=val7 
+sign_out
+current_folder
+whoami
+create_folder folder4
+show_folders
+which_group
+current_folder
+show_users
+which_group
+show_item_properties item2
+register_user user8 pass8
+create_folder folder3
+show_item_properties item4
+create_folder folder5
+ls
+help add_item
+register_admin user4 pass4
+whoami
+show_item_properties item4
+ls
+show_folders
+create_folder folder3
+add_item_property item4 key10=val4 key8=val10 key1=val8 key1=val5 
+show_item_properties item1
+buy
+sign_out
+sign_out
+help rename_user
+rename_user user4 <function generate_user at 0x027087F0>
+create_folder folder4
+current_folder
+add_item_property item4 key9=val6 key7=val7 key3=val6 key8=val2 
+rename_user user4 <function generate_user at 0x027087F0>
+register_admin user6 pass6
+show_folders
+show_folders
+add_item_property item1 key7=val10 key3=val5 key4=val5 key5=val4 
+register_admin user7 pass7
+add_item item3 key3=val3 key6=val10 key1=val7 key5=val7 
+buy
+show_users
+show_item_properties item4
+add_item_property item3 key7=val9 key5=val3 key6=val9 key3=val9 
+sign_in user4 pass4
+put item1
+add_item item1 key7=val4 key1=val10 key7=val7 key1=val1 
+show_items
+cd folder3
+register_admin admin admin
+ls_folders
+sign_in a5 pa5
+ls
+show_users
+add_item item1 key2=val8 key2=val1 key4=val1 key3=val10 
+pwd
+put item3
+current_folder
+put item1
+whoami
+rename_user user9 <function generate_user at 0x027087F0>
+create_folder folder2
+sign_in user8 pass8
+create_folder folder5
+ls_folders
+ls
+rename_user user6 <function generate_user at 0x027087F0>
+add_item_property item4 key1=val2 key8=val3 key2=val9 key1=val5 
+which_group
+add_item_property item4 key6=val10 key1=val7 key6=val7 key2=val10 
+put item2
+show_folders
+which_group
+show_items
+sign_out
+which_group
+show_folders
+sign_in user8 pass8
+ls_folders
+register_admin user9 pass9
+create_folder folder3
+pwd
+create_folder folder5
+put item5
+which_group
+show_users
+sign_in user1 pass1
+pwd
+cd folder3
+show_item_properties item5
+register_admin user9 pass9
+show_users
+current_folder
+sign_in a2 pa2
+ls_folders
+show_items
+add_item item4 key1=val1 key6=val7 key6=val3 key2=val10 
+put item4
+whoami
+buy
+register_user user4 pass4
+cd folder2
+cd folder1
+register_user admin admin
+register_admin user8 pass8
+which_group
+show_users
+ls
+sign_in user2 pass2
+buy
+help create_folder
+show_items
+sign_in a5 pa5
+pwd
+help help
+register_user user9 pass9
+pwd
+register_admin user3 pass3
+register_admin admin admin
+rename_user user8 <function generate_user at 0x027087F0>
+pwd
+pwd
+cd folder1
+help view_order
+which_group
+current_folder
+show_items
+create_folder folder2
+register_user user7 pass7
+show_item_properties item4
+put item2
+sign_out
+cd folder4
+ls_folders
+whoami
+add_item item5 key10=val5 key8=val6 key3=val5 key9=val4 
+ls_folders
+register_admin user6 pass6
+create_folder folder2
+show_items
+cd folder3
+sign_in a1 pa1
+add_item item5 key10=val9 key10=val2 key4=val5 key7=val9 
+cd folder5
+add_item item3 key8=val10 key8=val6 key7=val4 key9=val6 
+sign_in user8 pass8
+show_items
+whoami
+show_users
+sign_out
+current_folder
+rename_user user3 <function generate_user at 0x027087F0>
+sign_in user8 pass8
+buy
+sign_in admin admin
+pwd
+buy
+show_users
+show_users
+pwd
+register_user admin admin
+show_folders
+add_item_property item4 key10=val5 key7=val10 key1=val6 key10=val1 
+sign_in user7 pass7
+add_item_property item1 key9=val8 key4=val9 key1=val7 key4=val5 
+show_item_properties item3
+ls_folders
+whoami
+pwd
+add_item item1 key7=val6 key5=val5 key6=val3 key4=val6 
+rename_user user9 <function generate_user at 0x027087F0>
+sign_in a1 pa1
+ls
+sign_in user8 pass8
+register_user user5 pass5
+add_item_property item5 key4=val7 key7=val3 key10=val10 key2=val6 
+show_users
+pwd
+add_item_property item3 key10=val9 key6=val10 key10=val2 key3=val2 
+show_items
+register_admin user1 pass1
+buy
+sign_in user2 pass2
+show_folders
+sign_in a5 pa5
+show_items
+sign_out
+current_folder
+buy
+sign_in user9 pass9
+whoami
+register_user user7 pass7
+ls_folders
+show_items
+help delete_user
+show_item_properties item1
+create_folder folder4
+show_folders
+rename_user user2 <function generate_user at 0x027087F0>
+show_folders
+help sign_out
+sign_in a5 pa5
+sign_in user3 pass3
+ls_folders
+buy
+register_user user3 pass3
+put item4
+ls
+ls_folders
+current_folder
+add_item item2 key5=val1 key4=val4 key6=val6 key2=val6 
+add_item_property item5 key4=val8 key2=val5 key3=val1 key1=val1 
+add_item item4 key5=val3 key4=val10 key1=val6 key1=val1 
+cd folder4
+sign_in admin admin
+create_folder folder4
+sign_in user7 pass7
+show_users
+ls
+show_users
+ls
+register_user user8 pass8
+register_admin user5 pass5
+create_folder folder3
+ls
+register_user user6 pass6
+help register_user
+cd folder3
+pwd
+create_folder folder2
+sign_in a4 pa4
+show_item_properties item1
+which_group
+ls_folders
+help cd
+show_item_properties item5
+show_users
+pwd
+help add_item
+ls
+show_users
+show_items
+whoami
+show_item_properties item3
+sign_in user2 pass2
+sign_in a4 pa4
+ls
+help show_item_properties
+sign_in a4 pa4
+show_items
+ls_folders
+register_admin user1 pass1
+pwd
+whoami
+register_admin user7 pass7
+ls_folders
+help sign_out
+ls_folders
+ls
+show_folders
+show_folders
+whoami
+add_item item3 key3=val2 key9=val10 key10=val10 key3=val8 
+sign_out
+help show_items
+current_folder
+add_item_property item2 key1=val3 key1=val4 key9=val9 key3=val7 
+help current_folder
+put item4
+sign_in a3 pa3
+sign_in user6 pass6
+which_group
+rename_user user4 <function generate_user at 0x027087F0>
+pwd
+sign_out
+sign_in a1 pa1
+buy
+add_item_property item5 key4=val8 key5=val7 key4=val1 key7=val7 
+show_items
+create_folder folder1
+show_users
+current_folder
+put item4
+show_folders
+register_admin user2 pass2
+sign_in a1 pa1
+show_users
+sign_in a2 pa2
+sign_in user3 pass3
+ls_folders
+show_users
+help rename_user
+create_folder folder3
+show_items
+sign_in user5 pass5
+sign_in user9 pass9
+show_folders
+current_folder
+whoami
+show_items
+ls_folders
+current_folder
+show_folders
+rename_user user7 <function generate_user at 0x027087F0>
+help view_order
+whoami
+register_admin user5 pass5
+sign_out
+show_items
+add_item_property item4 key9=val7 key7=val4 key6=val9 key6=val5 
+sign_out
+add_item_property item1 key5=val8 key1=val1 key6=val4 key5=val10 
+register_user user8 pass8
+which_group
+cd folder1
+sign_in a1 pa1
+add_item_property item3 key2=val6 key7=val10 key6=val6 key1=val5 
+put item4
+help whoami
+which_group
+show_folders
+create_folder folder4
+sign_out
+sign_in a4 pa4
+register_user user6 pass6
+show_folders
+pwd
+add_item_property item1 key3=val9 key6=val1 key9=val10 key8=val5 
+add_item item3 key4=val6 key8=val2 key3=val4 key2=val6 
+sign_in a2 pa2
+sign_in a4 pa4
+show_item_properties item1
+whoami
+which_group
+register_user admin admin
+sign_in a1 pa1
+cd folder3
+sign_in user2 pass2
+cd folder2
+sign_in user7 pass7
+add_item item3 key3=val5 key9=val1 key3=val4 key1=val4 
+show_item_properties item5
+ls_folders
+ls_folders
+register_admin user2 pass2
+current_folder
+create_folder folder2
+create_folder folder4
+ls
+pwd
+whoami
+add_item item2 key6=val5 key10=val9 key8=val6 key1=val3 
+add_item_property item3 key9=val8 key7=val2 key2=val1 key6=val7 
+show_items
+which_group
+sign_in user2 pass2
+cd folder5
+rename_user user1 <function generate_user at 0x027087F0>
+pwd
+register_user admin admin
+sign_out
+which_group
+create_folder folder3
+buy
+show_items
+sign_out
+help show_folders
+pwd
+rename_user user6 <function generate_user at 0x027087F0>
+sign_in a3 pa3
+add_item_property item4 key6=val6 key9=val3 key2=val6 key3=val2 
+cd folder1
+show_item_properties item1
+which_group
+show_items
+show_items
+show_folders
+sign_in user5 pass5
+pwd
+register_admin user1 pass1
+put item3
+add_item item5 key4=val9 key7=val8 key4=val7 key2=val1 
+add_item item3 key9=val8 key2=val5 key10=val2 key4=val1 
+create_folder folder3
+show_items
+put item1
+show_item_properties item5
+current_folder
+create_folder folder4
+create_folder folder4
+sign_in a3 pa3
+create_folder folder2
+show_items
+register_admin user5 pass5
+sign_out
+which_group
+sign_out
+pwd
+cd folder3
+show_item_properties item2
+buy
+ls_folders
+show_users
+show_users
+add_item_property item2 key9=val10 key6=val10 key7=val1 key2=val9 
+which_group
+sign_in a5 pa5
+create_folder folder2
+ls_folders
+which_group
+sign_out
+buy
+current_folder
+show_users
+register_user user6 pass6
+whoami
+current_folder
+which_group
+ls
+sign_out
+sign_in user2 pass2
+show_folders
+rename_user user0 <function generate_user at 0x027087F0>
+help exit
+ls
+put item5
+put item2
+sign_out
+register_user user6 pass6
+add_item_property item4 key1=val2 key7=val8 key2=val9 key6=val2 
+rename_user user0 <function generate_user at 0x027087F0>
+create_folder folder3
+add_item_property item5 key5=val3 key8=val9 key4=val4 key7=val7 
+cd folder5
+which_group
+ls
+which_group
+register_user admin admin
+ls_folders
+add_item_property item1 key8=val8 key1=val3 key3=val2 key3=val3 
+help add_item_property
+sign_in user9 pass9
+buy
+sign_in a4 pa4
+show_item_properties item5
+put item3
+sign_out
+add_item item3 key10=val8 key7=val2 key9=val8 key10=val1 
+ls_folders
+which_group
+add_item item2 key6=val4 key8=val2 key6=val6 key4=val2 
+which_group
+ls
+sign_out
+ls_folders
+show_folders
+ls_folders
+add_item item5 key9=val4 key4=val3 key6=val9 key6=val5 
+rename_user user1 <function generate_user at 0x027087F0>
+sign_out
+show_users
+sign_in user2 pass2
+show_users
+cd folder3
+current_folder
+whoami
+ls_folders
+buy
+show_folders
+show_folders
+rename_user user4 <function generate_user at 0x027087F0>
+cd folder3
+ls_folders
+ls
+rename_user user7 <function generate_user at 0x027087F0>
+buy
+show_users
+ls
+sign_out
+sign_in a4 pa4
+show_users
+sign_in user9 pass9
+put item4
+add_item_property item4 key4=val3 key9=val8 key1=val3 key9=val3 
+create_folder folder4
+show_items
+put item5
+create_folder folder2
+current_folder
+rename_user user8 <function generate_user at 0x027087F0>
+help register_admin
+create_folder folder4
+register_user user8 pass8
+sign_in admin admin
+show_items
+put item3
+show_users
+current_folder
+show_items
+ls_folders
+sign_in user6 pass6
+register_user user2 pass2
+sign_out
+show_item_properties item2
+rename_user user3 <function generate_user at 0x027087F0>
+sign_out
+show_item_properties item5
+show_items
+sign_in a3 pa3
+cd folder3
+show_users
+sign_out
+show_items
+whoami
+ls
+register_user user8 pass8
+show_users
+sign_in a4 pa4
+ls
+pwd
+ls
+show_item_properties item1
+help sign_out
+show_users
+register_admin user4 pass4
+pwd
+ls_folders
+help show_users
+add_item_property item3 key2=val3 key7=val10 key8=val10 key3=val10 
+add_item_property item4 key9=val1 key6=val3 key2=val5 key9=val7 
+add_item item1 key5=val10 key9=val1 key7=val1 key10=val8 
+show_item_properties item2
+whoami
+create_folder folder4
+register_user user7 pass7
+add_item_property item2 key8=val7 key8=val6 key1=val8 key6=val8 
+add_item item3 key8=val3 key10=val7 key5=val9 key4=val9 
+add_item_property item4 key5=val1 key4=val3 key1=val6 key2=val9 
+which_group
+ls
+cd folder1
+show_users
+buy
+sign_in a4 pa4
+add_item_property item1 key1=val6 key9=val7 key6=val10 key5=val2 
+current_folder
+create_folder folder4
+sign_in a1 pa1
+register_admin user8 pass8
+create_folder folder1
+whoami
+whoami
+sign_in a1 pa1
+add_item item4 key9=val2 key7=val1 key3=val10 key7=val4 
+whoami
+pwd
+pwd
+register_user user4 pass4
+sign_out
+register_user user4 pass4
+sign_out
+whoami
+show_folders
+add_item item2 key6=val9 key1=val8 key2=val4 key4=val6 
+put item3
+put item5
+show_item_properties item3
+cd folder3
+current_folder
+register_user user4 pass4
+show_users
+put item4
+show_item_properties item5
+ls_folders
+register_admin user4 pass4
+register_admin admin admin
+help register_admin
+register_user user8 pass8
+register_admin user3 pass3
+add_item_property item1 key7=val5 key5=val9 key1=val9 key6=val1 
+create_folder folder3
+show_users
+add_item item5 key7=val10 key10=val4 key2=val6 key6=val7 
+register_admin user1 pass1
+rename_user user5 <function generate_user at 0x027087F0>
+register_admin user2 pass2
+show_item_properties item2
+ls
+ls_folders
+ls
+help register_admin
+ls
+current_folder
+buy
+show_folders
+rename_user user0 <function generate_user at 0x027087F0>
+put item1
+buy
+show_folders
+buy
+add_item_property item2 key6=val4 key7=val5 key3=val5 key10=val7 
+whoami
+cd folder1
+which_group
+buy
+sign_in a1 pa1
+which_group
+whoami
+register_admin user3 pass3
+whoami
+rename_user user2 <function generate_user at 0x027087F0>
+show_items
+which_group
+register_user user1 pass1
+buy
+ls
+put item3
+rename_user user4 <function generate_user at 0x027087F0>
+put item4
+show_folders
+ls_folders
+whoami
+current_folder
+show_items
+current_folder
+sign_out
+create_folder folder5
+whoami
+create_folder folder3
+register_user user6 pass6
+put item2
+sign_out
+register_admin user1 pass1
+create_folder folder5
+show_item_properties item2
+add_item item4 key7=val5 key9=val1 key9=val10 key10=val4 
+current_folder
+put item2
+whoami
+show_users
+put item3
+register_admin user1 pass1
+current_folder
+sign_in user2 pass2
+add_item item2 key10=val7 key4=val2 key9=val9 key7=val7 
+put item5
+pwd
+show_folders
+whoami
+cd folder1
+rename_user user2 <function generate_user at 0x027087F0>
+which_group
+sign_in user5 pass5
+sign_out
+help register_admin
+which_group
+register_user user7 pass7
+buy
+show_items
+which_group
+whoami
+show_items
+register_user user7 pass7
+rename_user user1 <function generate_user at 0x027087F0>
+cd folder5
+cd folder2
+help exit
+add_item_property item2 key4=val10 key2=val1 key5=val6 key8=val3 
+show_item_properties item3
+add_item item4 key7=val8 key2=val5 key1=val3 key10=val1 
+add_item item5 key6=val10 key6=val2 key8=val7 key4=val10 
+sign_in user2 pass2
+sign_out
+sign_in user7 pass7
+sign_in a3 pa3
+add_item item1 key10=val6 key10=val10 key9=val2 key6=val2 
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+put item1
+show_items
+add_item_property item3 key9=val2 key10=val7 key2=val9 key2=val2 
+which_group
+sign_in a4 pa4
+sign_in user5 pass5
+cd folder2
+cd folder2
+show_folders
+show_folders
+add_item_property item2 key10=val9 key5=val4 key9=val7 key8=val8 
+sign_in user6 pass6
+sign_in user8 pass8
+current_folder
+show_folders
+put item3
+sign_in a2 pa2
+sign_out
+which_group
+ls
+put item4
+sign_in a4 pa4
+ls_folders
+create_folder folder2
+whoami
+buy
+register_user user9 pass9
+cd folder1
+show_item_properties item3
+create_folder folder2
+show_items
+ls
+register_admin user6 pass6
+cd folder4
+show_items
+show_item_properties item3
+put item1
+rename_user user3 <function generate_user at 0x027087F0>
+register_admin user8 pass8
+buy
+cd folder3
+put item1
+register_user user3 pass3
+ls_folders
+show_folders
+add_item item3 key9=val1 key9=val10 key10=val7 key1=val6 
+add_item_property item5 key10=val6 key3=val9 key4=val9 key8=val9 
+cd folder2
+add_item_property item5 key8=val3 key10=val10 key5=val10 key3=val1 
+create_folder folder1
+register_user user4 pass4
+add_item_property item3 key5=val2 key7=val4 key10=val8 key3=val10 
+create_folder folder5
+put item1
+which_group
+show_items
+ls_folders
+buy
+help current_folder
+sign_in a2 pa2
+show_folders
+pwd
+register_user user2 pass2
+show_item_properties item4
+pwd
+ls_folders
+show_items
+help add_item
+show_users
+put item2
+register_user admin admin
+show_folders
+show_folders
+add_item_property item1 key3=val9 key10=val6 key7=val8 key8=val1 
+add_item_property item1 key3=val4 key5=val2 key9=val3 key7=val9 
+show_items
+whoami
+add_item_property item5 key7=val6 key10=val3 key8=val8 key2=val3 
+sign_in user6 pass6
+register_user user5 pass5
+whoami
+which_group
+show_items
+ls
+ls_folders
+buy
+buy
+create_folder folder5
+show_folders
+pwd
+rename_user user7 <function generate_user at 0x027087F0>
+show_folders
+current_folder
+which_group
+cd folder3
+which_group
+put item4
+add_item item4 key9=val5 key3=val1 key9=val3 key5=val4 
+create_folder folder4
+put item4
+register_user user6 pass6
+add_item_property item4 key8=val7 key2=val5 key4=val4 key7=val8 
+register_user user7 pass7
+sign_in admin admin
+ls_folders
+show_item_properties item5
+cd folder4
+whoami
+which_group
+ls_folders
+sign_in a5 pa5
+show_folders
+sign_in admin admin
+add_item_property item2 key7=val7 key6=val8 key6=val9 key4=val1 
+put item5
+current_folder
+sign_in user2 pass2
+sign_out
+current_folder
+whoami
+cd folder2
+add_item item1 key10=val2 key9=val8 key7=val4 key4=val1 
+which_group
+sign_in a5 pa5
+whoami
+add_item item5 key9=val8 key1=val3 key2=val8 key3=val5 
+pwd
+show_item_properties item2
+pwd
+show_users
+add_item item5 key4=val10 key10=val4 key7=val4 key9=val4 
+ls_folders
+rename_user user4 <function generate_user at 0x027087F0>
+show_item_properties item2
+register_user user4 pass4
+current_folder
+register_user admin admin
+register_user user7 pass7
+add_item item5 key6=val1 key7=val4 key5=val3 key5=val5 
+current_folder
+rename_user user7 <function generate_user at 0x027087F0>
+add_item item2 key7=val5 key4=val8 key2=val2 key10=val1 
+ls_folders
+pwd
+help buy
+pwd
+which_group
+buy
+show_users
+which_group
+help whoami
+add_item_property item4 key10=val6 key8=val2 key4=val4 key2=val8 
+show_folders
+current_folder
+rename_user user9 <function generate_user at 0x027087F0>
+which_group
+add_item item4 key3=val9 key1=val10 key10=val4 key10=val2 
+put item1
+which_group
+show_items
+ls_folders
+show_users
+show_item_properties item3
+show_item_properties item1
+ls_folders
+sign_in a4 pa4
+ls_folders
+which_group
+which_group
+rename_user user5 <function generate_user at 0x027087F0>
+help current_folder
+cd folder4
+put item1
+add_item item5 key7=val3 key1=val1 key1=val8 key5=val7 
+help ls
+register_user user8 pass8
+show_users
+help view_order
+buy
+create_folder folder4
+add_item_property item5 key8=val6 key5=val7 key4=val3 key1=val9 
+add_item_property item5 key4=val4 key3=val9 key9=val8 key10=val4 
+rename_user user5 <function generate_user at 0x027087F0>
+ls_folders
+sign_in user8 pass8
+show_users
+add_item item4 key9=val5 key6=val6 key2=val10 key2=val3 
+sign_in user9 pass9
+sign_in user5 pass5
+add_item item3 key7=val4 key10=val5 key8=val9 key9=val9 
+sign_in user5 pass5
+current_folder
+sign_in user7 pass7
+which_group
+help rename_user
+register_admin user8 pass8
+cd folder1
+sign_in user8 pass8
+create_folder folder2
+pwd
+buy
+ls_folders
+which_group
+add_item_property item4 key3=val8 key3=val9 key10=val5 key9=val3 
+ls
+register_admin user1 pass1
+register_user user4 pass4
+buy
+ls_folders
+show_folders
+whoami
+show_item_properties item1
+ls
+register_admin user2 pass2
+whoami
+register_admin user7 pass7
+show_users
+register_user user3 pass3
+register_user user8 pass8
+create_folder folder2
+pwd
+buy
+buy
+register_user admin admin
+add_item item3 key2=val5 key1=val4 key4=val2 key5=val6 
+add_item item5 key10=val10 key4=val7 key4=val3 key4=val1 
+add_item item1 key5=val5 key2=val2 key10=val1 key5=val6 
+whoami
+ls
+help show_folders
+put item2
+register_user user6 pass6
+sign_in user3 pass3
+show_item_properties item3
+put item1
+register_admin user6 pass6
+cd folder3
+ls
+current_folder
+sign_in admin admin
+register_user user1 pass1
+sign_in a2 pa2
+add_item item5 key6=val8 key8=val4 key3=val10 key7=val9 
+current_folder
+show_item_properties item1
+put item2
+which_group
+sign_in user9 pass9
+pwd
+create_folder folder3
+ls
+add_item_property item5 key3=val7 key6=val7 key5=val10 key2=val3 
+ls
+whoami
+whoami
+register_user user1 pass1
+rename_user user1 <function generate_user at 0x027087F0>
+create_folder folder4
+which_group
+cd folder3
+help add_item
+pwd
+ls_folders
+put item1
+rename_user user1 <function generate_user at 0x027087F0>
+sign_out
+add_item item4 key2=val7 key4=val5 key10=val9 key6=val7 
+sign_out
+show_users
+help exit
+help whoami
+sign_in admin admin
+show_item_properties item3
+rename_user user4 <function generate_user at 0x027087F0>
+sign_in user2 pass2
+cd folder2
+whoami
+show_users
+put item4
+sign_in a2 pa2
+rename_user user8 <function generate_user at 0x027087F0>
+add_item_property item2 key2=val1 key7=val7 key2=val6 key3=val7 
+show_items
+add_item item4 key4=val6 key6=val5 key5=val10 key1=val4 
+sign_out
+add_item_property item3 key9=val2 key2=val5 key9=val3 key6=val6 
+show_users
+show_items
+sign_in user1 pass1
+sign_in user7 pass7
+rename_user user4 <function generate_user at 0x027087F0>
+add_item_property item3 key5=val7 key4=val1 key3=val2 key9=val6 
+sign_out
+whoami
+current_folder
+pwd
+show_users
+sign_out
+sign_out
+sign_in a5 pa5
+whoami
+whoami
+add_item item5 key5=val4 key4=val7 key10=val3 key2=val10 
+rename_user user4 <function generate_user at 0x027087F0>
+put item2
+which_group
+whoami
+show_folders
+show_users
+whoami
+sign_in user2 pass2
+show_folders
+ls_folders
+ls_folders
+current_folder
+rename_user user9 <function generate_user at 0x027087F0>
+add_item item3 key9=val7 key9=val2 key10=val3 key3=val8 
+sign_in a5 pa5
+show_item_properties item2
+ls_folders
+sign_out
+show_folders
+buy
+add_item_property item1 key10=val1 key9=val4 key4=val5 key5=val8 
+ls
+current_folder
+show_folders
+register_user user9 pass9
+help register_admin
+put item3
+sign_in a5 pa5
+show_users
+pwd
+ls_folders
+sign_out
+show_item_properties item2
+create_folder folder4
+rename_user user7 <function generate_user at 0x027087F0>
+add_item_property item2 key10=val10 key2=val6 key9=val3 key5=val10 
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in user3 pass3
+show_item_properties item4
+put item2
+put item5
+sign_out
+sign_in a5 pa5
+add_item_property item4 key6=val9 key1=val4 key10=val3 key7=val3 
+help sign_out
+show_users
+which_group
+show_folders
+put item4
+add_item item2 key5=val8 key4=val5 key4=val7 key5=val5 
+show_items
+cd folder4
+ls
+sign_out
+sign_in a4 pa4
+register_user user8 pass8
+sign_in user2 pass2
+rename_user user4 <function generate_user at 0x027087F0>
+show_folders
+show_folders
+show_users
+put item5
+sign_in a3 pa3
+help whoami
+show_items
+current_folder
+sign_out
+ls_folders
+ls_folders
+current_folder
+put item4
+cd folder2
+put item3
+register_user user1 pass1
+show_folders
+show_users
+show_item_properties item3
+ls_folders
+register_user user3 pass3
+current_folder
+sign_in a1 pa1
+buy
+sign_out
+show_users
+cd folder3
+pwd
+current_folder
+register_admin admin admin
+help show_users
+pwd
+ls
+put item4
+pwd
+show_item_properties item1
+register_user user4 pass4
+sign_in user6 pass6
+show_items
+sign_in a1 pa1
+register_admin user3 pass3
+buy
+ls
+show_items
+sign_out
+show_item_properties item2
+which_group
+current_folder
+show_users
+create_folder folder1
+show_folders
+add_item_property item1 key2=val9 key4=val10 key10=val10 key9=val1 
+cd folder4
+pwd
+show_item_properties item3
+put item3
+which_group
+sign_out
+show_users
+register_user user4 pass4
+create_folder folder1
+add_item_property item2 key9=val9 key5=val6 key9=val6 key7=val4 
+put item2
+add_item item1 key6=val5 key6=val6 key8=val1 key5=val7 
+sign_in a4 pa4
+pwd
+put item5
+which_group
+sign_out
+sign_in user5 pass5
+register_user user2 pass2
+put item1
+cd folder2
+add_item_property item1 key3=val10 key7=val6 key7=val7 key10=val5 
+add_item item5 key9=val4 key4=val6 key2=val6 key1=val9 
+sign_out
+pwd
+create_folder folder1
+ls
+put item2
+add_item item5 key9=val3 key10=val5 key3=val6 key4=val4 
+create_folder folder3
+sign_in user7 pass7
+sign_in a4 pa4
+show_folders
+which_group
+sign_out
+whoami
+ls_folders
+help sign_in
+pwd
+help pwd
+show_items
+register_admin user2 pass2
+show_folders
+put item2
+create_folder folder2
+help show_item_properties
+sign_in user8 pass8
+current_folder
+whoami
+show_item_properties item4
+show_item_properties item3
+show_item_properties item1
+add_item_property item1 key4=val10 key8=val5 key6=val5 key9=val9 
+add_item_property item4 key6=val8 key6=val3 key7=val1 key4=val6 
+show_users
+create_folder folder3
+show_item_properties item5
+cd folder5
+show_item_properties item2
+current_folder
+show_item_properties item2
+ls_folders
+add_item item3 key7=val1 key6=val3 key5=val4 key7=val2 
+sign_in user1 pass1
+show_folders
+show_users
+show_items
+pwd
+whoami
+show_folders
+buy
+register_admin user3 pass3
+register_user user2 pass2
+pwd
+register_admin user2 pass2
+sign_in user2 pass2
+add_item_property item3 key3=val1 key8=val10 key5=val7 key10=val10 
+whoami
+rename_user user2 <function generate_user at 0x027087F0>
+pwd
+sign_in user2 pass2
+sign_in a1 pa1
+ls_folders
+put item1
+rename_user user6 <function generate_user at 0x027087F0>
+register_user admin admin
+buy
+buy
+current_folder
+cd folder4
+register_admin user1 pass1
+create_folder folder3
+ls
+show_folders
+show_item_properties item4
+sign_out
+which_group
+show_folders
+pwd
+ls_folders
+show_folders
+ls_folders
+add_item_property item5 key1=val3 key3=val2 key6=val9 key9=val8 
+cd folder4
+help create_folder
+rename_user user2 <function generate_user at 0x027087F0>
+show_item_properties item1
+ls_folders
+add_item_property item1 key10=val3 key10=val8 key2=val2 key1=val6 
+show_folders
+register_user user6 pass6
+sign_in user4 pass4
+create_folder folder5
+add_item item3 key9=val1 key6=val5 key4=val6 key3=val2 
+add_item_property item4 key8=val10 key9=val7 key10=val5 key2=val4 
+current_folder
+sign_in a3 pa3
+register_user user3 pass3
+register_admin user8 pass8
+show_item_properties item2
+show_users
+help ls_folders
+which_group
+ls_folders
+sign_in user1 pass1
+show_item_properties item3
+add_item_property item2 key5=val10 key10=val9 key9=val7 key3=val4 
+show_users
+register_admin user1 pass1
+buy
+sign_in user9 pass9
+rename_user user4 <function generate_user at 0x027087F0>
+sign_in a3 pa3
+ls_folders
+whoami
+create_folder folder1
+sign_in user2 pass2
+add_item item2 key2=val6 key6=val3 key2=val2 key5=val9 
+show_folders
+show_users
+which_group
+show_users
+show_folders
+put item2
+rename_user user5 <function generate_user at 0x027087F0>
+register_user user4 pass4
+sign_in a3 pa3
+cd folder5
+register_admin user6 pass6
+sign_in a4 pa4
+help ls_folders
+ls
+current_folder
+rename_user user2 <function generate_user at 0x027087F0>
+ls_folders
+show_users
+show_items
+show_items
+buy
+show_folders
+create_folder folder2
+cd folder5
+show_items
+show_item_properties item2
+register_user user8 pass8
+rename_user user1 <function generate_user at 0x027087F0>
+show_items
+sign_out
+create_folder folder3
+cd folder2
+show_item_properties item2
+show_item_properties item5
+pwd
+show_users
+show_item_properties item4
+whoami
+ls_folders
+which_group
+whoami
+show_users
+sign_in user3 pass3
+current_folder
+cd folder3
+create_folder folder5
+sign_out
+sign_out
+sign_out
+ls
+pwd
+buy
+create_folder folder5
+sign_in a5 pa5
+cd folder2
+show_users
+show_items
+show_folders
+cd folder4
+pwd
+current_folder
+create_folder folder2
+whoami
+show_item_properties item3
+sign_in a3 pa3
+register_user user2 pass2
+help show_items
+buy
+buy
+buy
+show_users
+register_user user9 pass9
+show_folders
+sign_out
+create_folder folder3
+cd folder5
+buy
+show_item_properties item1
+add_item item5 key4=val6 key6=val2 key3=val3 key1=val9 
+register_admin user8 pass8
+add_item item4 key7=val2 key9=val5 key3=val2 key6=val1 
+pwd
+buy
+show_item_properties item2
+ls_folders
+show_folders
+buy
+add_item item4 key4=val4 key10=val1 key8=val2 key9=val9 
+show_folders
+register_user user1 pass1
+create_folder folder2
+buy
+which_group
+show_item_properties item4
+cd folder1
+add_item_property item4 key6=val3 key5=val8 key6=val4 key2=val10 
+ls_folders
+create_folder folder4
+add_item_property item1 key1=val2 key3=val1 key4=val2 key3=val2 
+sign_in user2 pass2
+sign_out
+rename_user user1 <function generate_user at 0x027087F0>
+sign_in a1 pa1
+current_folder
+help exit
+which_group
+show_users
+which_group
+add_item item3 key6=val10 key4=val7 key9=val2 key5=val10 
+help current_folder
+ls
+sign_out
+cd folder3
+which_group
+show_items
+create_folder folder4
+rename_user user1 <function generate_user at 0x027087F0>
+whoami
+add_item_property item3 key5=val2 key9=val4 key7=val9 key5=val3 
+add_item item4 key1=val6 key4=val9 key3=val6 key4=val7 
+whoami
+add_item item5 key6=val5 key7=val6 key10=val7 key9=val7 
+ls
+ls_folders
+sign_in user8 pass8
+current_folder
+pwd
+whoami
+sign_in a2 pa2
+sign_out
+sign_in a3 pa3
+sign_in a5 pa5
+sign_out
+add_item item1 key3=val5 key9=val4 key7=val7 key7=val9 
+help register_admin
+ls
+rename_user user6 <function generate_user at 0x027087F0>
+show_items
+show_users
+register_admin user1 pass1
+ls_folders
+sign_in user1 pass1
+ls
+pwd
+pwd
+cd folder2
+sign_in user2 pass2
+create_folder folder2
+cd folder5
+show_item_properties item5
+ls
+rename_user user2 <function generate_user at 0x027087F0>
+register_admin user3 pass3
+add_item_property item5 key1=val8 key7=val2 key2=val6 key3=val9 
+show_folders
+buy
+register_admin user1 pass1
+ls_folders
+ls_folders
+add_item_property item1 key10=val6 key6=val9 key3=val3 key6=val4 
+show_items
+create_folder folder1
+help view_order
+sign_in a5 pa5
+ls_folders
+ls_folders
+show_item_properties item5
+which_group
+create_folder folder3
+ls
+buy
+create_folder folder2
+show_users
+show_item_properties item4
+register_admin user9 pass9
+register_admin user4 pass4
+help create_folder
+sign_in a5 pa5
+ls_folders
+sign_out
+register_admin user1 pass1
+buy
+ls_folders
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in a5 pa5
+create_folder folder2
+show_users
+register_admin user4 pass4
+show_users
+rename_user user0 <function generate_user at 0x027087F0>
+show_folders
+show_item_properties item1
+create_folder folder5
+show_items
+pwd
+current_folder
+show_users
+add_item item5 key6=val5 key3=val1 key4=val8 key3=val2 
+put item3
+rename_user user4 <function generate_user at 0x027087F0>
+show_folders
+sign_out
+show_items
+add_item_property item1 key9=val7 key6=val1 key5=val9 key7=val7 
+which_group
+current_folder
+register_admin user7 pass7
+cd folder2
+whoami
+sign_out
+register_user user8 pass8
+show_item_properties item3
+register_user user1 pass1
+cd folder1
+add_item item2 key9=val1 key6=val3 key4=val7 key2=val5 
+put item5
+add_item item1 key10=val10 key8=val6 key3=val1 key6=val1 
+add_item_property item1 key5=val10 key2=val3 key6=val8 key8=val1 
+help show_item_properties
+sign_out
+show_folders
+pwd
+sign_in user7 pass7
+cd folder4
+current_folder
+ls
+cd folder4
+sign_in a1 pa1
+rename_user user2 <function generate_user at 0x027087F0>
+buy
+sign_in a1 pa1
+ls_folders
+put item4
+which_group
+show_folders
+rename_user user1 <function generate_user at 0x027087F0>
+add_item_property item3 key6=val8 key6=val1 key10=val8 key5=val1 
+put item1
+help create_folder
+sign_in a5 pa5
+rename_user user3 <function generate_user at 0x027087F0>
+cd folder1
+which_group
+rename_user user6 <function generate_user at 0x027087F0>
+show_folders
+sign_in a5 pa5
+ls
+put item3
+ls
+which_group
+pwd
+sign_out
+sign_out
+show_users
+show_item_properties item2
+register_admin user7 pass7
+sign_in a3 pa3
+show_users
+current_folder
+sign_in user3 pass3
+sign_in a3 pa3
+current_folder
+current_folder
+buy
+cd folder2
+help help
+buy
+register_admin user6 pass6
+show_users
+add_item_property item3 key10=val9 key10=val10 key2=val2 key2=val4 
+whoami
+show_users
+ls
+help whoami
+register_user user9 pass9
+current_folder
+sign_in user3 pass3
+show_folders
+create_folder folder2
+add_item_property item4 key10=val2 key2=val3 key10=val3 key10=val1 
+register_admin user8 pass8
+which_group
+buy
+show_item_properties item4
+sign_in a3 pa3
+show_folders
+show_items
+ls
+add_item_property item1 key3=val7 key8=val5 key5=val7 key8=val7 
+ls_folders
+current_folder
+ls_folders
+show_folders
+whoami
+put item1
+show_users
+cd folder1
+current_folder
+sign_out
+show_items
+help register_admin
+pwd
+cd folder1
+register_user user7 pass7
+sign_out
+sign_out
+create_folder folder4
+sign_in admin admin
+ls_folders
+current_folder
+current_folder
+sign_in a1 pa1
+show_users
+show_items
+ls_folders
+sign_in user3 pass3
+cd folder1
+rename_user user8 <function generate_user at 0x027087F0>
+whoami
+ls_folders
+which_group
+buy
+rename_user user1 <function generate_user at 0x027087F0>
+sign_out
+sign_out
+sign_in user6 pass6
+help exit
+ls
+whoami
+ls
+whoami
+show_folders
+register_admin user9 pass9
+create_folder folder5
+buy
+add_item_property item4 key3=val8 key4=val6 key6=val10 key3=val3 
+show_users
+sign_out
+put item4
+add_item_property item3 key8=val10 key4=val8 key1=val10 key4=val3 
+show_users
+show_folders
+whoami
+ls_folders
+help exit
+current_folder
+show_items
+whoami
+create_folder folder1
+whoami
+current_folder
+show_items
+register_admin user5 pass5
+ls_folders
+register_admin user6 pass6
+create_folder folder3
+ls_folders
+sign_out
+help view_order
+register_admin user9 pass9
+put item3
+rename_user user5 <function generate_user at 0x027087F0>
+which_group
+pwd
+put item3
+sign_out
+show_folders
+register_admin admin admin
+which_group
+help buy
+show_folders
+sign_in a1 pa1
+current_folder
+add_item item3 key7=val8 key1=val1 key2=val10 key4=val7 
+put item3
+pwd
+put item3
+ls_folders
+which_group
+ls
+sign_out
+whoami
+buy
+whoami
+pwd
+current_folder
+register_admin user1 pass1
+add_item item1 key1=val4 key10=val10 key2=val2 key4=val4 
+cd folder1
+cd folder3
+show_item_properties item5
+register_admin user3 pass3
+cd folder2
+which_group
+which_group
+cd folder4
+create_folder folder5
+add_item item5 key6=val7 key2=val7 key6=val10 key6=val10 
+sign_in user6 pass6
+add_item_property item5 key1=val3 key6=val2 key2=val1 key10=val4 
+register_admin user1 pass1
+register_admin user5 pass5
+buy
+put item4
+whoami
+help rename_user
+sign_in user1 pass1
+create_folder folder2
+pwd
+whoami
+whoami
+show_users
+rename_user user9 <function generate_user at 0x027087F0>
+cd folder1
+rename_user user9 <function generate_user at 0x027087F0>
+ls_folders
+show_folders
+show_folders
+register_admin admin admin
+whoami
+current_folder
+add_item item4 key8=val10 key3=val8 key5=val8 key5=val1 
+register_user user8 pass8
+sign_in user4 pass4
+create_folder folder4
+buy
+sign_out
+cd folder5
+current_folder
+ls_folders
+ls_folders
+ls
+show_item_properties item3
+register_admin user8 pass8
+show_items
+add_item item5 key6=val2 key5=val8 key7=val1 key10=val5 
+which_group
+sign_out
+create_folder folder1
+ls
+whoami
+whoami
+whoami
+show_users
+current_folder
+ls_folders
+ls
+sign_out
+which_group
+show_users
+cd folder1
+sign_out
+register_admin user7 pass7
+which_group
+pwd
+rename_user user4 <function generate_user at 0x027087F0>
+whoami
+cd folder5
+add_item item4 key9=val6 key5=val9 key1=val7 key1=val9 
+ls
+ls
+pwd
+ls
+pwd
+create_folder folder4
+sign_out
+whoami
+ls_folders
+sign_out
+add_item_property item2 key7=val7 key10=val9 key4=val3 key9=val10 
+which_group
+show_items
+sign_in user9 pass9
+ls
+show_folders
+show_items
+which_group
+put item2
+buy
+rename_user user6 <function generate_user at 0x027087F0>
+put item3
+pwd
+show_users
+sign_in a4 pa4
+show_folders
+show_users
+register_user user5 pass5
+show_item_properties item4
+create_folder folder1
+show_items
+ls
+add_item_property item3 key3=val5 key5=val4 key8=val4 key3=val5 
+show_folders
+register_admin user2 pass2
+put item2
+rename_user user6 <function generate_user at 0x027087F0>
+buy
+rename_user user7 <function generate_user at 0x027087F0>
+ls_folders
+sign_in user2 pass2
+ls_folders
+show_users
+pwd
+rename_user user2 <function generate_user at 0x027087F0>
+sign_out
+create_folder folder1
+sign_in user5 pass5
+sign_in a1 pa1
+register_admin user2 pass2
+show_items
+show_users
+pwd
+show_users
+pwd
+register_user user5 pass5
+which_group
+create_folder folder1
+pwd
+buy
+sign_in user1 pass1
+ls
+show_users
+register_user user4 pass4
+ls
+show_folders
+cd folder1
+add_item item5 key4=val8 key2=val1 key2=val3 key9=val5 
+show_users
+put item4
+help put
+put item4
+sign_in user9 pass9
+rename_user user4 <function generate_user at 0x027087F0>
+create_folder folder3
+put item1
+which_group
+add_item_property item1 key9=val9 key7=val10 key10=val1 key5=val9 
+sign_in a1 pa1
+add_item_property item1 key9=val10 key3=val1 key4=val10 key2=val1 
+show_users
+which_group
+help ls
+ls_folders
+create_folder folder1
+current_folder
+sign_out
+rename_user user4 <function generate_user at 0x027087F0>
+show_items
+add_item item4 key6=val9 key1=val5 key3=val9 key10=val8 
+create_folder folder4
+buy
+put item1
+help exit
+whoami
+help cd
+register_admin admin admin
+which_group
+which_group
+cd folder2
+current_folder
+show_users
+current_folder
+help create_folder
+show_item_properties item4
+create_folder folder4
+buy
+buy
+create_folder folder1
+rename_user user9 <function generate_user at 0x027087F0>
+ls
+sign_out
+ls_folders
+show_items
+current_folder
+put item4
+whoami
+pwd
+ls
+show_folders
+buy
+sign_in a2 pa2
+put item5
+show_users
+whoami
+pwd
+register_user user9 pass9
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in a4 pa4
+add_item_property item2 key1=val8 key4=val10 key4=val6 key7=val4 
+show_items
+register_user user3 pass3
+sign_out
+sign_out
+add_item item3 key8=val6 key3=val4 key5=val8 key9=val10 
+register_admin user9 pass9
+register_user user5 pass5
+sign_in a5 pa5
+register_user user8 pass8
+register_admin user9 pass9
+sign_in a5 pa5
+put item2
+whoami
+show_items
+current_folder
+help register_user
+cd folder1
+show_item_properties item3
+sign_in user9 pass9
+add_item item4 key5=val2 key8=val5 key5=val1 key4=val8 
+sign_in user3 pass3
+add_item_property item5 key4=val4 key8=val7 key6=val1 key8=val10 
+whoami
+cd folder5
+whoami
+current_folder
+ls_folders
+buy
+register_user user8 pass8
+ls
+register_admin user4 pass4
+sign_in user6 pass6
+sign_in admin admin
+help show_items
+register_user user3 pass3
+pwd
+cd folder3
+sign_out
+put item5
+whoami
+cd folder2
+put item5
+show_item_properties item1
+cd folder3
+show_users
+register_user user1 pass1
+rename_user user2 <function generate_user at 0x027087F0>
+register_admin user9 pass9
+which_group
+which_group
+show_item_properties item5
+show_item_properties item4
+put item1
+which_group
+show_users
+add_item item5 key9=val10 key9=val1 key2=val6 key3=val4 
+pwd
+show_item_properties item3
+help cd
+which_group
+show_items
+cd folder1
+help history
+cd folder2
+which_group
+show_item_properties item4
+ls_folders
+which_group
+ls
+current_folder
+help ls
+create_folder folder3
+which_group
+current_folder
+create_folder folder3
+sign_out
+register_user user4 pass4
+put item1
+which_group
+create_folder folder1
+cd folder1
+which_group
+whoami
+show_items
+register_admin user1 pass1
+whoami
+pwd
+pwd
+register_admin admin admin
+show_folders
+help ls_folders
+register_admin user2 pass2
+show_items
+current_folder
+add_item item4 key7=val5 key8=val1 key5=val10 key3=val1 
+current_folder
+create_folder folder4
+show_items
+pwd
+show_items
+current_folder
+show_item_properties item3
+sign_in user1 pass1
+register_admin user6 pass6
+show_users
+current_folder
+sign_in user1 pass1
+rename_user user5 <function generate_user at 0x027087F0>
+register_user user3 pass3
+ls
+sign_in user9 pass9
+buy
+whoami
+put item5
+cd folder1
+show_item_properties item3
+sign_in a2 pa2
+pwd
+current_folder
+show_folders
+current_folder
+show_users
+add_item item2 key5=val9 key9=val5 key10=val4 key9=val7 
+register_user user3 pass3
+add_item_property item3 key3=val6 key6=val6 key7=val6 key3=val3 
+ls_folders
+show_items
+pwd
+ls
+show_users
+ls_folders
+cd folder3
+cd folder5
+register_admin user6 pass6
+add_item_property item4 key3=val6 key1=val9 key1=val3 key8=val6 
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+show_items
+current_folder
+whoami
+show_folders
+sign_in user8 pass8
+ls
+ls_folders
+register_admin user1 pass1
+show_item_properties item5
+create_folder folder4
+add_item item4 key6=val4 key2=val1 key9=val6 key8=val2 
+show_folders
+pwd
+cd folder3
+show_folders
+add_item_property item5 key10=val1 key5=val4 key6=val7 key3=val2 
+help add_item_property
+ls_folders
+register_admin user6 pass6
+sign_in a1 pa1
+register_user user7 pass7
+sign_out
+cd folder5
+show_items
+current_folder
+current_folder
+register_user user7 pass7
+show_items
+sign_in a3 pa3
+pwd
+put item4
+show_items
+current_folder
+add_item item5 key6=val5 key7=val3 key2=val4 key4=val1 
+register_user user1 pass1
+register_user user2 pass2
+sign_out
+whoami
+register_user user9 pass9
+whoami
+add_item_property item3 key1=val9 key7=val3 key8=val5 key7=val3 
+show_users
+buy
+sign_in user4 pass4
+help delete_user
+add_item_property item5 key9=val7 key6=val6 key4=val10 key6=val6 
+rename_user user2 <function generate_user at 0x027087F0>
+which_group
+register_admin user2 pass2
+show_users
+sign_out
+which_group
+show_folders
+register_user user8 pass8
+buy
+ls
+whoami
+help register_user
+whoami
+register_user user9 pass9
+sign_in a1 pa1
+add_item_property item5 key7=val5 key9=val5 key7=val5 key5=val4 
+add_item item1 key7=val1 key9=val2 key7=val6 key9=val5 
+add_item_property item3 key8=val10 key2=val3 key6=val2 key7=val6 
+show_item_properties item1
+rename_user user2 <function generate_user at 0x027087F0>
+pwd
+cd folder3
+register_user admin admin
+sign_in a3 pa3
+register_user user3 pass3
+whoami
+put item2
+show_folders
+ls_folders
+add_item_property item5 key3=val8 key6=val5 key1=val10 key8=val4 
+current_folder
+sign_in a3 pa3
+register_admin admin admin
+buy
+register_admin user5 pass5
+cd folder1
+help pwd
+show_item_properties item5
+register_admin user1 pass1
+add_item item5 key6=val2 key2=val1 key9=val1 key9=val5 
+cd folder2
+ls
+put item3
+which_group
+sign_out
+buy
+rename_user user6 <function generate_user at 0x027087F0>
+sign_in a2 pa2
+pwd
+sign_out
+current_folder
+sign_out
+create_folder folder3
+add_item item2 key10=val2 key8=val6 key8=val8 key1=val2 
+show_users
+rename_user user4 <function generate_user at 0x027087F0>
+help whoami
+show_items
+register_user admin admin
+sign_in a5 pa5
+show_item_properties item4
+sign_in user5 pass5
+sign_in user7 pass7
+cd folder5
+show_folders
+which_group
+create_folder folder4
+sign_in admin admin
+whoami
+put item3
+rename_user user5 <function generate_user at 0x027087F0>
+show_users
+help pwd
+current_folder
+ls
+put item1
+register_admin user3 pass3
+sign_in a1 pa1
+help sign_in
+show_items
+add_item_property item4 key9=val1 key4=val4 key2=val1 key8=val5 
+pwd
+sign_out
+ls
+sign_in a3 pa3
+register_admin user4 pass4
+rename_user user1 <function generate_user at 0x027087F0>
+which_group
+create_folder folder1
+show_item_properties item5
+show_items
+current_folder
+show_users
+sign_in user9 pass9
+ls_folders
+buy
+current_folder
+help delete_user
+sign_in a1 pa1
+ls
+sign_in user6 pass6
+current_folder
+put item3
+which_group
+pwd
+help add_item_property
+sign_in a3 pa3
+sign_out
+sign_out
+show_users
+register_admin admin admin
+register_admin user4 pass4
+put item3
+show_users
+ls
+add_item_property item3 key5=val8 key4=val2 key5=val6 key8=val4 
+register_admin user8 pass8
+which_group
+help view_order
+buy
+register_admin user1 pass1
+show_folders
+ls_folders
+show_items
+whoami
+cd folder3
+show_items
+whoami
+create_folder folder2
+show_item_properties item4
+register_user user6 pass6
+add_item item4 key3=val10 key5=val8 key9=val4 key5=val4 
+show_items
+show_folders
+current_folder
+pwd
+sign_in user4 pass4
+register_user user4 pass4
+show_folders
+register_admin user8 pass8
+sign_out
+add_item item3 key8=val5 key2=val7 key6=val5 key8=val4 
+whoami
+ls_folders
+register_admin admin admin
+current_folder
+rename_user user8 <function generate_user at 0x027087F0>
+ls
+show_users
+pwd
+buy
+buy
+pwd
+buy
+sign_in user7 pass7
+create_folder folder2
+buy
+add_item_property item1 key7=val3 key9=val7 key6=val9 key8=val10 
+show_item_properties item4
+create_folder folder5
+whoami
+which_group
+buy
+sign_in admin admin
+register_user user6 pass6
+sign_in a4 pa4
+show_item_properties item2
+ls
+ls_folders
+put item1
+add_item item3 key1=val9 key9=val3 key1=val5 key9=val4 
+current_folder
+pwd
+show_users
+sign_in user5 pass5
+show_item_properties item5
+show_users
+current_folder
+ls_folders
+sign_in a1 pa1
+rename_user user3 <function generate_user at 0x027087F0>
+cd folder2
+show_item_properties item1
+create_folder folder3
+show_users
+sign_in user1 pass1
+sign_out
+which_group
+show_items
+register_user user2 pass2
+show_users
+rename_user user8 <function generate_user at 0x027087F0>
+show_folders
+which_group
+buy
+create_folder folder4
+whoami
+register_admin user3 pass3
+ls_folders
+register_admin admin admin
+show_users
+ls
+ls
+pwd
+current_folder
+put item2
+add_item item4 key2=val9 key5=val2 key8=val2 key7=val9 
+show_item_properties item4
+buy
+create_folder folder3
+register_admin user6 pass6
+add_item_property item2 key1=val2 key5=val6 key9=val4 key6=val3 
+buy
+show_item_properties item3
+add_item_property item1 key10=val1 key10=val10 key8=val10 key9=val2 
+buy
+put item4
+show_items
+create_folder folder2
+whoami
+sign_in a5 pa5
+which_group
+whoami
+add_item item4 key3=val8 key5=val4 key6=val2 key4=val5 
+buy
+which_group
+create_folder folder2
+sign_in a5 pa5
+register_admin user6 pass6
+sign_out
+sign_in a4 pa4
+pwd
+buy
+show_item_properties item4
+sign_out
+register_admin user5 pass5
+create_folder folder5
+sign_out
+sign_out
+add_item item5 key4=val8 key8=val2 key4=val9 key1=val9 
+ls
+show_users
+show_users
+add_item_property item3 key7=val10 key3=val7 key9=val3 key6=val10 
+which_group
+buy
+which_group
+sign_in user4 pass4
+add_item item2 key6=val10 key2=val9 key7=val3 key10=val3 
+create_folder folder5
+buy
+sign_in admin admin
+sign_in a2 pa2
+help sign_out
+create_folder folder4
+create_folder folder2
+register_user user5 pass5
+show_users
+which_group
+help exit
+sign_out
+help show_items
+pwd
+show_folders
+show_users
+help pwd
+add_item item4 key9=val2 key9=val8 key9=val8 key5=val6 
+pwd
+add_item item4 key9=val3 key3=val7 key1=val6 key10=val5 
+pwd
+add_item item1 key2=val10 key7=val4 key4=val2 key7=val4 
+create_folder folder1
+sign_in a1 pa1
+cd folder2
+ls_folders
+which_group
+sign_in user1 pass1
+which_group
+sign_out
+sign_out
+ls
+buy
+cd folder1
+cd folder1
+add_item item4 key8=val7 key2=val9 key1=val4 key6=val3 
+which_group
+show_users
+cd folder1
+show_item_properties item5
+which_group
+show_item_properties item1
+show_folders
+cd folder5
+show_items
+buy
+sign_in user3 pass3
+sign_out
+add_item item3 key8=val6 key1=val7 key8=val9 key8=val9 
+rename_user user9 <function generate_user at 0x027087F0>
+pwd
+ls_folders
+put item5
+help add_item
+put item5
+pwd
+create_folder folder4
+show_item_properties item4
+ls_folders
+buy
+pwd
+ls_folders
+show_items
+whoami
+show_folders
+sign_in user4 pass4
+create_folder folder4
+sign_in user8 pass8
+put item5
+register_admin user6 pass6
+put item3
+rename_user user4 <function generate_user at 0x027087F0>
+which_group
+help put
+sign_in a1 pa1
+pwd
+put item5
+sign_in a5 pa5
+pwd
+register_admin user2 pass2
+show_item_properties item4
+ls
+show_users
+put item1
+sign_in a1 pa1
+which_group
+which_group
+put item4
+sign_out
+which_group
+rename_user user7 <function generate_user at 0x027087F0>
+sign_in user4 pass4
+register_admin user5 pass5
+cd folder4
+rename_user user3 <function generate_user at 0x027087F0>
+cd folder4
+sign_in user8 pass8
+put item5
+buy
+show_item_properties item1
+ls_folders
+which_group
+show_users
+put item5
+current_folder
+show_item_properties item4
+put item4
+show_folders
+register_user user4 pass4
+register_admin user2 pass2
+sign_out
+cd folder5
+create_folder folder3
+register_admin user9 pass9
+register_admin user6 pass6
+register_admin user9 pass9
+put item5
+put item4
+ls
+ls_folders
+which_group
+ls
+show_users
+show_users
+pwd
+show_folders
+create_folder folder5
+sign_in user3 pass3
+sign_in a3 pa3
+add_item_property item4 key7=val4 key3=val5 key2=val1 key4=val8 
+sign_in user4 pass4
+show_items
+create_folder folder2
+sign_in a4 pa4
+pwd
+show_folders
+show_folders
+rename_user user5 <function generate_user at 0x027087F0>
+add_item_property item2 key6=val2 key7=val8 key10=val7 key8=val5 
+show_item_properties item1
+add_item item1 key6=val4 key2=val1 key1=val4 key8=val8 
+rename_user user4 <function generate_user at 0x027087F0>
+buy
+help create_folder
+buy
+whoami
+ls_folders
+sign_in user5 pass5
+show_users
+sign_in a3 pa3
+ls_folders
+show_folders
+help register_admin
+buy
+sign_in a5 pa5
+register_admin user1 pass1
+show_items
+ls_folders
+show_item_properties item4
+current_folder
+ls
+create_folder folder1
+help register_user
+cd folder4
+show_item_properties item4
+add_item_property item1 key9=val7 key9=val1 key3=val1 key3=val5 
+add_item item1 key5=val7 key5=val7 key3=val9 key9=val9 
+sign_in a2 pa2
+ls_folders
+help show_item_properties
+add_item item2 key5=val7 key5=val4 key9=val3 key9=val4 
+show_items
+register_user user7 pass7
+sign_in user2 pass2
+help delete_user
+sign_in a3 pa3
+add_item_property item2 key8=val3 key9=val8 key2=val10 key1=val3 
+pwd
+register_user user5 pass5
+help buy
+buy
+cd folder2
+put item1
+current_folder
+show_users
+show_item_properties item1
+show_users
+add_item_property item5 key10=val2 key2=val6 key3=val5 key2=val4 
+cd folder5
+register_admin user2 pass2
+show_users
+put item5
+ls
+current_folder
+ls
+register_admin user1 pass1
+show_users
+create_folder folder3
+pwd
+pwd
+buy
+create_folder folder3
+show_folders
+whoami
+show_item_properties item1
+pwd
+whoami
+sign_in a5 pa5
+current_folder
+show_folders
+add_item item5 key7=val9 key3=val10 key10=val4 key5=val8 
+show_users
+ls_folders
+show_folders
+sign_in a2 pa2
+sign_out
+whoami
+register_admin user3 pass3
+add_item item5 key5=val1 key9=val1 key7=val10 key5=val6 
+ls
+put item4
+buy
+show_folders
+show_folders
+ls_folders
+help rename_user
+pwd
+whoami
+whoami
+show_items
+sign_out
+pwd
+show_items
+show_item_properties item2
+rename_user user9 <function generate_user at 0x027087F0>
+cd folder3
+sign_in a4 pa4
+add_item_property item1 key3=val8 key2=val3 key6=val9 key5=val4 
+rename_user user8 <function generate_user at 0x027087F0>
+add_item item5 key2=val10 key2=val8 key6=val6 key7=val1 
+cd folder5
+buy
+pwd
+which_group
+register_admin user1 pass1
+buy
+sign_out
+sign_in user6 pass6
+add_item_property item1 key5=val6 key10=val5 key7=val1 key9=val4 
+show_users
+sign_out
+sign_in a3 pa3
+which_group
+whoami
+which_group
+current_folder
+create_folder folder5
+sign_in a2 pa2
+sign_in a2 pa2
+help ls_folders
+show_folders
+add_item_property item3 key7=val8 key8=val5 key5=val3 key1=val5 
+ls
+sign_in user6 pass6
+buy
+show_items
+pwd
+show_folders
+show_users
+buy
+show_folders
+pwd
+sign_in a3 pa3
+show_users
+add_item item1 key4=val9 key1=val2 key3=val8 key6=val1 
+show_items
+register_admin user4 pass4
+register_admin user8 pass8
+whoami
+ls
+register_admin user4 pass4
+ls
+current_folder
+buy
+register_user admin admin
+add_item_property item3 key10=val4 key5=val8 key6=val4 key3=val8 
+add_item_property item5 key9=val9 key2=val5 key5=val3 key2=val7 
+create_folder folder5
+help history
+add_item item3 key3=val2 key4=val8 key6=val10 key4=val3 
+help sign_out
+show_folders
+whoami
+add_item_property item2 key10=val6 key7=val1 key2=val6 key8=val1 
+sign_in user7 pass7
+add_item item3 key8=val4 key7=val6 key8=val9 key9=val2 
+add_item_property item5 key5=val2 key2=val9 key3=val1 key10=val9 
+cd folder2
+rename_user user8 <function generate_user at 0x027087F0>
+ls_folders
+sign_in user5 pass5
+buy
+whoami
+which_group
+show_items
+show_items
+help show_folders
+sign_out
+put item3
+register_user user1 pass1
+register_admin user1 pass1
+cd folder5
+create_folder folder1
+ls_folders
+help view_order
+sign_in a5 pa5
+ls_folders
+cd folder3
+put item5
+register_admin user5 pass5
+rename_user user2 <function generate_user at 0x027087F0>
+sign_in user4 pass4
+cd folder3
+cd folder4
+sign_in user7 pass7
+add_item item5 key1=val10 key3=val3 key2=val5 key3=val4 
+add_item_property item2 key9=val5 key1=val10 key8=val3 key2=val8 
+register_admin user3 pass3
+sign_in user8 pass8
+add_item item4 key6=val5 key2=val2 key4=val8 key2=val5 
+ls
+rename_user user7 <function generate_user at 0x027087F0>
+help create_folder
+which_group
+add_item item1 key2=val2 key2=val6 key9=val9 key2=val9 
+sign_out
+ls
+add_item item2 key6=val2 key7=val4 key7=val3 key2=val6 
+show_items
+add_item_property item3 key9=val6 key7=val8 key9=val10 key1=val9 
+whoami
+register_admin user7 pass7
+pwd
+ls_folders
+show_items
+put item1
+add_item_property item4 key10=val3 key2=val8 key1=val7 key7=val4 
+help whoami
+register_admin admin admin
+cd folder3
+current_folder
+register_user user5 pass5
+show_users
+register_user admin admin
+current_folder
+whoami
+show_items
+sign_in a3 pa3
+buy
+rename_user user4 <function generate_user at 0x027087F0>
+sign_out
+ls
+sign_in a1 pa1
+help cd
+which_group
+pwd
+show_items
+sign_in a5 pa5
+pwd
+show_users
+add_item item2 key9=val6 key2=val4 key10=val9 key10=val9 
+create_folder folder2
+register_admin user3 pass3
+show_folders
+sign_in user7 pass7
+show_item_properties item3
+show_users
+rename_user user6 <function generate_user at 0x027087F0>
+register_user user5 pass5
+register_admin user4 pass4
+rename_user user3 <function generate_user at 0x027087F0>
+register_admin user8 pass8
+ls
+add_item_property item2 key10=val1 key4=val7 key4=val2 key10=val8 
+buy
+create_folder folder2
+create_folder folder5
+add_item_property item5 key7=val7 key10=val4 key6=val6 key3=val2 
+ls
+show_items
+register_user user3 pass3
+register_user user5 pass5
+buy
+show_items
+sign_in a3 pa3
+which_group
+sign_in admin admin
+show_item_properties item1
+sign_in user4 pass4
+help delete_user
+current_folder
+create_folder folder4
+sign_out
+register_admin user1 pass1
+ls_folders
+show_items
+register_admin user4 pass4
+register_user user4 pass4
+ls_folders
+register_admin user1 pass1
+put item5
+show_items
+sign_out
+ls
+whoami
+add_item item4 key6=val1 key2=val10 key10=val6 key8=val9 
+show_item_properties item2
+show_users
+help sign_in
+show_users
+ls_folders
+help show_item_properties
+show_users
+add_item_property item1 key7=val5 key9=val3 key2=val4 key10=val3 
+show_folders
+register_admin user7 pass7
+pwd
+buy
+add_item_property item1 key4=val5 key2=val3 key8=val3 key2=val3 
+show_users
+show_users
+put item3
+cd folder5
+rename_user user0 <function generate_user at 0x027087F0>
+show_users
+sign_in user6 pass6
+buy
+sign_out
+ls
+register_admin user7 pass7
+register_user user7 pass7
+sign_in a1 pa1
+help delete_user
+add_item item3 key4=val10 key8=val3 key3=val9 key6=val4 

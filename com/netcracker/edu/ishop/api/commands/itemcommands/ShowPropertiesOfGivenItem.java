@@ -46,19 +46,26 @@ public class ShowPropertiesOfGivenItem extends AbstractCommand {
 
             Item selectedItem = searchForItemObjectInGivenList(itemList, givenItemName);
 
-
-            List<ItemPropertyValue> propertiesList = selectedItem.getCharsVals();
-
-            if (propertiesList != null) {
-                String msg = "Properties of " + givenItemName + " are " + propertiesList.toString();
-                return CommandFormat.build("OK", "IS06", msg);
-
-            } else {
-                String msg = "There are no properties for " + givenItemName;
-                return CommandFormat.build("ERROR", "IF07", msg);
+            if (selectedItem != null) {
+                List<ItemPropertyValue> propertiesList = selectedItem.getCharsVals();
 
 
-            }
+                if (propertiesList != null) {
+                    String msg = "Properties of " + givenItemName + " are " + propertiesList.toString();
+                    return CommandFormat.build("OK", "IS06", msg);
+
+                } else {
+                    String msg = "There are no properties for " + givenItemName;
+                    return CommandFormat.build("ERROR", "IF07", msg);
+
+            }}
+
+
+
+            else {
+                    String msg = "There are no item in current directory " + givenItemName;
+                    return CommandFormat.build("ERROR", "----", msg);
+                }
 
 
         } else if (cmdArgs.length == 0) {

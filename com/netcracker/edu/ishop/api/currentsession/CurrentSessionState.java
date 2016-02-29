@@ -8,6 +8,7 @@ import netcracker.edu.ishop.api.persistence.DAOFactory;
 import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -167,6 +168,8 @@ public class CurrentSessionState {
         String firstLaunchStatusJSON = gson.toJson(firstLaunchStatus, varType);
 
         try {
+            //new File(SerializationConstants.SERIALIZED_FIRST_LAUNCH_FILE_PATH.getParent()).mkdirs();
+            FileUtils.forceMkdir(new File(SerializationConstants.SERIALIZED_OBJECT_FOLDER_NAME));
             FileWriter writer = new FileWriter(SerializationConstants.SERIALIZED_FIRST_LAUNCH_FILE_PATH);
             writer.write(firstLaunchStatusJSON);
             writer.close();

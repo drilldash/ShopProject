@@ -42,22 +42,22 @@ public class ShowFolderPathCommand extends AbstractCommand {
         List<String> filePathList = new ArrayList<String>();
         filePathList.add(CurrentSessionState.getCurrentSession().getCurrentFolder().getName());
 
-        while (parentRefId != null) {
+        if (folder.getParentFolderId() != null) {
+            while (parentRefId != null) {
 
-            folder = daoInstance.findABOInstanceById(Folder.class, folder.getParentFolderId());
-            //log.info(folder.getName());
+                log.info(folder);
+                folder = daoInstance.findABOInstanceById(Folder.class, folder.getParentFolderId());
+                //log.info(folder.getName());
 
-            //System.exit(0);
-            if (folder != null) {
-                filePathList.add(folder.getName());
-                parentRefId = folder.getParentFolderId();
+                //System.exit(0);
+                if (folder != null) {
+                    filePathList.add(folder.getName());
+                    parentRefId = folder.getParentFolderId();
+                } else {
+                    break;
+                }
+
             }
-            else {
-                break;
-            }
-
-
-
         }
         //setStatusMessage("Result:\n" + filePathTreeStructure);
         //log.info(getStatusMessage());
@@ -65,7 +65,7 @@ public class ShowFolderPathCommand extends AbstractCommand {
 
         //reversing the String
         //String msg = "Result:\n" + new StringBuilder(filePathTreeStructure).reverse().toString();
-        String msg = "Result:\n" +  printFilePath(filePathList);
+        String msg = "Result:\n" + printFilePath(filePathList);
 
 
         return CommandFormat.build("OK", "F010", msg);
@@ -80,7 +80,7 @@ public class ShowFolderPathCommand extends AbstractCommand {
 
     private String printFilePath(List<String> filePathList) {
         String output = "/";
-        for (String record: filePathList) {
+        for (String record : filePathList) {
             output += record + "/";
 
         }

@@ -14,7 +14,7 @@ public class SignOutCommand extends AbstractCommand {
 
     public SignOutCommand(DAO daoInstance) {
         super(daoInstance);
-        this.defaultLevelAccess = UserGroupTypes.setAccessForSignInGroups();
+        this.defaultLevelAccess = UserGroupTypes.setAllAccessGroups();
     }
 
     @Override
@@ -24,38 +24,40 @@ public class SignOutCommand extends AbstractCommand {
 
     @Override
     public String getDescription() {
-        return "Usage: sign_out [username]";
+        return "Usage: sign_out";
     }
 
     @Override
     public String execute(String[] cmdArgs) throws IllegalArgumentException {
 
-        if (cmdArgs.length > 1 || cmdArgs.length < 1) {
-            throw new IllegalArgumentException("Wrong number of arguments in " + "\"" + getName() + "\"");
+        if (cmdArgs.length > 0) {
+
+            return CommandFormat.build("ERROR", "----", "Wrong number of arguments in " + "\"" + getName() + "\"");
         }
 
         else {
-            String username = cmdArgs[0];
-            User user = daoInstance.findUserByName(username);
-            if (user != CurrentSessionState.getCurrentSession().getSignedInUser()) {
+            //String username = cmdArgs[0];
+            //User user = daoInstance.findUserByName(username);
+            if (CurrentSessionState.getCurrentSession().getSignedInUser() == null) {
 
                 //setStatusMessage("No such username found in data-structure, you should register first");
                 //log.info(getStatusMessage());
 
-                String msg ="Entered username doesn't match the actual signed in username";
-                return CommandFormat.build("ERROR", "U016", msg);
+                String msg ="You're a not signed in as user.";
+                return CommandFormat.build("ERROR", "----", msg);
                 
 
 
             } else {
+                String loggedUsername = CurrentSessionState.getCurrentSession().getSignedInUser().getName();
                 CurrentSessionState.getCurrentSession().removeUserFromSignedInUsers();
                 CurrentSessionState.getCurrentSession().setNoUser();
 
                 //setStatusMessage("User " + username + " has been successfully signed out");
                 //log.info(getStatusMessage());
 
-                String msg = "User " + username + " has been successfully signed out";
-                return CommandFormat.build("OK", "U017", msg);
+                String msg = "User " + loggedUsername + " has been successfully signed out";
+                return CommandFormat.build("OK", "----", msg);
                 
 
             }
