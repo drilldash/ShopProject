@@ -4,6 +4,8 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/antlr/stringtemplate/2.2/stringtemplate-2.2.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/antlr/stringtemplate/2.2/stringtemplate-2.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/antlr/antlr/2.7.2/antlr-2.7.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

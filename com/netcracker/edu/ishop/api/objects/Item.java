@@ -39,11 +39,6 @@ public class Item extends AbstractBusinessObject {
         return charsVals;
     }
 
-
-
-
-
-
     @Override
     public String toString() {
         return "In folder with id " + folderId + " there is " + name + " " + charsVals.toString();
@@ -57,8 +52,5 @@ public class Item extends AbstractBusinessObject {
     public void addPropertyWithVal(ItemPropertyValue propValue) {
         this.charsVals.add(propValue);
     }
-
-
-
 
 }
