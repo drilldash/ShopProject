@@ -35,6 +35,11 @@ public class DAOFactory {
                 DAO_INSTANCE = DAOInMemoryJSONConcurrent.getInstance();
                 log.info("Loaded DAO instance: " + DAO_INSTANCE.getClass());
                 break;
+            case "OracleXE":
+                //log.info("We are here");
+                DAO_INSTANCE = OracleDAO.getInstance();
+                log.info("Loaded DAO instance: " + DAO_INSTANCE.getClass());
+                break;
 
 
             default:

@@ -11,7 +11,7 @@ public class ConnectionPool {
     private static ConnectionPool INSTANCE = new ConnectionPool();
     private static DataSource datasource = new DataSource();
 
-    public ConnectionPool() {
+    private ConnectionPool() {
 
         PoolProperties poolProps = new PoolProperties();
         poolProps.setUrl("jdbc:oracle:thin:@//localhost:1521/xe");
@@ -49,7 +49,7 @@ public class ConnectionPool {
     }
 
 
-    public static Connection getConnection() {
+    public Connection getPooledConnection() {
 
         try {
             return datasource.getConnection();

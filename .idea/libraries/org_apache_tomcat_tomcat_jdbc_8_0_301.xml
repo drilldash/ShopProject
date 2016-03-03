@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.apache.tomcat:tomcat-jdbc:8.0.301" type="repository">
+    <properties maven-id="org.apache.tomcat:tomcat-jdbc:8.0.30" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-jdbc/8.0.30/tomcat-jdbc-8.0.30.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-juli/8.0.30/tomcat-juli-8.0.30.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

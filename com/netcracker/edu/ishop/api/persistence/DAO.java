@@ -14,7 +14,7 @@ abstract public class DAO {
 
     // CRUD: create, read, update, delete -> create, load, save, delete
 
-    public abstract <T extends AbstractBusinessObject>  T create(Class<T> abObj);
+    public abstract <T extends AbstractBusinessObject>  T create(Class<T> abObjType);
 
     public abstract <T extends AbstractBusinessObject>  T load();
 

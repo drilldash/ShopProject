@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -16,38 +16,21 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="UTF-8" />
+      <charset value="windows-1251" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="af4a6339-27ae-4e8f-aabf-64351cdecfc2">
-        <schema name="VERLORENER" object-types="cluster, dblink, dimension, function, materialized view, package, procedure, sequence, synonym, table, database trigger, type, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="6d2d6cf6-5ad2-4ce6-8931-54b6a49d5c89">
-      <console name="SystemConnection" type="STANDARD"><![CDATA[create tablespace shop_tabspace datafile 'shop_tabspace.dat' size 10M autoextend on;
-create temporary tablespace shop_tabspace_temp tempfile 'shop_tabspace_temp.dat' size 5M autoextend on;
-create user verlorener identified by verlorener default tablespace shop_tabspace temporary tablespace shop_tabspace_temp;
-grant create session to verlorener;
-grant create table to verlorener;
-grant unlimited tablespace to verlorener;
-
-ALTER DATABASE ADD SUPPLEMENTAL LOG DATA (PRIMARY KEY, UNIQUE INDEX) COLUMNS;]]></console>
+      <console name="SystemConnection" type="STANDARD" />
     </connection>
     <connection id="af4a6339-27ae-4e8f-aabf-64351cdecfc2">
-      <console name="VerlorenerConnection" type="STANDARD"><![CDATA[CREATE TABLE Persons (
-PersonID number(10,0),
-LastName varchar(255),
-FirstName varchar(255),
-Address varchar(255),
-City varchar(255)
-);]]></console>
+      <console name="VerlorenerConnection" type="STANDARD" />
     </connection>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -55,6 +38,7 @@ City varchar(255)
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/sql/create_user_with_grants.sql" connection-id="6d2d6cf6-5ad2-4ce6-8931-54b6a49d5c89" current-schema="SYSTEM" />
+    <mapping file-url="file://$PROJECT_DIR$/dbsql/create_user_with_grants.sql" connection-id="d10043e8-0bc9-445c-b7bf-00428c8b5834" current-schema="SYSTEM" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -82,7 +66,7 @@ City varchar(255)
           <description value="" />
           <database-type value="ORACLE" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="11.2" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />
@@ -156,7 +140,7 @@ City varchar(255)
           <description value="" />
           <database-type value="ORACLE" />
           <config-type value="BASIC" />
-          <database-version value="9999.0" />
+          <database-version value="11.2" />
           <driver-source value="BUILTIN" />
           <driver-library value="" />
           <driver value="" />

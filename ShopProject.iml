@@ -15,5 +15,6 @@
     <orderEntry type="library" name="antlr:stringtemplate:2.2" level="project" />
     <orderEntry type="library" name="ojdbc6" level="project" />
     <orderEntry type="library" name="org.apache.tomcat:tomcat-jdbc:8.0.30" level="project" />
+    <orderEntry type="library" name="org.apache.tomcat:tomcat-jdbc:8.0.301" level="project" />
   </component>
 </module>
