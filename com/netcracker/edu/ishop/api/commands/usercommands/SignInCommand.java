@@ -48,7 +48,12 @@ public class SignInCommand extends AbstractCommand {
             String username = cmdArgs[0];
             char[] password = cmdArgs[1].toCharArray();
 
+            //System.out.println(username + " " + Arrays.toString(password) );
+
             User user = daoInstance.findUserByName(username);
+
+
+            //System.out.println(user.getName() + " " + Arrays.toString(user.getPassword()) );
 
             if (user == null) {
                 //setStatusMessage("No such username found in data-structure, you should register first");

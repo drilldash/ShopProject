@@ -24,6 +24,10 @@ public class Item extends AbstractBusinessObject {
         this.folderId = folderId;
     }
 
+    public void setCharsVals(List<ItemPropertyValue> charsVals) {
+        this.charsVals = charsVals;
+    }
+
     public BigInteger getFolderId() {
         return folderId;
     }

@@ -12,7 +12,22 @@ public class User extends AbstractBusinessObject {
 
     @Override
     public String toString() {
-        return ""+getClass().getSimpleName() + " id:" + getId() + " name:" + getName() + " group:" + getGroup().toString().toCharArray()[0];
+
+        try {
+            String orderId = "";
+            if (getOrderId() == null) {
+                orderId+="null";
+            }
+            else{
+                orderId+=String.valueOf(getOrderId().intValue());
+            }
+
+            return "" + getClass().getSimpleName() + " id:" + getId() + " name:" + getName() + " group:"
+                    + getGroup().toString().toCharArray()[0] + "  " + orderId ;
+        }
+        catch (NullPointerException NPE) {
+            return "ID:" + getId() + " " + ". Rest of User fields are null. Check data for this ID.";
+        }
     }
 
     public User(BigInteger id) {

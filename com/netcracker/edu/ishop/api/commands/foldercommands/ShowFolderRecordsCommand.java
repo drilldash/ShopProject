@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class ShowFolderRecordsCommand extends AbstractCommand {
 
-    public static final Logger log = Logger.getLogger(ShowFolderRecordsCommand.class);
+    private static final Logger log = Logger.getLogger(ShowFolderRecordsCommand.class);
 
     public ShowFolderRecordsCommand(DAO daoInstance) {
         super(daoInstance);

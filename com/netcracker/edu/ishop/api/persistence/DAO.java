@@ -1,9 +1,6 @@
 package netcracker.edu.ishop.api.persistence;
 
-import netcracker.edu.ishop.api.objects.AbstractBusinessObject;
-import netcracker.edu.ishop.api.objects.Folder;
-import netcracker.edu.ishop.api.objects.Item;
-import netcracker.edu.ishop.api.objects.User;
+import netcracker.edu.ishop.api.objects.*;
 
 import java.math.BigInteger;
 import java.util.HashMap;
@@ -22,11 +19,13 @@ abstract public class DAO {
 
     public abstract <T extends AbstractBusinessObject>  void delete(T abObj);
 
-    public abstract <T extends AbstractBusinessObject>  Map getDataMapByABOName(Class<T> abObj);
+    public abstract <T extends AbstractBusinessObject>  Map<BigInteger, T> getDataMapByABOName(Class<T> abObj);
+
+    //
 
     public abstract User findUserByName(String username);
 
-    public abstract  <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String username);
+    //public abstract  <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String username);
 
     //
 
@@ -38,9 +37,15 @@ abstract public class DAO {
 
     //
 
+    public abstract Item findItemByName(String givenItemName);
+
     public abstract List<Item> findItemsWithGivenFolderId(BigInteger givenFolderId);
 
     public abstract Item searchForItemObjectInGivenList(List<Item> itemList, String givenItemName);
+
+    //
+
+    public abstract ItemProperty  findItemPropertyInstanceByName(String itemPropertyName);
 
     //
 

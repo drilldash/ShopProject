@@ -43,11 +43,14 @@ public class BuyItemsInOrderCommand extends AbstractCommand {
 
                 //currOrder.setUserId(null);
                 currOrder.setOrderDate( new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(new Date()));
-                currOrder.setText("SOLD OUT!");
+                currOrder.setOrderStatus("SOLD OUT!");
                 daoInstance.save(currOrder);
 
+
+                //log.info(currUser);
                 currUser.setOrderId(null);
                 daoInstance.save(currUser);
+                //log.info(currUser);
 
                 String msg = "Congratulations! You've done purchase! Order id:" + currOrder.getId();
                 return CommandFormat.build("Ok", "OS06", msg);

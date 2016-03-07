@@ -43,14 +43,16 @@ public class ShowFolderPathCommand extends AbstractCommand {
         filePathList.add(CurrentSessionState.getCurrentSession().getCurrentFolder().getName());
 
         if (folder.getParentFolderId() != null) {
-            while (parentRefId != null) {
+            while (parentRefId != null && parentRefId.equals(BigInteger.ZERO)) {
 
                 log.info(folder);
+                //find parent folder for current folder in loop
                 folder = daoInstance.findABOInstanceById(Folder.class, folder.getParentFolderId());
-                //log.info(folder.getName());
+
 
                 //System.exit(0);
                 if (folder != null) {
+                    log.info(folder.getName());
                     filePathList.add(folder.getName());
                     parentRefId = folder.getParentFolderId();
                 } else {

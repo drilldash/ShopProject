@@ -10,6 +10,10 @@ public class ItemProperty extends AbstractBusinessObject {
         //this. itemPropName = charName;
     }
 
+    public String getItemPropName() {
+        return itemPropName;
+    }
+
     @Override
     public String toString() {
         return this.name;

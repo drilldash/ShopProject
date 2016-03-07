@@ -1,19 +1,35 @@
-help
+#help
 #show_users
 #help <- this is comment
 #register_user u1 p1
 #register_user u2 p2
-sign_in u1 p1
-show_users
+#sign_in u1 p1
+#show_users
 #current_folder
-cd Tablets
-show_item_properties AsusNexus7
+#pwd
+#cd Tablets
+#add_item AsusNexus7 key1=val1
+#show_item_properties AsusNexus7
+#pwd
+#pwd
+#pwd
+#ls
+#cd ../
+#which_group
+#sign_out u1
+#sign_in admin admin
+#exit
+#sign_in u1 p1
+#cd Tablets
+#put item1
+#buy
+#history
 pwd
-pwd
-pwd
-ls
-cd ../
-which_group
-sign_out u1
-sign_in admin admin
-exit
+whoami
+sign_in u1 p1
+create_folder SSD
+cd SSD
+add_item Intel730 capacity=480gb vendor=Intel guarantee=60m
+put Intel730
+buy
+#history

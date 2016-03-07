@@ -39,12 +39,12 @@ public class CreateFolderCommand extends AbstractCommand {
 
             String folderName = cmdArgs[0];
 
-            Folder folder = daoInstance.create(Folder.class);
+
 
             Folder  folderToFind = daoInstance.findFolderInstanceByName(folderName);
 
             if (folderToFind == null) {
-
+                Folder folder = daoInstance.create(Folder.class);
                 folder.setName(folderName);
 
                 if (CurrentSessionState.getCurrentSession().getCurrentFolder() == null) {
@@ -63,7 +63,7 @@ public class CreateFolderCommand extends AbstractCommand {
             } else {
 
                 String msg = "Folder \"" + folderToFind.getName() + "\" already exists in data-structure!";
-                UniqueIDGenerator.getInstance().decrementID();
+                //UniqueIDGenerator.getInstance().decrementID();
                 return CommandFormat.build("ERROR", "F008", msg);
             }
         }

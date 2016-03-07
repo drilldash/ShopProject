@@ -39,7 +39,11 @@ public class AddItemCommand extends AbstractCommand {
         //BigInteger itemNum = new BigInteger(cmdArgs[1]);
 
         String[] cmdItemArgData = null;
-        if (cmdArgs.length >= 2) {
+
+        Item searchedItem = daoInstance.findItemByName(itemName);
+
+
+        if (cmdArgs.length >= 2 && searchedItem == null) {
             cmdItemArgData = Arrays.copyOfRange(cmdArgs, 1, cmdArgs.length);
             //log.info(Arrays.toString(cmdItemArgData));
 
@@ -59,21 +63,19 @@ public class AddItemCommand extends AbstractCommand {
                     //og.info(itemKeyChar);
                     //add_item item1 10 k1=v1 k2=v2 k3=v3
                     // checking existence of a given item's property
-                    ItemProperty itemProp = daoInstance.findAbstractBusinessObjByName(ItemProperty.class, itemKeyChar);
+                    ItemProperty itemProp = daoInstance.findItemPropertyInstanceByName(itemKeyChar);
                     //log.info(itemProp);
-                    if ( itemProp == null) {
-                            ItemProperty newItemProp = daoInstance.create(ItemProperty.class);
-                            newItemProp.setName(itemKeyChar);
-                            daoInstance.save(newItemProp);
-                            //log.info(daoInstance.getDataMapByABOName(ItemProperty.class));
+                    if (itemProp == null) {
+                        ItemProperty newItemProp = daoInstance.create(ItemProperty.class);
+                        newItemProp.setName(itemKeyChar);
+                        daoInstance.save(newItemProp);
+                        //log.info(daoInstance.getDataMapByABOName(ItemProperty.class));
 
                         item.addPropertyWithVal(new ItemPropertyValue(newItemProp, itemValChar));
-                    }
-                    else {
+                    } else {
                         item.addPropertyWithVal(new ItemPropertyValue(itemProp, itemValChar));
 
                     }
-
 
 
                 }
@@ -86,7 +88,7 @@ public class AddItemCommand extends AbstractCommand {
 
         }
 
-        if (cmdArgs.length == 1) {
+        if (cmdArgs.length == 1 && searchedItem == null) {
 
 
             Item item = daoInstance.create(Item.class);
@@ -102,6 +104,11 @@ public class AddItemCommand extends AbstractCommand {
         if (cmdArgs.length == 0) {
             String msg = "Wrong number of arguments in " + "\"" + getName() + "\"";
             return CommandFormat.build("ERROR", "----", msg);
+        }
+        if (searchedItem != null) {
+            String msg = "Item" + itemName + "already exists! ";
+            return CommandFormat.build("ERROR", "----", msg);
+
         }
         return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
     }

@@ -7,19 +7,8 @@ import java.util.EnumSet;
 
 public abstract class AbstractCommand {
 
-
     protected DAO daoInstance;
     protected EnumSet<UserGroupTypes> defaultLevelAccess;
-    protected String statusMessage;
-
-
-    public void setStatusMessage(String statusMessage) {
-        this.statusMessage = statusMessage;
-    }
-
-    public String getStatusMessage() {
-        return statusMessage;
-    }
 
     public AbstractCommand(DAO daoInstance) {
         this.daoInstance = daoInstance;

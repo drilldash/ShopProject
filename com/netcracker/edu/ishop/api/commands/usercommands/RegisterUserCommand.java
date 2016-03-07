@@ -48,13 +48,19 @@ public class RegisterUserCommand extends AbstractCommand {
             //User user = (User) daoInstance.create(User.class);
 
             //DAO<User> daoInstance = new DAOInMemoryJSONConcurrent<User>();
-            User user = daoInstance.create(User.class);
 
-            user.setName(username);
-            user.setPassword(password);
-            user.setGroupType(UserGroupTypes.USER);
+
+
+            //daoInstance.save(user);
+
+
+            //log.info(daoInstance.findUserByName(username).toString());
 
             if (daoInstance.findUserByName(username) == null) {
+                User user = daoInstance.create(User.class);
+                user.setName(username);
+                user.setPassword(password);
+                user.setGroupType(UserGroupTypes.USER);
                 daoInstance.save(user);
 
                 //setStatusMessage(username + " has been saved in data-structure!");
@@ -70,7 +76,7 @@ public class RegisterUserCommand extends AbstractCommand {
 
 
                 String msg = "Username " + username + " is taken, can't save it to data-structure";
-                UniqueIDGenerator.getInstance().decrementID();
+                //UniqueIDGenerator.getInstance().decrementID();
                 return CommandFormat.build("ERROR", "U006", msg);
 
 

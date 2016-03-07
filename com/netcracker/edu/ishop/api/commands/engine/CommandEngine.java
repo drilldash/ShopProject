@@ -129,7 +129,7 @@ public class CommandEngine {
             if (command.checkAccess(CurrentSessionState.getCurrentSession().getUserGroupTypeLocal())) {
                 try {
                     commandResult = command.execute(cmdParams);
-                    //commandStatus = command.getStatusMessage();
+                    log.info(commandResult);
                     return commandResult;
 
                     //log.info(commandStatus);

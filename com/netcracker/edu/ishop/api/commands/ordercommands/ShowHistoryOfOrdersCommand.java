@@ -40,11 +40,13 @@ public class ShowHistoryOfOrdersCommand extends AbstractCommand {
 
             List<Order> listSoldOutOrders = new ArrayList<>();
 
-            for (Order d : mapOfOrders.values()) {
-                //todo: hardcoded sh~
-                if (d.getText().equals("SOLD OUT!")) {
-                    listSoldOutOrders.add(d);
-                }//something here
+            if (mapOfOrders.size() > 0 ) {
+                for (Order d : mapOfOrders.values()) {
+                    //todo: hardcoded sh~
+                    if (d.getOrderStatus().equals("SOLD OUT!")) {
+                        listSoldOutOrders.add(d);
+                    }//something here
+                }
             }
 
             if (listSoldOutOrders.size() > 0) {

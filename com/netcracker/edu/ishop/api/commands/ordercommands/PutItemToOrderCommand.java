@@ -15,7 +15,7 @@ import java.util.List;
 
 public class PutItemToOrderCommand extends AbstractCommand {
 
-    public static final Logger log = Logger.getLogger(PutItemToOrderCommand.class);
+    private static final Logger log = Logger.getLogger(PutItemToOrderCommand.class);
 
     public PutItemToOrderCommand(DAO daoInstance) {
         super(daoInstance);
@@ -31,6 +31,7 @@ public class PutItemToOrderCommand extends AbstractCommand {
     public String getDescription() {
         return "Puts item by its name to user's order. Usage:'put [itemName]' ";
     }
+
     //@SuppressWarnings("unchecked")
     @Override
     public String execute(String[] cmdArgs) {
@@ -41,11 +42,13 @@ public class PutItemToOrderCommand extends AbstractCommand {
             String givenItemName = cmdArgs[0];
             Item selectedItem = daoInstance.searchForItemObjectInGivenList(itemList, givenItemName);
 
-            if (selectedItem!=null) {
+            if (selectedItem != null) {
                 User currUser = CurrentSessionState.getCurrentSession().getSignedInUser();
+
+                //log.info(currUser.getOrderId());
                 if (currUser.getOrderId() == null) {
                     Order currOrder = daoInstance.create(Order.class);
-                    currOrder.setText("RESERVED");
+                    currOrder.setOrderStatus("RESERVED");
                     currOrder.setUserId(currUser.getId());
                     currOrder.addItemToOrder(selectedItem);
                     currUser.setOrderId(currOrder.getId());
@@ -55,28 +58,40 @@ public class PutItemToOrderCommand extends AbstractCommand {
                     msg += "\n Item '" + selectedItem.getName() + "' has been added to Order:id" + currOrder.getId();
 
                     return CommandFormat.build("OK", "OS01", msg);
-                   
-                }
 
-                else if (currUser.getOrderId() != null) {
+                } else if (currUser.getOrderId() != null) {
+
+
                     Order currOrder = daoInstance.findABOInstanceById(Order.class, currUser.getOrderId());
-                    currOrder.addItemToOrder(selectedItem);
-                    daoInstance.save(currOrder);
 
-                    String msg = "\n Item '" + selectedItem.getName() + "' has been added to Order:id" + currOrder.getId();
+                    if (currOrder == null) {
+                        currUser.setOrderId(null);
+                        daoInstance.save(currUser);
 
-                    return CommandFormat.build("OK", "OS01", msg);
-                    
+                        String msg = "\n It seems that user with ID:" + currUser.getId() + "has ORDER_ID:" + currUser.getOrderId() +
+                                " but no such Order with ID:" + currUser.getOrderId() + "has been found. " +
+                                 "Trying to reset ORDERID to NULL" +
+                                "Try to reenter command 'put'";
+                        return CommandFormat.build("FATAL ERROR", "----", msg);
+
+                    } else {
+
+                        currOrder.addItemToOrder(selectedItem);
+                        daoInstance.save(currOrder);
+
+                        String msg = "\n Item '" + selectedItem.getName() + "' has been added to Order:id" + currOrder.getId();
+                        return CommandFormat.build("OK", "OS01", msg);
+                    }
+
 
                 }
-            }
-            else if (selectedItem == null) {
+            } else if (selectedItem == null) {
                 String msg = "No such item has been found in current directory. Name:" + givenItemName;
                 return CommandFormat.build("ERROR", "OF02", msg);
-                
+
             }
         }
-    return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
+        return CommandFormat.build("FATAL ERROR", "----", "Work of command:" + getName() + " is incorrect");
 
     }
 
@@ -84,7 +99,6 @@ public class PutItemToOrderCommand extends AbstractCommand {
     public String toString() {
         return null;
     }
-
 
 
 }

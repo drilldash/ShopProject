@@ -8,6 +8,7 @@ import netcracker.edu.ishop.utils.commands.CommandFormat;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ChangeFolderCommand extends AbstractCommand {
@@ -43,14 +44,29 @@ public class ChangeFolderCommand extends AbstractCommand {
                 String folderName = cmdArgs[0];
 
                 Folder currFolder = CurrentSessionState.getCurrentSession().getCurrentFolder();
+                log.info(currFolder);
 
-                //log.info(currFolder.getId());
+                log.info(currFolder.getId());
                 List<Folder> listChildFolders = daoInstance.findAllFoldersWithGivenParentId(currFolder.getId());
                 Folder givenFolder = daoInstance.findFolderInstanceByName(folderName);
 
+                //log.info(givenFolder.getId());
+
                 //if there are folders which we can change to
                 if (givenFolder != null && listChildFolders.size() > 0) {
-                    if (listChildFolders.contains(givenFolder)) {
+
+
+                    //log.info(listChildFolders);
+                    //log.info(listChildFolders.contains(givenFolder));
+
+                    List<String> listChildFoldersNames = new ArrayList<>();
+
+                    for (Folder f: listChildFolders) {
+                        listChildFoldersNames.add(f.getName());
+                    }
+
+
+                    if (listChildFoldersNames.contains(givenFolder.getName())) {
                         CurrentSessionState.getCurrentSession().setCurrentFolder(givenFolder);
 
                         String msg = ("You're in folder \"" + folderName + "\"!");

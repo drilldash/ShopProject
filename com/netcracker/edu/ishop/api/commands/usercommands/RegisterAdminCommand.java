@@ -43,19 +43,12 @@ public class RegisterAdminCommand extends AbstractCommand {
             String username = cmdArgs[0];
             char[] password = cmdArgs[1].toCharArray();
 
-
-            // class cast!!!
-            //User user = (User) daoInstance.create(User.class);
-
-            //DAO<User> daoInstance = new DAOInMemoryJSONConcurrent<User>();
-            User user = daoInstance.create(User.class);
-
-            user.setName(username);
-            user.setPassword(password);
-            user.setGroupType(UserGroupTypes.ADMIN);
-            user.setIsAdmin(true);
-
             if (daoInstance.findUserByName(username) == null) {
+                User user = daoInstance.create(User.class);
+                user.setName(username);
+                user.setPassword(password);
+                user.setGroupType(UserGroupTypes.ADMIN);
+                user.setIsAdmin(true);
                 daoInstance.save(user);
 
                 //setStatusMessage("Admin " + username + " has been saved in data-structure!");
@@ -71,7 +64,7 @@ public class RegisterAdminCommand extends AbstractCommand {
                 //log.info(getStatusMessage());
 
                 String msg = "Username " + username + " is taken, can't save it to data-structure";
-                UniqueIDGenerator.getInstance().decrementID();
+                //UniqueIDGenerator.getInstance().decrementID();
                 return CommandFormat.build("ERROR", "U004", msg);
                 
                 

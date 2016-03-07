@@ -24,4 +24,12 @@ public class ItemPropertyValue {
         return exp;
     }
 
+    public ItemProperty getKey() {
+        return charWithValue.getKey();
+    }
+
+    public String getVal() {
+        return charWithValue.getVal();
+    }
+
 }

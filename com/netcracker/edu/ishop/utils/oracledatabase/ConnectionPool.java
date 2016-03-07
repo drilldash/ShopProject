@@ -9,10 +9,11 @@ import java.sql.SQLException;
 public class ConnectionPool {
 
     private static ConnectionPool INSTANCE = new ConnectionPool();
-    private static DataSource datasource = new DataSource();
+
+    private DataSource datasource;
 
     private ConnectionPool() {
-
+        datasource = new DataSource();
         PoolProperties poolProps = new PoolProperties();
         poolProps.setUrl("jdbc:oracle:thin:@//localhost:1521/xe");
         poolProps.setDriverClassName("oracle.jdbc.driver.OracleDriver");
@@ -21,11 +22,12 @@ public class ConnectionPool {
         poolProps.setJmxEnabled(true);
         poolProps.setTestWhileIdle(false);
         poolProps.setTestOnBorrow(true);
-        poolProps.setValidationQuery("SELECT 1");
+        poolProps.setValidationQuery("SELECT 1 FROM DUAL");
         poolProps.setTestOnReturn(false);
         poolProps.setValidationInterval(30000);
         poolProps.setTimeBetweenEvictionRunsMillis(30000);
-        poolProps.setMaxActive(25);
+        poolProps.setMaxActive(20);
+        poolProps.setMaxIdle(20);
         poolProps.setInitialSize(10);
         poolProps.setMaxWait(10000);
         poolProps.setRemoveAbandonedTimeout(60);

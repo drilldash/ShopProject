@@ -1,14 +1,3 @@
-create table test_table
-    (
-       id int not null,
-       name varchar2(200),
-       text varchar2(100),
-      primary key (id)
-  );
-
-  insert into TEST_TABLE (id, text) values (1, 'This is some text.');
-
-
 create table TFolder
    (
      id int not null,
@@ -31,8 +20,6 @@ create table TItem
 ( 
   id int not null,
   name varchar2(200),
-  property_id int not null,
-  propertyname varchar2(200),
   primary key(id)
  );
 
@@ -50,7 +37,7 @@ create table TItem
   id int not null,
   name varchar2(200),
   order_status varchar2(200),
-  order_date timestamp,
+  order_date varchar2(200),
   user_id int,
   primary key(id)
  );
@@ -72,20 +59,6 @@ create table TUser
  primary key(id)
 );
 
-drop table FOLDERTABLE;
-drop table ITEMPROPERTYDESCRIPTIONTABLE;
-drop table ITEMTABLE;
-DROP table JOHNY_TABLE;
-drop table ORDERCONTENTTABLE;
-drop TABLE TEST_TABLE;
-drop table USERTABLE;
-drop TABLE ORDERTABLE;
-drop TABLE ITEMPROPERTYTABLE;
-
-INSERT into TFolder (id, NAME, PARENT_ID) VALUES (1,"test", null);
-UPDATE TFolder VALUES (1,"test", null);
-
-
 drop table TUser;
 drop table TOrder;
 drop table TItem;
@@ -95,6 +68,14 @@ drop TABLE TItemPropertyValue;
 drop table TItemProperty;
 
 
-
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (1, 'a1', 'pa1', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (2, 'a2', 'pa2', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (3, 'a3', 'pa3', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (4, 'a4', 'pa4', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (5, 'a5', 'pa5', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (6, 'admin', 'admin', 'ADMIN');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (7, 'u1', 'p1', 'USER');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (8, 'u2', 'p2', 'USER');
+INSERT INTO TUSER (ID, NAME, PASSWORD, GROUPTYPE) VALUES (9, 'u3', 'p3', 'USER');
 
  

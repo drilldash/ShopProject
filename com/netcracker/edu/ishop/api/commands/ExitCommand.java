@@ -12,7 +12,8 @@ public class ExitCommand extends AbstractCommand{
 
     public ExitCommand(DAO daoInstance) {
         super(daoInstance);
-        this.defaultLevelAccess = UserGroupTypes.setAdminAccessGroup();
+        //this.defaultLevelAccess = UserGroupTypes.setAdminAccessGroup();
+        this.defaultLevelAccess = UserGroupTypes.setAllAccessGroups();
     }
 
     @Override

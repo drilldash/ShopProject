@@ -65,7 +65,7 @@ public class AddItemPropertyCommand extends AbstractCommand {
                             //log.info(itemKeyChar);
                             //add_item item1 10 k1=v1 k2=v2 k3=v3
                             // checking existence of a given item's property
-                            ItemProperty itemProp = daoInstance.findAbstractBusinessObjByName(ItemProperty.class, itemKeyChar);
+                            ItemProperty itemProp = daoInstance.findItemPropertyInstanceByName(itemKeyChar);
                             //log.info(itemProp);
                             if (itemProp == null) {
                                 ItemProperty newItemProp = daoInstance.create(ItemProperty.class);
@@ -83,11 +83,17 @@ public class AddItemPropertyCommand extends AbstractCommand {
                         }
 
                     }
+                    String msg = "Following properties were added to " + givenItemName + ": " + Arrays.toString(cmdItemArgData);
+                    daoInstance.save(selectedItem);
+                    return CommandFormat.build("OK", "----", msg);
+                }
+                else {
+                    String msg = "Can't add properties to " + givenItemName + " : item doesn't exist!";
+                    //daoInstance.save(selectedItem);
+                    return CommandFormat.build("OK", "----", msg);
                 }
 
-                String msg = "Following properties were added to " + givenItemName + ": " + Arrays.toString(cmdItemArgData);
-                daoInstance.save(selectedItem);
-                return CommandFormat.build("OK", "----", msg);
+
 
 
             }

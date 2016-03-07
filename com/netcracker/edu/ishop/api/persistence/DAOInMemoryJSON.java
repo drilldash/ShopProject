@@ -11,6 +11,7 @@ import netcracker.edu.ishop.utils.DAOUtils;
 import netcracker.edu.ishop.utils.SerializationConstants;
 import netcracker.edu.ishop.utils.UniqueIDGenerator;
 
+import netcracker.edu.ishop.utils.gson.SerializationUtils;
 import org.apache.log4j.Logger;
 
 import java.io.*;
@@ -122,13 +123,30 @@ public class DAOInMemoryJSON extends DAO {
         return null;
     }
 
-    //@SuppressWarnings("unchecked")
-    public <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String nameABO) {
-        Map shardMap = dataMemoryStorage.getHashMapByType(cls);
+//    //@SuppressWarnings("unchecked")
+//    public <T extends AbstractBusinessObject> T findAbstractBusinessObjByName(Class<T> cls, String nameABO) {
+//        Map shardMap = dataMemoryStorage.getHashMapByType(cls);
+//        //log.info(shardMap);
+//
+//        for (Iterator<T> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
+//            T aboObj = aboIterator.next();
+//            if (aboObj.getName().equals(nameABO)) {
+//                return aboObj;
+//            }
+//
+//            //log.info(aboObj.getName());
+//
+//        }
+//        return null;
+//    }
+
+
+    public ItemProperty findItemPropertyInstanceByName(String nameABO) {
+        Map shardMap = dataMemoryStorage.getHashMapByType(ItemProperty.class);
         //log.info(shardMap);
 
-        for (Iterator<T> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
-            T aboObj = aboIterator.next();
+        for (Iterator<ItemProperty> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
+            ItemProperty aboObj = aboIterator.next();
             if (aboObj.getName().equals(nameABO)) {
                 return aboObj;
             }
@@ -138,6 +156,8 @@ public class DAOInMemoryJSON extends DAO {
         }
         return null;
     }
+
+
 
     @Override
     public List<String> findOnlyItemsAndFoldersWithGivenParentId(BigInteger givenParentId) {
@@ -244,6 +264,22 @@ public class DAOInMemoryJSON extends DAO {
     }
 
     @Override
+    public Item findItemByName(String givenItemName) {
+        Map shardMap = dataMemoryStorage.getHashMapByType(Item.class);
+        //log.info(shardMap);
+        for (Iterator<Item> aboIterator = shardMap.values().iterator(); aboIterator.hasNext(); ) {
+            Item aboObj = aboIterator.next();
+            if (aboObj.getName().equals(givenItemName)) {
+                return aboObj;
+            }
+
+            //log.info(aboObj.getName());
+
+        }
+        return null;
+    }
+
+    @Override
     public void DAOExit() {
 
         /*
@@ -268,7 +304,7 @@ public class DAOInMemoryJSON extends DAO {
         }
 
         //here we serialize last ID number to use it as initial value for next launch of the application
-        saveLastID();
+        SerializationUtils.saveLastID();
 
         //test: entire json serialization\deserialization
         //jsonSerializeEntireDataStructure(SerializationConstants.SERIALIZED_DATAMAP_FILE_PATH);
@@ -279,7 +315,7 @@ public class DAOInMemoryJSON extends DAO {
         for (Iterator<User> userIterator = CurrentSessionState.getCurrentSession().getAllSignedInUsers().iterator(); userIterator.hasNext(); ) {
             User user = userIterator.next();
             try {
-                comEngine.executeCommand("sign_out " + user.getName());
+                comEngine.executeCommand("sign_out");
             } catch (AccessDeniedException ADE) {
                 log.info(ADE);
             }
@@ -471,22 +507,7 @@ public class DAOInMemoryJSON extends DAO {
 //    }
 
 
-    private void saveLastID() {
-        BigInteger lastID = UniqueIDGenerator.getInstance().getID();
-        log.info("Last unused ID number:" + lastID);
-        Gson gson = new Gson();
-        Type varType = new TypeToken<BigInteger>(){}.getType();
-        String jsonLastID = gson.toJson(lastID, varType);
 
-        try {
-            FileWriter writer = new FileWriter(SerializationConstants.SERIALIZED_LAST_ID_FILE_PATH);
-            writer.write(jsonLastID);
-            writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
 
     private <T extends AbstractBusinessObject> void restoreDataMemoryMapPartsByBusinessObjType(Class<T> abObjType) {
