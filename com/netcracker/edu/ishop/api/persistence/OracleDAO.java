@@ -16,6 +16,7 @@ import java.nio.file.AccessDeniedException;
 import java.sql.*;
 import java.util.*;
 
+@SuppressWarnings("ALL")
 public class OracleDAO extends DAO {
 
     private static OracleDAO INSTANCE = new OracleDAO();
@@ -347,11 +348,10 @@ public class OracleDAO extends DAO {
 
                 String mergeQuery = "MERGE INTO TITEMPROPERTYVALUE d " +
                         "USING ( SELECT ? AS item_id, ? AS property_id FROM DUAL ) s " +
-                        "ON ( d.item_id = s.item_id and d.property_id = s.property_id )" +
+                        "ON ( d.item_id = s.item_id and d.property_id = s.property_id ) " +
                         "WHEN NOT MATCHED THEN " +
                         "INSERT ( d.item_id, d.property_id, d.propertyvalue ) VALUES ( s.item_id, s.property_id, ?) " +
-                        "WHEN MATCHED THEN " +
-                        "UPDATE SET d.propertyvalue = ?";
+                        " WHEN MATCHED THEN UPDATE SET d.propertyvalue = ?";
 
                 log.info(mergeQuery);
 
@@ -397,8 +397,7 @@ public class OracleDAO extends DAO {
         try {
 
             con = ConnectionPool.getInstance().getPooledConnection();
-            PreparedStatement ps = con.prepareStatement(
-                    "DELETE FROM TUSER WHERE ID=?");
+            PreparedStatement ps = con.prepareStatement("DELETE FROM TUSER WHERE ID=?");
 
             ps.setInt(1, user.getId().intValue());
             ps.executeUpdate();
@@ -622,7 +621,7 @@ public class OracleDAO extends DAO {
                         BigInteger orderId = rs.getObject("ORDER_ID") != null ? BigInteger.valueOf(rs.getInt("ORDER_ID")) : null;
 
                         user.setOrderId(orderId);
-                        log.info(user);
+                        //log.info(user);
                         return user;
                     }
                 }
@@ -1063,8 +1062,8 @@ public class OracleDAO extends DAO {
     public void DAOExit() {
         CommandEngine comEngine = CommandEngine.getInstance();
 
-        for (Iterator<User> userIterator = CurrentSessionState.getCurrentSession().getAllSignedInUsers().iterator(); userIterator.hasNext(); ) {
-            User user = userIterator.next();
+        for (Iterator<BigInteger> bigIntIterator = CurrentSessionState.getCurrentSession().getAllSignedInUsers().iterator(); bigIntIterator.hasNext(); ) {
+            BigInteger bigIntId = bigIntIterator.next();
             try {
                 comEngine.executeCommand("sign_out");
             } catch (AccessDeniedException ADE) {

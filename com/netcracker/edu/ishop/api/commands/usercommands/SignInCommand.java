@@ -73,7 +73,7 @@ public class SignInCommand extends AbstractCommand {
                 
 
 
-            } else if (!CurrentSessionState.getCurrentSession().getAllSignedInUsers().contains(user)) {
+            } else if (!CurrentSessionState.getCurrentSession().getAllSignedInUsers().contains(user.getId())) {
                 CurrentSessionState.getCurrentSession().setSignedInUser(user);
 
                 //setStatusMessage("User \"" + username + "\" has been successfully signed in!");

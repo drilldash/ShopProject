@@ -36,14 +36,13 @@ public class ExitCommand extends AbstractCommand{
             String msg = numberSignedInUsers + " users will be signed out automatically." + " Exiting application...";
 
             daoInstance.DAOExit();
-            System.exit(0);
+
             return CommandFormat.build("OK", "----", msg);
            
 
         }
 
         daoInstance.DAOExit();
-        System.exit(0);
         return CommandFormat.build("OK", "----", "Exit has been done!");
     }
 

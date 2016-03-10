@@ -45,7 +45,7 @@ public class MultiThreadServer implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            CurrentSessionState.getCurrentSession().removeUserFromSignedInUsers();
+            //CurrentSessionState.getCurrentSession().removeUserFromSignedInUsers();
         }
     }
 }

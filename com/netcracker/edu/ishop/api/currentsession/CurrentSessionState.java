@@ -6,13 +6,13 @@ import netcracker.edu.ishop.api.objects.Folder;
 import netcracker.edu.ishop.api.objects.User;
 import netcracker.edu.ishop.api.persistence.DAOFactory;
 import netcracker.edu.ishop.utils.SerializationConstants;
-import netcracker.edu.ishop.utils.UniqueIDGenerator;
 import netcracker.edu.ishop.utils.UserGroupTypes;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.lang.reflect.Type;
+import java.math.BigInteger;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
@@ -24,7 +24,7 @@ public class CurrentSessionState {
 
     private static CurrentSessionState INSTANCE = new CurrentSessionState();
 
-    private static final Set<User> activeUsers = Collections.synchronizedSet(new HashSet<>());
+    private static final Set<BigInteger> activeUserIds = Collections.synchronizedSet(new HashSet<>());
 
     private static Gson gson = new Gson();
 
@@ -125,23 +125,25 @@ public class CurrentSessionState {
         return sessionStateThreadLocal.get().getLocalUser();
     }
 
-    public Set<User> getAllSignedInUsers() {
-        return activeUsers;
+    public Set<BigInteger> getAllSignedInUsers() {
+        return activeUserIds;
     }
 
     public void setSignedInUser(User user) {
 
-        if (activeUsers.contains(user)) {
+
+
+        if (activeUserIds.contains(user.getId())) {
             log.info("User already signed in");
         } else {
-            activeUsers.add(user);
+            activeUserIds.add(user.getId());
             sessionStateThreadLocal.get().setLocalUser(user);
             sessionStateThreadLocal.get().setLocalUserType(user.getGroup());
         }
     }
 
     public void removeUserFromSignedInUsers() {
-        activeUsers.remove(sessionStateThreadLocal.get().getLocalUser());
+        activeUserIds.remove(sessionStateThreadLocal.get().getLocalUser().getId());
     }
 
 

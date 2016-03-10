@@ -8,6 +8,8 @@ import java.sql.SQLException;
 
 public class ConnectionPool {
 
+    //oracle http port is 8088 now
+
     private static ConnectionPool INSTANCE = new ConnectionPool();
 
     private DataSource datasource;

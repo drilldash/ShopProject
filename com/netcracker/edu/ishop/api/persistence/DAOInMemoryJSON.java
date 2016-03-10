@@ -312,8 +312,8 @@ public class DAOInMemoryJSON extends DAO {
 
         CommandEngine comEngine = CommandEngine.getInstance();
 
-        for (Iterator<User> userIterator = CurrentSessionState.getCurrentSession().getAllSignedInUsers().iterator(); userIterator.hasNext(); ) {
-            User user = userIterator.next();
+        for (Iterator<BigInteger> intIterator = CurrentSessionState.getCurrentSession().getAllSignedInUsers().iterator(); intIterator.hasNext(); ) {
+            BigInteger bgInt = intIterator.next();
             try {
                 comEngine.executeCommand("sign_out");
             } catch (AccessDeniedException ADE) {
